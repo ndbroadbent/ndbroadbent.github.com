@@ -11,7 +11,7 @@ permalink:   /:year/:month/:title.html
 #
 # Site configuration
 #
-url:          http://madebynathan.com
+url:          http://ndbroadbent.github.com
 title:        Made by Nathan
 description:  ruby, rails, linux, iphone, electronics
 keywords:     ruby, rails, linux, iphone, electronics

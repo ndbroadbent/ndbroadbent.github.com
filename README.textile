@@ -7,5 +7,5 @@ I'm a full-time volunteer at a non-profit organization in Hong Kong called Cross
 I make websites with Ruby on Rails.
 This blog is where I post the stuff I learn at work, and projects that I do in my spare time.
 
-h3. Read it at "http://madebynathan.com":http://madebynathan.com
+h3. Read it at "http://ndbroadbent.github.com":http://ndbroadbent.github.com
 

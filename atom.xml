@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>{{ site.title }}</title>
- <link href="http://madebynathan.com/atom.xml" rel="self"/>
- <link href="http://madebynathan.com/"/>
+ <link href="http://ndbroadbent.github.com/atom.xml" rel="self"/>
+ <link href="http://ndbroadbent.github.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>madebynathan.com</id>
+ <id>ndbroadbent.github.com</id>
 
  {% if site.author || site.email %}
  <author>
@@ -20,19 +20,19 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://madebynathan.com{{ post.url }}"/>
+   <link href="http://ndbroadbent.github.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>madebynathan.com{{ post.id }}</id>
+   <id>ndbroadbent.github.com{{ post.id }}</id>
    <summary>{{ post.excerpt | xml_escape }}</summary>
    <content type="html">{{ post.content | xml_escape }}</content>
 
 {% comment %}
  Pending implementation
  {% for category in post.categories %}
-   <category scheme="http://madebynathan.com/category/" term="{{ category | downcase }}" label="{{ category }}" />
+   <category scheme="http://ndbroadbent.github.com/category/" term="{{ category | downcase }}" label="{{ category }}" />
  {% endfor %}
  {% for tag in post.tags %}
-   <category scheme="http://madebynathan.com/tag/" term="{{ tag | downcase }}" label="{{ tag }}" />
+   <category scheme="http://ndbroadbent.github.com/tag/" term="{{ tag | downcase }}" label="{{ tag }}" />
  {% endfor %}
 {% endcomment %}
 
