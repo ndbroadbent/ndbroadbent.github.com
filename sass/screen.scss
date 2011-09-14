@@ -1,0 +1,254 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+//@import blueprint/form
+// Import the non-default scaffolding module.
+//@import blueprint/scaffolding
+
+// To generate css equivalent to the blueprint css but with your
+// configuration applied, uncomment:
+// @include blueprint
+
+// If you are doing a lot of stylesheet concatenation, it is suggested
+// that you scope your blueprint styles, so that you can better control
+// what pages use blueprint when stylesheets are concatenated together.
+body.bp {
+  @include blueprint-typography(true);
+  @include blueprint-utilities; }
+
+//  +blueprint-debug
+// +blueprint-interaction
+// // Remove the scaffolding when you're ready to start doing visual design.
+// // Or leave it in if you're happy with how blueprint looks out-of-the-box
+// pre
+//   :margin 0px
+form.bp {}
+
+//  +blueprint-inline-form
+// // You'll probably want to remove the scaffolding once you start styling your site.
+//  +blueprint-scaffolding
+@mixin post-title {
+  h3 {
+    margin-bottom: 0px;
+    font-family: Francois One, sans-serif; }
+  h6 {
+    color: $light-gray;
+    margin-bottom: 20px;
+    font-family: Arimo, serif; } }
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius; }
+
+@mixin border-shadow($horizontal, $vertical, $blur, $colour) {
+  -moz-box-shadow: $horizontal $vertical $blur $colour;
+  box-shadow: $horizontal $vertical $blur $colour;
+  -webkit-box-shadow: $horizontal $vertical $blur $colour; }
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body.two-col {
+  background-color: #f7f7f7;
+  #container {
+    @include container;
+    a, a:visited {
+      color: $dark-gray;
+      text-shadow: 1px 1px 0 #ffffff; }
+    a:hover {
+      color: #333333; } }
+  #header {
+    @include column(24);
+    margin-top: 20px;
+    a {
+      text-decoration: none; }
+    #logo {
+      @include column(10);
+      h1, h2 {
+        text-shadow: 1px 1px 0 #ffffff;
+      }
+      h1 {
+        margin-bottom: 0px;
+        font-family: 'Amaranth', arial, serif;
+        font-size: 3.2em;
+      a:hover {
+        color: #555555; } }
+      h2 {
+        color: $light-gray;
+        font-family: 'Francois One', serif;
+        font-size: 1.54em;
+        margin-top: 3px; } }
+    #menu {
+      @include column(14, true);
+      font-size: 180%;
+      font-family: Oswald, serif;
+      ul {
+        list-style-type: none;
+        float: right;
+        li {
+          display: inline;
+          margin-left: 20px;
+          form {
+            width: 100px;
+            display: inline;
+            input {
+              width: 90px;
+              @include border-radius(5px);
+              border: 1px solid #999999;
+              padding: 3px 3px 3px 14px;
+              background: url(/images/agile-toolkit-icons/atk-icons-nobg.png) 0px -318px no-repeat scroll white;
+              -webkit-appearance: none;
+              -webkit-box-sizing: content-box; } } } } } }
+  #sidebar {
+    @include column(8);
+    font-family: Oswald, serif;
+    ul {
+      list-style: none;
+      li {
+        font-family: Francois One, sans-serif;
+        color: $light-gray;
+        a {
+          font-family: Arimo, sans-serif;
+          color: $dark-gray; } } }
+    h3 {
+      color: #999999; }
+    #coderwall {
+      margin-bottom: 20px; }
+    #tweets {
+      ul.tweet_list {
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0.5em;
+        border-radius: 0.5em;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
+        .awesome, .epic {
+          text-transform: uppercase; }
+        li {
+          overflow-y: auto;
+          overflow-x: hidden;
+          padding: 0.5em; }
+        .tweet_time {
+          a {
+            font-family: Francois One, sans-serif;
+            color: $light-gray; } }
+        .tweet_text {
+          font-family: Arimo, sans-serif;
+          color: $dark-gray; }
+        .tweet_avatar {
+          padding-right: 0.5em;
+          float: left;
+          img {
+            vertical-align: middle; } } } } }
+  #content {
+    @include column(14, true);
+    @include prepend(1);
+    @include append(1);
+    .post {
+      p, h4 {
+        font-family: Droid Sans, sans-serif; }
+      h4 {
+        margin-bottom: 0px; }
+      h4 + p {
+        text-indent: 2em; }
+      code {
+        font-family: Droid Sans Mono, serif; }
+      p {
+        line-height: 140%; }
+      .header {
+        @include column(14, true);
+        .title {
+          @include column(10);
+          display: inline-block;
+          @include post-title; }
+        .social_bar {
+          @include column(4, true);
+          ul {
+            list-style-type: none;
+            float: right;
+            margin-right: 0px;
+            li {
+              display: inline-block; } } } }
+      img {
+        @include border-shadow(5px, 5px, 7px, #999999); }
+      .highlight {
+        background-color: #444444;
+        color: #d4d4d4;
+        padding: 10px;
+        margin-bottom: 20px;
+        @include border-radius(10px);
+        @include border-shadow(5px, 5px, 7px, #999999);
+        pre {
+          margin: 0px;
+          overflow: auto; } }
+      .hackernews {
+        font-size: 1.3em;
+        text-align: right;
+        .heart {
+          color: #cc0000; }
+        a {
+          background: transparent url(/images/hackernews-icon.png) no-repeat center left;
+          display: inline-block;
+          padding-left: 16px; } }
+      blockquote {
+        p:before {
+          font: 48px Lucida Sans Unicode, Lucida Grande, sans-serif;
+          content: "“";
+          float: left;
+          margin-top: -12px; }
+        p:after {
+          content: "”";
+          font: 48px Lucida Sans Unicode, Lucida Grande, sans-serif;
+          float: right; } } }
+    .post-excerpt {
+      margin-bottom: 20px;
+      @include post-title;
+      h6 {
+        margin: 0px; }
+      p {
+        font-family: Droid Sans, sans-serif; } }
+    #search {
+      .result {
+        @include post-title; } }
+    #projects {
+      @include post-title;
+      h2 {
+        font-family: Oswald, serif;
+        text-align: center;
+        color: $dark-gray;
+        margin-bottom: 0px; }
+      h3 {
+        color: $dark-gray; }
+      h4 {
+        font-family: Oswald, serif;
+        text-align: center;
+        color: $light-gray;
+        a {
+          color: $light-gray; } }
+      h6 {
+        margin-bottom: 0px;
+        a {
+          color: $light-gray; }
+        strong {
+          color: $dark-gray; } } } }
+  .not_found {
+    h1 {
+      font-family: Luckiest Guy, arial, serif;
+      text-align: center;
+      font-size: 10em;
+      margin-top: 100px; }
+    h4 {
+      font-family: Oswald, serif;
+      text-align: center; } }
+  #footer {
+    @include column(24);
+    color: $light-gray;
+    text-align: center;
+    font-family: Droid Sans, sans-serif;
+    font-size: 0.8em; } }
+

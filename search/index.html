@@ -1,0 +1,20 @@
+---
+layout: default
+title: Search results
+---
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="/javascripts/jquery-tapir.min.js"></script>
+
+<div id="content">
+  <div id="search">
+    <img src="/images/loading.gif" style="border:none; margin:auto; width:32px; height:32px; box-shadow:none; display: block;"/>
+  </div>
+</div>
+
+<script>
+  $('#search').tapir({
+    token: '********************',
+    complete: function(){ $('#content img').remove() }
+  });
+</script>
+

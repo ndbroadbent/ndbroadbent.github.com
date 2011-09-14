@@ -1,0 +1,11 @@
+h1. Made by Nathan
+
+h3. A blog about ruby, rails, linux, iphone, electronics
+
+Hi, I'm Nathan Broadbent.
+I'm a full-time volunteer at a non-profit organization in Hong Kong called Crossroads.
+I make websites with Ruby on Rails.
+This blog is where I post the stuff I learn at work, and projects that I do in my spare time.
+
+h3. Read it at "http://madebynathan.com":http://madebynathan.com
+

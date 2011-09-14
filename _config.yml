@@ -1,0 +1,20 @@
+#
+# Jekyll configuration
+#
+#destination: ./_site
+auto:        true
+lsi:         true # better related posts
+server_port: 3000
+pygments:    true
+permalink:   /:year/:month/:title.html
+
+#
+# Site configuration
+#
+url:          http://madebynathan.com
+title:        Made by Nathan
+description:  ruby, rails, linux, iphone, electronics
+keywords:     ruby, rails, linux, iphone, electronics
+author:       Nathan Broadbent
+email:        nathan.f77@gmail.com
+
