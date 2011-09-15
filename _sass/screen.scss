@@ -98,6 +98,9 @@ body.two-col {
           vertical-align: middle;
           border-bottom: 1px solid #d2d2d2;
           border-right: 1px solid #d2d2d2;
+          &:hover {
+            background-color: #d2d2d2;
+          }
           form {
             width: 100px;
             display: inline;
@@ -125,6 +128,7 @@ body.two-col {
     h3 {
       color: #999999; }
     #tweets {
+      margin-top: 10px;
       ul.tweet_list {
         -webkit-border-radius: 0.5em;
         -moz-border-radius: 0.5em;

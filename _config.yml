@@ -22,6 +22,5 @@ keywords:     ruby, rails, linux, iphone, electronics
 author:       Nathan Broadbent
 email:        nathan.f77@gmail.com
 
-
 exclude: ['haml', 'sass', 'Rakefile', 'README.textile', 'config.rb']
 

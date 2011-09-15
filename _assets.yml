@@ -1,0 +1,19 @@
+gzip_assets: false  # GitHub Pages gzip assets already
+javascript_compressor: closure
+
+javascripts:
+  application:
+    - javascripts/jquery.tweet.js
+    - javascripts/application.js
+
+stylesheets:
+  screen:
+    - stylesheets/screen.css
+    - stylesheets/syntax.css
+
+  print:
+    - stylesheets/print.css
+
+  ie:
+    - stylesheets/ie.css
+
