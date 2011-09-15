@@ -204,10 +204,13 @@ body.two-col {
         @include column(14, true);
         padding: 6px 0;
         .title {
-          @include column(10);
           display: inline-block;
           @include post-title;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          h3 {
+            font-size: 23px;
+            line-height: 110%;
+          } }
         .social_bar {
           @include column(4, true);
           ul {
@@ -310,5 +313,6 @@ body.two-col {
     color: $light-gray;
     text-align: center;
     font-family: Droid Sans, sans-serif;
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+    padding: 15px; } }
 
