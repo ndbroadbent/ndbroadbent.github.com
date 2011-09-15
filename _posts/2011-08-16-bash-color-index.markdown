@@ -8,7 +8,7 @@ wordpress_url: http://madebynathan.com/?p=552
 ---
 Sometimes it's nice to add color output to your bash scripts. Here's a nicely formatted 'color index' function for your .bashrc for when you need to look up the color codes.
 
-[code]
+{% highlight bash %}
 # Bash Colors index
 # ------------------------------------------------
 color_index() {
@@ -38,7 +38,7 @@ color_index() {
   done
   echo -e "$blank_line" "\n" # Bottom border
 }
-[/code]
+{% endhighlight %}
 
 <p>Calling 'color_index' produces something like this:</p>
 

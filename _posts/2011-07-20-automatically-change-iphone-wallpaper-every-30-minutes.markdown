@@ -17,7 +17,7 @@ Save your wallpapers to <em>/var/mobile/Media/Wallpapers</em> (or wherever you l
 
 &nbsp;
 
-[code]
+{% highlight bash %}
 #!/bin/bash
 # This script sets up your iPhone to change the lock-screen wallpaper every 30 minutes.
 wallpaper_dir="/var/mobile/Media/Wallpapers"
@@ -66,6 +66,6 @@ EOF
 
 # Load the scheduled task
 launchctl load /Library/LaunchDaemons/com.ndb.changewallpaper.plist
-[/code]
+{% endhighlight %}
 
 Enjoy!

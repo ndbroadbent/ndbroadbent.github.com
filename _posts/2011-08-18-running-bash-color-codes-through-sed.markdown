@@ -12,13 +12,13 @@ wordpress_url: http://madebynathan.com/?p=569
 
 <p>Here is an example of how to use sed when your string contains color codes:</p>
 
-[code]
+{% highlight bash %}
 # Need to strip the color character from the end of the line, otherwise
 # EOL '$' doesn't work. This gave me a headache for long time.
 # The echo ~> regex is time-consuming, so perform a simple search first.
 if [[ $line == *$search* ]]; then
     line=$(echo $line | sed -r "s:$search(\x1B\[m)?$:$replace:g")
 fi
-[/code]
+{% endhighlight %}
 
 <p>You might also find this page useful: <a href="http://www.commandlinefu.com/commands/view/3584/remove-color-codes-special-characters-with-sed">http://www.commandlinefu.com/commands/view/3584/remove-color-codes-special-characters-with-sed</a></p>

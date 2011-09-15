@@ -4,18 +4,19 @@
   ---
 #content
   .posts-list
-    {% for post in site.posts limit:5 %}
+    {% for post in paginator.posts %}
     .post
       .header
         .title
           %h3 <a href="{{ post.url }}">{{ post.title }}</a>
-          %h6 {{ post.date | date: "%A, %B %d, %Y" }}
+          %h6
+            {{ post.date | date: "%A, %B %d, %Y" }} #{"|"} tagged with {{ post.tags | join " " }}
+
       .content
         {{ post.content }}
     {% endfor %}
 
-  %p#footnote
-    Didn't find what you were looking for? There's more in the <a href="/archive.html">archive</a>.
+  {% include pagination.html %}
 
 #sidebar
   %h3 Latest Posts
