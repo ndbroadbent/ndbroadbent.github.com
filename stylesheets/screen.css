@@ -366,7 +366,7 @@ body.two-col #header #logo h1 a:hover {
 }
 /* line 82, ../_sass/screen.scss */
 body.two-col #header #logo h2 {
-  color: #889788;
+  color: #859885;
   font-family: 'Francois One', serif;
   font-size: 1.54em;
   margin-top: 3px;
@@ -466,7 +466,7 @@ body.two-col #sidebar ul {
 /* line 143, ../_sass/screen.scss */
 body.two-col #sidebar ul li {
   font-family: Francois One, sans-serif;
-  color: #889788;
+  color: #859885;
 }
 /* line 146, ../_sass/screen.scss */
 body.two-col #sidebar ul li a {
@@ -505,7 +505,7 @@ body.two-col #sidebar #tweets ul.tweet_list li {
 /* line 169, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_time a {
   font-family: Francois One, sans-serif;
-  color: #889788;
+  color: #859885;
 }
 /* line 172, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_text {
@@ -588,7 +588,7 @@ body.two-col #content .post .header .title h3, body.two-col #content .post .head
 }
 /* line 40, ../_sass/screen.scss */
 body.two-col #content .post .header .title h6 {
-  color: #889788;
+  color: #859885;
   margin: 5px 0 2px;
   font-family: Arimo, serif;
 }
@@ -676,7 +676,7 @@ body.two-col #content .post-excerpt h3, body.two-col #content .post-excerpt h2 {
 }
 /* line 40, ../_sass/screen.scss */
 body.two-col #content .post-excerpt h6 {
-  color: #889788;
+  color: #859885;
   margin: 5px 0 2px;
   font-family: Arimo, serif;
 }
@@ -695,7 +695,7 @@ body.two-col #content #search .result h3, body.two-col #content #search .result 
 }
 /* line 40, ../_sass/screen.scss */
 body.two-col #content #search .result h6 {
-  color: #889788;
+  color: #859885;
   margin: 5px 0 2px;
   font-family: Arimo, serif;
 }
@@ -706,7 +706,7 @@ body.two-col #content #projects h3, body.two-col #content #projects h2 {
 }
 /* line 40, ../_sass/screen.scss */
 body.two-col #content #projects h6 {
-  color: #889788;
+  color: #859885;
   margin: 5px 0 2px;
   font-family: Arimo, serif;
 }
@@ -725,11 +725,11 @@ body.two-col #content #projects h3 {
 body.two-col #content #projects h4 {
   font-family: Oswald, serif;
   text-align: center;
-  color: #889788;
+  color: #859885;
 }
 /* line 271, ../_sass/screen.scss */
 body.two-col #content #projects h4 a {
-  color: #889788;
+  color: #859885;
 }
 /* line 273, ../_sass/screen.scss */
 body.two-col #content #projects h6 {
@@ -737,7 +737,7 @@ body.two-col #content #projects h6 {
 }
 /* line 275, ../_sass/screen.scss */
 body.two-col #content #projects h6 a {
-  color: #889788;
+  color: #859885;
 }
 /* line 277, ../_sass/screen.scss */
 body.two-col #content #projects h6 strong {
@@ -772,7 +772,7 @@ body.two-col #footer {
   float: left;
   margin-right: 10px;
   width: 950px;
-  color: #889788;
+  color: #859885;
   text-align: center;
   font-family: Droid Sans, sans-serif;
   font-size: 0.8em;

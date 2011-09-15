@@ -43,13 +43,12 @@
 #sidebar
   %h3 Related Posts
   %ul
-    {% for post in site.related_posts limit:3 %}
+    {% for post in site.related_posts limit:5 %}
     %li
       <a href="{{ post.url }}">{{ post.title }}</a>
       %br
       {{ post.date | date: "%B %d, %Y"}}
     {% endfor %}
-  %h3 Twitter
-  <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
-  #tweets
+
+  {% include common_sidebar.html %}
 

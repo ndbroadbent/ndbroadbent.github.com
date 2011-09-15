@@ -51,7 +51,7 @@ layout: default
 <div id='sidebar'>
   <h3>Related Posts</h3>
   <ul>
-    {% for post in site.related_posts limit:3 %}
+    {% for post in site.related_posts limit:5 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       <br />
@@ -59,7 +59,5 @@ layout: default
     </li>
     {% endfor %}
   </ul>
-  <h3>Twitter</h3>
-  <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
-  <div id='tweets'></div>
+  {% include common_sidebar.html %}
 </div>

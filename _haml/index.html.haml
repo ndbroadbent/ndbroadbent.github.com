@@ -18,5 +18,14 @@
     Didn't find what you were looking for? There's more in the <a href="/archive.html">archive</a>.
 
 #sidebar
-  {% include sidebar.html %}
+  %h3 Latest Posts
+  %ul
+    {% for post in site.posts limit:5 %}
+    %li
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      %br
+      {{ post.date | date: "%B %d, %Y"}}
+    {% endfor %}
+
+  {% include common_sidebar.html %}
 
