@@ -145,7 +145,13 @@ body.two-col {
         color: $light-gray;
         a {
           font-family: Arimo, sans-serif;
-          color: $dark-gray; } } }
+          color: #333;
+          &:visited {
+            color: #333;
+          }
+          &:hover {
+            color: #111;
+          } } } }
     h3 {
       color: #999999; }
     #tweets {
@@ -182,7 +188,7 @@ body.two-col {
     @include prepend(1);
     @include append(1);
     padding-top: 18px;
-    padding-left: 20px;
+    padding-left: 0;
     .post {
       p, h4 {
         font-family: Droid Sans, sans-serif; }
@@ -210,6 +216,11 @@ body.two-col {
             margin-right: 0px;
             li {
               display: inline-block; } } } }
+      .content {
+        padding-left: 10px;
+        padding-top: 5px;
+        clear: both;
+      }
       img {
         @include border-shadow(3px, 3px, 5px, #999999);
         @include border-radius(7px); }
