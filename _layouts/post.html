@@ -48,17 +48,5 @@ layout: default
   </script>
 </div>
 <div id='sidebar'>
-  <h3>Related posts</h3>
-  <ul>
-    {% for post in site.related_posts limit:3 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <br />
-      {{ post.date | date: "%B %d, %Y"}}
-    </li>
-    {% endfor %}
-  </ul>
-  <h3>Twitter</h3>
-  <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
-  <div id='tweets'></div>
+  {% include sidebar.html %}
 </div>

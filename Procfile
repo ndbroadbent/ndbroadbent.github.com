@@ -1,3 +1,4 @@
-jekyll:  bundle exec ejekyll --server
+jekyll:  bundle exec jekyll --server
 compass: bundle exec compass watch
+haml:    bundle exec rake haml:watch
 

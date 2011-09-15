@@ -9,7 +9,7 @@ keywords: jekyll, rails, ruby, rails 3.1
 
 Here is some ruby:
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 module Jekyll
   class Site
     def compile_haml(files, input_regex, output_extension)

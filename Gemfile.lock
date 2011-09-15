@@ -26,7 +26,6 @@ GEM
       directory_watcher (>= 1.1.1)
       liquid (>= 1.9.0)
       maruku (>= 0.5.9)
-    jekyll_ext (0.1.4)
     linecache19 (0.5.12)
       ruby_core_source (>= 0.1.4)
     liquid (2.2.2)
@@ -34,6 +33,7 @@ GEM
       syntax (>= 1.0.0)
     narray (0.6.0.1)
     pygmentize (0.0.3)
+    rake (0.9.1)
     rb-inotify (0.8.6)
       ffi (>= 0.5.0)
     ruby-debug-base19 (0.11.25)
@@ -61,7 +61,7 @@ DEPENDENCIES
   gsl
   haml
   jekyll
-  jekyll_ext
   pygmentize
+  rake
   rb-inotify
   ruby-debug19
