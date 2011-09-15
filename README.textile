@@ -1,11 +1,22 @@
-h1. Made by Nathan
+h1. "http://MadeByNathan.com":http://madebynathan.com
 
-h3. A blog about ruby, rails, linux, iphone, electronics
+h3. A "Jekyll":http://github.com/mojombo/jekyll blog about ruby, rails, linux, iphone, electronics
 
-Hi, I'm Nathan Broadbent.
-I'm a full-time volunteer at a non-profit organization in Hong Kong called Crossroads.
-I make websites with Ruby on Rails.
-This blog is where I post the stuff I learn at work, and projects that I do in my spare time.
+I'm a full-time volunteer at a non-profit in Hong Kong called "Crossroads":http://www.crossroads.org.hk,
+where I make websites with Ruby on Rails.
 
-h3. Read it at "http://ndbroadbent.github.com":http://ndbroadbent.github.com
+This blog is where I post the things I learn at work, and the projects that I do in my spare time.
+
+It is automatically transformed by "Jekyll":http://github.com/mojombo/jekyll into a static site
+whenever I push this repository to GitHub.
+
+h1. License
+
+The following directories and their contents are Copyright Nathan D. Broadbent.
+You may not reuse anything therein without my permission:
+
+* _posts/
+* images/
+
+All other directories and files are MIT Licensed. Feel free to use them as you please.
 
