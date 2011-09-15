@@ -6,6 +6,7 @@ gem "jekyll"
 gem "haml"
 gem "compass"
 gem "RedCloth"
+gem 'rdiscount'
 gem "pygmentize"
 gem "foreman"
 gem "rb-inotify"

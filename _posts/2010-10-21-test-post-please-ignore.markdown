@@ -5,11 +5,11 @@ excerpt: Testing Jekyll blog
 keywords: jekyll, rails, ruby, rails 3.1
 ---
 
-## This is a test post.
+This is a test post for testing purposes.
 
 Here is some ruby:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 module Jekyll
   class Site
     def compile_haml(files, input_regex, output_extension)

@@ -1,3 +1,8 @@
+// Set Disqus to developer mode if developing site on localhost
+if (window.location.href.indexOf("//localhost") != -1) {
+  var disqus_developer = 1;
+};
+
 $(function() {
   $('.two-col').noisy({
       'intensity' : 1,
@@ -7,6 +12,7 @@ $(function() {
       'monochrome' : false
   }).css('background-color', '#f3f3f3');
 
+  // Always open links from blog post content in a new tab/window
   $(".post .content a").attr("target","_blank");
 
   $("#tweets").tweet({
