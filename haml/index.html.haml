@@ -18,15 +18,5 @@
     Didn't find what you were looking for? There's more in the <a href="/archive.html">archive</a>.
 
 #sidebar
-  %h3 Latest Posts
-  %ul
-    {% for post in site.posts limit:10 %}
-    %li
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      %br
-      {{ post.date | date: "%B %d, %Y"}}
-    {% endfor %}
-  %h3 Twitter
-  <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
-  #tweets
+  {% include sidebar.html %}
 

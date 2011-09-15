@@ -38,11 +38,14 @@ class HamlWatcher
       output_file_name = output_file(file)
       origin = File.open(File.join('haml', file)).read
       result = Haml::Engine.new(origin).render
-      raise "Nothing rendered!" if result.empty?
-      # Write rendered HTML to file
-      color, action = File.exist?(output_file_name) ? [33, 'overwrite'] : [32, '   create']
-      puts "\033[0;#{color}m#{action}\033[0m #{output_file_name}"
-      File.open(output_file_name,'w') {|f| f.write(result)}
+      if result.empty?
+        puts "Nothing rendered!"
+      else
+        # Write rendered HTML to file
+        color, action = File.exist?(output_file_name) ? [33, 'overwrite'] : [32, '   create']
+        puts "\033[0;#{color}m#{action}\033[0m #{output_file_name}"
+        File.open(output_file_name,'w') {|f| f.write(result)}
+      end
     end
 
     # Check that all haml templates have been rendered.
