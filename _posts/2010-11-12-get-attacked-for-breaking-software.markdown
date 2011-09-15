@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Get attacked for breaking your software tests.
 wordpress_id: 264
@@ -11,14 +11,15 @@ At work, we use software called Atlassian Bamboo. It does CI (continuous integra
 We had a USB Missile launcher lying around, and I thought it could be put to good use. So now, whenever a developer commits a change that breaks a test, he gets shot.
 
 <br>
-[caption id="attachment_268" align="aligncenter" width="480" caption="CI Sentinel is waiting for your mistake"]<a href="http://www.f-77.com/wp-content/uploads/2010/11/Photo-Nov-11-17-21-55.jpg"><img src="http://www.f-77.com/wp-content/uploads/2010/11/Photo-Nov-11-17-21-55.jpg" alt="CI Sentinel is waiting for your mistake" title="CI Sentinel" width="480" height="640" class="size-full wp-image-268" /></a>[/caption]
+<a href="http://www.f-77.com/wp-content/uploads/2010/11/Photo-Nov-11-17-21-55.jpg"><img src="http://www.f-77.com/wp-content/uploads/2010/11/Photo-Nov-11-17-21-55.jpg" alt="CI Sentinel is waiting for your mistake" title="CI Sentinel" width="480" height="640" class="size-full wp-image-268" /></a>
 <br>
 
 The launcher is a bit wimpy though. I'd like to replace the springs with some more powerful ones, since the darts only get about half way to Steve's desk :P
 
-If you're interested, see here for the source code and instructions: 
+If you're interested, see here for the source code and instructions:
 <a href="https://github.com/ndbroadbent/bamboo_punisher">https://github.com/ndbroadbent/bamboo_punisher</a>
 
 UPDATE:
 
 I attached a webcam and set it to record a video every time a missile was fired. Heres a link to the latest video:  http://www.youtube.com/watch?v=MK1p7Nz5c9s
+
