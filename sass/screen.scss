@@ -53,7 +53,7 @@ form.bp {}
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col {
-  background-color: #f7f7f7;
+  background-color: #f3f3f3;
   #container {
     @include container;
     a, a:visited {
@@ -116,8 +116,6 @@ body.two-col {
           color: $dark-gray; } } }
     h3 {
       color: #999999; }
-    #coderwall {
-      margin-bottom: 20px; }
     #tweets {
       ul.tweet_list {
         -webkit-border-radius: 0.5em;
@@ -182,7 +180,10 @@ body.two-col {
         padding: 10px;
         margin-bottom: 20px;
         @include border-radius(10px);
-        @include border-shadow(5px, 5px, 7px, #999999);
+        border: {
+          right:  2px solid #fff;
+          bottom: 2px solid #fff;
+        }
         pre {
           margin: 0px;
           overflow: auto; } }

@@ -5,7 +5,7 @@ $(function() {
       'opacity' : 0.08,
       'fallback' : '',
       'monochrome' : false
-  }).css('background-color', '#f7f7f7');
+  }).css('background-color', '#f3f3f3');
 
   $(".post .content a").attr("target","_blank");
 
