@@ -154,6 +154,12 @@ body.two-col {
           } } } }
     h3 {
       color: #999999; }
+    #google-search {
+      table { margin-bottom: 0; }
+      table.gsc-branding { display: none; }
+      .gsc-results {
+        font-family: 'Droid Sans', arial, sans-serif;
+      } }
     #tweets {
       margin-top: 10px;
       ul.tweet_list {
