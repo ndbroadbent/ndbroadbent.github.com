@@ -1,3 +1,3 @@
 jekyll:  bundle exec ejekyll --server
-comapss: bundle exec compass watch
+compass: bundle exec compass watch
 
