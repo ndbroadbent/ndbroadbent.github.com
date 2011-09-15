@@ -187,7 +187,7 @@ body.two-col {
     @include column(14, true);
     @include prepend(1);
     @include append(1);
-    padding-top: 18px;
+    padding-top: 12px;
     padding-left: 0;
     .post {
       p, h4 {
@@ -202,7 +202,7 @@ body.two-col {
         line-height: 140%; }
       .header {
         @include column(14, true);
-        padding: 5px 0;
+        padding: 6px 0;
         .title {
           @include column(10);
           display: inline-block;
