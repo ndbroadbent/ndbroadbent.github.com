@@ -342,7 +342,7 @@ body.two-col #header #logo {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 390px;
+  width: 310px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@madebynathan.github.com/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header #logo {
@@ -375,7 +375,7 @@ body.two-col #header #menu {
   float: left;
   margin-right: 0;
   width: 550px;
-  font-size: 180%;
+  font-size: 26px;
   font-family: Oswald, serif;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p290@madebynathan.github.com/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */

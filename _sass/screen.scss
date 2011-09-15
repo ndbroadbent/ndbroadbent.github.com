@@ -67,7 +67,7 @@ body.two-col {
     a {
       text-decoration: none; }
     #logo {
-      @include column(10);
+      @include column(8);
       h1, h2 {
         text-shadow: 1px 1px 0 #ffffff;
       }
@@ -84,7 +84,7 @@ body.two-col {
         margin-top: 3px; } }
     #menu {
       @include column(14, true);
-      font-size: 180%;
+      font-size: 26px;
       font-family: Oswald, serif;
       ul {
         list-style-type: none;
