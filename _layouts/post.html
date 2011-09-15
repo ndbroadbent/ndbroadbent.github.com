@@ -5,7 +5,7 @@ layout: default
   <div class='post'>
     <div class='header'>
       <div class='title'>
-        <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
         <h6>{{ page.date | date: "%A, %B %d, %Y" }}</h6>
       </div>
       <div class='social_bar'>
@@ -49,14 +49,15 @@ layout: default
 </div>
 <div id='sidebar'>
   <h3>Related posts</h3>
-  <ul></ul>
-  {% for post in site.related_posts limit:3 %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <br />
-    {{ post.date | date: "%B %d, %Y"}}
-  </li>
-  {% endfor %}
+  <ul>
+    {% for post in site.related_posts limit:3 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <br />
+      {{ post.date | date: "%B %d, %Y"}}
+    </li>
+    {% endfor %}
+  </ul>
   <h3>Twitter</h3>
   <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
   <div id='tweets'></div>
