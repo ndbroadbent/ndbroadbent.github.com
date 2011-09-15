@@ -1,6 +1,8 @@
 #
 # Jekyll configuration
 #
+exclude: haml, sass
+
 #destination: ./_site
 auto:        true
 lsi:         true # better related posts
