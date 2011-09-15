@@ -44,7 +44,7 @@ task :revisions, :roles => :app do
 end
 
 after "deploy", "revisions"
-[/sourcecode]
+{% endhighlight %}
 <br/>
 
 I spent a while getting the output nicely colorized and indented. Everything is tested with ruby 1.9.2, but let me know if you have problems with 1.8.7.

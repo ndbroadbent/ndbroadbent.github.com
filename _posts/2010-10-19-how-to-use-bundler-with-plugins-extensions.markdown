@@ -21,6 +21,6 @@ If we are developing a Spree extension, or a Retrospectiva extension, or a Fat F
 Dir.glob(File.join(File.dirname(__FILE__), 'vendor', 'plugins', '**', "Gemfile")) do |gemfile|
     self.send(:eval, File.open(gemfile, 'r').read)
 end
-[/sourcecode]
+{% endhighlight %}
 
 This will find and evaluate the Gemfiles from each of your plugins/extensions, as if you were modifying your base Gemfile.

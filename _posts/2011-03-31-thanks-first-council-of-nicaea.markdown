@@ -23,7 +23,7 @@ def easter(year)
   day=l+28-31*(month/4)
   [day, month]
 end
-[/sourcecode]
+{% endhighlight %}
 
 That's how you calculate the date of Easter Sunday in Ruby, which just happens to be the first Sunday after the Paschal full moon following the northern hemisphere's vernal equinox.
 
@@ -34,5 +34,5 @@ Christmas, for comparison:
 def christmas(year)
   [25, 12]
 end
-[/sourcecode]
+{% endhighlight %}
 

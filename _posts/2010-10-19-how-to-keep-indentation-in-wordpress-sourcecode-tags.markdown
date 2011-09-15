@@ -19,7 +19,7 @@ Examples:
 </indent>
 </indent>
 </indent>
-[/sourcecode]
+{% endhighlight %}
 
 <strong>Code pasted in 'HTML' View</strong>
 
@@ -30,6 +30,6 @@ Examples:
         </indent>
     </indent>
 </indent>
-[/sourcecode]
+{% endhighlight %}
 
 YMMV, I guess, but this is what works for me.

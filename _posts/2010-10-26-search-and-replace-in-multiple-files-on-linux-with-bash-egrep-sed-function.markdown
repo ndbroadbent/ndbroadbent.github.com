@@ -17,7 +17,7 @@ function gsed () {
     egrep --exclude-dir=.git -lRZ "$1" $3 | xargs -0 -l sed -i -e "s/$1/$2/g"
   fi
 }
-[/sourcecode]
+{% endhighlight %}
 
 Add it to the bottom of ~/.bashrc
 
@@ -25,6 +25,6 @@ So you might want to replace all occurences of 'badly_named_method' with 'awesom
 
 {% highlight bash %}
   gsed "badly_named_ruby_method" "awesome_method_name" .
-[/sourcecode]
+{% endhighlight %}
 
 Note: quotes are optional for single words.

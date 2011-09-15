@@ -12,7 +12,7 @@ Enter RVM hooks! If you want a symlink to the current gem directory to be update
 
 {% highlight bash %}
 ln -nfs $rvm_ruby_gem_home/gems ~/src/gems/current_bundle
-[/sourcecode]
+{% endhighlight %}
 
 
 

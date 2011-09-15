@@ -13,7 +13,7 @@ I created a function to export the paths of each modified file into numbered env
 You will need to configure git if you want to have colorized output:
 {% highlight bash %}
 git config --global color.status always
-[/sourcecode]
+{% endhighlight %}
 
 Paste the following script at the bottom of your ~/.bashrc file, and use it by typing 'gs'. (Change the shortcut to whatever you like.)
 
@@ -63,7 +63,7 @@ gs() {
   # Reset IFS separator to default.
   unset IFS
 }
-[/sourcecode]
+{% endhighlight %}
 
 Now you can just type 'gs', and use the exported variables for commands. You can also customise the shortcut letter by changing the 'pfix' variable in the function. I chose 'e' because it's easy to slide your finger to it from the '$' key.
 
@@ -89,7 +89,7 @@ $ cd $e2
 or
 $ git rm -r $e3
 
-[/sourcecode]
+{% endhighlight %}
 
 &nbsp;
 
