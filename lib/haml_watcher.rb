@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'fssm'
 require 'haml'
-require 'sass'
 
 class HamlWatcher
   class << self
