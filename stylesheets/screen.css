@@ -584,13 +584,13 @@ body.two-col #content .post .highlight {
   margin-bottom: 20px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  overflow: auto;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 body.two-col #content .post .highlight pre {
   margin: 0px;
-  overflow: auto;
 }
 /* line 195, ../sass/screen.scss */
 body.two-col #content .post .hackernews {

@@ -185,13 +185,13 @@ body.two-col {
         padding: 10px;
         margin-bottom: 20px;
         @include border-radius(10px);
+        overflow: auto;
         border: {
           right:  2px solid #fff;
           bottom: 2px solid #fff;
         }
         pre {
-          margin: 0px;
-          overflow: auto; } }
+          margin: 0px; } }
       .hackernews {
         font-size: 1.3em;
         text-align: right;
