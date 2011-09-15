@@ -7,15 +7,15 @@ lsi:         true # better related posts
 server_port: 3000
 pygments:    true
 markdown:    rdiscount
-permalink:   /:year/:month/:title.html
-
 rdiscount:
   extensions: []
+paginate:    7
 
 #
 # Site configuration
 #
 url:          http://ndbroadbent.github.com
+permalink:    /:year/:month/:title.html
 title:        Made by Nathan
 description:  ruby, rails, linux, iphone, electronics
 keywords:     ruby, rails, linux, iphone, electronics

@@ -1,0 +1,10 @@
+{% if paginator.previous_page > 1 %}
+%h3 <a href="/page{{ paginator.previous_page }}">&lArr; Previous Page</a>
+{% elsif paginator.previous_page == 1 %}
+%h3 <a href="/">&lArr; Previous Page</a>
+{% endif %}
+
+{% if paginator.next_page < paginator.total_pages %}
+%h3 <a href="/page{{ paginator.next_page }}">Next Page &rArr;</a>
+{% endif %}
+

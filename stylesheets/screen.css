@@ -328,16 +328,18 @@ body.two-col #header {
   margin-right: 10px;
   width: 950px;
   margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e4e4e4;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@madebynathan.github.com/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #header {
   overflow-x: hidden;
 }
-/* line 67, ../_sass/screen.scss */
+/* line 69, ../_sass/screen.scss */
 body.two-col #header a {
   text-decoration: none;
 }
-/* line 69, ../_sass/screen.scss */
+/* line 71, ../_sass/screen.scss */
 body.two-col #header #logo {
   display: inline;
   float: left;
@@ -348,28 +350,29 @@ body.two-col #header #logo {
 * html body.two-col #header #logo {
   overflow-x: hidden;
 }
-/* line 71, ../_sass/screen.scss */
+/* line 73, ../_sass/screen.scss */
 body.two-col #header #logo h1, body.two-col #header #logo h2 {
   text-shadow: 1px 1px 0 #ffffff;
 }
-/* line 74, ../_sass/screen.scss */
+/* line 76, ../_sass/screen.scss */
 body.two-col #header #logo h1 {
   margin-bottom: 0px;
   font-family: 'Amaranth', arial, serif;
   font-size: 3.2em;
 }
-/* line 78, ../_sass/screen.scss */
+/* line 80, ../_sass/screen.scss */
 body.two-col #header #logo h1 a:hover {
   color: #555555;
 }
-/* line 80, ../_sass/screen.scss */
+/* line 82, ../_sass/screen.scss */
 body.two-col #header #logo h2 {
-  color: #a4a4a4;
+  color: #889788;
   font-family: 'Francois One', serif;
   font-size: 1.54em;
   margin-top: 3px;
+  margin-bottom: 5px;
 }
-/* line 85, ../_sass/screen.scss */
+/* line 88, ../_sass/screen.scss */
 body.two-col #header #menu {
   display: inline;
   float: left;
@@ -382,32 +385,38 @@ body.two-col #header #menu {
 * html body.two-col #header #menu {
   overflow-x: hidden;
 }
-/* line 89, ../_sass/screen.scss */
+/* line 92, ../_sass/screen.scss */
 body.two-col #header #menu ul {
   list-style-type: none;
   float: right;
+  margin: 14px 0 0;
+  margin-right: 91px;
 }
-/* line 92, ../_sass/screen.scss */
+/* line 97, ../_sass/screen.scss */
 body.two-col #header #menu ul li {
   display: inline;
   margin-left: 20px;
-  background-color: #E0E0E0;
+  background-color: #e4e4e4;
   border-radius: 7px 7px 7px 7px;
   padding: 0 9px 4px;
   vertical-align: middle;
   border-bottom: 1px solid #d2d2d2;
   border-right: 1px solid #d2d2d2;
 }
-/* line 101, ../_sass/screen.scss */
+/* line 106, ../_sass/screen.scss */
 body.two-col #header #menu ul li:hover {
   background-color: #d2d2d2;
 }
-/* line 104, ../_sass/screen.scss */
+/* line 109, ../_sass/screen.scss */
+body.two-col #header #menu ul li:hover a {
+  color: #555555;
+}
+/* line 112, ../_sass/screen.scss */
 body.two-col #header #menu ul li form {
   width: 100px;
   display: inline;
 }
-/* line 107, ../_sass/screen.scss */
+/* line 115, ../_sass/screen.scss */
 body.two-col #header #menu ul li form input {
   width: 90px;
   -moz-border-radius: 5px;
@@ -418,43 +427,61 @@ body.two-col #header #menu ul li form input {
   -webkit-appearance: none;
   -webkit-box-sizing: content-box;
 }
-/* line 115, ../_sass/screen.scss */
+/* line 123, ../_sass/screen.scss */
 body.two-col #sidebar {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 310px;
+  padding-top: 18px;
   padding-left: 18px;
-  border-left: 2px solid #E0E0E0;
+  margin-right: 0;
+  border-left: 1px solid #e4e4e4;
   font-family: Oswald, serif;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@madebynathan.github.com/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #sidebar {
   overflow-x: hidden;
 }
-/* line 120, ../_sass/screen.scss */
+/* line 130, ../_sass/screen.scss */
+body.two-col #sidebar .sidebar-section {
+  margin-bottom: 24px;
+  padding-left: 12px;
+}
+/* line 134, ../_sass/screen.scss */
+body.two-col #sidebar p {
+  font-family: Droid Sans, sans-serif;
+}
+/* line 135, ../_sass/screen.scss */
+body.two-col #sidebar img.avatar {
+  border: 1px solid #d0d0d0;
+  border-radius: 7px;
+  margin: 0 0 6px 20px;
+}
+/* line 140, ../_sass/screen.scss */
 body.two-col #sidebar ul {
   list-style: none;
+  padding-left: 0;
 }
-/* line 122, ../_sass/screen.scss */
+/* line 143, ../_sass/screen.scss */
 body.two-col #sidebar ul li {
   font-family: Francois One, sans-serif;
-  color: #a4a4a4;
+  color: #889788;
 }
-/* line 125, ../_sass/screen.scss */
+/* line 146, ../_sass/screen.scss */
 body.two-col #sidebar ul li a {
   font-family: Arimo, sans-serif;
   color: #676767;
 }
-/* line 128, ../_sass/screen.scss */
+/* line 149, ../_sass/screen.scss */
 body.two-col #sidebar h3 {
   color: #999999;
 }
-/* line 130, ../_sass/screen.scss */
+/* line 151, ../_sass/screen.scss */
 body.two-col #sidebar #tweets {
   margin-top: 10px;
 }
-/* line 132, ../_sass/screen.scss */
+/* line 153, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -464,36 +491,37 @@ body.two-col #sidebar #tweets ul.tweet_list {
   padding: 0;
   overflow-y: hidden;
 }
-/* line 140, ../_sass/screen.scss */
+/* line 161, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .awesome, body.two-col #sidebar #tweets ul.tweet_list .epic {
   text-transform: uppercase;
 }
-/* line 142, ../_sass/screen.scss */
+/* line 163, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0.5em;
+  padding-left: 0;
 }
-/* line 147, ../_sass/screen.scss */
+/* line 169, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_time a {
   font-family: Francois One, sans-serif;
-  color: #a4a4a4;
+  color: #889788;
 }
-/* line 150, ../_sass/screen.scss */
+/* line 172, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_text {
   font-family: Arimo, sans-serif;
   color: #676767;
 }
-/* line 153, ../_sass/screen.scss */
+/* line 175, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_avatar {
   padding-right: 0.5em;
   float: left;
 }
-/* line 156, ../_sass/screen.scss */
+/* line 178, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
-/* line 158, ../_sass/screen.scss */
+/* line 180, ../_sass/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;
@@ -501,33 +529,34 @@ body.two-col #content {
   width: 550px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 18px;
   padding-left: 20px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@madebynathan.github.com/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #content {
   overflow-x: hidden;
 }
-/* line 164, ../_sass/screen.scss */
+/* line 187, ../_sass/screen.scss */
 body.two-col #content .post p, body.two-col #content .post h4 {
   font-family: Droid Sans, sans-serif;
 }
-/* line 166, ../_sass/screen.scss */
+/* line 189, ../_sass/screen.scss */
 body.two-col #content .post h4 {
   margin-bottom: 0px;
 }
-/* line 168, ../_sass/screen.scss */
+/* line 191, ../_sass/screen.scss */
 body.two-col #content .post h4 + p {
   text-indent: 2em;
 }
-/* line 170, ../_sass/screen.scss */
+/* line 193, ../_sass/screen.scss */
 body.two-col #content .post code {
   font-family: Droid Sans Mono, serif;
 }
-/* line 172, ../_sass/screen.scss */
+/* line 195, ../_sass/screen.scss */
 body.two-col #content .post p {
   line-height: 140%;
 }
-/* line 174, ../_sass/screen.scss */
+/* line 197, ../_sass/screen.scss */
 body.two-col #content .post .header {
   display: inline;
   float: left;
@@ -539,7 +568,7 @@ body.two-col #content .post .header {
 * html body.two-col #content .post .header {
   overflow-x: hidden;
 }
-/* line 177, ../_sass/screen.scss */
+/* line 200, ../_sass/screen.scss */
 body.two-col #content .post .header .title {
   display: inline;
   float: left;
@@ -559,11 +588,11 @@ body.two-col #content .post .header .title h3, body.two-col #content .post .head
 }
 /* line 40, ../_sass/screen.scss */
 body.two-col #content .post .header .title h6 {
-  color: #a4a4a4;
-  margin-bottom: 5px;
+  color: #889788;
+  margin: 5px 0 2px;
   font-family: Arimo, serif;
 }
-/* line 182, ../_sass/screen.scss */
+/* line 205, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar {
   display: inline;
   float: left;
@@ -574,67 +603,69 @@ body.two-col #content .post .header .social_bar {
 * html body.two-col #content .post .header .social_bar {
   overflow-x: hidden;
 }
-/* line 184, ../_sass/screen.scss */
+/* line 207, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar ul {
   list-style-type: none;
   float: right;
   margin-right: 0px;
 }
-/* line 188, ../_sass/screen.scss */
+/* line 211, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar ul li {
   display: inline-block;
 }
-/* line 190, ../_sass/screen.scss */
+/* line 213, ../_sass/screen.scss */
 body.two-col #content .post img {
-  -moz-box-shadow: 5px 5px 7px #999999;
-  box-shadow: 5px 5px 7px #999999;
-  -webkit-box-shadow: 5px 5px 7px #999999;
+  -moz-box-shadow: 3px 3px 5px #999999;
+  box-shadow: 3px 3px 5px #999999;
+  -webkit-box-shadow: 3px 3px 5px #999999;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
 }
-/* line 192, ../_sass/screen.scss */
+/* line 216, ../_sass/screen.scss */
 body.two-col #content .post .highlight {
-  background-color: #444444;
+  background-color: #303030;
   color: #d4d4d4;
   padding: 10px;
   margin-bottom: 20px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
   overflow: auto;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
-/* line 203, ../_sass/screen.scss */
+/* line 227, ../_sass/screen.scss */
 body.two-col #content .post .highlight pre {
   margin: 0px;
 }
-/* line 205, ../_sass/screen.scss */
+/* line 229, ../_sass/screen.scss */
 body.two-col #content .post .hackernews {
   font-size: 1.3em;
   text-align: right;
 }
-/* line 208, ../_sass/screen.scss */
+/* line 232, ../_sass/screen.scss */
 body.two-col #content .post .hackernews .heart {
   color: #cc0000;
 }
-/* line 210, ../_sass/screen.scss */
+/* line 234, ../_sass/screen.scss */
 body.two-col #content .post .hackernews a {
   background: transparent url(/images/hackernews-icon.png) no-repeat center left;
   display: inline-block;
   padding-left: 16px;
 }
-/* line 215, ../_sass/screen.scss */
+/* line 239, ../_sass/screen.scss */
 body.two-col #content .post blockquote p:before {
   font: 48px Lucida Sans Unicode, Lucida Grande, sans-serif;
   content: "“";
   float: left;
   margin-top: -12px;
 }
-/* line 220, ../_sass/screen.scss */
+/* line 244, ../_sass/screen.scss */
 body.two-col #content .post blockquote p:after {
   content: "”";
   font: 48px Lucida Sans Unicode, Lucida Grande, sans-serif;
   float: right;
 }
-/* line 224, ../_sass/screen.scss */
+/* line 248, ../_sass/screen.scss */
 body.two-col #content .post-excerpt {
   margin-bottom: 20px;
 }
@@ -645,15 +676,15 @@ body.two-col #content .post-excerpt h3, body.two-col #content .post-excerpt h2 {
 }
 /* line 40, ../_sass/screen.scss */
 body.two-col #content .post-excerpt h6 {
-  color: #a4a4a4;
-  margin-bottom: 5px;
+  color: #889788;
+  margin: 5px 0 2px;
   font-family: Arimo, serif;
 }
-/* line 227, ../_sass/screen.scss */
+/* line 251, ../_sass/screen.scss */
 body.two-col #content .post-excerpt h6 {
   margin: 0px;
 }
-/* line 229, ../_sass/screen.scss */
+/* line 253, ../_sass/screen.scss */
 body.two-col #content .post-excerpt p {
   font-family: Droid Sans, sans-serif;
 }
@@ -664,8 +695,8 @@ body.two-col #content #search .result h3, body.two-col #content #search .result 
 }
 /* line 40, ../_sass/screen.scss */
 body.two-col #content #search .result h6 {
-  color: #a4a4a4;
-  margin-bottom: 5px;
+  color: #889788;
+  margin: 5px 0 2px;
   font-family: Arimo, serif;
 }
 /* line 37, ../_sass/screen.scss */
@@ -675,62 +706,73 @@ body.two-col #content #projects h3, body.two-col #content #projects h2 {
 }
 /* line 40, ../_sass/screen.scss */
 body.two-col #content #projects h6 {
-  color: #a4a4a4;
-  margin-bottom: 5px;
+  color: #889788;
+  margin: 5px 0 2px;
   font-family: Arimo, serif;
 }
-/* line 236, ../_sass/screen.scss */
+/* line 260, ../_sass/screen.scss */
 body.two-col #content #projects h2 {
   font-family: Oswald, serif;
   text-align: center;
   color: #676767;
   margin-bottom: 0px;
 }
-/* line 241, ../_sass/screen.scss */
+/* line 265, ../_sass/screen.scss */
 body.two-col #content #projects h3 {
   color: #676767;
 }
-/* line 243, ../_sass/screen.scss */
+/* line 267, ../_sass/screen.scss */
 body.two-col #content #projects h4 {
   font-family: Oswald, serif;
   text-align: center;
-  color: #a4a4a4;
+  color: #889788;
 }
-/* line 247, ../_sass/screen.scss */
+/* line 271, ../_sass/screen.scss */
 body.two-col #content #projects h4 a {
-  color: #a4a4a4;
+  color: #889788;
 }
-/* line 249, ../_sass/screen.scss */
+/* line 273, ../_sass/screen.scss */
 body.two-col #content #projects h6 {
   margin-bottom: 0px;
 }
-/* line 251, ../_sass/screen.scss */
+/* line 275, ../_sass/screen.scss */
 body.two-col #content #projects h6 a {
-  color: #a4a4a4;
+  color: #889788;
 }
-/* line 253, ../_sass/screen.scss */
+/* line 277, ../_sass/screen.scss */
 body.two-col #content #projects h6 strong {
   color: #676767;
 }
-/* line 256, ../_sass/screen.scss */
+/* line 279, ../_sass/screen.scss */
+body.two-col .pagination {
+  padding: 18px 0;
+  border-top: 2px solid #e4e4e4;
+  text-align: center;
+}
+/* line 283, ../_sass/screen.scss */
+body.two-col .pagination h3 {
+  display: inline;
+  margin: 0 17px;
+}
+/* line 289, ../_sass/screen.scss */
 body.two-col .not_found h1 {
   font-family: Luckiest Guy, arial, serif;
   text-align: center;
   font-size: 10em;
   margin-top: 100px;
 }
-/* line 261, ../_sass/screen.scss */
+/* line 294, ../_sass/screen.scss */
 body.two-col .not_found h4 {
   font-family: Oswald, serif;
   text-align: center;
 }
-/* line 264, ../_sass/screen.scss */
+/* line 297, ../_sass/screen.scss */
 body.two-col #footer {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 950px;
-  color: #a4a4a4;
+  color: #889788;
   text-align: center;
   font-family: Droid Sans, sans-serif;
   font-size: 0.8em;
