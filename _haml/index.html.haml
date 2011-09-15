@@ -1,37 +1,32 @@
----
-layout: default
----
-<div id='content'>
-  <div class='posts-list'>
+:plain
+  ---
+  layout: default
+  ---
+#content
+  .posts-list
     {% for post in site.posts limit:5 %}
-    <div class='post'>
-      <div class='header'>
-        <div class='title'>
+    .post
+      .header
+        .title
           <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
           <h6>{{ post.date | date: "%A, %B %d, %Y" }}</h6>
-        </div>
-      </div>
-      <div class='content'>
+      .content
         {{ post.content }}
-      </div>
-    </div>
     {% endfor %}
-  </div>
-  <p id='footnote'>
+
+  %p#footnote
     Didn't find what you were looking for? There's more in the <a href="/archive.html">archive</a>.
-  </p>
-</div>
-<div id='sidebar'>
-  <h3>Latest Posts</h3>
-  <ul></ul>
+
+#sidebar
+  %h3 Latest Posts
+  %ul
   {% for post in site.posts limit:10 %}
-  <li>
+  %li
     <a href="{{ post.url }}">{{ post.title }}</a>
-    <br />
+    %br
     {{ post.date | date: "%B %d, %Y"}}
-  </li>
   {% endfor %}
-  <h3>Twitter</h3>
+  %h3 Twitter
   <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
-  <div id='tweets'></div>
-</div>
+  #tweets
+

@@ -2,34 +2,31 @@
 layout: default
 title: Projects
 ---
-<div id="content">
-  <div id="projects">
+<div id='content'>
+  <div id='projects'>
     <h2>My Open Source projects</h2>
     <h4>
-      <a href="https://github.com/ndbroadbent">GitHub</a> |
+      <a href="https://github.com/ndbroadbent">GitHub</a> 
       <a href="https://rubygems.org/profiles/ndbroadbent">RubyGems</a>
     </h4>
   </div>
 </div>
-<div id="sidebar">
+<div id='sidebar'>
   <h3>Latest Posts</h3>
-  <ul>
+  <ul></ul>
   {% for post in site.posts limit:10 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <br />
-      {{ post.date | date: "%B %d, %Y"}}
-    </li>
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <br />
+    {{ post.date | date: "%B %d, %Y"}}
+  </li>
   {% endfor %}
-  </ul>
-  <h3>My tweets</h3>
+  <h3>Twitter</h3>
   <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
-  <div id="tweets"></div>
+  <div id='tweets'></div>
 </div>
-
 <script id="projectTemplate" type="text/x-jquery-tmpl">
   <h3>${name}</h3>
   <h6><strong>${watchers}</strong> watchers and <strong>${forks}</strong> forks on <a href="${github_url}">GitHub</a>, <strong>${downloads}</strong> downloads from <a href="${rubygems_url}">RubyGems</a></h6>
   <p>${description}</p>
 </script>
-

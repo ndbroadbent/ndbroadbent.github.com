@@ -1,0 +1,16 @@
+:plain
+  ---
+  layout: default
+  title: Archive
+  ---
+#content
+  .posts-list
+    {% for post in site.posts %}
+    .post-excerpt
+      %h3 <a href="{{ post.url }}">{{ post.title }}</a>
+      %h6 Posted on {{ post.date | date: "%A, %B %d, %Y" }}
+      {{ post.excerpt }}
+    {% endfor %}
+
+#sidebar
+

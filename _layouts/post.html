@@ -1,63 +1,63 @@
 ---
 layout: default
 ---
-<div id="content">
-  <div class="post">
-    <div class="header">
-      <div class="title">
+<div id='content'>
+  <div class='post'>
+    <div class='header'>
+      <div class='title'>
         <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
         <h6>{{ page.date | date: "%A, %B %d, %Y" }}</h6>
       </div>
-      <div class="social_bar">
+      <div class='social_bar'>
         <ul>
           <li>
             <div>
-               <a href="http://twitter.com/share" class="twitter-share-button"
+              <a href="http://twitter.com/share" class="twitter-share-button"
                 data-via="madebynathan"
                 data-counturl="{{ site.url }}{{ page.url }}"
                 data-url="{% if page.short_url %}{{ page.short_url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}"
                 data-text="{{ page.title }}"
                 data-count="none"
-               >Tweet</a>
+              >Tweet</a>
             </div>
           </li>
           <li>
-            <div class="g-plusone" data-size="standard" data-count="false" data-href="{{ post.url }}"></div>
+            <div class='g-plusone' data-count='false' data-href='{{ post.url }}' data-size='standard'></div>
           </li>
         </ul>
       </div>
     </div>
-    <div class="content">
+    <div class='content'>
       {{ content }}
     </div>
     {% if page.hackernews_url %}
-    <p class="hackernews">
+    <p class='hackernews'>
       Liked this post? Share the <span class="heart">♥</span> on <a href="{{ page.hackernews_url }}">Hacker News</a>
     </p>
     {% endif %}
   </div>
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
+  <div id='disqus_thread'></div>
+  <script type='text/javascript'>
+    //<![CDATA[
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = 'http://madebynathan.disqus.com/embed.js';
           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
+    //]]>
   </script>
 </div>
-<div id="sidebar">
+<div id='sidebar'>
   <h3>Related posts</h3>
-  <ul>
+  <ul></ul>
   {% for post in site.related_posts limit:3 %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <br />
-      {{ post.date | date: "%B %d, %Y"}}
-    </li>
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <br />
+    {{ post.date | date: "%B %d, %Y"}}
+  </li>
   {% endfor %}
-  </ul>
-  <h3>Twitter Feed</h3>
+  <h3>Twitter</h3>
   <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
-  <div id="tweets"></div>
+  <div id='tweets'></div>
 </div>
-

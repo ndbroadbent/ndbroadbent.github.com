@@ -1,0 +1,53 @@
+:plain
+  ---
+  layout: default
+  ---
+#content
+  .post
+    .header
+      .title
+        %h3 <a href="{{ page.url }}">{{ page.title }}</a>
+        %h6 {{ page.date | date: "%A, %B %d, %Y" }}
+      .social_bar
+        %ul
+          %li
+            %div
+              :plain
+                <a href="http://twitter.com/share" class="twitter-share-button"
+                  data-via="madebynathan"
+                  data-counturl="{{ site.url }}{{ page.url }}"
+                  data-url="{% if page.short_url %}{{ page.short_url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}"
+                  data-text="{{ page.title }}"
+                  data-count="none"
+                >Tweet</a>
+          %li
+            .g-plusone(data-size="standard" data-count="false" data-href="{{ post.url }}")
+
+    .content
+      {{ content }}
+
+    {% if page.hackernews_url %}
+    %p.hackernews
+      Liked this post? Share the <span class="heart">♥</span> on <a href="{{ page.hackernews_url }}">Hacker News</a>
+    {% endif %}
+  #disqus_thread
+  :javascript
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://madebynathan.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+#sidebar
+  %h3 Related posts
+  %ul
+  {% for post in site.related_posts limit:3 %}
+  %li
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    %br
+    {{ post.date | date: "%B %d, %Y"}}
+  {% endfor %}
+  %h3 Twitter
+  <a href="https://twitter.com/nathanf77" class="twitter-follow-button" data-show-count="true">Follow @nathanf77</a>
+  #tweets
+
