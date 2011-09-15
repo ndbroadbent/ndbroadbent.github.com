@@ -12,7 +12,7 @@ Examples:
 
 <strong>Code pasted in 'Visual' View</strong>
 
-[sourcecode language="html"]
+{% highlight html %}
 <indent>
 <indent>
 <indent>
@@ -23,7 +23,7 @@ Examples:
 
 <strong>Code pasted in 'HTML' View</strong>
 
-[sourcecode language="html"]
+{% highlight html %}
 <indent>
     <indent>
         <indent>

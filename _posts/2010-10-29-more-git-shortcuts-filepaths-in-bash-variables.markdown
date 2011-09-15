@@ -11,13 +11,13 @@ But I wanted more, so I thought it would be nice if I could somehow create 'shor
 I created a function to export the paths of each modified file into numbered environment variables, and it has really sped up my workflow.
 
 You will need to configure git if you want to have colorized output:
-[sourcecode language="bash"]
+{% highlight bash %}
 git config --global color.status always
 [/sourcecode]
 
 Paste the following script at the bottom of your ~/.bashrc file, and use it by typing 'gs'. (Change the shortcut to whatever you like.)
 
-[sourcecode language="bash"]
+{% highlight bash %}
 # Processes your git status output, exporting bash variables
 # for the filepaths of each modified file.
 # To ensure colored output, please run: $ git config --global color.status always
@@ -69,7 +69,7 @@ Now you can just type 'gs', and use the exported variables for commands. You can
 
 Example:
 
-[sourcecode language="bash"]
+{% highlight bash %}
 $ gs
 # On branch master
 # Your branch is ahead of 'origin/master' by 4 commits.

@@ -12,7 +12,7 @@ If you have a very simple rake task that is called very often, you might want to
 
 Here is an example for way faster hoptoad notifications (this cut our deploy time in half):
 
-[sourcecode lang="ruby"]
+{% highlight ruby %}
 # Speed up hoptoad:deploy by not loading rails environment
 if ARGV[0] == "hoptoad:deploy"
   require 'active_support/core_ext/string'

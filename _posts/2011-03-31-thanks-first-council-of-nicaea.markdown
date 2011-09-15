@@ -8,7 +8,7 @@ wordpress_url: http://www.f-77.com/?p=420
 ---
 Hey, lets have the program do something special for Easter. I wonder how hard it is to calculate which day Easter Sunday is...
 
-[sourcecode lang="ruby"]
+{% highlight ruby %}
 def easter(year)
   c=year/100
   n=year-19*(year/19)
@@ -30,7 +30,7 @@ That's how you calculate the date of Easter Sunday in Ruby, which just happens t
 
 Christmas, for comparison:
 
-[sourcecode lang="ruby"]
+{% highlight ruby %}
 def christmas(year)
   [25, 12]
 end

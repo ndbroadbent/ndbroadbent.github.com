@@ -10,7 +10,7 @@ I use gedit to write code. I keep a filebrowser tab open at the left side of my 
 
 Enter RVM hooks! If you want a symlink to the current gem directory to be updated each time you switch ruby versions, save something like the following code to <pre>~/.rvm/hooks/after_use</pre>
 
-[sourcecode lang="bash"]
+{% highlight bash %}
 ln -nfs $rvm_ruby_gem_home/gems ~/src/gems/current_bundle
 [/sourcecode]
 

@@ -16,7 +16,7 @@ If you run this 'cap revisions' task, it will show the currently deployed revisi
 Here it is:
 
 <br/>
-[sourcecode lang="ruby"]
+{% highlight ruby %}
 desc "Show currently deployed revision on server."
 task :revisions, :roles => :app do
   current, previous, latest = current_revision[0,7], previous_revision[0,7], real_revision[0,7]

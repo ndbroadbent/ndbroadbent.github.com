@@ -8,7 +8,7 @@ wordpress_url: http://nathanf77.wordpress.com/?p=184
 ---
 Heres a simple function to add to your shell if you ever want to replace a string in multiple files at once. It ignores everything in .git, otherwise you get 'bad index file sha1 signature' errors.
 
-[sourcecode language="bash"]
+{% highlight bash %}
 function gsed () {
   if [ -z "$3" ]
   then
@@ -23,7 +23,7 @@ Add it to the bottom of ~/.bashrc
 
 So you might want to replace all occurences of 'badly_named_method' with 'awesome_method_name', recursively for the current directory? You would type:
 
-[sourcecode language="bash"]
+{% highlight bash %}
   gsed "badly_named_ruby_method" "awesome_method_name" .
 [/sourcecode]
 
