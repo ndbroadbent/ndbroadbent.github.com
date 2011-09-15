@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Automatically change iPhone wallpaper every 30 minutes
 wordpress_id: 526
@@ -6,8 +6,8 @@ tags: iphone, ios-4-x, jailbreak
 date: 2011-07-20 16:27:10 +08:00
 wordpress_url: http://madebynathan.com/?p=526
 ---
-<h3>(for jailbroken iPhones)</h3>
-&nbsp;
+
+<b>NOTE: This is only for jailbroken iPhones.</b>
 
 I love finding awesome wallpapers on <a href="http://www.reddit.com">reddit</a>. My Ubuntu desktop cycles through my wallpaper collection with a program called <a href="https://help.ubuntu.com/community/Cortina">Cortina</a>, and I wanted my iPhone to do the same.
 
@@ -69,3 +69,4 @@ launchctl load /Library/LaunchDaemons/com.ndb.changewallpaper.plist
 {% endhighlight %}
 
 Enjoy!
+

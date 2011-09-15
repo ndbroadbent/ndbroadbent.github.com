@@ -207,6 +207,10 @@ body.two-col {
           display: inline-block;
           @include post-title;
           margin-bottom: 0;
+          // limit width to allow room for social bar
+          &.limit_width {
+            @include column(10);
+          }
           h3 {
             font-size: 23px;
             line-height: 110%;

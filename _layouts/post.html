@@ -5,9 +5,9 @@ layout: default
 <div id='content'>
   <div class='post'>
     <div class='header'>
-      <div class='title'>
+      <div class='title limit_width'>
         <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-        <h6>{{ page.date | date: "%A, %B %d, %Y" }}</h6>
+        <h6>{{ page.date | date: "%A, %B %d, %Y" }} | tagged with {{ page.tags | join " " }}</h6>
       </div>
       <div class='social_bar'>
         <ul>

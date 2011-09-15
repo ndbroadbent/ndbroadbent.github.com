@@ -7,9 +7,9 @@
 #content
   .post
     .header
-      .title
+      .title.limit_width
         %h3 <a href="{{ page.url }}">{{ page.title }}</a>
-        %h6 {{ page.date | date: "%A, %B %d, %Y" }}
+        %h6 {{ page.date | date: "%A, %B %d, %Y" }} #{"|"} tagged with {{ page.tags | join " " }}
       .social_bar
         %ul
           %li
