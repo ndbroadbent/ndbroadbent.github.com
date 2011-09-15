@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: My attempt at an embossed metal box from beverage can
+wordpress_id: 208
+tags: projects, art, aluminium, embossed-box, can, creative, craft
+date: 2010-11-05 15:05:57 +08:00
+wordpress_url: http://www.f-77.com/?p=208
+---
+I was inspired by a <a href="http://blog.makezine.com/archive/2010/11/how-to_embossed_metal_box_from_beve.html">makezine.com article I was reading this evening</a>, and decided to follow a tutorial to make an embossed box out of an aluminium can. I haven't done anything creative for a long time, and I really enjoyed it.
+
+<a href="http://www.f-77.com/wp-content/uploads/2010/11/box-small.jpg"><img src="http://www.f-77.com/wp-content/uploads/2010/11/box-small.jpg" alt="Embossed Aluminium Box" title="Embossed Aluminium Box" class="aligncenter size-full wp-image-209" /></a>
+
+I'm not sure if sanding the outside of the can is completely necessary, since its only visible on the inside of the box. Also, a ballpoint pen isn't the best tool to use, since it leaves blue ink everywhere.

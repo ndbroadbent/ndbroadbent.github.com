@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: last.fm on embedded systems
+wordpress_id: 96
+tags: compaq-evo-t20, lcd4linux, linux, music, projects, ruby, ruby-gems, shell-fm, web-design
+date: 2010-06-26 00:30:15 +08:00
+wordpress_url: http://nathanf77.wordpress.com/?p=96
+---
+I've finished most of the work I'm going to do on my shell.fm ruby server. Its written on sinatra + jquery + jquery-ui (so, a lot of ajax calls). It also requires my custom shell.fm fork if you want the volume control to work.
+
+You can find my shell.fm fork here: <a href="http://github.com/ndbroadbent/shell-fm">http://github.com/ndbroadbent/shell-fm</a>
+
+and the shell.fm sinatra server is here: <a href="http://github.com/ndbroadbent/shell-fm_sinatra">http://github.com/ndbroadbent/shell-fm_sinatra</a>
+
+By the way, this post is about an embedded linux system that plays last.fm internet radio streams. I have set it up on tinycore linux, and its a permanent part of my home sterio system.
+
+Here are some screenshots of the shell.fm sinatra web interface:
+
+<a href="http://ec2-184-72-165-169.compute-1.amazonaws.com/wp-content/uploads/2010/06/changing-station.png"><img class="alignnone size-medium wp-image-97" title="shell.fm sinatra" src="http://ec2-184-72-165-169.compute-1.amazonaws.com/wp-content/uploads/2010/06/changing-station.png?w=300" alt="" width="300" height="187" /></a>
+
+<a href="http://ec2-184-72-165-169.compute-1.amazonaws.com/wp-content/uploads/2010/06/paused.png"><img class="alignnone size-medium wp-image-98" title="paused track, volume change" src="http://ec2-184-72-165-169.compute-1.amazonaws.com/wp-content/uploads/2010/06/paused.png?w=300" alt="" width="300" height="141" /></a>
