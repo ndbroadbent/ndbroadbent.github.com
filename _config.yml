@@ -14,7 +14,7 @@ paginate:    5
 #
 # Site configuration
 #
-url:          http://ndbroadbent.github.com
+url:          http://madebynathan.com
 permalink:    /:year/:month/:day/:title/index.html
 title:        Made by Nathan
 description:  ruby, rails, linux, iphone, electronics
