@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Add .bashrc to iPhone for SSH or MobileTerminal
 wordpress_id: 325
@@ -13,9 +13,14 @@ To do this:
 	<li>Create and edit your ".bashrc" file at "/var/root/.bashrc"</li>
 	<li>Add the following line to "/etc/profile":</li>
 </ol>
-<p style="padding-left: 60px;">source /var/root/.bashrc</p>
+
+{% highlight bash %}
+source /var/root/.bashrc
+{% endhighlight %}
+
 An example alias would be: alias respring="killall SpringBoard"
 
 Colored prompts look great in MobileTerminal too.
 
 <a href="https://github.com/ndbroadbent/ubuntu_config/blob/master/assets/iphone_bashrc.sh">This is the bashrc that I use on my iPhone.</a>
+
