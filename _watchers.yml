@@ -8,6 +8,6 @@ image:
     thumb: [75, 75]
 
 jammit:
-  assets_file:  "_assets.yml"
+  assets_file: "_assets.yml"
   command: "jammit -o assets -c _assets.yml"
 
