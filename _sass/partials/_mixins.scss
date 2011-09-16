@@ -1,0 +1,26 @@
+//  +blueprint-inline-form
+// // You'll probably want to remove the scaffolding once you start styling your site.
+//  +blueprint-scaffolding
+@mixin post-title {
+  h3, h2 {
+    margin-bottom: 0px;
+    font-family: 'Francois One', arial, sans-serif; }
+  h6 {
+    color: $light-gray;
+    margin: 2px 0 2px;
+    font-family: 'Arimo', serif; } }
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius; }
+
+@mixin border-shadow($horizontal, $vertical, $blur, $colour) {
+  -moz-box-shadow: $horizontal $vertical $blur $colour;
+  box-shadow: $horizontal $vertical $blur $colour;
+  -webkit-box-shadow: $horizontal $vertical $blur $colour; }
+
+@mixin border-indent($horizontal, $vertical, $blur, $colour) {
+  -moz-box-shadow: $horizontal $vertical $blur $colour inset;
+  box-shadow: $horizontal $vertical $blur $colour inset;
+  -webkit-box-shadow: $horizontal $vertical $blur $colour inset; }
+

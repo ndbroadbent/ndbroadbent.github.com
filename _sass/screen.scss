@@ -1,13 +1,19 @@
 // This import applies a global reset to any page that imports this stylesheet.
 @import "blueprint/reset";
-
-// To configure blueprint, edit the partials/base.sass file.
-@import "partials/base";
-
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
 
+
+// Helpers (mixins / sprites / variables)
+// ----------------------------------------------------------------
+@import "partials/base";
+@import "partials/mixins";
 @import "partials/icons";
+
+// Layouts
+// ----------------------------------------------------------------
+@import "partials/sidebar";
+
 
 //@import blueprint/form
 // Import the non-default scaffolding module.
@@ -31,32 +37,6 @@ body.bp {
 // pre
 //   :margin 0px
 form.bp {}
-
-//  +blueprint-inline-form
-// // You'll probably want to remove the scaffolding once you start styling your site.
-//  +blueprint-scaffolding
-@mixin post-title {
-  h3, h2 {
-    margin-bottom: 0px;
-    font-family: 'Francois One', arial, sans-serif; }
-  h6 {
-    color: $light-gray;
-    margin: 2px 0 2px;
-    font-family: 'Arimo', serif; } }
-
-@mixin border-radius($radius) {
-  -moz-border-radius: $radius;
-  -webkit-border-radius: $radius; }
-
-@mixin border-shadow($horizontal, $vertical, $blur, $colour) {
-  -moz-box-shadow: $horizontal $vertical $blur $colour;
-  box-shadow: $horizontal $vertical $blur $colour;
-  -webkit-box-shadow: $horizontal $vertical $blur $colour; }
-
-@mixin border-indent($horizontal, $vertical, $blur, $colour) {
-  -moz-box-shadow: $horizontal $vertical $blur $colour inset;
-  box-shadow: $horizontal $vertical $blur $colour inset;
-  -webkit-box-shadow: $horizontal $vertical $blur $colour inset; }
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col {
@@ -125,100 +105,6 @@ body.two-col {
               background: url(/images/agile-toolkit-icons/atk-icons-nobg.png) 0px -318px no-repeat scroll white;
               -webkit-appearance: none;
               -webkit-box-sizing: content-box; } } } } } }
-  #sidebar {
-    @include column(8);
-    padding-top: 18px;
-    padding-left: 18px;
-    margin-right: 0;
-    border-left: 1px solid #dcdcdc;
-    @include border-indent(1px, 0, 0, #fbfbfb);
-    font-family: 'Oswald', serif;
-    text-shadow: 1px 1px 0 #ffffff;
-    h3 {
-      color: #999999;
-      margin-bottom: 14px; }
-    .sidebar-section {
-      margin-bottom: 24px;
-      padding-left: 12px;
-    }
-    #other-posts {
-      ul {
-        list-style: none;
-        padding-left: 0;
-        li {
-          font-family: 'Francois One', sans-serif;
-          color: $light-gray;
-          text-shadow: 1px 1px 0 #fff;
-          line-height: 16px;
-          margin-bottom: 7px;
-          padding-top: 6px;
-          border-top: 1px solid #dbdbdb;
-          @include border-indent(0, 1px, 0, #fbfbfb);
-          // Turn off border and padding for first li element
-          &:first-child {
-            border-top: none;
-            @include border-indent(0px, 0px, 0px, #fff);
-            padding-top: 0;
-          }
-          a {
-            font-family: 'Arimo', sans-serif;
-            color: #333;
-            &:hover {
-              color: #111;
-            } } } } }
-    #about {
-      text-align: justify;
-      p { font-family: 'Droid Sans', sans-serif; }
-      img.avatar {
-        border: 1px solid #d0d0d0;
-        border-radius: 7px;
-        margin: 0 0 15px 15px;
-      }
-    }
-    #google-search {
-      table { margin-bottom: 0; }
-      table.gsc-branding { display: none; }
-      .gsc-results {
-        font-family: 'Droid Sans', arial, sans-serif;
-      } }
-    #recentcomments.dsq-widget {
-      span.dsq-widget-comment {
-        color: $dark-gray;
-        font-family: Arimo, sans-serif;
-      }
-      img.dsq-widget-avatar {
-        padding: 0 7px 7px 0;;
-      }
-    }
-    #tweets {
-      margin-top: 10px;
-      ul.tweet_list {
-        -webkit-border-radius: 0.5em;
-        -moz-border-radius: 0.5em;
-        border-radius: 0.5em;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        overflow-y: hidden;
-        .awesome, .epic {
-          text-transform: uppercase; }
-        li {
-          overflow-y: auto;
-          overflow-x: hidden;
-          padding: 0.5em;
-          padding-left: 0; }
-        .tweet_time {
-          a {
-            font-family: 'Francois One', arial, sans-serif;
-            color: $light-gray; } }
-        .tweet_text {
-          font-family: Arimo, sans-serif;
-          color: $dark-gray; }
-        .tweet_avatar {
-          padding: 0 7px 7px 0;
-          float: left;
-          img {
-            vertical-align: middle; } } } } }
   #content {
     @include column(14, true);
     @include prepend(1);
@@ -268,8 +154,8 @@ body.two-col {
             li {
               display: inline-block; } } } }
       .content {
-        border-top: 1px solid #d9d9d9;
-        @include border-indent(0, 1px, 0, #fdfdfd);
+        border-top: 1px solid #ccc;
+        @include border-indent(0, 1px, 0, #fff);
         padding-top: 12px;
         clear: both;
       }

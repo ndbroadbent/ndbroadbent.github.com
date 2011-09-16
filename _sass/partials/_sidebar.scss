@@ -1,0 +1,125 @@
+#sidebar {
+  @include column(8);
+  padding-top: 18px;
+  padding-left: 18px;
+  margin-right: 0;
+  border-left: 1px solid #ccc;
+  @include border-indent(1px, 0, 0, #fff);
+  font-family: 'Oswald', serif;
+  text-shadow: 1px 1px 0 #ffffff;
+  h3 {
+    color: #999999;
+    margin-bottom: 14px; }
+  .sidebar-section {
+    margin-bottom: 24px;
+    padding-left: 12px;
+  }
+
+  // Latest / Related Posts
+  // --------------------------------------------------------------
+  #other-posts {
+    ul {
+      list-style: none;
+      padding-left: 0;
+      li {
+        font-family: 'Francois One', sans-serif;
+        color: $light-gray;
+        text-shadow: 1px 1px 0 #fff;
+        line-height: 16px;
+        margin-bottom: 7px;
+        padding-top: 6px;
+        border-top: 1px solid #ccc;
+        @include border-indent(0, 1px, 0, #fff);
+        // Turn off border and padding for first li element
+        &:first-child {
+          border-top: none;
+          @include border-indent(0px, 0px, 0px, #fff);
+          padding-top: 0;
+        }
+        a {
+          font-family: 'Arimo', sans-serif;
+          color: #333;
+          &:hover {
+            color: #111;
+          } } } } }
+
+  // About
+  // --------------------------------------------------------------
+  #about {
+    text-align: justify;
+    p { font-family: 'Droid Sans', sans-serif; }
+    img.avatar {
+      border: 1px solid #d0d0d0;
+      border-radius: 7px;
+      margin: 0 0 15px 15px;
+    }
+  }
+
+  // Google Site Search API
+  // --------------------------------------------------------------
+  #google-search {
+    table { margin-bottom: 0; }
+    table.gsc-branding { display: none; }
+    .gsc-results {
+      font-family: 'Droid Sans', arial, sans-serif;
+    } }
+
+  // Disqus Comments
+  // --------------------------------------------------------------
+  #recentcomments.dsq-widget {
+    font-family: Arimo,sans-serif;
+    span.dsq-widget-comment {
+      color: #444;
+      font-family: Arimo, sans-serif;
+    }
+    img.dsq-widget-avatar {
+      padding: 0 7px 3px 0;;
+    }
+    a.dsq-widget-user {
+      font-family: 'Francois One', arial, sans-serif;
+      font-weight: normal;
+      color: $light-gray;
+    }
+    .dsq-widget-meta a {
+      color: #85A085;
+      font-family: 'Francois One',arial,sans-serif;
+    }
+  }
+
+  // Twitter
+  // --------------------------------------------------------------
+  #tweets {
+    margin-top: 10px;
+    ul.tweet_list {
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      border-radius: 0.5em;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow-y: hidden;
+      .awesome, .epic {
+        text-transform: uppercase; }
+      li {
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0.5em;
+        padding-left: 0; }
+      span {
+        vertical-align: top;
+      }
+      .tweet_join, .tweet_time {
+         font-family: 'Francois One', arial, sans-serif;
+         color: $light-gray;
+      }
+      .tweet_time a {
+          color: #444; }
+      .tweet_text {
+        font-family: Arimo, sans-serif;
+        color: #444; }
+      .tweet_avatar {
+        padding: 0 7px 3px 0;
+        float: left;
+        img {
+          vertical-align: middle; } } } } }
+

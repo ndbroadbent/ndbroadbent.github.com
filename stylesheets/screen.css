@@ -114,7 +114,175 @@ a img {
   opacity: 1;
 }
 
-/* line 23, ../_sass/screen.scss */
+/* line 1, ../_sass/partials/_sidebar.scss */
+#sidebar {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  padding-top: 18px;
+  padding-left: 18px;
+  margin-right: 0;
+  border-left: 1px solid #ccc;
+  -moz-box-shadow: 1px 0 0 white inset;
+  box-shadow: 1px 0 0 white inset;
+  -webkit-box-shadow: 1px 0 0 white inset;
+  font-family: 'Oswald', serif;
+  text-shadow: 1px 1px 0 #ffffff;
+}
+/* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@madebynathan.github.com/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #sidebar {
+  overflow-x: hidden;
+}
+/* line 10, ../_sass/partials/_sidebar.scss */
+#sidebar h3 {
+  color: #999999;
+  margin-bottom: 14px;
+}
+/* line 13, ../_sass/partials/_sidebar.scss */
+#sidebar .sidebar-section {
+  margin-bottom: 24px;
+  padding-left: 12px;
+}
+/* line 21, ../_sass/partials/_sidebar.scss */
+#sidebar #other-posts ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 24, ../_sass/partials/_sidebar.scss */
+#sidebar #other-posts ul li {
+  font-family: 'Francois One', sans-serif;
+  color: #85a085;
+  text-shadow: 1px 1px 0 #fff;
+  line-height: 16px;
+  margin-bottom: 7px;
+  padding-top: 6px;
+  border-top: 1px solid #ccc;
+  -moz-box-shadow: 0 1px 0 white inset;
+  box-shadow: 0 1px 0 white inset;
+  -webkit-box-shadow: 0 1px 0 white inset;
+}
+/* line 34, ../_sass/partials/_sidebar.scss */
+#sidebar #other-posts ul li:first-child {
+  border-top: none;
+  -moz-box-shadow: 0px 0px 0px white inset;
+  box-shadow: 0px 0px 0px white inset;
+  -webkit-box-shadow: 0px 0px 0px white inset;
+  padding-top: 0;
+}
+/* line 39, ../_sass/partials/_sidebar.scss */
+#sidebar #other-posts ul li a {
+  font-family: 'Arimo', sans-serif;
+  color: #333;
+}
+/* line 42, ../_sass/partials/_sidebar.scss */
+#sidebar #other-posts ul li a:hover {
+  color: #111;
+}
+/* line 48, ../_sass/partials/_sidebar.scss */
+#sidebar #about {
+  text-align: justify;
+}
+/* line 50, ../_sass/partials/_sidebar.scss */
+#sidebar #about p {
+  font-family: 'Droid Sans', sans-serif;
+}
+/* line 51, ../_sass/partials/_sidebar.scss */
+#sidebar #about img.avatar {
+  border: 1px solid #d0d0d0;
+  border-radius: 7px;
+  margin: 0 0 15px 15px;
+}
+/* line 61, ../_sass/partials/_sidebar.scss */
+#sidebar #google-search table {
+  margin-bottom: 0;
+}
+/* line 62, ../_sass/partials/_sidebar.scss */
+#sidebar #google-search table.gsc-branding {
+  display: none;
+}
+/* line 63, ../_sass/partials/_sidebar.scss */
+#sidebar #google-search .gsc-results {
+  font-family: 'Droid Sans', arial, sans-serif;
+}
+/* line 69, ../_sass/partials/_sidebar.scss */
+#sidebar #recentcomments.dsq-widget {
+  font-family: Arimo,sans-serif;
+}
+/* line 71, ../_sass/partials/_sidebar.scss */
+#sidebar #recentcomments.dsq-widget span.dsq-widget-comment {
+  color: #444;
+  font-family: Arimo, sans-serif;
+}
+/* line 75, ../_sass/partials/_sidebar.scss */
+#sidebar #recentcomments.dsq-widget img.dsq-widget-avatar {
+  padding: 0 7px 3px 0;
+}
+/* line 78, ../_sass/partials/_sidebar.scss */
+#sidebar #recentcomments.dsq-widget a.dsq-widget-user {
+  font-family: 'Francois One', arial, sans-serif;
+  font-weight: normal;
+  color: #85a085;
+}
+/* line 83, ../_sass/partials/_sidebar.scss */
+#sidebar #recentcomments.dsq-widget .dsq-widget-meta a {
+  color: #85A085;
+  font-family: 'Francois One',arial,sans-serif;
+}
+/* line 91, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets {
+  margin-top: 10px;
+}
+/* line 93, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+/* line 101, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list .awesome, #sidebar #tweets ul.tweet_list .epic {
+  text-transform: uppercase;
+}
+/* line 103, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list li {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0.5em;
+  padding-left: 0;
+}
+/* line 108, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list span {
+  vertical-align: top;
+}
+/* line 111, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list .tweet_join, #sidebar #tweets ul.tweet_list .tweet_time {
+  font-family: 'Francois One', arial, sans-serif;
+  color: #85a085;
+}
+/* line 115, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list .tweet_time a {
+  color: #444;
+}
+/* line 117, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list .tweet_text {
+  font-family: Arimo, sans-serif;
+  color: #444;
+}
+/* line 120, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list .tweet_avatar {
+  padding: 0 7px 3px 0;
+  float: left;
+}
+/* line 123, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list .tweet_avatar img {
+  vertical-align: middle;
+}
+
+/* line 29, ../_sass/screen.scss */
 body.bp {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -357,31 +525,31 @@ body.bp .bottom {
   padding-bottom: 0;
 }
 
-/* line 62, ../_sass/screen.scss */
+/* line 42, ../_sass/screen.scss */
 body.two-col {
   background-color: #f3f3f3;
 }
-/* line 64, ../_sass/screen.scss */
+/* line 44, ../_sass/screen.scss */
 body.two-col p, body.two-col ol, body.two-col ul {
   font-size: 12px;
 }
-/* line 67, ../_sass/screen.scss */
+/* line 47, ../_sass/screen.scss */
 body.two-col a, body.two-col a:visited {
   color: #676767;
   text-shadow: 1px 1px 0 #ffffff;
 }
-/* line 70, ../_sass/screen.scss */
+/* line 50, ../_sass/screen.scss */
 body.two-col a:hover {
   color: #333333;
 }
-/* line 72, ../_sass/screen.scss */
+/* line 52, ../_sass/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 74, ../_sass/screen.scss */
+/* line 54, ../_sass/screen.scss */
 body.two-col #header {
   display: inline;
   float: left;
@@ -394,11 +562,11 @@ body.two-col #header {
 * html body.two-col #header {
   overflow-x: hidden;
 }
-/* line 78, ../_sass/screen.scss */
+/* line 58, ../_sass/screen.scss */
 body.two-col #header a {
   text-decoration: none;
 }
-/* line 80, ../_sass/screen.scss */
+/* line 60, ../_sass/screen.scss */
 body.two-col #header #logo {
   display: inline;
   float: left;
@@ -409,28 +577,28 @@ body.two-col #header #logo {
 * html body.two-col #header #logo {
   overflow-x: hidden;
 }
-/* line 82, ../_sass/screen.scss */
+/* line 62, ../_sass/screen.scss */
 body.two-col #header #logo h1, body.two-col #header #logo h2 {
   text-shadow: 1px 1px 0 #ffffff;
 }
-/* line 85, ../_sass/screen.scss */
+/* line 65, ../_sass/screen.scss */
 body.two-col #header #logo h1 {
   margin-bottom: 0px;
   font-family: 'Amaranth', arial, serif;
   font-size: 42px;
 }
-/* line 89, ../_sass/screen.scss */
+/* line 69, ../_sass/screen.scss */
 body.two-col #header #logo h1 a:hover {
   color: #555555;
 }
-/* line 91, ../_sass/screen.scss */
+/* line 71, ../_sass/screen.scss */
 body.two-col #header #logo h2 {
   color: #aaaaaa;
   font-family: 'Francois One', serif;
   font-size: 16px;
   margin: 3px 0 5px;
 }
-/* line 96, ../_sass/screen.scss */
+/* line 76, ../_sass/screen.scss */
 body.two-col #header #menu {
   display: inline;
   float: left;
@@ -443,15 +611,15 @@ body.two-col #header #menu {
 * html body.two-col #header #menu {
   overflow-x: hidden;
 }
-/* line 100, ../_sass/screen.scss */
+/* line 80, ../_sass/screen.scss */
 body.two-col #header #menu a, body.two-col #header #menu a:visited {
   color: #657590;
 }
-/* line 103, ../_sass/screen.scss */
+/* line 83, ../_sass/screen.scss */
 body.two-col #header #menu a:hover {
   color: #455580;
 }
-/* line 106, ../_sass/screen.scss */
+/* line 86, ../_sass/screen.scss */
 body.two-col #header #menu ul {
   list-style-type: none;
   float: right;
@@ -461,17 +629,17 @@ body.two-col #header #menu ul {
   border-right: 1px solid #DDDDDD;
   border-radius: 5px 5px 5px 5px;
 }
-/* line 114, ../_sass/screen.scss */
+/* line 94, ../_sass/screen.scss */
 body.two-col #header #menu ul li {
   display: inline;
   margin-left: 0;
 }
-/* line 117, ../_sass/screen.scss */
+/* line 97, ../_sass/screen.scss */
 body.two-col #header #menu ul li form {
   width: 100px;
   display: inline;
 }
-/* line 120, ../_sass/screen.scss */
+/* line 100, ../_sass/screen.scss */
 body.two-col #header #menu ul li form input {
   width: 90px;
   -moz-border-radius: 5px;
@@ -482,151 +650,7 @@ body.two-col #header #menu ul li form input {
   -webkit-appearance: none;
   -webkit-box-sizing: content-box;
 }
-/* line 128, ../_sass/screen.scss */
-body.two-col #sidebar {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 310px;
-  padding-top: 18px;
-  padding-left: 18px;
-  margin-right: 0;
-  border-left: 1px solid #dcdcdc;
-  -moz-box-shadow: 1px 0 0 #fbfbfb inset;
-  box-shadow: 1px 0 0 #fbfbfb inset;
-  -webkit-box-shadow: 1px 0 0 #fbfbfb inset;
-  font-family: 'Oswald', serif;
-  text-shadow: 1px 1px 0 #ffffff;
-}
-/* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@madebynathan.github.com/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body.two-col #sidebar {
-  overflow-x: hidden;
-}
-/* line 137, ../_sass/screen.scss */
-body.two-col #sidebar h3 {
-  color: #999999;
-  margin-bottom: 14px;
-}
-/* line 140, ../_sass/screen.scss */
-body.two-col #sidebar .sidebar-section {
-  margin-bottom: 24px;
-  padding-left: 12px;
-}
-/* line 145, ../_sass/screen.scss */
-body.two-col #sidebar #other-posts ul {
-  list-style: none;
-  padding-left: 0;
-}
-/* line 148, ../_sass/screen.scss */
-body.two-col #sidebar #other-posts ul li {
-  font-family: 'Francois One', sans-serif;
-  color: #85a085;
-  text-shadow: 1px 1px 0 #fff;
-  line-height: 16px;
-  margin-bottom: 7px;
-  padding-top: 6px;
-  border-top: 1px solid #dbdbdb;
-  -moz-box-shadow: 0 1px 0 #fbfbfb inset;
-  box-shadow: 0 1px 0 #fbfbfb inset;
-  -webkit-box-shadow: 0 1px 0 #fbfbfb inset;
-}
-/* line 158, ../_sass/screen.scss */
-body.two-col #sidebar #other-posts ul li:first-child {
-  border-top: none;
-  -moz-box-shadow: 0px 0px 0px white inset;
-  box-shadow: 0px 0px 0px white inset;
-  -webkit-box-shadow: 0px 0px 0px white inset;
-  padding-top: 0;
-}
-/* line 163, ../_sass/screen.scss */
-body.two-col #sidebar #other-posts ul li a {
-  font-family: 'Arimo', sans-serif;
-  color: #333;
-}
-/* line 166, ../_sass/screen.scss */
-body.two-col #sidebar #other-posts ul li a:hover {
-  color: #111;
-}
-/* line 169, ../_sass/screen.scss */
-body.two-col #sidebar #about {
-  text-align: justify;
-}
-/* line 171, ../_sass/screen.scss */
-body.two-col #sidebar #about p {
-  font-family: 'Droid Sans', sans-serif;
-}
-/* line 172, ../_sass/screen.scss */
-body.two-col #sidebar #about img.avatar {
-  border: 1px solid #d0d0d0;
-  border-radius: 7px;
-  margin: 0 0 15px 15px;
-}
-/* line 179, ../_sass/screen.scss */
-body.two-col #sidebar #google-search table {
-  margin-bottom: 0;
-}
-/* line 180, ../_sass/screen.scss */
-body.two-col #sidebar #google-search table.gsc-branding {
-  display: none;
-}
-/* line 181, ../_sass/screen.scss */
-body.two-col #sidebar #google-search .gsc-results {
-  font-family: 'Droid Sans', arial, sans-serif;
-}
-/* line 185, ../_sass/screen.scss */
-body.two-col #sidebar #recentcomments.dsq-widget span.dsq-widget-comment {
-  color: #676767;
-  font-family: Arimo, sans-serif;
-}
-/* line 189, ../_sass/screen.scss */
-body.two-col #sidebar #recentcomments.dsq-widget img.dsq-widget-avatar {
-  padding: 0 7px 7px 0;
-}
-/* line 193, ../_sass/screen.scss */
-body.two-col #sidebar #tweets {
-  margin-top: 10px;
-}
-/* line 195, ../_sass/screen.scss */
-body.two-col #sidebar #tweets ul.tweet_list {
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  border-radius: 0.5em;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow-y: hidden;
-}
-/* line 203, ../_sass/screen.scss */
-body.two-col #sidebar #tweets ul.tweet_list .awesome, body.two-col #sidebar #tweets ul.tweet_list .epic {
-  text-transform: uppercase;
-}
-/* line 205, ../_sass/screen.scss */
-body.two-col #sidebar #tweets ul.tweet_list li {
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: 0.5em;
-  padding-left: 0;
-}
-/* line 211, ../_sass/screen.scss */
-body.two-col #sidebar #tweets ul.tweet_list .tweet_time a {
-  font-family: 'Francois One', arial, sans-serif;
-  color: #85a085;
-}
-/* line 214, ../_sass/screen.scss */
-body.two-col #sidebar #tweets ul.tweet_list .tweet_text {
-  font-family: Arimo, sans-serif;
-  color: #676767;
-}
-/* line 217, ../_sass/screen.scss */
-body.two-col #sidebar #tweets ul.tweet_list .tweet_avatar {
-  padding: 0 7px 7px 0;
-  float: left;
-}
-/* line 220, ../_sass/screen.scss */
-body.two-col #sidebar #tweets ul.tweet_list .tweet_avatar img {
-  vertical-align: middle;
-}
-/* line 222, ../_sass/screen.scss */
+/* line 108, ../_sass/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;
@@ -641,27 +665,27 @@ body.two-col #content {
 * html body.two-col #content {
   overflow-x: hidden;
 }
-/* line 229, ../_sass/screen.scss */
+/* line 115, ../_sass/screen.scss */
 body.two-col #content .post p, body.two-col #content .post h4 {
   font-family: 'Droid Sans', arial, sans-serif;
 }
-/* line 231, ../_sass/screen.scss */
+/* line 117, ../_sass/screen.scss */
 body.two-col #content .post h4 {
   margin-bottom: 0px;
 }
-/* line 233, ../_sass/screen.scss */
+/* line 119, ../_sass/screen.scss */
 body.two-col #content .post h4 + p {
   text-indent: 2em;
 }
-/* line 235, ../_sass/screen.scss */
+/* line 121, ../_sass/screen.scss */
 body.two-col #content .post code {
   font-family: 'Droid Sans Mono', serif;
 }
-/* line 237, ../_sass/screen.scss */
+/* line 123, ../_sass/screen.scss */
 body.two-col #content .post p {
   line-height: 140%;
 }
-/* line 239, ../_sass/screen.scss */
+/* line 125, ../_sass/screen.scss */
 body.two-col #content .post .header {
   display: inline;
   float: left;
@@ -673,23 +697,23 @@ body.two-col #content .post .header {
 * html body.two-col #content .post .header {
   overflow-x: hidden;
 }
-/* line 242, ../_sass/screen.scss */
+/* line 128, ../_sass/screen.scss */
 body.two-col #content .post .header .title {
   display: inline-block;
   margin-bottom: 0;
 }
-/* line 39, ../_sass/screen.scss */
+/* line 5, ../_sass/partials/_mixins.scss */
 body.two-col #content .post .header .title h3, body.two-col #content .post .header .title h2 {
   margin-bottom: 0px;
   font-family: 'Francois One', arial, sans-serif;
 }
-/* line 42, ../_sass/screen.scss */
+/* line 8, ../_sass/partials/_mixins.scss */
 body.two-col #content .post .header .title h6 {
   color: #85a085;
   margin: 2px 0 2px;
   font-family: 'Arimo', serif;
 }
-/* line 247, ../_sass/screen.scss */
+/* line 133, ../_sass/screen.scss */
 body.two-col #content .post .header .title.limit_width {
   display: inline;
   float: left;
@@ -700,22 +724,22 @@ body.two-col #content .post .header .title.limit_width {
 * html body.two-col #content .post .header .title.limit_width {
   overflow-x: hidden;
 }
-/* line 250, ../_sass/screen.scss */
+/* line 136, ../_sass/screen.scss */
 body.two-col #content .post .header .title h3 {
   font-size: 23px;
   line-height: 110%;
   padding-bottom: 0;
 }
-/* line 254, ../_sass/screen.scss */
+/* line 140, ../_sass/screen.scss */
 body.two-col #content .post .header .title h3 a, body.two-col #content .post .header .title h3 a:visited {
   text-decoration: none;
 }
-/* line 258, ../_sass/screen.scss */
+/* line 144, ../_sass/screen.scss */
 body.two-col #content .post .header .title h6 {
   text-shadow: 1px 1px 0 #FFFFFF;
   margin: 1px 0 2px 0;
 }
-/* line 262, ../_sass/screen.scss */
+/* line 148, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar {
   display: inline;
   float: left;
@@ -726,26 +750,26 @@ body.two-col #content .post .header .social_bar {
 * html body.two-col #content .post .header .social_bar {
   overflow-x: hidden;
 }
-/* line 264, ../_sass/screen.scss */
+/* line 150, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar ul {
   list-style-type: none;
   float: right;
   margin-right: 0px;
 }
-/* line 268, ../_sass/screen.scss */
+/* line 154, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar ul li {
   display: inline-block;
 }
-/* line 270, ../_sass/screen.scss */
+/* line 156, ../_sass/screen.scss */
 body.two-col #content .post .content {
-  border-top: 1px solid #d9d9d9;
-  -moz-box-shadow: 0 1px 0 #fdfdfd inset;
-  box-shadow: 0 1px 0 #fdfdfd inset;
-  -webkit-box-shadow: 0 1px 0 #fdfdfd inset;
+  border-top: 1px solid #ccc;
+  -moz-box-shadow: 0 1px 0 white inset;
+  box-shadow: 0 1px 0 white inset;
+  -webkit-box-shadow: 0 1px 0 white inset;
   padding-top: 12px;
   clear: both;
 }
-/* line 276, ../_sass/screen.scss */
+/* line 162, ../_sass/screen.scss */
 body.two-col #content .post img {
   -moz-box-shadow: 3px 3px 5px #999999;
   box-shadow: 3px 3px 5px #999999;
@@ -753,7 +777,7 @@ body.two-col #content .post img {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
-/* line 279, ../_sass/screen.scss */
+/* line 165, ../_sass/screen.scss */
 body.two-col #content .post .highlight {
   background-color: #303030;
   color: #d4d4d4;
@@ -765,123 +789,123 @@ body.two-col #content .post .highlight {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
-/* line 290, ../_sass/screen.scss */
+/* line 176, ../_sass/screen.scss */
 body.two-col #content .post .highlight pre {
   margin: 0px;
 }
-/* line 292, ../_sass/screen.scss */
+/* line 178, ../_sass/screen.scss */
 body.two-col #content .post .hackernews {
   font-size: 1.3em;
   text-align: right;
 }
-/* line 295, ../_sass/screen.scss */
+/* line 181, ../_sass/screen.scss */
 body.two-col #content .post .hackernews .heart {
   color: #cc0000;
 }
-/* line 297, ../_sass/screen.scss */
+/* line 183, ../_sass/screen.scss */
 body.two-col #content .post .hackernews a, body.two-col #content .post .hackernews a:visited {
   background: transparent url(/images/hackernews.png) no-repeat center left;
   display: inline-block;
   padding-left: 16px;
 }
-/* line 302, ../_sass/screen.scss */
+/* line 188, ../_sass/screen.scss */
 body.two-col #content .post blockquote p:before {
   font: 48px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   content: "“";
   float: left;
   margin-top: -12px;
 }
-/* line 307, ../_sass/screen.scss */
+/* line 193, ../_sass/screen.scss */
 body.two-col #content .post blockquote p:after {
   content: "”";
   font: 48px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   float: right;
 }
-/* line 311, ../_sass/screen.scss */
+/* line 197, ../_sass/screen.scss */
 body.two-col #content .post-excerpt {
   margin-bottom: 20px;
 }
-/* line 39, ../_sass/screen.scss */
+/* line 5, ../_sass/partials/_mixins.scss */
 body.two-col #content .post-excerpt h3, body.two-col #content .post-excerpt h2 {
   margin-bottom: 0px;
   font-family: 'Francois One', arial, sans-serif;
 }
-/* line 42, ../_sass/screen.scss */
+/* line 8, ../_sass/partials/_mixins.scss */
 body.two-col #content .post-excerpt h6 {
   color: #85a085;
   margin: 2px 0 2px;
   font-family: 'Arimo', serif;
 }
-/* line 314, ../_sass/screen.scss */
+/* line 200, ../_sass/screen.scss */
 body.two-col #content .post-excerpt h6 {
   margin: 0px;
 }
-/* line 316, ../_sass/screen.scss */
+/* line 202, ../_sass/screen.scss */
 body.two-col #content .post-excerpt p {
   font-family: 'Droid Sans', sans-serif;
 }
-/* line 39, ../_sass/screen.scss */
+/* line 5, ../_sass/partials/_mixins.scss */
 body.two-col #content #search .result h3, body.two-col #content #search .result h2 {
   margin-bottom: 0px;
   font-family: 'Francois One', arial, sans-serif;
 }
-/* line 42, ../_sass/screen.scss */
+/* line 8, ../_sass/partials/_mixins.scss */
 body.two-col #content #search .result h6 {
   color: #85a085;
   margin: 2px 0 2px;
   font-family: 'Arimo', serif;
 }
-/* line 39, ../_sass/screen.scss */
+/* line 5, ../_sass/partials/_mixins.scss */
 body.two-col #content #projects h3, body.two-col #content #projects h2 {
   margin-bottom: 0px;
   font-family: 'Francois One', arial, sans-serif;
 }
-/* line 42, ../_sass/screen.scss */
+/* line 8, ../_sass/partials/_mixins.scss */
 body.two-col #content #projects h6 {
   color: #85a085;
   margin: 2px 0 2px;
   font-family: 'Arimo', serif;
 }
-/* line 323, ../_sass/screen.scss */
+/* line 209, ../_sass/screen.scss */
 body.two-col #content #projects h2 {
   font-family: 'Oswald', serif;
   text-align: center;
   color: #676767;
   margin-bottom: 0px;
 }
-/* line 328, ../_sass/screen.scss */
+/* line 214, ../_sass/screen.scss */
 body.two-col #content #projects h3 {
   color: #676767;
 }
-/* line 330, ../_sass/screen.scss */
+/* line 216, ../_sass/screen.scss */
 body.two-col #content #projects h4 {
   font-family: 'Oswald', serif;
   text-align: center;
   color: #85a085;
 }
-/* line 334, ../_sass/screen.scss */
+/* line 220, ../_sass/screen.scss */
 body.two-col #content #projects h4 a, body.two-col #content #projects h4 a:visited {
   color: #85a085;
 }
-/* line 336, ../_sass/screen.scss */
+/* line 222, ../_sass/screen.scss */
 body.two-col #content #projects h6 {
   margin-bottom: 0px;
 }
-/* line 338, ../_sass/screen.scss */
+/* line 224, ../_sass/screen.scss */
 body.two-col #content #projects h6 a, body.two-col #content #projects h6 a:visited {
   color: #85a085;
 }
-/* line 340, ../_sass/screen.scss */
+/* line 226, ../_sass/screen.scss */
 body.two-col #content #projects h6 strong {
   color: #676767;
 }
-/* line 342, ../_sass/screen.scss */
+/* line 228, ../_sass/screen.scss */
 body.two-col .pagination {
   padding: 18px 0;
   border-top: 2px solid #e4e4e4;
   text-align: center;
 }
-/* line 346, ../_sass/screen.scss */
+/* line 232, ../_sass/screen.scss */
 body.two-col .pagination h3 {
   display: inline-block;
   margin: 0 17px;
@@ -892,45 +916,45 @@ body.two-col .pagination h3 {
   border-bottom: 1px solid #d2d2d2;
   border-right: 1px solid #d2d2d2;
 }
-/* line 355, ../_sass/screen.scss */
+/* line 241, ../_sass/screen.scss */
 body.two-col .pagination h3:hover {
   background-color: #d2d2d2;
 }
-/* line 357, ../_sass/screen.scss */
+/* line 243, ../_sass/screen.scss */
 body.two-col .pagination h3:hover a, body.two-col .pagination h3:hover a:visited {
   color: #333;
 }
-/* line 361, ../_sass/screen.scss */
+/* line 247, ../_sass/screen.scss */
 body.two-col .pagination h3 a {
   text-decoration: none;
 }
-/* line 367, ../_sass/screen.scss */
+/* line 253, ../_sass/screen.scss */
 body.two-col .not_found h1, body.two-col .not_found h2 {
   font-family: 'Oswald', arial, serif;
   text-align: center;
 }
-/* line 371, ../_sass/screen.scss */
+/* line 257, ../_sass/screen.scss */
 body.two-col .not_found h1 {
   font-size: 10em;
   margin: 65px 0 10px;
 }
-/* line 374, ../_sass/screen.scss */
+/* line 260, ../_sass/screen.scss */
 body.two-col .not_found h2 {
   font-size: 5em;
   margin-bottom: 28px;
 }
-/* line 378, ../_sass/screen.scss */
+/* line 264, ../_sass/screen.scss */
 body.two-col .not_found p {
   font-family: 'Droid Sans', serif;
   text-align: center;
   font-size: 19px;
 }
-/* line 382, ../_sass/screen.scss */
+/* line 268, ../_sass/screen.scss */
 body.two-col .not_found .posts-list {
   padding-top: 35px;
   border-top: 2px solid #e0e0e0;
 }
-/* line 386, ../_sass/screen.scss */
+/* line 272, ../_sass/screen.scss */
 body.two-col #footer {
   display: inline;
   float: left;
@@ -947,7 +971,7 @@ body.two-col #footer {
   overflow-x: hidden;
 }
 
-/* line 394, ../_sass/screen.scss */
+/* line 280, ../_sass/screen.scss */
 #_d ul li {
   float: left;
 }
