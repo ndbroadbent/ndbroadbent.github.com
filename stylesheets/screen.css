@@ -317,7 +317,7 @@ body.two-col #container {
   *zoom: 1;
 }
 /* line 62, ../_sass/screen.scss */
-body.two-col #container a, body.two-col #container a:visited {
+body.two-col #container a {
   color: #676767;
   text-shadow: 1px 1px 0 #ffffff;
 }
@@ -471,39 +471,35 @@ body.two-col #sidebar ul li a {
   color: #333;
 }
 /* line 146, ../_sass/screen.scss */
-body.two-col #sidebar ul li a:visited {
-  color: #333;
-}
-/* line 149, ../_sass/screen.scss */
 body.two-col #sidebar ul li a:hover {
   color: #111;
 }
-/* line 152, ../_sass/screen.scss */
+/* line 149, ../_sass/screen.scss */
 body.two-col #sidebar h3 {
   color: #999999;
 }
-/* line 155, ../_sass/screen.scss */
+/* line 152, ../_sass/screen.scss */
 body.two-col #sidebar #google-search table {
   margin-bottom: 0;
 }
-/* line 156, ../_sass/screen.scss */
+/* line 153, ../_sass/screen.scss */
 body.two-col #sidebar #google-search table.gsc-branding {
   display: none;
 }
-/* line 157, ../_sass/screen.scss */
+/* line 154, ../_sass/screen.scss */
 body.two-col #sidebar #google-search .gsc-results {
   font-family: 'Droid Sans', arial, sans-serif;
 }
-/* line 161, ../_sass/screen.scss */
+/* line 158, ../_sass/screen.scss */
 body.two-col #sidebar #recentcomments.dsq-widget span.dsq-widget-comment {
   color: #676767;
   font-family: Arimo, sans-serif;
 }
-/* line 166, ../_sass/screen.scss */
+/* line 163, ../_sass/screen.scss */
 body.two-col #sidebar #tweets {
   margin-top: 10px;
 }
-/* line 168, ../_sass/screen.scss */
+/* line 165, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -513,37 +509,37 @@ body.two-col #sidebar #tweets ul.tweet_list {
   padding: 0;
   overflow-y: hidden;
 }
-/* line 176, ../_sass/screen.scss */
+/* line 173, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .awesome, body.two-col #sidebar #tweets ul.tweet_list .epic {
   text-transform: uppercase;
 }
-/* line 178, ../_sass/screen.scss */
+/* line 175, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0.5em;
   padding-left: 0;
 }
-/* line 184, ../_sass/screen.scss */
+/* line 181, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_time a {
   font-family: 'Francois One', arial, sans-serif;
   color: #85a085;
 }
-/* line 187, ../_sass/screen.scss */
+/* line 184, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_text {
   font-family: Arimo, sans-serif;
   color: #676767;
 }
-/* line 190, ../_sass/screen.scss */
+/* line 187, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_avatar {
   padding-right: 0.5em;
   float: left;
 }
-/* line 193, ../_sass/screen.scss */
+/* line 190, ../_sass/screen.scss */
 body.two-col #sidebar #tweets ul.tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
-/* line 195, ../_sass/screen.scss */
+/* line 192, ../_sass/screen.scss */
 body.two-col #content {
   display: inline;
   float: left;
@@ -558,27 +554,27 @@ body.two-col #content {
 * html body.two-col #content {
   overflow-x: hidden;
 }
-/* line 202, ../_sass/screen.scss */
+/* line 199, ../_sass/screen.scss */
 body.two-col #content .post p, body.two-col #content .post h4 {
   font-family: 'Droid Sans', arial, sans-serif;
 }
-/* line 204, ../_sass/screen.scss */
+/* line 201, ../_sass/screen.scss */
 body.two-col #content .post h4 {
   margin-bottom: 0px;
 }
-/* line 206, ../_sass/screen.scss */
+/* line 203, ../_sass/screen.scss */
 body.two-col #content .post h4 + p {
   text-indent: 2em;
 }
-/* line 208, ../_sass/screen.scss */
+/* line 205, ../_sass/screen.scss */
 body.two-col #content .post code {
   font-family: 'Droid Sans Mono', serif;
 }
-/* line 210, ../_sass/screen.scss */
+/* line 207, ../_sass/screen.scss */
 body.two-col #content .post p {
   line-height: 140%;
 }
-/* line 212, ../_sass/screen.scss */
+/* line 209, ../_sass/screen.scss */
 body.two-col #content .post .header {
   display: inline;
   float: left;
@@ -590,7 +586,7 @@ body.two-col #content .post .header {
 * html body.two-col #content .post .header {
   overflow-x: hidden;
 }
-/* line 215, ../_sass/screen.scss */
+/* line 212, ../_sass/screen.scss */
 body.two-col #content .post .header .title {
   display: inline-block;
   margin-bottom: 0;
@@ -606,7 +602,7 @@ body.two-col #content .post .header .title h6 {
   margin: 5px 0 2px;
   font-family: 'Arimo', serif;
 }
-/* line 220, ../_sass/screen.scss */
+/* line 217, ../_sass/screen.scss */
 body.two-col #content .post .header .title.limit_width {
   display: inline;
   float: left;
@@ -617,22 +613,22 @@ body.two-col #content .post .header .title.limit_width {
 * html body.two-col #content .post .header .title.limit_width {
   overflow-x: hidden;
 }
-/* line 223, ../_sass/screen.scss */
+/* line 220, ../_sass/screen.scss */
 body.two-col #content .post .header .title h3 {
   font-size: 23px;
   line-height: 110%;
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 3px;
 }
-/* line 228, ../_sass/screen.scss */
+/* line 225, ../_sass/screen.scss */
 body.two-col #content .post .header .title h3 a {
   text-decoration: none;
 }
-/* line 232, ../_sass/screen.scss */
+/* line 229, ../_sass/screen.scss */
 body.two-col #content .post .header .title h6 {
   text-shadow: 1px 1px 0 #FFFFFF;
 }
-/* line 235, ../_sass/screen.scss */
+/* line 232, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar {
   display: inline;
   float: left;
@@ -643,23 +639,23 @@ body.two-col #content .post .header .social_bar {
 * html body.two-col #content .post .header .social_bar {
   overflow-x: hidden;
 }
-/* line 237, ../_sass/screen.scss */
+/* line 234, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar ul {
   list-style-type: none;
   float: right;
   margin-right: 0px;
 }
-/* line 241, ../_sass/screen.scss */
+/* line 238, ../_sass/screen.scss */
 body.two-col #content .post .header .social_bar ul li {
   display: inline-block;
 }
-/* line 243, ../_sass/screen.scss */
+/* line 240, ../_sass/screen.scss */
 body.two-col #content .post .content {
   padding-left: 10px;
   padding-top: 5px;
   clear: both;
 }
-/* line 248, ../_sass/screen.scss */
+/* line 245, ../_sass/screen.scss */
 body.two-col #content .post img {
   -moz-box-shadow: 3px 3px 5px #999999;
   box-shadow: 3px 3px 5px #999999;
@@ -667,7 +663,7 @@ body.two-col #content .post img {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
-/* line 251, ../_sass/screen.scss */
+/* line 248, ../_sass/screen.scss */
 body.two-col #content .post .highlight {
   background-color: #303030;
   color: #d4d4d4;
@@ -679,39 +675,39 @@ body.two-col #content .post .highlight {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
-/* line 262, ../_sass/screen.scss */
+/* line 259, ../_sass/screen.scss */
 body.two-col #content .post .highlight pre {
   margin: 0px;
 }
-/* line 264, ../_sass/screen.scss */
+/* line 261, ../_sass/screen.scss */
 body.two-col #content .post .hackernews {
   font-size: 1.3em;
   text-align: right;
 }
-/* line 267, ../_sass/screen.scss */
+/* line 264, ../_sass/screen.scss */
 body.two-col #content .post .hackernews .heart {
   color: #cc0000;
 }
-/* line 269, ../_sass/screen.scss */
+/* line 266, ../_sass/screen.scss */
 body.two-col #content .post .hackernews a {
   background: transparent url(/images/hackernews-icon.png) no-repeat center left;
   display: inline-block;
   padding-left: 16px;
 }
-/* line 274, ../_sass/screen.scss */
+/* line 271, ../_sass/screen.scss */
 body.two-col #content .post blockquote p:before {
   font: 48px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   content: "“";
   float: left;
   margin-top: -12px;
 }
-/* line 279, ../_sass/screen.scss */
+/* line 276, ../_sass/screen.scss */
 body.two-col #content .post blockquote p:after {
   content: "”";
   font: 48px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   float: right;
 }
-/* line 283, ../_sass/screen.scss */
+/* line 280, ../_sass/screen.scss */
 body.two-col #content .post-excerpt {
   margin-bottom: 20px;
 }
@@ -726,11 +722,11 @@ body.two-col #content .post-excerpt h6 {
   margin: 5px 0 2px;
   font-family: 'Arimo', serif;
 }
-/* line 286, ../_sass/screen.scss */
+/* line 283, ../_sass/screen.scss */
 body.two-col #content .post-excerpt h6 {
   margin: 0px;
 }
-/* line 288, ../_sass/screen.scss */
+/* line 285, ../_sass/screen.scss */
 body.two-col #content .post-excerpt p {
   font-family: 'Droid Sans', sans-serif;
 }
@@ -756,46 +752,46 @@ body.two-col #content #projects h6 {
   margin: 5px 0 2px;
   font-family: 'Arimo', serif;
 }
-/* line 295, ../_sass/screen.scss */
+/* line 292, ../_sass/screen.scss */
 body.two-col #content #projects h2 {
   font-family: 'Oswald', serif;
   text-align: center;
   color: #676767;
   margin-bottom: 0px;
 }
-/* line 300, ../_sass/screen.scss */
+/* line 297, ../_sass/screen.scss */
 body.two-col #content #projects h3 {
   color: #676767;
 }
-/* line 302, ../_sass/screen.scss */
+/* line 299, ../_sass/screen.scss */
 body.two-col #content #projects h4 {
   font-family: 'Oswald', serif;
   text-align: center;
   color: #85a085;
 }
-/* line 306, ../_sass/screen.scss */
+/* line 303, ../_sass/screen.scss */
 body.two-col #content #projects h4 a {
   color: #85a085;
 }
-/* line 308, ../_sass/screen.scss */
+/* line 305, ../_sass/screen.scss */
 body.two-col #content #projects h6 {
   margin-bottom: 0px;
 }
-/* line 310, ../_sass/screen.scss */
+/* line 307, ../_sass/screen.scss */
 body.two-col #content #projects h6 a {
   color: #85a085;
 }
-/* line 312, ../_sass/screen.scss */
+/* line 309, ../_sass/screen.scss */
 body.two-col #content #projects h6 strong {
   color: #676767;
 }
-/* line 314, ../_sass/screen.scss */
+/* line 311, ../_sass/screen.scss */
 body.two-col .pagination {
   padding: 18px 0;
   border-top: 2px solid #e4e4e4;
   text-align: center;
 }
-/* line 318, ../_sass/screen.scss */
+/* line 315, ../_sass/screen.scss */
 body.two-col .pagination h3 {
   display: inline-block;
   margin: 0 17px;
@@ -806,45 +802,45 @@ body.two-col .pagination h3 {
   border-bottom: 1px solid #d2d2d2;
   border-right: 1px solid #d2d2d2;
 }
-/* line 327, ../_sass/screen.scss */
+/* line 324, ../_sass/screen.scss */
 body.two-col .pagination h3:hover {
   background-color: #d2d2d2;
 }
-/* line 330, ../_sass/screen.scss */
+/* line 327, ../_sass/screen.scss */
 body.two-col .pagination h3:hover a {
   color: #333;
 }
-/* line 333, ../_sass/screen.scss */
+/* line 330, ../_sass/screen.scss */
 body.two-col .pagination h3 a {
   text-decoration: none;
 }
-/* line 339, ../_sass/screen.scss */
+/* line 336, ../_sass/screen.scss */
 body.two-col .not_found h1, body.two-col .not_found h2 {
   font-family: 'Oswald', arial, serif;
   text-align: center;
 }
-/* line 343, ../_sass/screen.scss */
+/* line 340, ../_sass/screen.scss */
 body.two-col .not_found h1 {
   font-size: 10em;
   margin: 65px 0 10px;
 }
-/* line 346, ../_sass/screen.scss */
+/* line 343, ../_sass/screen.scss */
 body.two-col .not_found h2 {
   font-size: 5em;
   margin-bottom: 28px;
 }
-/* line 350, ../_sass/screen.scss */
+/* line 347, ../_sass/screen.scss */
 body.two-col .not_found p {
   font-family: 'Droid Sans', serif;
   text-align: center;
   font-size: 19px;
 }
-/* line 354, ../_sass/screen.scss */
+/* line 351, ../_sass/screen.scss */
 body.two-col .not_found .posts-list {
   padding-top: 35px;
   border-top: 2px solid #e0e0e0;
 }
-/* line 358, ../_sass/screen.scss */
+/* line 355, ../_sass/screen.scss */
 body.two-col #footer {
   display: inline;
   float: left;
@@ -861,7 +857,7 @@ body.two-col #footer {
   overflow-x: hidden;
 }
 
-/* line 366, ../_sass/screen.scss */
+/* line 363, ../_sass/screen.scss */
 #_d ul li {
   float: left;
 }

@@ -59,7 +59,7 @@ body.two-col {
   }
   #container {
     @include container;
-    a, a:visited {
+    a {
       color: $dark-gray;
       text-shadow: 1px 1px 0 #ffffff; }
     a:hover {
@@ -143,9 +143,6 @@ body.two-col {
         a {
           font-family: 'Arimo', sans-serif;
           color: #333;
-          &:visited {
-            color: #333;
-          }
           &:hover {
             color: #111;
           } } } }
