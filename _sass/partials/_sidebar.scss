@@ -21,7 +21,7 @@
       list-style: none;
       padding-left: 0;
       li {
-        font-family: 'Francois One', sans-serif;
+        font-family: 'Francois One', 'trebuchet MS', arial, sans-serif;
         color: $light-gray;
         text-shadow: 1px 1px 0 #fff;
         line-height: 16px;
@@ -36,7 +36,7 @@
           padding-top: 0;
         }
         a {
-          font-family: 'Arimo', sans-serif;
+          font-family: 'Arimo', helvetica, arial, sans-serif;
           color: #333;
           &:hover {
             color: #111;
@@ -66,22 +66,22 @@
   // Disqus Comments
   // --------------------------------------------------------------
   #recentcomments.dsq-widget {
-    font-family: Arimo,sans-serif;
+    font-family: 'Arimo', helvetica, arial, sans-serif;
     span.dsq-widget-comment {
       color: #444;
-      font-family: Arimo, sans-serif;
+      font-family: 'Arimo', helvetica, arial, sans-serif;
     }
     img.dsq-widget-avatar {
       padding: 0 7px 3px 0;;
     }
     a.dsq-widget-user {
-      font-family: 'Francois One', arial, sans-serif;
+      font-family: 'Francois One', 'trebuchet MS', arial, sans-serif;
       font-weight: normal;
       color: #555;
     }
     .dsq-widget-meta a {
       color: #85A085;
-      font-family: 'Francois One',arial,sans-serif;
+      font-family: 'Francois One', 'trebuchet MS', arial, sans-serif;
     }
   }
 
@@ -105,13 +105,13 @@
         padding: 0.5em;
         padding-left: 0; }
       .tweet_join, .tweet_time {
-         font-family: 'Francois One', arial, sans-serif;
+         font-family: 'Francois One', 'trebuchet MS', arial, sans-serif;
          color: #444;
       }
       .tweet_time a {
           color: #555; }
       .tweet_text {
-        font-family: Arimo, sans-serif;
+        font-family: 'Arimo', helvetica, arial, sans-serif;
         color: #444; }
       .tweet_avatar {
         padding: 0 7px 3px 0;

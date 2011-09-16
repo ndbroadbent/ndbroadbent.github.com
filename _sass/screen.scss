@@ -74,18 +74,18 @@ body.two-col {
       }
       h1 {
         margin-bottom: 0px;
-        font-family: 'Amaranth', arial, serif;
+        font-family: 'Amaranth', fantasy, arial, serif;
         font-size: 42px;
       a:hover {
         color: #555555; } }
       h2 {
         color: #aaaaaa;
-        font-family: 'Francois One', serif;
+        font-family: 'Francois One', 'trebuchet MS', arial, sans-serif;
         font-size: 16px;
         margin: 3px 0 5px; } }
     #menu {
       @include column(14, true);
-      font-family: 'Oswald', serif;
+      font-family: 'Oswald',fantasy,arial,serif;
       margin-top: 25px;
       a, a:visited {
         color: #657590;
@@ -219,14 +219,14 @@ body.two-col {
     #projects {
       @include post-title;
       h2 {
-        font-family: 'Oswald', serif;
+        font-family: 'Oswald',fantasy,arial,serif;
         text-align: center;
         color: $dark-gray;
         margin-bottom: 0px; }
       h3 {
         color: $dark-gray; }
       h4 {
-        font-family: 'Oswald', serif;
+        font-family: 'Oswald',fantasy,arial,serif;
         text-align: center;
         color: $light-gray;
         a, a:visited {
@@ -264,7 +264,7 @@ body.two-col {
   }
   .not_found {
     h1, h2 {
-      font-family: 'Oswald', arial, serif;
+      font-family: 'Oswald',fantasy,arial,serif;
       text-align: center;
     }
     h1 {
