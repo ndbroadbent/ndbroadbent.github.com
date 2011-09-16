@@ -100,15 +100,6 @@ body.two-col {
         li {
           display: inline;
           margin-left: 20px;
-          background-color: #e4e4e4;
-          border-radius: 7px 7px 7px 7px;
-          padding: 0 9px 4px;
-          vertical-align: middle;
-          border-bottom: 1px solid #d2d2d2;
-          border-right: 1px solid #d2d2d2;
-          &:hover {
-            background-color: #d2d2d2;
-          }
           &:hover a {
             color: #555555;
           }
@@ -229,6 +220,12 @@ body.two-col {
           h3 {
             font-size: 23px;
             line-height: 110%;
+            border-bottom: 1px solid #DDDDDD;
+            padding-bottom: 3px;
+            a {
+               text-decoration: none;
+               text-shadow: none;
+            }
           } }
         .social_bar {
           @include column(4, true);
@@ -314,8 +311,23 @@ body.two-col {
     border-top: 2px solid #e4e4e4;
     text-align: center;
     h3 {
-      display: inline;
+      display: inline-block;
       margin: 0 17px;
+      background-color: #e4e4e4;
+      border-radius: 7px 7px 7px 7px;
+      padding: 10px 10px 9px 14px;
+      vertical-align: middle;
+      border-bottom: 1px solid #d2d2d2;
+      border-right: 1px solid #d2d2d2;
+      &:hover {
+        background-color: #d2d2d2;
+      }
+      &:hover a {
+        color: #333;
+      }
+      a {
+        text-decoration: none;
+      }
     }
   }
   .not_found {
