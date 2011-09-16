@@ -137,6 +137,9 @@ body.two-col {
       li {
         font-family: 'Francois One', sans-serif;
         color: $light-gray;
+        text-shadow: 1px 1px 0 #fff;
+        line-height: 16px;
+        margin-bottom: 7px;
         a {
           font-family: 'Arimo', sans-serif;
           color: #333;
@@ -224,8 +227,10 @@ body.two-col {
             padding-bottom: 3px;
             a {
                text-decoration: none;
-               text-shadow: none;
             }
+          }
+          h6 {
+            text-shadow: 1px 1px 0 #FFFFFF;
           } }
         .social_bar {
           @include column(4, true);
@@ -357,4 +362,6 @@ body.two-col {
     font-family: 'Droid Sans', sans-serif;
     font-size: 0.8em;
     padding: 15px; } }
+
+  #_d ul li { float: left }
 
