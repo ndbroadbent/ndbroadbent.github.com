@@ -42,4 +42,4 @@ color_index() {
 
 <p>Calling 'color_index' produces something like this:</p>
 
-<img src="http://madebynathan.com/wp-content/uploads/2011/08/color_index3.png" alt="color_index()" />
+<img src="/images/posts/2011/08/color_index3.png" alt="color_index()" />

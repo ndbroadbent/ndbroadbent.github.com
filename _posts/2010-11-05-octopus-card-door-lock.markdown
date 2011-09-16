@@ -40,32 +40,32 @@ Here's some photos of the lock and the iPhone app (sorry for the quality):
 
 <br/>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/11/outside_door.jpg"><img src="http://www.f-77.com/wp-content/uploads/2010/11/outside_door.jpg" alt="" title="Outside Door - LCD Screen &amp; Octopus RFID Reader" width="480" height="640" class="aligncenter size-full wp-image-232" /></a>
+<a href="/images/posts/2010/11/outside_door.jpg"><img src="/images/posts/2010/11/outside_door.jpg" alt="" title="Outside Door - LCD Screen &amp; Octopus RFID Reader" width="480" height="640" class="aligncenter size-full wp-image-232" /></a>
 
 <p style="text-align: center;">Outside Door – LCD Screen & Octopus RFID Reader</p>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/11/compaq_evo_t20.jpg"><img src="http://www.f-77.com/wp-content/uploads/2010/11/compaq_evo_t20.jpg" alt="" title="Compaq Evo T20 - TinyCore Linux" width="480" height="640" class="aligncenter size-full wp-image-229" /></a>
+<a href="/images/posts/2010/11/compaq_evo_t20.jpg"><img src="/images/posts/2010/11/compaq_evo_t20.jpg" alt="" title="Compaq Evo T20 - TinyCore Linux" width="480" height="640" class="aligncenter size-full wp-image-229" /></a>
 
 <p style="text-align: center;">Compaq Evo T20 - TinyCore Linux</p>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/11/inside_door.jpg"><img src="http://www.f-77.com/wp-content/uploads/2010/11/inside_door.jpg" alt="" title="Lock - Inside Door" width="480" height="640" class="aligncenter size-full wp-image-231" /></a>
+<a href="/images/posts/2010/11/inside_door.jpg"><img src="/images/posts/2010/11/inside_door.jpg" alt="" title="Lock - Inside Door" width="480" height="640" class="aligncenter size-full wp-image-231" /></a>
 
 <p style="text-align: center;">Lock - Inside Door</p>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/11/falt10C-screen.jpg"><img src="http://www.f-77.com/wp-content/uploads/2010/11/falt10C-screen.jpg" alt="" title="Default LCD message" width="480" height="640" class="aligncenter size-full wp-image-230" /></a>
+<a href="/images/posts/2010/11/falt10C-screen.jpg"><img src="/images/posts/2010/11/falt10C-screen.jpg" alt="" title="Default LCD message" width="480" height="640" class="aligncenter size-full wp-image-230" /></a>
 
 <p style="text-align: center;">Default LCD message</p>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/11/welcome_nathan.jpg"><img src="http://www.f-77.com/wp-content/uploads/2010/11/welcome_nathan.jpg" alt="" title="RFID card scanned" width="480" height="640" class="aligncenter size-full wp-image-233" /></a>
+<a href="/images/posts/2010/11/welcome_nathan.jpg"><img src="/images/posts/2010/11/welcome_nathan.jpg" alt="" title="RFID card scanned" width="480" height="640" class="aligncenter size-full wp-image-233" /></a>
 
 <p style="text-align: center;">RFID card scanned</p>
 
 <h3 style="text-align: center;">iPhone App</h3>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/06/IMG_0173.png"><img src="http://www.f-77.com/wp-content/uploads/2010/06/IMG_0173.png" alt="" title="Unlock Apartment 10C" width="320" height="480" class="aligncenter size-full wp-image-219" /></a>
+<a href="/images/posts/2010/06/IMG_0173.png"><img src="/images/posts/2010/06/IMG_0173.png" alt="" title="Unlock Apartment 10C" width="320" height="480" class="aligncenter size-full wp-image-219" /></a>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/06/IMG_0174.png"><img src="http://www.f-77.com/wp-content/uploads/2010/06/IMG_0174.png" alt="" title="Unlocking" width="320" height="480" class="aligncenter size-full wp-image-220" /></a>
+<a href="/images/posts/2010/06/IMG_0174.png"><img src="/images/posts/2010/06/IMG_0174.png" alt="" title="Unlocking" width="320" height="480" class="aligncenter size-full wp-image-220" /></a>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/06/IMG_0176.png"><img src="http://www.f-77.com/wp-content/uploads/2010/06/IMG_0176.png" alt="" title="Unlocked" width="320" height="480" class="aligncenter size-full wp-image-221" /></a>
+<a href="/images/posts/2010/06/IMG_0176.png"><img src="/images/posts/2010/06/IMG_0176.png" alt="" title="Unlocked" width="320" height="480" class="aligncenter size-full wp-image-221" /></a>
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/06/IMG_0178.png"><img src="http://www.f-77.com/wp-content/uploads/2010/06/IMG_0178.png" alt="" title="Settings" width="320" height="480" class="aligncenter size-full wp-image-222" /></a>
+<a href="/images/posts/2010/06/IMG_0178.png"><img src="/images/posts/2010/06/IMG_0178.png" alt="" title="Settings" width="320" height="480" class="aligncenter size-full wp-image-222" /></a>

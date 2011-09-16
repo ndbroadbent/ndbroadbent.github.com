@@ -8,7 +8,7 @@ wordpress_url: http://www.f-77.com/?p=310
 ---
 My hall light turns on for 15 minutes if it's past 10pm and I unlock my door with an octopus card or iPhone.
 
-<a href="http://www.f-77.com/wp-content/uploads/2010/12/hall-light.jpg"><img class="aligncenter size-medium wp-image-311" title="Hall Light Automated" src="http://www.f-77.com/wp-content/uploads/2010/12/hall-light-225x300.jpg" alt="Hall Light Automated" width="225" height="300" /></a>
+<a href="/images/posts/2010/12/hall-light.jpg"><img class="aligncenter size-medium wp-image-311" title="Hall Light Automated" src="/images/posts/2010/12/hall-light-225x300.jpg" alt="Hall Light Automated" width="225" height="300" /></a>
 
 Its just a 12v relay (rated at 240V/30A), and some cat-5 to the thin client PC. All happens to fit perfectly inside the light switch.
 

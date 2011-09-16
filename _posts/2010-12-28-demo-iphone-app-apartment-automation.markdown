@@ -26,4 +26,4 @@ You could use this as a demo app to help you learn about:
 	<li>Using capistrano to deploy an iPhone app straight to your phone over SSH. (for jailbroken phones only)</li>
 	<li>etc.</li>
 </ul>
-<a href="http://www.f-77.com/wp-content/uploads/2010/12/photo3.png"><img class="aligncenter size-full wp-image-317" title="iPhone app for apartment automation" src="http://www.f-77.com/wp-content/uploads/2010/12/photo3.png" alt="iPhone app for apartment automation" width="320" height="480" /></a>
+<a href="/images/posts/2010/12/photo3.png"><img class="aligncenter size-full wp-image-317" title="iPhone app for apartment automation" src="/images/posts/2010/12/photo3.png" alt="iPhone app for apartment automation" width="320" height="480" /></a>
