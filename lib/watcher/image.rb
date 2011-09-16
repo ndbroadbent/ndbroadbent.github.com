@@ -33,10 +33,10 @@ module Watcher
         File.join(PATH.first, file)
       end
 
-      def output_file(file, tag, x, y)
+      def output_file(file, x, y)
         ext = file[/\.([^\.]*)$/, 1]
         filename = file.sub(Regexp.new("\\.#{ext}$"), '')
-        "#{filename}-#{tag}-#{x}x#{y}.#{ext}"
+        "#{filename}-#{x}x#{y}.#{ext}"
       end
 
       def process(file)
@@ -46,14 +46,14 @@ module Watcher
         # Process thumbnail
         sizes.delete(:thumb).tap do |x, y|
           thumb = image.crop_resized(75, 75, Magick::NorthGravity)
-          dest = output_file(file, :thumb, x, y)
+          dest = output_file(file, x, y)
           puts status_message(dest)
           thumb.write(dest)
         end
         # Process other sizes
         sizes.each do |tag, (x, y)|
           resized = image.resize_to_fit(x, y)
-          dest = output_file(file, tag, x, y)
+          dest = output_file(file, x, y)
           puts status_message(dest)
           resized.write(dest)
         end
