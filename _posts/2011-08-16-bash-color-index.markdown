@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Bash Color Index
 wordpress_id: 552
@@ -42,4 +42,5 @@ color_index() {
 
 <p>Calling 'color_index' produces something like this:</p>
 
-<img src="/images/posts/2011/08/color_index3.png" alt="color_index()" />
+<img src="/images/posts/2011/08/color_index3.png" alt="color_index()" width="540px" />
+

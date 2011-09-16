@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Scanning lots of photos at once with GIMP on Ubuntu Linux
 wordpress_id: 74
@@ -27,10 +27,11 @@ Thanks to <strong> <a href="http://www.gimptalk.com/forum/memberlist.php?mode=vi
 
 Example:
 
-<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1.jpg">
+<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1.jpg" width="540px">
 
 <h3>becomes</h3>
 
-<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-a.jpg">
-<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-b.jpg">
-<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-c.jpg">
+<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-a.jpg" width="540px">
+<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-b.jpg" width="540px">
+<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-c.jpg" width="540px">
+

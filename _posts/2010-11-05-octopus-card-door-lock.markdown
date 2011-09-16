@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: RFID apartment lock (& iPhone app)
 wordpress_id: 104
@@ -30,7 +30,7 @@ One of my first projects after moving back to Hong Kong was installing an electr
 
 I wrote a small ruby library to read an octopus card ID (<a href="http://github.com/ndbroadbent/octopus">http://github.com/ndbroadbent/octopus</a>), using a USB RFID reader for the 13.56 MHz Sony FeliCa chip. I used a K8055 USB interface board to switch on a relay every time an authorized octopus card was recognized.
 
-My apartment door lock is the "button" kind, with a button in the middle of the handle that pops out when the knob is turned from the inside. So I put a screw into the base of the handle, and mounted the actuator on the apartment door, so the actuator turns the handle and unlocks the door. Of course its not the most elegant solution, but the actuator was only about $7 USD... 
+My apartment door lock is the "button" kind, with a button in the middle of the handle that pops out when the knob is turned from the inside. So I put a screw into the base of the handle, and mounted the actuator on the apartment door, so the actuator turns the handle and unlocks the door. Of course its not the most elegant solution, but the actuator was only about $7 USD...
 It can only unlock the door, but I don't need it to lock automatically.
 
 I added a web server, and wrote an iPhone app so that I can unlock the door via our wifi connection.
@@ -69,3 +69,4 @@ Here's some photos of the lock and the iPhone app (sorry for the quality):
 <a href="/images/posts/2010/06/IMG_0176.png"><img src="/images/posts/2010/06/IMG_0176.png" alt="" title="Unlocked" width="320" height="480" class="aligncenter size-full wp-image-221" /></a>
 
 <a href="/images/posts/2010/06/IMG_0178.png"><img src="/images/posts/2010/06/IMG_0178.png" alt="" title="Settings" width="320" height="480" class="aligncenter size-full wp-image-222" /></a>
+
