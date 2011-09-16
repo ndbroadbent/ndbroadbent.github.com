@@ -1,4 +1,5 @@
 $: << File.expand_path(File.join(File.dirname(__FILE__), "lib"))
+require 'ruby-debug'
 
 namespace :haml do
   desc "Watch the site's HAML templates and recompile them when they change"
@@ -13,5 +14,7 @@ end
 namespace :image do
   desc "Watch images in images/posts, and create resized versions & thumbnails"
   task(:watch) { require 'watcher/image'; Watcher::Image.watch }
+  desc "Delete all previously generated images, and regenerates from Watcher::Image::SIZES"
+  task(:regenerate) { require 'watcher/image'; Watcher::Image.regenerate_all }
 end
 

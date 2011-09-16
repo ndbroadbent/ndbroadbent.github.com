@@ -1,9 +1,8 @@
-require 'rubygems'
-require 'fssm'
+require 'watcher'
 require 'yaml'
 
 module Watcher
-  class Jammit
+  class Jammit < Watcher::Base
     CONFIG = "_assets.yml"
     CMD    = "jammit -o assets -c #{CONFIG}"
 

@@ -1,9 +1,8 @@
-require 'rubygems'
-require 'fssm'
+require 'watcher'
 require 'haml'
 
 module Watcher
-  class Haml
+  class Haml < Watcher::Base
     PATH = "_haml"
     class << self
       def watch
@@ -44,10 +43,9 @@ module Watcher
         begin
           origin = File.open(File.join(PATH, file)).read
           result = ::Haml::Engine.new(origin).render
-          # Write rendered HTML to file
-          color, action = File.exist?(output_file_name) ? [33, 'overwrite'] : [32, '   create']
-          puts "\033[0;#{color}m#{action}\033[0m #{output_file_name}"
           File.open(output_file_name,'w') {|f| f.write(result)}
+          # Write rendered HTML to file
+          puts status_message(output_file_name)
         rescue Exception => ex
           puts "\033[1;31m!!! Error while processing #{file}: #{ex.message}\033[0m"
         end

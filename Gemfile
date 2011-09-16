@@ -16,7 +16,5 @@ gem "jammit",     ">= 0.6.3"
 gem "foreman",    ">= 0.18.0"
 gem "rb-inotify", ">= 0.8.6"
 
-group :devlopment do
-  gem "ruby-debug19", :require => true
-end
+gem "ruby-debug19"
 
