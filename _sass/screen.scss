@@ -7,6 +7,8 @@
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
 
+@import "partials/icons";
+
 //@import blueprint/form
 // Import the non-default scaffolding module.
 //@import blueprint/scaffolding
@@ -39,7 +41,7 @@ form.bp {}
     font-family: 'Francois One', arial, sans-serif; }
   h6 {
     color: $light-gray;
-    margin: 5px 0 2px;
+    margin: 2px 0 2px;
     font-family: 'Arimo', serif; } }
 
 @mixin border-radius($radius) {
@@ -51,58 +53,67 @@ form.bp {}
   box-shadow: $horizontal $vertical $blur $colour;
   -webkit-box-shadow: $horizontal $vertical $blur $colour; }
 
+@mixin border-indent($horizontal, $vertical, $blur, $colour) {
+  -moz-box-shadow: $horizontal $vertical $blur $colour inset;
+  box-shadow: $horizontal $vertical $blur $colour inset;
+  -webkit-box-shadow: $horizontal $vertical $blur $colour inset; }
+
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col {
   background-color: #f3f3f3;
   p, ol, ul {
     font-size: 12px;
   }
+  a, a:visited {
+    color: $dark-gray;
+    text-shadow: 1px 1px 0 #ffffff; }
+  a:hover {
+    color: #333333; }
   #container {
-    @include container;
-    a {
-      color: $dark-gray;
-      text-shadow: 1px 1px 0 #ffffff; }
-    a:hover {
-      color: #333333; } }
+    @include container; }
   #header {
     @include column(24);
-    margin-top: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e4e4e4;
+    margin-top: 18px;
+    padding-bottom: 10px;
     a {
       text-decoration: none; }
     #logo {
-      @include column(8);
+      @include column(9);
       h1, h2 {
         text-shadow: 1px 1px 0 #ffffff;
       }
       h1 {
         margin-bottom: 0px;
         font-family: 'Amaranth', arial, serif;
-        font-size: 3.2em;
+        font-size: 42px;
       a:hover {
         color: #555555; } }
       h2 {
-        color: $light-gray;
+        color: #aaaaaa;
         font-family: 'Francois One', serif;
-        font-size: 1.54em;
-        margin-top: 3px;
-        margin-bottom: 5px; } }
+        font-size: 16px;
+        margin: 3px 0 5px; } }
     #menu {
-      @include column(15, true);
+      @include column(14, true);
       font-family: 'Oswald', serif;
+      margin-top: 25px;
+      a, a:visited {
+        color: #657590;
+      }
+      a:hover {
+        color: #455580;
+      }
       ul {
         list-style-type: none;
         float: right;
-        margin: 14px 0 0;
-        margin-right: 91px;
-        font-size: 24px;
+        margin: 0;
+        background-color: #E7E7E7;
+        border-bottom: 1px solid #DDDDDD;
+        border-right: 1px solid #DDDDDD;
+        border-radius: 5px 5px 5px 5px;
         li {
           display: inline;
-          margin-left: 20px;
-          &:hover a {
-            color: #555555;
-          }
+          margin-left: 0;
           form {
             width: 100px;
             display: inline;
@@ -119,35 +130,51 @@ body.two-col {
     padding-top: 18px;
     padding-left: 18px;
     margin-right: 0;
-    border-left: 1px solid #e4e4e4;
+    border-left: 1px solid #dcdcdc;
+    @include border-indent(1px, 0, 0, #fbfbfb);
     font-family: 'Oswald', serif;
+    text-shadow: 1px 1px 0 #ffffff;
+    h3 {
+      color: #999999;
+      margin-bottom: 14px; }
     .sidebar-section {
       margin-bottom: 24px;
       padding-left: 12px;
     }
-    p { font-family: 'Droid Sans', sans-serif; }
-    img.avatar {
-      border: 1px solid #d0d0d0;
-      border-radius: 7px;
-      margin: 0 0 6px 20px;
+    #other-posts {
+      ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+          font-family: 'Francois One', sans-serif;
+          color: $light-gray;
+          text-shadow: 1px 1px 0 #fff;
+          line-height: 16px;
+          margin-bottom: 7px;
+          padding-top: 6px;
+          border-top: 1px solid #dbdbdb;
+          @include border-indent(0, 1px, 0, #fbfbfb);
+          // Turn off border and padding for first li element
+          &:first-child {
+            border-top: none;
+            @include border-indent(0px, 0px, 0px, #fff);
+            padding-top: 0;
+          }
+          a {
+            font-family: 'Arimo', sans-serif;
+            color: #333;
+            &:hover {
+              color: #111;
+            } } } } }
+    #about {
+      text-align: justify;
+      p { font-family: 'Droid Sans', sans-serif; }
+      img.avatar {
+        border: 1px solid #d0d0d0;
+        border-radius: 7px;
+        margin: 0 0 15px 15px;
+      }
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
-      li {
-        font-family: 'Francois One', sans-serif;
-        color: $light-gray;
-        text-shadow: 1px 1px 0 #fff;
-        line-height: 16px;
-        margin-bottom: 7px;
-        a {
-          font-family: 'Arimo', sans-serif;
-          color: #333;
-          &:hover {
-            color: #111;
-          } } } }
-    h3 {
-      color: #999999; }
     #google-search {
       table { margin-bottom: 0; }
       table.gsc-branding { display: none; }
@@ -158,6 +185,9 @@ body.two-col {
       span.dsq-widget-comment {
         color: $dark-gray;
         font-family: Arimo, sans-serif;
+      }
+      img.dsq-widget-avatar {
+        padding: 0 7px 7px 0;;
       }
     }
     #tweets {
@@ -185,7 +215,7 @@ body.two-col {
           font-family: Arimo, sans-serif;
           color: $dark-gray; }
         .tweet_avatar {
-          padding-right: 0.5em;
+          padding: 0 7px 7px 0;
           float: left;
           img {
             vertical-align: middle; } } } } }
@@ -193,7 +223,7 @@ body.two-col {
     @include column(14, true);
     @include prepend(1);
     @include append(1);
-    padding-top: 12px;
+    padding-top: 9px;
     padding-left: 0;
     .post {
       p, h4 {
@@ -208,7 +238,7 @@ body.two-col {
         line-height: 140%; }
       .header {
         @include column(14, true);
-        padding: 6px 0;
+        padding: 6px 0 3px 0;
         .title {
           display: inline-block;
           @include post-title;
@@ -220,14 +250,14 @@ body.two-col {
           h3 {
             font-size: 23px;
             line-height: 110%;
-            border-bottom: 1px solid #DDDDDD;
-            padding-bottom: 3px;
-            a {
+            padding-bottom: 0;
+            a, a:visited {
                text-decoration: none;
             }
           }
           h6 {
             text-shadow: 1px 1px 0 #FFFFFF;
+            margin: 1px 0 2px 0;
           } }
         .social_bar {
           @include column(4, true);
@@ -238,8 +268,9 @@ body.two-col {
             li {
               display: inline-block; } } } }
       .content {
-        padding-left: 10px;
-        padding-top: 5px;
+        border-top: 1px solid #d9d9d9;
+        @include border-indent(0, 1px, 0, #fdfdfd);
+        padding-top: 12px;
         clear: both;
       }
       img {
@@ -263,8 +294,8 @@ body.two-col {
         text-align: right;
         .heart {
           color: #cc0000; }
-        a {
-          background: transparent url(/images/hackernews-icon.png) no-repeat center left;
+        a, a:visited {
+          background: transparent url(/images/hackernews.png) no-repeat center left;
           display: inline-block;
           padding-left: 16px; } }
       blockquote {
@@ -300,11 +331,11 @@ body.two-col {
         font-family: 'Oswald', serif;
         text-align: center;
         color: $light-gray;
-        a {
+        a, a:visited {
           color: $light-gray; } }
       h6 {
         margin-bottom: 0px;
-        a {
+        a, a:visited {
           color: $light-gray; }
         strong {
           color: $dark-gray; } } } }
@@ -323,9 +354,9 @@ body.two-col {
       border-right: 1px solid #d2d2d2;
       &:hover {
         background-color: #d2d2d2;
-      }
-      &:hover a {
-        color: #333;
+        a, a:visited {
+          color: #333;
+        }
       }
       a {
         text-decoration: none;

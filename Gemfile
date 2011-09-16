@@ -5,6 +5,7 @@ gem "jekyll",     "~> 0.10.0"
 
 gem "haml",       ">= 3.1.3"
 gem "compass",    ">= 0.11.3"
+gem "oily_png"
 gem "RedCloth",   ">= 4.2.7"
 gem "pygmentize", ">= 0.0.3"
 

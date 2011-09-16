@@ -17,8 +17,8 @@ paginate:    5
 url:          http://madebynathan.com
 permalink:    /:year/:month/:day/:title/index.html
 title:        Made by Nathan
-description:  ruby, rails, linux, iphone, electronics
-keywords:     ruby, rails, linux, iphone, electronics
+description:  ruby & rails, ubuntu linux, iphone, electronics
+keywords:     ruby, rails, ubuntu, linux, iphone, electronics, arduino, projects, hobbies
 author:       Nathan Broadbent
 email:        nathan.f77@gmail.com
 

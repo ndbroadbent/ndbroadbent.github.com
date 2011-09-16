@@ -25,13 +25,14 @@
 
   %h3 Latest Posts
   .sidebar-section
-    %ul
-      {% for post in site.posts limit:5 %}
-      %li
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        %br
-        {{ post.date | date: "%B %d, %Y"}}
-      {% endfor %}
+    #other-posts
+      %ul
+        {% for post in site.posts limit:5 %}
+        %li
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          %br
+          {{ post.date | date: "%B %d, %Y"}}
+        {% endfor %}
 
   {% include common_sidebar.html %}
 
