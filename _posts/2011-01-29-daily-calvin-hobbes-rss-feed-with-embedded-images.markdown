@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Daily Calvin & Hobbes RSS feed (with embedded images)
 wordpress_id: 342
@@ -10,4 +10,7 @@ wordpress_url: http://www.f-77.com/?p=342
 
 Here's a <a title="Calvin and Hobbes RSS" href="http://pipes.yahoo.com/pipes/pipe.run?_id=4ea8ada9a8b0f29e54ce1056f46f9202&amp;_render=rss" target="_blank">daily Calvin and Hobbes RSS feed</a> that parses the comic image from the linked page, and drops it in the feed itself. Perfect for Google Reader.
 
-<a href="/images/posts/2011/01/calvinhobbes.gif"><img class="aligncenter size-full wp-image-346" title="calvin &amp; hobbes" src="/images/posts/2011/01/calvinhobbes.gif" alt="" width="600" height="214" /></a>
+<a href="/images/posts/2011/01/calvinhobbes.gif">
+<img class="aligncenter size-full wp-image-346" title="calvin &amp; hobbes" src="/images/posts/2011/01/calvinhobbes.gif" alt="" width="540" />
+</a>
+
