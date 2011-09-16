@@ -5,10 +5,11 @@
   ---
 #content.not_found
   %h1 404
-  %h4 The page that you are looking for does not exist.
-  %h4 Check out one of these posts if you like:
+  %h2 Page Not Found
+  %p I'm sorry, the page you are looking for does not exist.
+  %p Have a look at one of these posts instead, if you like:
   .posts-list
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
     .post-excerpt
       %h3 <a href="{{ post.url }}">{{ post.title }}</a>
       %h6 {{ post.date | date: "%A, %B %d, %Y" }}
@@ -16,5 +17,5 @@
     {% endfor %}
 
 #sidebar
-  {% include sidebar.html %}
+  {% include common_sidebar.html %}
 

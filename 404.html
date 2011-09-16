@@ -4,10 +4,11 @@ title: 404 - page not found
 ---
 <div class='not_found' id='content'>
   <h1>404</h1>
-  <h4>The page that you are looking for does not exist.</h4>
-  <h4>Check out one of these posts if you like:</h4>
+  <h2>Page Not Found</h2>
+  <p>I'm sorry, the page you are looking for does not exist.</p>
+  <p>Have a look at one of these posts instead, if you like:</p>
   <div class='posts-list'>
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
     <div class='post-excerpt'>
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <h6>{{ post.date | date: "%A, %B %d, %Y" }}</h6>
@@ -17,5 +18,5 @@ title: 404 - page not found
   </div>
 </div>
 <div id='sidebar'>
-  {% include sidebar.html %}
+  {% include common_sidebar.html %}
 </div>
