@@ -19,7 +19,7 @@ $(function() {
     username: "nathanf77",
     join_text: "auto",
     avatar_size: 32,
-    count: 5,
+    count: 3,
     auto_join_text_default: ":",
     auto_join_text_ed: ":",
     auto_join_text_ing: ":",

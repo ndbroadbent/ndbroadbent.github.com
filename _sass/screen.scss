@@ -163,6 +163,12 @@ body.two-col {
       .gsc-results {
         font-family: 'Droid Sans', arial, sans-serif;
       } }
+    #recentcomments.dsq-widget {
+      span.dsq-widget-comment {
+        color: $dark-gray;
+        font-family: Arimo, sans-serif;
+      }
+    }
     #tweets {
       margin-top: 10px;
       ul.tweet_list {
