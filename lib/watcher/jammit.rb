@@ -3,16 +3,12 @@ require 'yaml'
 
 module Watcher
   class Jammit < Watcher::Base
-    CONFIG = "_assets.yml"
-    CMD    = "jammit -o assets -c #{CONFIG}"
-
     class << self
       def watched_files
         return @watched_files if @watched_files
-        config = YAML.load_file(CONFIG)
-        js = config['javascripts']['application'].map{|f| f.sub(/^javascripts\//,'**/') }
-        css = config['stylesheets'].map{|m,f|f}.flatten.map{|f| f.sub(/^stylesheets\//,'**/') }
-
+        assets = YAML.load_file(config["assets_file"])
+        js = assets['javascripts']['application'].map{|f| f.sub(/^javascripts\//,'**/') }
+        css = assets['stylesheets'].map{|m,f|f}.flatten.map{|f| f.sub(/^stylesheets\//,'**/') }
         @watched_files = {:js => js, :css => css}
       end
 
@@ -35,7 +31,7 @@ module Watcher
 
       def run_jammit(*args)
         puts (args.any? ? ">>> #{args[1]} changed. " : ">>> ") << "Running Jammit..."
-        system(CMD)
+        system(config["command"])
         puts "    Assets packed."
       end
     end

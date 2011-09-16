@@ -3,12 +3,11 @@ require 'haml'
 
 module Watcher
   class Haml < Watcher::Base
-    PATH = "_haml"
     class << self
       def watch
         refresh
         puts ">>> Haml Watcher is watching for changes. Press Ctrl-C to Stop."
-        FSSM.monitor(PATH, "**/*.haml") do
+        FSSM.monitor(config["path"], "**/*.haml") do
           update do |base, relative|
             puts ">>> Change detected to: #{relative}"
             Haml.compile(relative)
@@ -41,7 +40,7 @@ module Watcher
       def compile(file)
         output_file_name = output_file(file)
         begin
-          origin = File.open(File.join(PATH, file)).read
+          origin = File.open(File.join(config["path"], file)).read
           result = ::Haml::Engine.new(origin).render
           File.open(output_file_name,'w') {|f| f.write(result)}
           # Write rendered HTML to file
@@ -53,7 +52,8 @@ module Watcher
 
       # Check that all haml templates have been rendered.
       def refresh
-        Dir.glob("#{PATH}/**/*.haml").each do |file|
+        glob_pattern = File.join(config["path"], "**/*.haml")
+        Dir.glob(glob_pattern).each do |file|
           file.gsub!(/^_haml\//, '')
           compile(file) unless File.exist?(output_file(file))
         end

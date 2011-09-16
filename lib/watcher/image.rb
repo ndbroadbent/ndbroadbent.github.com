@@ -3,13 +3,10 @@ require 'RMagick'
 
 module Watcher
   class Image < Watcher::Base
-    PATH = ["images/posts/", "**/*.*"]
-    SIZES = {:post => [540, 540], :thumb => [75, 75]}
-
     class << self
       def watch
         puts ">>> Image Watcher is watching for changes. Press Ctrl-C to Stop."
-        FSSM.monitor(*PATH) do
+        FSSM.monitor(config["path"], "**/*.*") do
           update do |base, relative|
             unless Image.is_processed?(relative)
               puts ">>> Change detected to image: #{relative}"
@@ -30,7 +27,7 @@ module Watcher
       end
 
       def full_path(file)
-        File.join(PATH.first, file)
+        File.join(config["path"], file)
       end
 
       def output_file(file, x, y)
@@ -40,15 +37,17 @@ module Watcher
       end
 
       def process(file)
-        sizes = SIZES.dup
+        sizes = config["sizes"].dup
         image = Magick::Image.read(file).first
 
         # Process thumbnail
-        sizes.delete(:thumb).tap do |x, y|
-          thumb = image.crop_resized(75, 75, Magick::NorthGravity)
-          dest = output_file(file, x, y)
-          puts status_message(dest)
-          thumb.write(dest)
+        if sizes[:thumb]
+          sizes.delete(:thumb).tap do |x, y|
+            thumb = image.crop_resized(75, 75, Magick::NorthGravity)
+            dest = output_file(file, x, y)
+            puts status_message(dest)
+            thumb.write(dest)
+          end
         end
         # Process other sizes
         sizes.each do |tag, (x, y)|
@@ -61,14 +60,15 @@ module Watcher
 
       def regenerate_all
         # 1st pass - delete previously generated images
-        Dir.glob(PATH.join).each do |file|
+        glob_pattern = File.join(config["path"], "**/*.*")
+        Dir.glob(glob_pattern).each do |file|
           if is_processed?(file)
             puts "\033[0;31m   remove\033[0m #{file}"
             File.delete(file)
           end
         end
-        # 2nd pass - regenerate
-        Dir.glob(PATH.join).each {|file| process(file) }
+        # 2nd pass - regenerate images
+        Dir.glob(glob_pattern).each {|file| process(file) }
       end
     end
   end

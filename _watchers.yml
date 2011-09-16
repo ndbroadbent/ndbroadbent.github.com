@@ -1,0 +1,13 @@
+haml:
+  path: "_haml"
+
+image:
+  path: "images/posts/"
+  sizes:
+    post:  [540, 540]
+    thumb: [75, 75]
+
+jammit:
+  assets_file:  "_assets.yml"
+  command: "jammit -o assets -c _assets.yml"
+
