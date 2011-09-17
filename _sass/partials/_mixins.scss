@@ -4,11 +4,11 @@
 @mixin post-title {
   h3, h2 {
     margin-bottom: 0px;
-    font-family: 'Francois One', impact, arial, sans-serif; }
+    @include font-francois-one; }
   h6 {
     color: $light-gray;
     margin: 2px 0 2px;
-    font-family: 'Arimo', helvetica, arial, sans-serif; } }
+    @include font-helvetica; } }
 
 @mixin border-radius($radius) {
   -moz-border-radius: $radius;

@@ -11,18 +11,18 @@
     }
     h1 {
       margin-bottom: 0px;
-      font-family: 'Amaranth', fantasy, arial, serif;
+      @include font-amaranth;
       font-size: 42px;
     a:hover {
       color: #555555; } }
     h2 {
       color: #aaaaaa;
-      font-family: 'Francois One', 'trebuchet MS', arial, sans-serif;
+      @include font-francois-one;
       font-size: 16px;
       margin: 3px 0 5px; } }
   #menu {
     @include column(14, true);
-    font-family: 'Oswald',fantasy,arial,serif;
+    @include font-oswald;
     margin-top: 25px;
     a, a:visited {
       color: #657590;

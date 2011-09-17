@@ -6,13 +6,13 @@
   padding-left: 0;
   .post {
     p, h4 {
-      font-family: 'Droid Sans', arial, sans-serif; }
+      @include font-droid-sans; }
     h4 {
       margin-bottom: 0px; }
     h4 + p {
       text-indent: 2em; }
     code {
-      font-family: 'Droid Sans Mono', serif; }
+      @include font-droid-sans-mono; }
     p {
       line-height: 140%; }
     .header {
@@ -80,14 +80,16 @@
         display: inline-block;
         padding-left: 16px; } }
     blockquote {
+      p {
+        @include font-lucida-unicode;
+        font-size: 48px;
+      }
       p:before {
-        font: 48px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
         content: "“";
         float: left;
         margin-top: -12px; }
       p:after {
         content: "”";
-        font: 48px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
         float: right; } } }
   .post-excerpt {
     margin-bottom: 20px;
@@ -95,21 +97,21 @@
     h6 {
       margin: 0px; }
     p {
-      font-family: 'Droid Sans', sans-serif; } }
+      @include font-droid-sans; } }
   #search {
     .result {
       @include post-title; } }
   #projects {
     @include post-title;
     h2 {
-      font-family: 'Oswald',fantasy,arial,serif;
+      @include font-oswald;
       text-align: center;
       color: $dark-gray;
       margin-bottom: 0px; }
     h3 {
       color: $dark-gray; }
     h4 {
-      font-family: 'Oswald',fantasy,arial,serif;
+      @include font-oswald;
       text-align: center;
       color: $light-gray;
       a, a:visited {

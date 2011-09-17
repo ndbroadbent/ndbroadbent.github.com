@@ -3,12 +3,12 @@
 // Import all the default blueprint modules so that we can access their mixins.
 @import "blueprint";
 
-
 // Helpers (mixins / sprites / variables)
 // ----------------------------------------------------------------
-@import "partials/base";
-@import "partials/mixins";
+@import "partials/fonts";
 @import "partials/icons";
+@import "partials/mixins";
+@import "partials/base";
 
 // Layouts
 // ----------------------------------------------------------------
@@ -69,7 +69,7 @@ body.two-col {
     @include column(24);
     color: $light-gray;
     text-align: center;
-    font-family: 'Droid Sans', sans-serif;
+    @include font-droid-sans;
     font-size: 0.8em;
     padding: 15px; } }
 

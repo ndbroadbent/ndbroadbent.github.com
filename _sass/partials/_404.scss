@@ -1,6 +1,6 @@
 .not_found {
   h1, h2 {
-    font-family: 'Oswald',fantasy,arial,serif;
+    @include font-oswald;
     text-align: center;
   }
   h1 {
@@ -11,7 +11,7 @@
     margin-bottom: 28px;
   }
   p {
-    font-family: 'Droid Sans', serif;
+    @include font-droid-sans;
     text-align: center;
     font-size: 19px; }
   .posts-list {
