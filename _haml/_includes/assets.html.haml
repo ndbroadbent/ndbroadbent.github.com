@@ -1,11 +1,23 @@
 <link href="http://feeds.feedburner.com/madebynathan" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
-<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/noisy/1.0/jquery.noisy.min.js" type="text/javascript"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js" type="text/javascript"></script>
-<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-<script src="https://apis.google.com/js/plusone.js" type="text/javascript"></script>
+
+-# Use production css/js when jekyll server is running
+{% if site.server %}
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/syntax.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+<script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
+<script src="/javascripts/application.js" type="text/javascript"></script>
+
+-# Use production css/js when jekyll converter is running
+{% else %}
+
+<link href="/assets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<script src="/assets/application.js" type="text/javascript"></script>
+{% endif %}
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 :javascript
@@ -13,9 +25,14 @@
   google.setOnLoadCallback(function() {
     WebFont.load({
       google: {
-        families: [ 'Amaranth:bold', 'Oswald', 'Francois One', 'Arimo', 'Droid Sans', 'Droid Sans Mono'  ]
+        families: [ 'Amaranth:bold', 'Francois One', 'Droid Sans', 'Droid Sans Mono'  ]
       }});
   });
+
+<link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+<script src="https://apis.google.com/js/plusone.js" type="text/javascript"></script>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 
 :plain
   <!--[if lte IE 6]>
@@ -25,28 +42,7 @@
     </script>
   <![endif]-->
 
-{% if site.server %}
-
-:plain
   <!--[if lt IE 8]>
     <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
-
-<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/syntax.css" media="screen, projection" rel="stylesheet" type="text/css" />
-
-<script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
-<script src="/javascripts/application.js" type="text/javascript"></script>
-
-{% else %}
-
-:plain
-  <!--[if lt IE 8]>
-    <link href="/assets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <![endif]-->
-
-<link href="/assets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<script src="/assets/application.js" type="text/javascript"></script>
-
-{% endif %}
 
