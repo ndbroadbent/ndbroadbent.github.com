@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: You keep using 'bundle install {gem}'. I do not think it means what you think it means.
 wordpress_id: 571
@@ -15,6 +15,17 @@ What <code>bundle install haml</code> does:
 	<li>Installs all of your gems into a 'haml' folder. (creates the folder if it doesn't exist)</li>
 	<li>Saves the  'haml' path in .bundle/config, so that it becomes your default gem folder for every bundle command you run in the future.</li>
 </ol>
-If you made this mistake and want to reset everything back to normal, just run: <code>rm -rf {gem} .bundle/config</code>
 
-If you want to update a single gem to the latest version on rubygems.org, you should run <code>bundle update {gem}</code>.
+If you made this mistake and want to reset everything back to normal, just run:
+
+{% highlight bash %}
+rm -rf {gem} .bundle/config
+{% endhighlight %}
+
+
+Then, to update your gem, you should run:
+
+{% highlight bash %}
+bundle update {gem}
+{% endhighlight %}
+
