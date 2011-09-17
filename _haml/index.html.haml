@@ -23,6 +23,8 @@
   .sidebar-section
     #google-search
 
+  {% include common_sidebar.html %}
+
   %h3 Latest Posts
   .sidebar-section
     #other-posts
@@ -33,5 +35,9 @@
           %h6 {{ post.date | date: "%B %d, %Y"}}
         {% endfor %}
 
-  {% include common_sidebar.html %}
+  %h3 Recent Comments
+  .sidebar-section
+    #recentcomments.dsq-widget
+      <script type="text/javascript" src="http://madebynathan.disqus.com/recent_comments_widget.js?num_items=3&hide_avatars=0&avatar_size=32&excerpt_length=140"></script>
+      <a href="http://disqus.com/">Powered by Disqus</a>
 

@@ -150,7 +150,7 @@ a img {
 /* line 13, ../_sass/partials/_header.scss */
 #header #logo h1 {
   margin-bottom: 0px;
-  font-family: 'Amaranth', fantasy, arial, serif;
+  font-family: 'Amaranth', fantasy, Georgia, serif;
   font-size: 42px;
 }
 /* line 17, ../_sass/partials/_header.scss */
@@ -179,13 +179,13 @@ a img {
 }
 /* line 28, ../_sass/partials/_header.scss */
 #header #menu a, #header #menu a:visited {
-  color: #657590;
+  color: #5577AA;
 }
-/* line 31, ../_sass/partials/_header.scss */
+/* line 30, ../_sass/partials/_header.scss */
 #header #menu a:hover {
-  color: #455580;
+  color: #335588;
 }
-/* line 34, ../_sass/partials/_header.scss */
+/* line 32, ../_sass/partials/_header.scss */
 #header #menu ul {
   list-style-type: none;
   float: right;
@@ -195,17 +195,21 @@ a img {
   border-right: 1px solid #DDDDDD;
   border-radius: 5px 5px 5px 5px;
 }
-/* line 42, ../_sass/partials/_header.scss */
+/* line 40, ../_sass/partials/_header.scss */
 #header #menu ul li {
   display: inline;
   margin-left: 0;
 }
-/* line 45, ../_sass/partials/_header.scss */
+/* line 43, ../_sass/partials/_header.scss */
+#header #menu ul li a {
+  line-height: 23px;
+}
+/* line 44, ../_sass/partials/_header.scss */
 #header #menu ul li form {
   width: 100px;
   display: inline;
 }
-/* line 48, ../_sass/partials/_header.scss */
+/* line 47, ../_sass/partials/_header.scss */
 #header #menu ul li form input {
   width: 90px;
   -moz-border-radius: 5px;
@@ -223,7 +227,7 @@ a img {
   float: left;
   margin-right: 10px;
   width: 310px;
-  font-family: 'Droid Sans', arial, sans-serif;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
   padding-top: 18px;
   padding-left: 28px;
   margin-right: 0;
@@ -247,12 +251,16 @@ a img {
 #sidebar .sidebar-section {
   margin-bottom: 24px;
 }
-/* line 21, ../_sass/partials/_sidebar.scss */
+/* line 17, ../_sass/partials/_sidebar.scss */
+#sidebar a:hover {
+  text-decoration: underline !important;
+}
+/* line 24, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul {
   list-style: none;
   padding-left: 0;
 }
-/* line 24, ../_sass/partials/_sidebar.scss */
+/* line 27, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li {
   color: #85a085;
   text-shadow: 1px 1px 0 #fff;
@@ -264,13 +272,13 @@ a img {
   box-shadow: 0 1px 0 white inset;
   -webkit-box-shadow: 0 1px 0 white inset;
 }
-/* line 32, ../_sass/partials/_sidebar.scss */
+/* line 35, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li h6 {
   color: #85A085;
   font-family: helvetica, arial, sans-serif;
   margin: 2px 0;
 }
-/* line 39, ../_sass/partials/_sidebar.scss */
+/* line 42, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li:first-child {
   border-top: none;
   -moz-box-shadow: 0px 0px 0px white inset;
@@ -278,65 +286,80 @@ a img {
   -webkit-box-shadow: 0px 0px 0px white inset;
   padding-top: 0;
 }
-/* line 44, ../_sass/partials/_sidebar.scss */
+/* line 47, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li a {
   font-weight: normal;
   color: #333;
 }
-/* line 48, ../_sass/partials/_sidebar.scss */
+/* line 51, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li a:hover {
   color: #111;
 }
-/* line 54, ../_sass/partials/_sidebar.scss */
+/* line 57, ../_sass/partials/_sidebar.scss */
 #sidebar #about {
   text-align: justify;
 }
-/* line 56, ../_sass/partials/_sidebar.scss */
+/* line 59, ../_sass/partials/_sidebar.scss */
 #sidebar #about p {
-  font-family: 'Droid Sans', arial, sans-serif;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
-/* line 57, ../_sass/partials/_sidebar.scss */
+/* line 60, ../_sass/partials/_sidebar.scss */
 #sidebar #about img.avatar {
   border: 1px solid #d0d0d0;
   border-radius: 7px;
   margin: 0 0 15px 15px;
 }
-/* line 67, ../_sass/partials/_sidebar.scss */
+/* line 70, ../_sass/partials/_sidebar.scss */
 #sidebar #google-search table {
   margin-bottom: 0;
 }
-/* line 68, ../_sass/partials/_sidebar.scss */
+/* line 71, ../_sass/partials/_sidebar.scss */
 #sidebar #google-search table.gsc-branding {
   display: none;
 }
-/* line 69, ../_sass/partials/_sidebar.scss */
+/* line 72, ../_sass/partials/_sidebar.scss */
 #sidebar #google-search .gsc-results {
-  font-family: 'Droid Sans', arial, sans-serif;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
-/* line 76, ../_sass/partials/_sidebar.scss */
+/* line 79, ../_sass/partials/_sidebar.scss */
 #sidebar #recentcomments.dsq-widget span.dsq-widget-comment {
   color: #444;
 }
-/* line 79, ../_sass/partials/_sidebar.scss */
+/* line 82, ../_sass/partials/_sidebar.scss */
 #sidebar #recentcomments.dsq-widget img.dsq-widget-avatar {
   padding: 0 7px 3px 0;
 }
-/* line 82, ../_sass/partials/_sidebar.scss */
-#sidebar #recentcomments.dsq-widget a.dsq-widget-user {
-  font-family: 'Francois One', helvetica, arial, sans-serif;
-  font-weight: normal;
+/* line 85, ../_sass/partials/_sidebar.scss */
+#sidebar #recentcomments.dsq-widget a {
   color: #555;
 }
 /* line 87, ../_sass/partials/_sidebar.scss */
-#sidebar #recentcomments.dsq-widget .dsq-widget-meta a {
-  color: #85A085;
+#sidebar #recentcomments.dsq-widget a.dsq-widget-user {
   font-family: 'Francois One', helvetica, arial, sans-serif;
+  font-weight: normal;
+  background-color: #E2E2E2;
+  border: 1px solid #FFFFFF;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 1px 4px;
+  text-decoration: none;
 }
 /* line 95, ../_sass/partials/_sidebar.scss */
+#sidebar #recentcomments.dsq-widget a.dsq-widget-user:hover {
+  color: #444;
+  background-color: #ddd;
+}
+/* line 100, ../_sass/partials/_sidebar.scss */
+#sidebar #recentcomments.dsq-widget .dsq-widget-meta a {
+  color: #555;
+  font-family: 'Francois One', helvetica, arial, sans-serif;
+  text-decoration: none;
+}
+/* line 109, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets {
   margin-top: 10px;
 }
-/* line 97, ../_sass/partials/_sidebar.scss */
+/* line 111, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -346,36 +369,37 @@ a img {
   padding: 0;
   overflow-y: hidden;
 }
-/* line 105, ../_sass/partials/_sidebar.scss */
+/* line 119, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .awesome, #sidebar #tweets ul.tweet_list .epic {
   text-transform: uppercase;
 }
-/* line 107, ../_sass/partials/_sidebar.scss */
+/* line 121, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0.5em;
   padding-left: 0;
 }
-/* line 112, ../_sass/partials/_sidebar.scss */
-#sidebar #tweets ul.tweet_list .tweet_join, #sidebar #tweets ul.tweet_list .tweet_time {
+/* line 126, ../_sass/partials/_sidebar.scss */
+#sidebar #tweets ul.tweet_list .tweet_time {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   color: #444;
 }
-/* line 116, ../_sass/partials/_sidebar.scss */
+/* line 129, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_time a {
+  text-decoration: none;
   color: #555;
 }
-/* line 118, ../_sass/partials/_sidebar.scss */
+/* line 132, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_text {
   color: #444;
 }
-/* line 120, ../_sass/partials/_sidebar.scss */
+/* line 134, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_avatar {
   padding: 0 7px 3px 0;
   float: left;
 }
-/* line 123, ../_sass/partials/_sidebar.scss */
+/* line 137, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
@@ -397,7 +421,7 @@ a img {
 }
 /* line 8, ../_sass/partials/_content.scss */
 #content .post p, #content .post h4 {
-  font-family: 'Droid Sans', arial, sans-serif;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
 /* line 10, ../_sass/partials/_content.scss */
 #content .post h4 {
@@ -409,7 +433,7 @@ a img {
 }
 /* line 14, ../_sass/partials/_content.scss */
 #content .post code {
-  font-family: 'Droid Sans Mono', arial, sans-serif;
+  font-family: 'Droid Sans Mono', monospace;
 }
 /* line 16, ../_sass/partials/_content.scss */
 #content .post p {
@@ -577,7 +601,7 @@ a img {
 }
 /* line 99, ../_sass/partials/_content.scss */
 #content .post-excerpt p {
-  font-family: 'Droid Sans', arial, sans-serif;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
 /* line 5, ../_sass/partials/_mixins.scss */
 #content #search .result h3, #content #search .result h2 {
@@ -635,8 +659,8 @@ a img {
   color: #676767;
 }
 
-/* line 1, ../_sass/partials/_pagination.scss */
-.pagination {
+/* line 2, ../_sass/partials/_pagination.scss */
+body.bp .pagination {
   text-align: center;
   padding: 18px 0;
   border-top: 1px solid #ccc;
@@ -644,8 +668,8 @@ a img {
   box-shadow: 0 1px 0 white inset;
   -webkit-box-shadow: 0 1px 0 white inset;
 }
-/* line 6, ../_sass/partials/_pagination.scss */
-.pagination h3 {
+/* line 7, ../_sass/partials/_pagination.scss */
+body.bp .pagination h3 {
   display: inline-block;
   margin: 0 17px;
   background-color: #e4e4e4;
@@ -655,16 +679,16 @@ a img {
   border-bottom: 1px solid #d2d2d2;
   border-right: 1px solid #d2d2d2;
 }
-/* line 15, ../_sass/partials/_pagination.scss */
-.pagination h3:hover {
+/* line 16, ../_sass/partials/_pagination.scss */
+body.bp .pagination h3:hover {
   background-color: #d2d2d2;
 }
-/* line 17, ../_sass/partials/_pagination.scss */
-.pagination h3:hover a, .pagination h3:hover a:visited {
+/* line 18, ../_sass/partials/_pagination.scss */
+body.bp .pagination h3:hover a, body.bp .pagination h3:hover a:visited {
   color: #333;
 }
-/* line 21, ../_sass/partials/_pagination.scss */
-.pagination h3 a {
+/* line 22, ../_sass/partials/_pagination.scss */
+body.bp .pagination h3 a, body.bp .pagination h3 a:visited {
   text-decoration: none;
 }
 
@@ -685,7 +709,7 @@ a img {
 }
 /* line 13, ../_sass/partials/_404.scss */
 .not_found p {
-  font-family: 'Droid Sans', arial, sans-serif;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
   text-align: center;
   font-size: 19px;
 }
@@ -948,12 +972,12 @@ body.two-col p, body.two-col ol, body.two-col ul {
 }
 /* line 50, ../_sass/screen.scss */
 body.two-col a, body.two-col a:visited {
-  color: #676767;
+  color: #5577AA;
   text-shadow: 1px 1px 0 #ffffff;
 }
 /* line 53, ../_sass/screen.scss */
 body.two-col a:hover {
-  color: #333333;
+  color: #335588;
 }
 /* line 55, ../_sass/screen.scss */
 body.two-col a#fork-on-github img {
@@ -968,13 +992,25 @@ body.two-col a#fork-on-github img:hover {
   opacity: 0.7;
 }
 /* line 65, ../_sass/screen.scss */
+body.two-col h3 {
+  font-size: 19px;
+}
+/* line 69, ../_sass/screen.scss */
+body.two-col h1 a, body.two-col h1 a:visited, body.two-col h2 a, body.two-col h2 a:visited, body.two-col h3 a, body.two-col h3 a:visited, body.two-col h4 a, body.two-col h4 a:visited, body.two-col h5 a, body.two-col h5 a:visited, body.two-col h6 a, body.two-col h6 a:visited {
+  color: #676767;
+}
+/* line 72, ../_sass/screen.scss */
+body.two-col h1 a:hover, body.two-col h2 a:hover, body.two-col h3 a:hover, body.two-col h4 a:hover, body.two-col h5 a:hover, body.two-col h6 a:hover {
+  color: #4b4b4b;
+}
+/* line 74, ../_sass/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 68, ../_sass/screen.scss */
+/* line 77, ../_sass/screen.scss */
 body.two-col #footer {
   display: inline;
   float: left;
@@ -982,7 +1018,7 @@ body.two-col #footer {
   width: 950px;
   color: #85a085;
   text-align: center;
-  font-family: 'Droid Sans', arial, sans-serif;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
   font-size: 0.8em;
   padding: 15px;
 }
@@ -991,7 +1027,7 @@ body.two-col #footer {
   overflow-x: hidden;
 }
 
-/* line 76, ../_sass/screen.scss */
+/* line 85, ../_sass/screen.scss */
 #_d ul li {
   float: left;
 }

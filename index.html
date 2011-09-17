@@ -26,6 +26,7 @@ layout: default
   <div class='sidebar-section'>
     <div id='google-search'></div>
   </div>
+  {% include common_sidebar.html %}
   <h3>Latest Posts</h3>
   <div class='sidebar-section'>
     <div id='other-posts'>
@@ -39,5 +40,11 @@ layout: default
       </ul>
     </div>
   </div>
-  {% include common_sidebar.html %}
+  <h3>Recent Comments</h3>
+  <div class='sidebar-section'>
+    <div class='dsq-widget' id='recentcomments'>
+      <script type="text/javascript" src="http://madebynathan.disqus.com/recent_comments_widget.js?num_items=3&hide_avatars=0&avatar_size=32&excerpt_length=140"></script>
+      <a href="http://disqus.com/">Powered by Disqus</a>
+    </div>
+  </div>
 </div>

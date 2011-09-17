@@ -48,10 +48,10 @@ body.two-col {
     font-size: 12px;
   }
   a, a:visited {
-    color: $dark-gray;
+    color: #5577AA;
     text-shadow: 1px 1px 0 #ffffff; }
   a:hover {
-    color: #333333; }
+    color: #335588; }
   a#fork-on-github img {
     position: absolute;
     top: 0;
@@ -61,6 +61,15 @@ body.two-col {
     &:hover {
       opacity: 0.7;
     }
+  }
+  h3 {
+    font-size: 19px;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    a, a:visited {
+      color: $dark-gray;
+    }
+    a:hover { color: #4b4b4b; }
   }
   #container {
     @include container; }

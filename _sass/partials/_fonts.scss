@@ -1,8 +1,8 @@
-@mixin font-amaranth { font-family: 'Amaranth', fantasy, arial, serif; }
+@mixin font-amaranth { font-family: 'Amaranth', fantasy, Georgia, serif; }
 @mixin font-francois-one { font-family: 'Francois One', helvetica, arial, sans-serif; }
 
 @mixin font-helvetica { font-family: helvetica, arial, sans-serif; }
-@mixin font-droid-sans { font-family: 'Droid Sans', arial, sans-serif; }
-@mixin font-droid-sans-mono { font-family: 'Droid Sans Mono', arial, sans-serif; }
+@mixin font-droid-sans { font-family: 'Droid Sans', helvetica, arial, sans-serif; }
+@mixin font-droid-sans-mono { font-family: 'Droid Sans Mono', monospace; }
 @mixin font-lucida-unicode { font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
 

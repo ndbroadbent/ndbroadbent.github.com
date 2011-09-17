@@ -26,11 +26,9 @@
     @include font-francois-one;
     margin-top: 25px;
     a, a:visited {
-      color: #657590;
-    }
+      color: #5577AA; }
     a:hover {
-      color: #455580;
-    }
+      color: #335588; }
     ul {
       list-style-type: none;
       float: right;
@@ -42,6 +40,7 @@
       li {
         display: inline;
         margin-left: 0;
+        a { line-height: 23px; }
         form {
           width: 100px;
           display: inline;
