@@ -1,8 +1,5 @@
-require 'liquid'
-require "highline/import"
-
-module Post
-  class Generator
+module Generators
+  class Post
     def initialize(options = {:edit_with => :gedit})
       @options = options
       @time = Time.now

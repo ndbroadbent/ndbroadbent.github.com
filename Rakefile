@@ -3,8 +3,8 @@ require 'ruby-debug'
 
 desc "Generate a new post from the default template. Takes params from ENV variables or prompts for input."
 task :post do
-  require 'post_generator'
-  Post::Generator.new.generate_from_template("_post_templates/default.markdown")
+  require 'generators'
+  Generators::Post.new.generate_from_template("_post_templates/default.markdown")
 end
 
 namespace :haml do
