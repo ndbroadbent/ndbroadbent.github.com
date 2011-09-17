@@ -98,7 +98,8 @@
     margin-bottom: 20px;
     @include post-title;
     h6 {
-      margin: 0px; }
+      margin: 0px;
+      font-size: 12px; }
     p {
       @include font-droid-sans; } }
   #search {

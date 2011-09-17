@@ -627,8 +627,9 @@ body.bp #sidebar #tweets ul.tweet_list .tweet_avatar img {
 /* line 100, ../_sass/partials/_content.scss */
 #content .post-excerpt h6 {
   margin: 0px;
+  font-size: 12px;
 }
-/* line 102, ../_sass/partials/_content.scss */
+/* line 103, ../_sass/partials/_content.scss */
 #content .post-excerpt p {
   font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
@@ -654,36 +655,36 @@ body.bp #sidebar #tweets ul.tweet_list .tweet_avatar img {
   margin: 2px 0 2px;
   font-family: helvetica, arial, sans-serif;
 }
-/* line 109, ../_sass/partials/_content.scss */
+/* line 110, ../_sass/partials/_content.scss */
 #content #projects h2 {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   text-align: center;
   color: #676767;
   margin-bottom: 0px;
 }
-/* line 114, ../_sass/partials/_content.scss */
+/* line 115, ../_sass/partials/_content.scss */
 #content #projects h3 {
   color: #676767;
 }
-/* line 116, ../_sass/partials/_content.scss */
+/* line 117, ../_sass/partials/_content.scss */
 #content #projects h4 {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   text-align: center;
   color: #85a085;
 }
-/* line 120, ../_sass/partials/_content.scss */
+/* line 121, ../_sass/partials/_content.scss */
 #content #projects h4 a, #content #projects h4 a:visited {
   color: #85a085;
 }
-/* line 122, ../_sass/partials/_content.scss */
+/* line 123, ../_sass/partials/_content.scss */
 #content #projects h6 {
   margin-bottom: 0px;
 }
-/* line 124, ../_sass/partials/_content.scss */
+/* line 125, ../_sass/partials/_content.scss */
 #content #projects h6 a, #content #projects h6 a:visited {
   color: #85a085;
 }
-/* line 126, ../_sass/partials/_content.scss */
+/* line 127, ../_sass/partials/_content.scss */
 #content #projects h6 strong {
   color: #676767;
 }
