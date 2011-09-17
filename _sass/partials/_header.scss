@@ -6,6 +6,7 @@
     text-decoration: none; }
   #logo {
     @include column(9);
+    margin-right: 0;
     h1, h2 {
       text-shadow: 1px 1px 0 #ffffff;
     }
