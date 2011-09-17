@@ -11,8 +11,10 @@ body.bp {
     h3 {
       @include font-francois-one;
       color: #999999;
-      margin-bottom: 14px;
-      margin-left: -3px; }
+      margin-bottom: 9px;
+      padding-bottom: 3px;
+      margin-left: -3px;
+      border-bottom: 1px solid #dbdbdb; }
     .sidebar-section {
       margin-bottom: 24px;
     }
@@ -35,7 +37,6 @@ body.bp {
         padding-top: 0;
       }
     }
-
 
     // Latest / Related Posts
     // --------------------------------------------------------------
@@ -69,6 +70,14 @@ body.bp {
         border: 1px solid #d0d0d0;
         border-radius: 7px;
         margin: 0 0 15px 15px;
+      }
+    }
+
+    // Stack Overflow
+    // --------------------------------------------------------------
+    #stack-overflow {
+      img.stack-overflow {
+        margin-top: 7px;
       }
     }
 

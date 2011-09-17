@@ -245,18 +245,20 @@ body.bp #sidebar {
 body.bp #sidebar h3 {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   color: #999999;
-  margin-bottom: 14px;
+  margin-bottom: 9px;
+  padding-bottom: 3px;
   margin-left: -3px;
+  border-bottom: 1px solid #dbdbdb;
 }
-/* line 16, ../_sass/partials/_sidebar.scss */
+/* line 18, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar .sidebar-section {
   margin-bottom: 24px;
 }
-/* line 19, ../_sass/partials/_sidebar.scss */
+/* line 21, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar a:hover {
   text-decoration: underline !important;
 }
-/* line 24, ../_sass/partials/_sidebar.scss */
+/* line 26, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar li {
   margin-bottom: 7px;
   margin-top: 0;
@@ -266,7 +268,7 @@ body.bp #sidebar li {
   box-shadow: 0 1px 0 white inset;
   -webkit-box-shadow: 0 1px 0 white inset;
 }
-/* line 32, ../_sass/partials/_sidebar.scss */
+/* line 34, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar li:first-child {
   border-top: none;
   -moz-box-shadow: 0px 0px 0px white inset;
@@ -274,71 +276,75 @@ body.bp #sidebar li:first-child {
   -webkit-box-shadow: 0px 0px 0px white inset;
   padding-top: 0;
 }
-/* line 43, ../_sass/partials/_sidebar.scss */
+/* line 44, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #other-posts ul {
   list-style: none;
   padding-left: 0;
 }
-/* line 46, ../_sass/partials/_sidebar.scss */
+/* line 47, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #other-posts ul li {
   color: #85a085;
   text-shadow: 1px 1px 0 #fff;
   line-height: 16px;
 }
-/* line 50, ../_sass/partials/_sidebar.scss */
+/* line 51, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #other-posts ul li h6 {
   color: #85A085;
   font-family: helvetica, arial, sans-serif;
   margin: 2px 0;
 }
-/* line 55, ../_sass/partials/_sidebar.scss */
+/* line 56, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #other-posts ul li a {
   font-weight: normal;
   color: #333;
 }
-/* line 59, ../_sass/partials/_sidebar.scss */
+/* line 60, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #other-posts ul li a:hover {
   color: #111;
 }
-/* line 65, ../_sass/partials/_sidebar.scss */
+/* line 66, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #about {
   text-align: justify;
 }
-/* line 67, ../_sass/partials/_sidebar.scss */
+/* line 68, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #about p {
   font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
-/* line 68, ../_sass/partials/_sidebar.scss */
+/* line 69, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #about img.avatar {
   border: 1px solid #d0d0d0;
   border-radius: 7px;
   margin: 0 0 15px 15px;
 }
-/* line 78, ../_sass/partials/_sidebar.scss */
+/* line 79, ../_sass/partials/_sidebar.scss */
+body.bp #sidebar #stack-overflow img.stack-overflow {
+  margin-top: 7px;
+}
+/* line 87, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #google-search table {
   margin-bottom: 0;
 }
-/* line 79, ../_sass/partials/_sidebar.scss */
+/* line 88, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #google-search table.gsc-branding {
   display: none;
 }
-/* line 80, ../_sass/partials/_sidebar.scss */
+/* line 89, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #google-search .gsc-results {
   font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
-/* line 87, ../_sass/partials/_sidebar.scss */
+/* line 96, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget span.dsq-widget-comment {
   color: #444;
 }
-/* line 90, ../_sass/partials/_sidebar.scss */
+/* line 99, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget img.dsq-widget-avatar {
   padding: 0 7px 3px 0;
 }
-/* line 93, ../_sass/partials/_sidebar.scss */
+/* line 102, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget a {
   color: #555;
 }
-/* line 95, ../_sass/partials/_sidebar.scss */
+/* line 104, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget a.dsq-widget-user {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   font-weight: normal;
@@ -350,34 +356,34 @@ body.bp #sidebar #recentcomments.dsq-widget a.dsq-widget-user {
   padding: 1px 4px;
   text-decoration: none;
 }
-/* line 104, ../_sass/partials/_sidebar.scss */
+/* line 113, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget a.dsq-widget-user:hover {
   color: #444;
   background-color: #ddd;
 }
-/* line 109, ../_sass/partials/_sidebar.scss */
+/* line 118, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget p.dsq-widget-meta {
   margin-bottom: 0;
 }
-/* line 111, ../_sass/partials/_sidebar.scss */
+/* line 120, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget p.dsq-widget-meta a {
   color: #555;
   font-family: 'Francois One', helvetica, arial, sans-serif;
   text-decoration: none;
 }
-/* line 116, ../_sass/partials/_sidebar.scss */
+/* line 125, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget li.dsq-widget-item {
   padding-top: 10px;
 }
-/* line 118, ../_sass/partials/_sidebar.scss */
+/* line 127, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget li.dsq-widget-item:first-child {
   padding-top: 0;
 }
-/* line 124, ../_sass/partials/_sidebar.scss */
+/* line 133, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets {
   margin-top: 10px;
 }
-/* line 126, ../_sass/partials/_sidebar.scss */
+/* line 135, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -387,11 +393,11 @@ body.bp #sidebar #tweets ul.tweet_list {
   padding: 0;
   overflow-y: hidden;
 }
-/* line 134, ../_sass/partials/_sidebar.scss */
+/* line 143, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .awesome, body.bp #sidebar #tweets ul.tweet_list .epic {
   text-transform: uppercase;
 }
-/* line 136, ../_sass/partials/_sidebar.scss */
+/* line 145, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
@@ -400,26 +406,26 @@ body.bp #sidebar #tweets ul.tweet_list li {
   margin-bottom: 1px;
   padding-top: 10px;
 }
-/* line 143, ../_sass/partials/_sidebar.scss */
+/* line 152, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_time {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   color: #444;
 }
-/* line 146, ../_sass/partials/_sidebar.scss */
+/* line 155, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_time a {
   text-decoration: none;
   color: #555;
 }
-/* line 149, ../_sass/partials/_sidebar.scss */
+/* line 158, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_text {
   color: #444;
 }
-/* line 151, ../_sass/partials/_sidebar.scss */
+/* line 160, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_avatar {
   padding: 0 7px 3px 0;
   float: left;
 }
-/* line 154, ../_sass/partials/_sidebar.scss */
+/* line 163, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
