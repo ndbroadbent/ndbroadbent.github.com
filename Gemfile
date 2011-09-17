@@ -16,6 +16,7 @@ gem "gsl",        ">= 1.14.7"
 gem "jammit",     ">= 0.6.3"
 gem "foreman",    ">= 0.18.0"
 gem "rb-inotify", ">= 0.8.6"
+gem "highline"
 
 gem "ruby-debug19"
 
