@@ -1,0 +1,55 @@
+#header {
+  @include column(24);
+  margin-top: 18px;
+  padding-bottom: 10px;
+  a {
+    text-decoration: none; }
+  #logo {
+    @include column(9);
+    h1, h2 {
+      text-shadow: 1px 1px 0 #ffffff;
+    }
+    h1 {
+      margin-bottom: 0px;
+      font-family: 'Amaranth', fantasy, arial, serif;
+      font-size: 42px;
+    a:hover {
+      color: #555555; } }
+    h2 {
+      color: #aaaaaa;
+      font-family: 'Francois One', 'trebuchet MS', arial, sans-serif;
+      font-size: 16px;
+      margin: 3px 0 5px; } }
+  #menu {
+    @include column(14, true);
+    font-family: 'Oswald',fantasy,arial,serif;
+    margin-top: 25px;
+    a, a:visited {
+      color: #657590;
+    }
+    a:hover {
+      color: #455580;
+    }
+    ul {
+      list-style-type: none;
+      float: right;
+      margin: 0;
+      background-color: #E7E7E7;
+      border-bottom: 1px solid #DDDDDD;
+      border-right: 1px solid #DDDDDD;
+      border-radius: 5px 5px 5px 5px;
+      li {
+        display: inline;
+        margin-left: 0;
+        form {
+          width: 100px;
+          display: inline;
+          input {
+            width: 90px;
+            @include border-radius(5px);
+            border: 1px solid #999999;
+            padding: 3px 3px 3px 14px;
+            background: url(/images/agile-toolkit-icons/atk-icons-nobg.png) 0px -318px no-repeat scroll white;
+            -webkit-appearance: none;
+            -webkit-box-sizing: content-box; } } } } } }
+

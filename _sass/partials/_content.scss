@@ -1,0 +1,123 @@
+#content {
+  @include column(14, true);
+  @include prepend(1);
+  @include append(1);
+  padding-top: 9px;
+  padding-left: 0;
+  .post {
+    p, h4 {
+      font-family: 'Droid Sans', arial, sans-serif; }
+    h4 {
+      margin-bottom: 0px; }
+    h4 + p {
+      text-indent: 2em; }
+    code {
+      font-family: 'Droid Sans Mono', serif; }
+    p {
+      line-height: 140%; }
+    .header {
+      @include column(14, true);
+      padding: 6px 0 3px 0;
+      .title {
+        display: inline-block;
+        @include post-title;
+        margin-bottom: 0;
+        // limit width to allow room for social bar
+        &.limit_width {
+          @include column(11);
+          width: 416px;
+        }
+        h3 {
+          font-size: 23px;
+          line-height: 110%;
+          padding-bottom: 0;
+          a, a:visited {
+             text-decoration: none;
+          }
+        }
+        h6 {
+          text-shadow: 1px 1px 0 #FFFFFF;
+          margin: 1px 0 2px 0;
+        } }
+      .social_bar {
+        @include column(3, true);
+        width: 120px;
+        ul {
+          list-style-type: none;
+          float: right;
+          margin-right: 0px;
+          li {
+            display: inline-block; } } } }
+    .content {
+      border-top: 1px solid #ccc;
+      @include border-indent(0, 1px, 0, #fff);
+      padding-top: 12px;
+      clear: both;
+    }
+    img {
+      @include border-shadow(3px, 3px, 5px, #999999);
+      @include border-radius(7px); }
+    .highlight {
+      background-color: #303030;
+      color: #d4d4d4;
+      padding: 10px;
+      margin-bottom: 20px;
+      @include border-radius(7px);
+      overflow: auto;
+      border: {
+        right:  2px solid #fff;
+        bottom: 2px solid #fff;
+      }
+      pre {
+        margin: 0px; } }
+    .hackernews {
+      font-size: 1.3em;
+      text-align: right;
+      .heart {
+        color: #cc0000; }
+      a, a:visited {
+        background: transparent url(/images/hackernews.png) no-repeat center left;
+        display: inline-block;
+        padding-left: 16px; } }
+    blockquote {
+      p:before {
+        font: 48px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+        content: "“";
+        float: left;
+        margin-top: -12px; }
+      p:after {
+        content: "”";
+        font: 48px 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+        float: right; } } }
+  .post-excerpt {
+    margin-bottom: 20px;
+    @include post-title;
+    h6 {
+      margin: 0px; }
+    p {
+      font-family: 'Droid Sans', sans-serif; } }
+  #search {
+    .result {
+      @include post-title; } }
+  #projects {
+    @include post-title;
+    h2 {
+      font-family: 'Oswald',fantasy,arial,serif;
+      text-align: center;
+      color: $dark-gray;
+      margin-bottom: 0px; }
+    h3 {
+      color: $dark-gray; }
+    h4 {
+      font-family: 'Oswald',fantasy,arial,serif;
+      text-align: center;
+      color: $light-gray;
+      a, a:visited {
+        color: $light-gray; } }
+    h6 {
+      margin-bottom: 0px;
+      a, a:visited {
+        color: $light-gray; }
+      strong {
+        color: $dark-gray; } } } }
+

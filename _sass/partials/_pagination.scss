@@ -1,0 +1,26 @@
+.pagination {
+  text-align: center;
+  padding: 18px 0;
+  border-top: 1px solid #ccc;
+  @include border-indent(0, 1px, 0, #fff);
+  h3 {
+    display: inline-block;
+    margin: 0 17px;
+    background-color: #e4e4e4;
+    border-radius: 7px 7px 7px 7px;
+    padding: 10px 10px 9px 14px;
+    vertical-align: middle;
+    border-bottom: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    &:hover {
+      background-color: #d2d2d2;
+      a, a:visited {
+        color: #333;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
