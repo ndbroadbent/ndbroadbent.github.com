@@ -1,13 +1,14 @@
 #sidebar {
   @include column(8);
+  @include font-droid-sans;
   padding-top: 18px;
   padding-left: 28px;
   margin-right: 0;
   border-left: 1px solid #ccc;
   @include border-indent(1px, 0, 0, #fff);
-  @include font-oswald;
   text-shadow: 1px 1px 0 #ffffff;
   h3 {
+    @include font-francois-one;
     color: #999999;
     margin-bottom: 14px; }
   .sidebar-section {
@@ -21,8 +22,6 @@
       list-style: none;
       padding-left: 0;
       li {
-        @include font-helvetica;
-        font-weight: bold;
         color: $light-gray;
         text-shadow: 1px 1px 0 #fff;
         line-height: 16px;
@@ -30,6 +29,12 @@
         padding-top: 6px;
         border-top: 1px solid #ccc;
         @include border-indent(0, 1px, 0, #fff);
+        h6 {
+          color: #85A085;
+          @include font-helvetica;
+          margin: 2px 0;
+        }
+
         // Turn off border and padding for first li element
         &:first-child {
           border-top: none;
@@ -37,7 +42,7 @@
           padding-top: 0;
         }
         a {
-          @include font-arimo;
+
           font-weight: normal;
           color: #333;
           &:hover {
@@ -68,10 +73,8 @@
   // Disqus Comments
   // --------------------------------------------------------------
   #recentcomments.dsq-widget {
-    @include font-arimo;
     span.dsq-widget-comment {
       color: #444;
-      @include font-arimo;
     }
     img.dsq-widget-avatar {
       padding: 0 7px 3px 0;;
@@ -113,7 +116,6 @@
       .tweet_time a {
           color: #555; }
       .tweet_text {
-        @include font-arimo;
         color: #444; }
       .tweet_avatar {
         padding: 0 7px 3px 0;

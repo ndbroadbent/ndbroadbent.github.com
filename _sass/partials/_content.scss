@@ -104,14 +104,14 @@
   #projects {
     @include post-title;
     h2 {
-      @include font-oswald;
+      @include font-francois-one;
       text-align: center;
       color: $dark-gray;
       margin-bottom: 0px; }
     h3 {
       color: $dark-gray; }
     h4 {
-      @include font-oswald;
+      @include font-francois-one;
       text-align: center;
       color: $light-gray;
       a, a:visited {

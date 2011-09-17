@@ -23,7 +23,7 @@
       margin: 3px 0 5px; } }
   #menu {
     @include column(14, true);
-    @include font-oswald;
+    @include font-francois-one;
     margin-top: 25px;
     a, a:visited {
       color: #657590;
