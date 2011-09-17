@@ -15,8 +15,6 @@ So I wrote a very simple script and a launchd plist that runs the script every 3
 
 Save your wallpapers to <em>/var/mobile/Media/Wallpapers</em> (or wherever you like), then ssh the following script to your iPhone and run it. (It will need to be executable: chmod +x).
 
-&nbsp;
-
 {% highlight bash %}
 #!/bin/bash
 # This script sets up your iPhone to change the lock-screen wallpaper every 30 minutes.
