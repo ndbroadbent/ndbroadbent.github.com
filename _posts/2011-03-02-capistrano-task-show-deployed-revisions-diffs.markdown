@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Capistrano task - show deployed revisions & diffs
 wordpress_id: 380
@@ -15,7 +15,6 @@ If you run this 'cap revisions' task, it will show the currently deployed revisi
 
 Here it is:
 
-<br/>
 {% highlight ruby %}
 desc "Show currently deployed revision on server."
 task :revisions, :roles => :app do
@@ -45,8 +44,8 @@ end
 
 after "deploy", "revisions"
 {% endhighlight %}
-<br/>
 
 I spent a while getting the output nicely colorized and indented. Everything is tested with ruby 1.9.2, but let me know if you have problems with 1.8.7.
 
 Also, be careful <strong>not</strong> to chain this task <strong>before</strong> 'deploy', because the 'current_revision' method caches the path and messes up bundler. (lesson learnt the hard way..)
+

@@ -6,13 +6,14 @@ body.bp {
     @include border-indent(0, 1px, 0, #fff);
     h3 {
       display: inline-block;
-      margin: 0 17px;
+      margin: 0;
       background-color: #e4e4e4;
       border-radius: 7px 7px 7px 7px;
       padding: 10px 10px 9px 14px;
       vertical-align: middle;
       border-bottom: 1px solid #d2d2d2;
       border-right: 1px solid #d2d2d2;
+      @include font-droid-sans;
       &:hover {
         background-color: #d2d2d2;
         a, a:visited {
@@ -23,6 +24,8 @@ body.bp {
         text-decoration: none;
       }
     }
+    h3.previous-page { margin-right: 60px; }
+    h3.next-page     { margin-left:  60px; }
   }
 }
 

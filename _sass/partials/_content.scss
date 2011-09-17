@@ -4,6 +4,7 @@
   @include append(1);
   padding-top: 9px;
   padding-left: 0;
+  font-size: 14px;
   .post {
     p, h4 {
       @include font-droid-sans; }
@@ -38,6 +39,7 @@
         h6 {
           text-shadow: 1px 1px 0 #FFFFFF;
           margin: 1px 0 2px 0;
+          font-size: 12px;
         } }
       .social_bar {
         @include column(3, true);
@@ -60,6 +62,7 @@
     .highlight {
       background-color: #303030;
       color: #d4d4d4;
+      font-size: 12px;
       padding: 10px;
       margin-bottom: 20px;
       @include border-radius(7px);

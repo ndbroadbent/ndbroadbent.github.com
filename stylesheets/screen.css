@@ -246,21 +246,22 @@ a img {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   color: #999999;
   margin-bottom: 14px;
+  margin-left: -3px;
 }
-/* line 14, ../_sass/partials/_sidebar.scss */
+/* line 15, ../_sass/partials/_sidebar.scss */
 #sidebar .sidebar-section {
   margin-bottom: 24px;
 }
-/* line 17, ../_sass/partials/_sidebar.scss */
+/* line 18, ../_sass/partials/_sidebar.scss */
 #sidebar a:hover {
   text-decoration: underline !important;
 }
-/* line 24, ../_sass/partials/_sidebar.scss */
+/* line 25, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul {
   list-style: none;
   padding-left: 0;
 }
-/* line 27, ../_sass/partials/_sidebar.scss */
+/* line 28, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li {
   color: #85a085;
   text-shadow: 1px 1px 0 #fff;
@@ -272,13 +273,13 @@ a img {
   box-shadow: 0 1px 0 white inset;
   -webkit-box-shadow: 0 1px 0 white inset;
 }
-/* line 35, ../_sass/partials/_sidebar.scss */
+/* line 36, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li h6 {
   color: #85A085;
   font-family: helvetica, arial, sans-serif;
   margin: 2px 0;
 }
-/* line 42, ../_sass/partials/_sidebar.scss */
+/* line 43, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li:first-child {
   border-top: none;
   -moz-box-shadow: 0px 0px 0px white inset;
@@ -286,54 +287,54 @@ a img {
   -webkit-box-shadow: 0px 0px 0px white inset;
   padding-top: 0;
 }
-/* line 47, ../_sass/partials/_sidebar.scss */
+/* line 48, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li a {
   font-weight: normal;
   color: #333;
 }
-/* line 51, ../_sass/partials/_sidebar.scss */
+/* line 52, ../_sass/partials/_sidebar.scss */
 #sidebar #other-posts ul li a:hover {
   color: #111;
 }
-/* line 57, ../_sass/partials/_sidebar.scss */
+/* line 58, ../_sass/partials/_sidebar.scss */
 #sidebar #about {
   text-align: justify;
 }
-/* line 59, ../_sass/partials/_sidebar.scss */
+/* line 60, ../_sass/partials/_sidebar.scss */
 #sidebar #about p {
   font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
-/* line 60, ../_sass/partials/_sidebar.scss */
+/* line 61, ../_sass/partials/_sidebar.scss */
 #sidebar #about img.avatar {
   border: 1px solid #d0d0d0;
   border-radius: 7px;
   margin: 0 0 15px 15px;
 }
-/* line 70, ../_sass/partials/_sidebar.scss */
+/* line 71, ../_sass/partials/_sidebar.scss */
 #sidebar #google-search table {
   margin-bottom: 0;
 }
-/* line 71, ../_sass/partials/_sidebar.scss */
+/* line 72, ../_sass/partials/_sidebar.scss */
 #sidebar #google-search table.gsc-branding {
   display: none;
 }
-/* line 72, ../_sass/partials/_sidebar.scss */
+/* line 73, ../_sass/partials/_sidebar.scss */
 #sidebar #google-search .gsc-results {
   font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
-/* line 79, ../_sass/partials/_sidebar.scss */
+/* line 80, ../_sass/partials/_sidebar.scss */
 #sidebar #recentcomments.dsq-widget span.dsq-widget-comment {
   color: #444;
 }
-/* line 82, ../_sass/partials/_sidebar.scss */
+/* line 83, ../_sass/partials/_sidebar.scss */
 #sidebar #recentcomments.dsq-widget img.dsq-widget-avatar {
   padding: 0 7px 3px 0;
 }
-/* line 85, ../_sass/partials/_sidebar.scss */
+/* line 86, ../_sass/partials/_sidebar.scss */
 #sidebar #recentcomments.dsq-widget a {
   color: #555;
 }
-/* line 87, ../_sass/partials/_sidebar.scss */
+/* line 88, ../_sass/partials/_sidebar.scss */
 #sidebar #recentcomments.dsq-widget a.dsq-widget-user {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   font-weight: normal;
@@ -344,22 +345,22 @@ a img {
   padding: 1px 4px;
   text-decoration: none;
 }
-/* line 95, ../_sass/partials/_sidebar.scss */
+/* line 96, ../_sass/partials/_sidebar.scss */
 #sidebar #recentcomments.dsq-widget a.dsq-widget-user:hover {
   color: #444;
   background-color: #ddd;
 }
-/* line 100, ../_sass/partials/_sidebar.scss */
+/* line 101, ../_sass/partials/_sidebar.scss */
 #sidebar #recentcomments.dsq-widget .dsq-widget-meta a {
   color: #555;
   font-family: 'Francois One', helvetica, arial, sans-serif;
   text-decoration: none;
 }
-/* line 109, ../_sass/partials/_sidebar.scss */
+/* line 110, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets {
   margin-top: 10px;
 }
-/* line 111, ../_sass/partials/_sidebar.scss */
+/* line 112, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -369,37 +370,37 @@ a img {
   padding: 0;
   overflow-y: hidden;
 }
-/* line 119, ../_sass/partials/_sidebar.scss */
+/* line 120, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .awesome, #sidebar #tweets ul.tweet_list .epic {
   text-transform: uppercase;
 }
-/* line 121, ../_sass/partials/_sidebar.scss */
+/* line 122, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0.5em;
   padding-left: 0;
 }
-/* line 126, ../_sass/partials/_sidebar.scss */
+/* line 127, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_time {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   color: #444;
 }
-/* line 129, ../_sass/partials/_sidebar.scss */
+/* line 130, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_time a {
   text-decoration: none;
   color: #555;
 }
-/* line 132, ../_sass/partials/_sidebar.scss */
+/* line 133, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_text {
   color: #444;
 }
-/* line 134, ../_sass/partials/_sidebar.scss */
+/* line 135, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_avatar {
   padding: 0 7px 3px 0;
   float: left;
 }
-/* line 137, ../_sass/partials/_sidebar.scss */
+/* line 138, ../_sass/partials/_sidebar.scss */
 #sidebar #tweets ul.tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
@@ -414,32 +415,33 @@ a img {
   padding-right: 40px;
   padding-top: 9px;
   padding-left: 0;
+  font-size: 14px;
 }
 /* line 147, ../../../.rvm/gems/ruby-1.9.2-p180@madebynathan.github.com/gems/compass-0.11.3/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #content {
   overflow-x: hidden;
 }
-/* line 8, ../_sass/partials/_content.scss */
+/* line 9, ../_sass/partials/_content.scss */
 #content .post p, #content .post h4 {
   font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
-/* line 10, ../_sass/partials/_content.scss */
+/* line 11, ../_sass/partials/_content.scss */
 #content .post h4 {
   margin-bottom: 0px;
 }
-/* line 12, ../_sass/partials/_content.scss */
+/* line 13, ../_sass/partials/_content.scss */
 #content .post h4 + p {
   text-indent: 2em;
 }
-/* line 14, ../_sass/partials/_content.scss */
+/* line 15, ../_sass/partials/_content.scss */
 #content .post code {
   font-family: 'Droid Sans Mono', monospace;
 }
-/* line 16, ../_sass/partials/_content.scss */
+/* line 17, ../_sass/partials/_content.scss */
 #content .post p {
   line-height: 140%;
 }
-/* line 18, ../_sass/partials/_content.scss */
+/* line 19, ../_sass/partials/_content.scss */
 #content .post .header {
   display: inline;
   float: left;
@@ -451,7 +453,7 @@ a img {
 * html #content .post .header {
   overflow-x: hidden;
 }
-/* line 21, ../_sass/partials/_content.scss */
+/* line 22, ../_sass/partials/_content.scss */
 #content .post .header .title {
   display: inline-block;
   margin-bottom: 0;
@@ -467,7 +469,7 @@ a img {
   margin: 2px 0 2px;
   font-family: helvetica, arial, sans-serif;
 }
-/* line 26, ../_sass/partials/_content.scss */
+/* line 27, ../_sass/partials/_content.scss */
 #content .post .header .title.limit_width {
   display: inline;
   float: left;
@@ -479,22 +481,23 @@ a img {
 * html #content .post .header .title.limit_width {
   overflow-x: hidden;
 }
-/* line 30, ../_sass/partials/_content.scss */
+/* line 31, ../_sass/partials/_content.scss */
 #content .post .header .title h3 {
   font-size: 22px;
   line-height: 110%;
   padding-bottom: 0;
 }
-/* line 34, ../_sass/partials/_content.scss */
+/* line 35, ../_sass/partials/_content.scss */
 #content .post .header .title h3 a, #content .post .header .title h3 a:visited {
   text-decoration: none;
 }
-/* line 38, ../_sass/partials/_content.scss */
+/* line 39, ../_sass/partials/_content.scss */
 #content .post .header .title h6 {
   text-shadow: 1px 1px 0 #FFFFFF;
   margin: 1px 0 2px 0;
+  font-size: 12px;
 }
-/* line 42, ../_sass/partials/_content.scss */
+/* line 44, ../_sass/partials/_content.scss */
 #content .post .header .social_bar {
   display: inline;
   float: left;
@@ -506,17 +509,17 @@ a img {
 * html #content .post .header .social_bar {
   overflow-x: hidden;
 }
-/* line 45, ../_sass/partials/_content.scss */
+/* line 47, ../_sass/partials/_content.scss */
 #content .post .header .social_bar ul {
   list-style-type: none;
   float: right;
   margin-right: 0px;
 }
-/* line 49, ../_sass/partials/_content.scss */
+/* line 51, ../_sass/partials/_content.scss */
 #content .post .header .social_bar ul li {
   display: inline-block;
 }
-/* line 51, ../_sass/partials/_content.scss */
+/* line 53, ../_sass/partials/_content.scss */
 #content .post .content {
   border-top: 1px solid #ccc;
   -moz-box-shadow: 0 1px 0 white inset;
@@ -525,7 +528,7 @@ a img {
   padding-top: 12px;
   clear: both;
 }
-/* line 57, ../_sass/partials/_content.scss */
+/* line 59, ../_sass/partials/_content.scss */
 #content .post img {
   -moz-box-shadow: 3px 3px 5px #999999;
   box-shadow: 3px 3px 5px #999999;
@@ -533,10 +536,11 @@ a img {
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
-/* line 60, ../_sass/partials/_content.scss */
+/* line 62, ../_sass/partials/_content.scss */
 #content .post .highlight {
   background-color: #303030;
   color: #d4d4d4;
+  font-size: 12px;
   padding: 10px;
   margin-bottom: 20px;
   -moz-border-radius: 7px;
@@ -545,42 +549,42 @@ a img {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
-/* line 71, ../_sass/partials/_content.scss */
+/* line 74, ../_sass/partials/_content.scss */
 #content .post .highlight pre {
   margin: 0px;
 }
-/* line 73, ../_sass/partials/_content.scss */
+/* line 76, ../_sass/partials/_content.scss */
 #content .post .hackernews {
   font-size: 1.3em;
   text-align: right;
 }
-/* line 76, ../_sass/partials/_content.scss */
+/* line 79, ../_sass/partials/_content.scss */
 #content .post .hackernews .heart {
   color: #cc0000;
 }
-/* line 78, ../_sass/partials/_content.scss */
+/* line 81, ../_sass/partials/_content.scss */
 #content .post .hackernews a, #content .post .hackernews a:visited {
   background: transparent url(/images/hackernews.png) no-repeat center left;
   display: inline-block;
   padding-left: 16px;
 }
-/* line 83, ../_sass/partials/_content.scss */
+/* line 86, ../_sass/partials/_content.scss */
 #content .post blockquote p {
   font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   font-size: 48px;
 }
-/* line 87, ../_sass/partials/_content.scss */
+/* line 90, ../_sass/partials/_content.scss */
 #content .post blockquote p:before {
   content: "“";
   float: left;
   margin-top: -12px;
 }
-/* line 91, ../_sass/partials/_content.scss */
+/* line 94, ../_sass/partials/_content.scss */
 #content .post blockquote p:after {
   content: "”";
   float: right;
 }
-/* line 94, ../_sass/partials/_content.scss */
+/* line 97, ../_sass/partials/_content.scss */
 #content .post-excerpt {
   margin-bottom: 20px;
 }
@@ -595,11 +599,11 @@ a img {
   margin: 2px 0 2px;
   font-family: helvetica, arial, sans-serif;
 }
-/* line 97, ../_sass/partials/_content.scss */
+/* line 100, ../_sass/partials/_content.scss */
 #content .post-excerpt h6 {
   margin: 0px;
 }
-/* line 99, ../_sass/partials/_content.scss */
+/* line 102, ../_sass/partials/_content.scss */
 #content .post-excerpt p {
   font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
@@ -625,36 +629,36 @@ a img {
   margin: 2px 0 2px;
   font-family: helvetica, arial, sans-serif;
 }
-/* line 106, ../_sass/partials/_content.scss */
+/* line 109, ../_sass/partials/_content.scss */
 #content #projects h2 {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   text-align: center;
   color: #676767;
   margin-bottom: 0px;
 }
-/* line 111, ../_sass/partials/_content.scss */
+/* line 114, ../_sass/partials/_content.scss */
 #content #projects h3 {
   color: #676767;
 }
-/* line 113, ../_sass/partials/_content.scss */
+/* line 116, ../_sass/partials/_content.scss */
 #content #projects h4 {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   text-align: center;
   color: #85a085;
 }
-/* line 117, ../_sass/partials/_content.scss */
+/* line 120, ../_sass/partials/_content.scss */
 #content #projects h4 a, #content #projects h4 a:visited {
   color: #85a085;
 }
-/* line 119, ../_sass/partials/_content.scss */
+/* line 122, ../_sass/partials/_content.scss */
 #content #projects h6 {
   margin-bottom: 0px;
 }
-/* line 121, ../_sass/partials/_content.scss */
+/* line 124, ../_sass/partials/_content.scss */
 #content #projects h6 a, #content #projects h6 a:visited {
   color: #85a085;
 }
-/* line 123, ../_sass/partials/_content.scss */
+/* line 126, ../_sass/partials/_content.scss */
 #content #projects h6 strong {
   color: #676767;
 }
@@ -671,25 +675,34 @@ body.bp .pagination {
 /* line 7, ../_sass/partials/_pagination.scss */
 body.bp .pagination h3 {
   display: inline-block;
-  margin: 0 17px;
+  margin: 0;
   background-color: #e4e4e4;
   border-radius: 7px 7px 7px 7px;
   padding: 10px 10px 9px 14px;
   vertical-align: middle;
   border-bottom: 1px solid #d2d2d2;
   border-right: 1px solid #d2d2d2;
+  font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
-/* line 16, ../_sass/partials/_pagination.scss */
+/* line 17, ../_sass/partials/_pagination.scss */
 body.bp .pagination h3:hover {
   background-color: #d2d2d2;
 }
-/* line 18, ../_sass/partials/_pagination.scss */
+/* line 19, ../_sass/partials/_pagination.scss */
 body.bp .pagination h3:hover a, body.bp .pagination h3:hover a:visited {
   color: #333;
 }
-/* line 22, ../_sass/partials/_pagination.scss */
+/* line 23, ../_sass/partials/_pagination.scss */
 body.bp .pagination h3 a, body.bp .pagination h3 a:visited {
   text-decoration: none;
+}
+/* line 27, ../_sass/partials/_pagination.scss */
+body.bp .pagination h3.previous-page {
+  margin-right: 60px;
+}
+/* line 28, ../_sass/partials/_pagination.scss */
+body.bp .pagination h3.next-page {
+  margin-left: 60px;
 }
 
 /* line 2, ../_sass/partials/_404.scss */
@@ -965,21 +978,18 @@ body.bp .bottom {
 /* line 45, ../_sass/screen.scss */
 body.two-col {
   background-color: #f3f3f3;
-}
-/* line 47, ../_sass/screen.scss */
-body.two-col p, body.two-col ol, body.two-col ul {
   font-size: 12px;
 }
-/* line 50, ../_sass/screen.scss */
+/* line 48, ../_sass/screen.scss */
 body.two-col a, body.two-col a:visited {
   color: #5577AA;
   text-shadow: 1px 1px 0 #ffffff;
 }
-/* line 53, ../_sass/screen.scss */
+/* line 51, ../_sass/screen.scss */
 body.two-col a:hover {
   color: #335588;
 }
-/* line 55, ../_sass/screen.scss */
+/* line 53, ../_sass/screen.scss */
 body.two-col a#fork-on-github img {
   position: absolute;
   top: 0;
@@ -987,30 +997,30 @@ body.two-col a#fork-on-github img {
   border: 0;
   opacity: 0.65;
 }
-/* line 61, ../_sass/screen.scss */
+/* line 59, ../_sass/screen.scss */
 body.two-col a#fork-on-github img:hover {
   opacity: 0.7;
 }
-/* line 65, ../_sass/screen.scss */
+/* line 63, ../_sass/screen.scss */
 body.two-col h3 {
   font-size: 19px;
 }
-/* line 69, ../_sass/screen.scss */
+/* line 67, ../_sass/screen.scss */
 body.two-col h1 a, body.two-col h1 a:visited, body.two-col h2 a, body.two-col h2 a:visited, body.two-col h3 a, body.two-col h3 a:visited, body.two-col h4 a, body.two-col h4 a:visited, body.two-col h5 a, body.two-col h5 a:visited, body.two-col h6 a, body.two-col h6 a:visited {
   color: #676767;
 }
-/* line 72, ../_sass/screen.scss */
+/* line 70, ../_sass/screen.scss */
 body.two-col h1 a:hover, body.two-col h2 a:hover, body.two-col h3 a:hover, body.two-col h4 a:hover, body.two-col h5 a:hover, body.two-col h6 a:hover {
   color: #4b4b4b;
 }
-/* line 74, ../_sass/screen.scss */
+/* line 72, ../_sass/screen.scss */
 body.two-col #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 77, ../_sass/screen.scss */
+/* line 75, ../_sass/screen.scss */
 body.two-col #footer {
   display: inline;
   float: left;
@@ -1027,7 +1037,7 @@ body.two-col #footer {
   overflow-x: hidden;
 }
 
-/* line 85, ../_sass/screen.scss */
+/* line 83, ../_sass/screen.scss */
 #_d ul li {
   float: left;
 }

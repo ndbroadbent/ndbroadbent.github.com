@@ -40,7 +40,7 @@ color_index() {
 }
 {% endhighlight %}
 
-<p>Calling 'color_index' produces something like this:</p>
+Calling 'color_index' produces something like this:
 
 <img src="/images/posts/2011/08/color_index3.png" alt="color_index()" width="540px" />
 
