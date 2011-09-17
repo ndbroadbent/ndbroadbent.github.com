@@ -51,14 +51,16 @@ body.bp {
           h6 {
             color: #85A085;
             @include font-helvetica;
-            margin: 2px 0;
+            margin: 1px 0;
           }
           a {
-
+            @include font-francois-one;
             font-weight: normal;
-            color: #333;
+            text-decoration: none;
+            color: #676767;
+            font-size: 12px;
             &:hover {
-              color: #111;
+              color: #4b4b4b;
             } } } } }
 
     // About
