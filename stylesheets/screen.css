@@ -370,20 +370,21 @@ body.bp #sidebar #recentcomments.dsq-widget p.dsq-widget-meta a {
   color: #555;
   font-family: 'Francois One', helvetica, arial, sans-serif;
   text-decoration: none;
+  font-size: 12px;
 }
-/* line 125, ../_sass/partials/_sidebar.scss */
+/* line 126, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget li.dsq-widget-item {
   padding-top: 10px;
 }
-/* line 127, ../_sass/partials/_sidebar.scss */
+/* line 128, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #recentcomments.dsq-widget li.dsq-widget-item:first-child {
   padding-top: 0;
 }
-/* line 133, ../_sass/partials/_sidebar.scss */
+/* line 134, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets {
   margin-top: 10px;
 }
-/* line 135, ../_sass/partials/_sidebar.scss */
+/* line 136, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -393,11 +394,11 @@ body.bp #sidebar #tweets ul.tweet_list {
   padding: 0;
   overflow-y: hidden;
 }
-/* line 143, ../_sass/partials/_sidebar.scss */
+/* line 144, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .awesome, body.bp #sidebar #tweets ul.tweet_list .epic {
   text-transform: uppercase;
 }
-/* line 145, ../_sass/partials/_sidebar.scss */
+/* line 146, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
@@ -406,26 +407,26 @@ body.bp #sidebar #tweets ul.tweet_list li {
   margin-bottom: 1px;
   padding-top: 10px;
 }
-/* line 152, ../_sass/partials/_sidebar.scss */
+/* line 153, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_time {
   font-family: 'Francois One', helvetica, arial, sans-serif;
   color: #444;
 }
-/* line 155, ../_sass/partials/_sidebar.scss */
+/* line 156, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_time a {
   text-decoration: none;
   color: #555;
 }
-/* line 158, ../_sass/partials/_sidebar.scss */
+/* line 159, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_text {
   color: #444;
 }
-/* line 160, ../_sass/partials/_sidebar.scss */
+/* line 161, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_avatar {
   padding: 0 7px 3px 0;
   float: left;
 }
-/* line 163, ../_sass/partials/_sidebar.scss */
+/* line 164, ../_sass/partials/_sidebar.scss */
 body.bp #sidebar #tweets ul.tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
