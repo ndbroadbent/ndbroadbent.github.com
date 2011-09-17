@@ -97,6 +97,9 @@
   .post-excerpt {
     margin-bottom: 20px;
     @include post-title;
+    h3 a {
+      text-decoration: none;
+    }
     h6 {
       margin: 0px;
       font-size: 12px; }
