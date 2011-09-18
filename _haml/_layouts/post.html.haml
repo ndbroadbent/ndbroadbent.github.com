@@ -42,19 +42,9 @@
   %noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 
 #sidebar
-  %h3 Related Posts
-  .sidebar-section
-    #other-posts
-      %ul
-        {% for post in site.related_posts limit:5 %}
-        %li
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          %h6 {{ post.date | date: "%B %d, %Y"}}
-        {% endfor %}
-
-  %h3 Search
-  .sidebar-section
-    #google-search
-
-  {% include common_sidebar.html %}
+  {% include sidebar/search.html %}
+  {% include sidebar/related_posts.html %}
+  {% include sidebar/about.html %}
+  {% include sidebar/twitter.html %}
+  {% include sidebar/stack_overflow.html %}
 

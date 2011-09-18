@@ -21,30 +21,4 @@ layout: default
   </div>
   {% include pagination.html %}
 </div>
-<div id='sidebar'>
-  <h3>Search</h3>
-  <div class='sidebar-section'>
-    <div id='google-search'></div>
-  </div>
-  {% include common_sidebar.html %}
-  <h3>Latest Posts</h3>
-  <div class='sidebar-section'>
-    <div id='other-posts'>
-      <ul>
-        {% for post in site.posts limit:5 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <h6>{{ post.date | date: "%B %d, %Y"}}</h6>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-  <h3>Recent Comments</h3>
-  <div class='sidebar-section'>
-    <div class='dsq-widget' id='recentcomments'>
-      <script type="text/javascript" src="http://madebynathan.disqus.com/recent_comments_widget.js?num_items=3&hide_avatars=0&avatar_size=32&excerpt_length=140"></script>
-      <a href="http://disqus.com/">Powered by Disqus</a>
-    </div>
-  </div>
-</div>
+{% include default_sidebar.html %}
