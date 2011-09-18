@@ -22,5 +22,7 @@ keywords:     ruby, rails, ubuntu, linux, iphone, electronics, arduino, projects
 author:       Nathan Broadbent
 email:        nathan.f77@gmail.com
 
-exclude: ['haml', 'sass', 'Rakefile', 'README.textile', 'config.rb']
+exclude: ['Rakefile', 'README.textile', 'config.rb']
+
+exclude: makelive.sh, ideas.txt, newpost.rb
 
