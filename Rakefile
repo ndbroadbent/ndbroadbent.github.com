@@ -7,6 +7,15 @@ task :post do
   Generator::Post.new.generate_from_template("_post_templates/default.markdown")
 end
 
+desc "Execute all watchers in one process"
+task :watch do
+  require 'watcher'
+  [Watcher::Haml, Watcher::Jammit, Watcher::Image, Watcher::Asset].each do |watcher|
+    Thread.new { watcher.watch }.run
+  end
+  while true; end
+end
+
 namespace :haml do
   desc "Watch the site's HAML templates and recompile them when they change"
   task(:watch) { require 'watcher/haml'; Watcher::Haml.watch }

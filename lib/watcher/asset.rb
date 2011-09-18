@@ -1,4 +1,4 @@
-require 'watcher'
+require 'watcher/base'
 
 module Watcher
   class Asset < Watcher::Base

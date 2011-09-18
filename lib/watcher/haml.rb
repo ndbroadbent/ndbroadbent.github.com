@@ -1,4 +1,4 @@
-require 'watcher'
+require 'watcher/base'
 require 'haml'
 
 module Watcher
