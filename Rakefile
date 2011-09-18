@@ -3,8 +3,8 @@ require 'ruby-debug'
 
 desc "Generate a new post from the default template. Takes params from ENV variables or prompts for input."
 task :post do
-  require 'generators'
-  Generators::Post.new.generate_from_template("_post_templates/default.markdown")
+  require 'generator'
+  Generator::Post.new.generate_from_template("_post_templates/default.markdown")
 end
 
 namespace :haml do
@@ -22,5 +22,10 @@ namespace :image do
   task(:watch) { require 'watcher/image'; Watcher::Image.watch }
   desc "Delete all previously generated images, and regenerates from Watcher::Image::SIZES"
   task(:regenerate) { require 'watcher/image'; Watcher::Image.regenerate_all }
+end
+
+namespace :asset do
+  desc "Push changed assets directly into the _site directory. Jekyll takes a while to render posts, and does this last."
+  task(:watch) { require 'watcher/asset'; Watcher::Asset.watch }
 end
 

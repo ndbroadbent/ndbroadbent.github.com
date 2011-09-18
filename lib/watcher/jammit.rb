@@ -32,7 +32,7 @@ module Watcher
       def run_jammit(*args)
         puts (args.any? ? ">>> #{args[1]} changed. " : ">>> ") << "Running Jammit..."
         system(config["command"])
-        puts "    Assets packed."
+        puts "    Jammit: Assets packed."
       end
     end
   end

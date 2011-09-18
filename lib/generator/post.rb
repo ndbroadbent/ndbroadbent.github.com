@@ -1,4 +1,4 @@
-module Generators
+module Generator
   class Post
     def initialize(options = {:edit_with => :gedit})
       @options = options

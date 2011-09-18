@@ -42,6 +42,8 @@ module Watcher
         begin
           origin = File.open(File.join(config["path"], file)).read
           result = ::Haml::Engine.new(origin).render
+          # Ensure output directory exists
+          system("mkdir -p #{File.dirname(output_file_name)}")
           File.open(output_file_name,'w') {|f| f.write(result)}
           # Write rendered HTML to file
           puts status_message(output_file_name)
