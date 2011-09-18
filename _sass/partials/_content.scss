@@ -56,12 +56,12 @@
             display: inline-block; } } } }
     .content {
       background-color: #f9f9f9;
-      @include border-indent(1px, 1px, 3px, #999);
+      @include border-indent(1px, 1px, 3px, #aaa);
       padding: 15px 19px 19px;
       clear: both;
     }
     img {
-      @include border-shadow(1px, 1px, 3px, #444); }
+      @include border-shadow(1px, 1px, 3px, #555); }
     .highlight {
       background-color: #303030;
       color: #d4d4d4;
