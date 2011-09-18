@@ -4,7 +4,7 @@
   {% elsif paginator.previous_page == 1 %}
   <h3 class='previous-page'><a href="/">&lArr; Previous Page</a></h3>
   {% endif %}
-  {% if paginator.next_page < paginator.total_pages %}
+  {% if paginator.next_page <= paginator.total_pages %}
   <h3 class='next-page'><a href="/page{{ paginator.next_page }}">Next Page &rArr;</a></h3>
   {% endif %}
 </div>
