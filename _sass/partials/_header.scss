@@ -43,13 +43,5 @@
         a { line-height: 23px; }
         form {
           width: 100px;
-          display: inline;
-          input {
-            width: 90px;
-            @include border-radius(5px);
-            border: 1px solid #999999;
-            padding: 3px 3px 3px 14px;
-            background: url(/images/agile-toolkit-icons/atk-icons-nobg.png) 0px -318px no-repeat scroll white;
-            -webkit-appearance: none;
-            -webkit-box-sizing: content-box; } } } } } }
+          display: inline; } } } } }
 

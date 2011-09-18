@@ -4,8 +4,11 @@
   @include append(1);
   padding-top: 9px;
   padding-left: 0;
+  padding-right: 0;
+  width: 600px;
   font-size: 14px;
   .post {
+    margin-bottom: 20px;
     p, h4 {
       @include font-droid-sans; }
     h4 {
@@ -22,7 +25,8 @@
       .title {
         display: inline-block;
         @include post-title;
-        margin-bottom: 0;
+        margin: 0;
+        margin-bottom: 4px;
         // limit width to allow room for social bar
         &.limit_width {
           @include column(11);
@@ -38,7 +42,7 @@
         }
         h6 {
           text-shadow: 1px 1px 0 #FFFFFF;
-          margin: 1px 0 2px 0;
+          margin-top: 1px;
           font-size: 12px;
         } }
       .social_bar {
@@ -51,9 +55,9 @@
           li {
             display: inline-block; } } } }
     .content {
-      border-top: 1px solid #ccc;
-      @include border-indent(0, 1px, 0, #fff);
-      padding-top: 12px;
+      background-color: #fbfbfb;
+      @include border-indent(1px, 1px, 3px, #aaa);
+      padding: 11px 14px 14px;
       clear: both;
     }
     img {
