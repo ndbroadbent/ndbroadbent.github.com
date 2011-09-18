@@ -2,3 +2,10 @@ _site
 .DS_Store
 .sass-cache/
 Design
+
+# Ignore the middle point of the CSS render chain. (SASS -> {css} -> Jammit asset)
+stylesheets/screen.css
+stylesheets/syntax.css
+stylesheets/print.css
+stylesheets/ie.css
+
