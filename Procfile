@@ -1,4 +1,4 @@
-jekyll:  bundle exec jekyll --server
+jekyll:  bundle exec jekyll --server --no-lsi
 compass: bundle exec compass watch --sass-dir _sass
 haml:    bundle exec rake haml:watch
 jammit:  bundle exec rake jammit:watch
