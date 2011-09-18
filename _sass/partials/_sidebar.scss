@@ -94,6 +94,7 @@ body.bp {
         border: 1px solid #999999;
         padding: 3px;
         padding-left: 18px;
+        width: 155px;
         background: url(/images/agile-toolkit-icons/atk-icons-nobg.png) 0px -318px no-repeat scroll white;
         -webkit-appearance: none;
         -webkit-box-sizing: content-box; }
@@ -114,8 +115,7 @@ body.bp {
         @include font-francois-one;
         font-weight: normal;
         background-color: #E2E2E2;
-        border-right: 1px solid #fefefe;
-        border-bottom: 1px solid #fefefe;
+        border: 1px solid #ccc;
         @include border-radius(4px);
         padding: 1px 4px;
         text-decoration: none;
