@@ -56,7 +56,7 @@
             display: inline-block; } } } }
     .content {
       background-color: #f9f9f9;
-      @include border-indent(1px, 1px, 3px, #aaa);
+      @include border-indent(1px, 1px, 4px, #bbb);
       padding: 15px 19px 19px;
       clear: both;
     }
