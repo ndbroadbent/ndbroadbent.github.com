@@ -1,14 +1,19 @@
 #header {
   @include column(24);
   margin-top: 18px;
-  padding-bottom: 10px;
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+    li { display: inline; }
+  }
   a {
     text-decoration: none; }
   #logo {
-    @include column(9);
-    margin-right: 0;
+    margin-bottom: 20px;
     h1, h2 {
       text-shadow: 1px 1px 0 #ffffff;
+      display: inline;
     }
     h1 {
       margin-bottom: 0px;
@@ -19,29 +24,35 @@
     h2 {
       color: #aaaaaa;
       @include font-francois-one;
-      font-size: 16px;
-      margin: 3px 0 5px; } }
+      font-size: 18px;
+      margin: 3px 10px 5px;
+      vertical-align: bottom; } }
   #menu {
-    @include column(14, true);
     @include font-francois-one;
-    margin-top: 25px;
+    clear: both;
+    float: left;
+    margin-bottom: 8px;
     a, a:visited {
-      color: #5577AA; }
+      color: #6b6b6b; }
     a:hover {
-      color: #335588; }
-    ul {
-      list-style-type: none;
-      float: right;
+      color: #559966; }
+    ul.icons {
       margin: 0;
-      background-color: #E7E7E7;
+      padding: 8px 8px 9px 14px;
+      background-color: #e8e8e8;
       border-bottom: 1px solid #DDDDDD;
       border-right: 1px solid #DDDDDD;
       border-radius: 5px 5px 5px 5px;
       li {
-        display: inline;
         margin-left: 0;
+        margin-right: 14px;
         a { line-height: 23px; }
         form {
           width: 100px;
-          display: inline; } } } } }
+          display: inline; } }
+      li.divider { margin: 0 65px; }
+      li.no-text { margin-right: 4px; }
+      &.profiles {
+        margin-left: 30px;
+      } } } }
 

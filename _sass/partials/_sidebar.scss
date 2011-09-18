@@ -3,8 +3,9 @@ body.bp {
     @include column(8);
     @include font-droid-sans;
     padding-top: 18px;
-    padding-left: 28px;
+    padding-left: 37px;
     margin-right: 0;
+    margin-top: -68px;
     text-shadow: 1px 1px 0 #ffffff;
     h3 {
       @include font-francois-one;
