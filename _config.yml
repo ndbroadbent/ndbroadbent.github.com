@@ -11,6 +11,8 @@ rdiscount:
   extensions: []
 paginate:    5
 
+exclude: Rakefile, README.textile, lib
+
 #
 # Site configuration
 #
@@ -21,8 +23,4 @@ description:  ruby & rails, ubuntu linux, iphone, electronics
 keywords:     ruby, rails, ubuntu, linux, iphone, electronics, arduino, projects, hobbies
 author:       Nathan Broadbent
 email:        nathan.f77@gmail.com
-
-exclude: ['Rakefile', 'README.textile', 'config.rb']
-
-exclude: makelive.sh, ideas.txt, newpost.rb
 
