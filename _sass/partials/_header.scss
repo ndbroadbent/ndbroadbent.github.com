@@ -51,8 +51,9 @@
         form {
           width: 100px;
           display: inline; } }
-      li.divider { margin: 0 65px; }
-      li.no-text { margin-right: 4px; }
+      li.no-text {
+        float: right;
+        margin-right: 4px; }
       &.profiles {
         margin-left: 30px;
       } } } }
