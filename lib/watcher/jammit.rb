@@ -13,9 +13,8 @@ module Watcher
       end
 
       def watch
-        run_jammit
-
         puts ">>> Jammit Watcher is watching for changes. Press Ctrl-C to Stop."
+        run_jammit
         FSSM.monitor do
           path 'javascripts/' do
             glob Jammit.watched_files[:js]
@@ -32,7 +31,7 @@ module Watcher
       def run_jammit(*args)
         puts (args.any? ? ">>> #{args[1]} changed. " : ">>> ") << "Running Jammit..."
         system(config["command"])
-        puts "    Jammit: Assets packed."
+        puts ">>> Jammit: Assets packed."
       end
     end
   end

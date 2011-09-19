@@ -5,8 +5,8 @@ module Watcher
   class Haml < Watcher::Base
     class << self
       def watch
-        refresh
         puts ">>> Haml Watcher is watching for changes. Press Ctrl-C to Stop."
+        refresh
         FSSM.monitor(config["path"], "**/*.haml") do
           update do |base, relative|
             puts ">>> Change detected to: #{relative}"
