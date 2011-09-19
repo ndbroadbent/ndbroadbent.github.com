@@ -48,8 +48,8 @@ body.two-col {
   a, a:visited {
     color: #448844;
     text-shadow: 1px 1px 0 #ffffff; }
-  a:hover {
-    color: #115511; }
+  a:hover, a:active {
+    color: #B22222; }
   a#fork-on-github img {
     position: absolute;
     top: 0;
