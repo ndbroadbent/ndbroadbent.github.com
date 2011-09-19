@@ -40,9 +40,9 @@
     ul.icons {
       margin: 0;
       padding: 7px 4px 8px 9px;
-      @include background-gradient(#f8f8f8, #e4e4e4);
-      border-bottom: 1px solid #d0d0d0;
-      border-right: 1px solid #d0d0d0;
+      @include background-gradient(#fcfcfc, #dddddd);
+      border-bottom: 1px solid #c4c4c4;
+      border-right: 1px solid #c4c4c4;
       border-radius: 5px 5px 5px 5px;
       li {
         margin-left: 0;
