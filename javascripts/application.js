@@ -28,7 +28,38 @@ $(function() {
     loading_text: "loading tweets..."
   });
 
+  // Emulate Github's tooltip style
+  jQuery.fn.qtip.styles.github = {
+    background: '#444',
+    color: 'white',
+    tip: {
+      corner: 'topMiddle',
+      color: false,
+      size: { x: 8, y: 5 }
+    },
+    border: {
+      width:  3,
+      radius: 3,
+      color:  '#444'
+    },
+    padding: '0 4px'
+  }
 
+  $('a[href][title]').each(function() {
+    $(this).qtip({
+      content: $(this).attr('title'),
+      style: {name: 'github'},
+      show: { delay: 0, effect: { length: 100 } },
+      hide: { delay: 0, effect: { length: 100 } },
+      position: {
+        corner: {
+           target: 'bottomMiddle',
+           tooltip: 'topMiddle'
+        }
+      }
+    });
+    $(this).removeAttr('title');
+  });
 
   $("#projects").each(function() {
     var featured_projects = {

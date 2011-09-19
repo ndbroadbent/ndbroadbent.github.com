@@ -53,7 +53,10 @@
           display: inline; } }
       li.no-text {
         float: right;
-        margin-right: 4px; }
+        margin-right: 3px;
+        a {
+          padding-left: 32px;
+        } }
       &.profiles {
         margin-left: 30px;
       } } } }

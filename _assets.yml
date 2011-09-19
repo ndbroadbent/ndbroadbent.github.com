@@ -4,6 +4,7 @@ javascript_compressor: closure
 javascripts:
   application:
     - javascripts/jquery.tweet.js
+    - javascripts/jquery.qtip.min.js
     - javascripts/application.js
 
 stylesheets:
