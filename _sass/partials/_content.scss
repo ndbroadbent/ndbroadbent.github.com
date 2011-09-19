@@ -43,7 +43,7 @@
         h6 {
           text-shadow: 1px 1px 0 #FFFFFF;
           margin-top: 1px;
-          font-size: 12px;
+          font-size: 14px;
         } }
       .social_bar {
         @include column(3, true);
@@ -57,7 +57,7 @@
     .content {
       background-color: #f9f9f9;
       @include border-indent(1px, 1px, 4px, #bbb);
-      padding: 15px 19px 19px;
+      padding: 14px 17px 14px;
       clear: both;
     }
     img {

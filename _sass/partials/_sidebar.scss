@@ -48,8 +48,9 @@ body.bp {
           text-shadow: 1px 1px 0 #fff;
           line-height: 16px;
           h6 {
+            @include font-francois-one;
+            font-weight: normal;
             color: #85A085;
-            @include font-helvetica;
             margin: 1px 0;
           }
           a {
@@ -57,7 +58,7 @@ body.bp {
             font-weight: normal;
             text-decoration: none;
             color: #676767;
-            font-size: 12px;
+            font-size: 14px;
             &:hover {
               color: #4b4b4b;
             } } } } }
@@ -111,7 +112,9 @@ body.bp {
         padding: 0 7px 3px 0;;
       }
       a {
-        color: #555; }
+        color: #555;
+        &:hover {
+          color: #333; } }
       a.dsq-widget-user {
         @include font-francois-one;
         font-weight: normal;
@@ -129,16 +132,13 @@ body.bp {
       p.dsq-widget-meta {
         margin-bottom: 0;
         a {
-          color: #555;
           @include font-francois-one;
           text-decoration: none;
-          font-size: 12px;
-        } }
+          font-size: 12px; } }
       li.dsq-widget-item {
         padding-top: 10px;
       &:first-child {
-        padding-top: 0; } }
-    }
+        padding-top: 0; } } }
 
     // Twitter
     // --------------------------------------------------------------
@@ -166,7 +166,9 @@ body.bp {
           color: #444;
           a {
             text-decoration: none;
-            color: #555; } }
+            color: #555;
+            &:hover {
+              color: #333; } } }
         .tweet_text {
           color: #444; }
         .tweet_avatar {

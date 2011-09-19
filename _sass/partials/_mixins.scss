@@ -2,13 +2,13 @@
 // // You'll probably want to remove the scaffolding once you start styling your site.
 //  +blueprint-scaffolding
 @mixin post-title {
-  h3, h2 {
+  h3, h2, h6 {
     margin-bottom: 0px;
     @include font-francois-one; }
   h6 {
     color: $light-gray;
     margin: 2px 0 2px;
-    @include font-helvetica; } }
+    font-weight: normal } }
 
 @mixin border-radius($radius) {
   -moz-border-radius: $radius;
