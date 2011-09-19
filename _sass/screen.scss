@@ -74,7 +74,7 @@ body.two-col {
 
   #footer {
     @include column(24);
-    color: $light-gray;
+    color: $light-header;
     text-align: center;
     @include font-droid-sans;
     font-size: 0.8em;

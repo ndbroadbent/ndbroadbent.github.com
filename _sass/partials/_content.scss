@@ -120,13 +120,13 @@
     h4 {
       @include font-francois-one;
       text-align: center;
-      color: $light-gray;
+      color: $light-header;
       a, a:visited {
-        color: $light-gray; } }
+        color: $light-header; } }
     h6 {
       margin-bottom: 0px;
       a, a:visited {
-        color: $light-gray; }
+        color: $light-header; }
       strong {
         color: $dark-gray; } } } }
 
