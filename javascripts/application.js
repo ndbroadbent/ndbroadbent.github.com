@@ -27,14 +27,13 @@ $(function() {
     auto_join_text_url: ":",
     loading_text: "loading tweets..."
   });
+
+
+
   $("#projects").each(function() {
     var featured_projects = {
-      "fuubar-cucumber": {rubygems: true},
-      "thumbs": {rubygems: true},
-      "pickle-mongo_mapper": {rubygems: true},
-      "pickle-mongoid": {rubygems: true},
-      "state_machine-mongoid": {rubygems: true},
-      "Rails-I18n.tmbundle": {rubygems: false, downloads: 0, rubygems_url: "https://rubygems.org/profiles/ndbroadbent"}
+      "actionmailer_inline_css": {rubygems: true},
+      "ubuntu_config": {rubygems: false}
     };
 
     var Projects = {

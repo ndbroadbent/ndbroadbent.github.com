@@ -6,15 +6,15 @@
 #content
   #projects
     %h2 My Open Source projects
-    %h4 <a href="https://github.com/ndbroadbent">GitHub</a>
-    %h4 <a href="https://rubygems.org/profiles/nathan_f77">RubyGems</a>
 
-    %h3 Project gallery under construction. Please check back later!
+  %h3 Project gallery is under construction. Please check back later!
 
-#sidebar
-  %h3 Search
-  .sidebar-section
-    #google-search
+{% include default_sidebar.html %}
 
-  {% include common_sidebar.html %}
+:plain
+  <script id="projectTemplate" type="text/x-jquery-tmpl">
+    <h3>${name}</h3>
+    <h6><strong>${watchers}</strong> watchers and <strong>${forks}</strong> forks on <a href="${github_url}">GitHub</a>, <strong>${downloads}</strong> downloads from <a href="${rubygems_url}">RubyGems</a></h6>
+    <p>${description}</p>
+  </script>
 
