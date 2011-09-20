@@ -51,11 +51,11 @@ HTML
   html = <<-HTML
 ---
 layout: default
-title: "Tags Index"
+title: "Categories Index"
 ---
 <div id="content">
   <div id="tag_cloud">
-    <h3>Tags</h3>
+    <h3>Categories</h3>
 HTML
 
   @site.tags.sort.each do |tag, posts|
