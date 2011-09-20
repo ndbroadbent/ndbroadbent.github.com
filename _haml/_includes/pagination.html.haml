@@ -1,11 +1,14 @@
 .pagination
   {% if paginator.previous_page > 1 %}
-  %h3.previous-page <a href="/page{{ paginator.previous_page }}">&lArr; Previous Page</a>
+  %a.previous-page(href="/page{{ paginator.previous_page }}")>
+    %h3 &laquo; Previous Page
   {% elsif paginator.previous_page == 1 %}
-  %h3.previous-page <a href="/">&lArr; Previous Page</a>
+  %a.previous-page(href="/")>
+    %h3 &laquo; Previous Page
   {% endif %}
 
   {% if paginator.next_page <= paginator.total_pages %}
-  %h3.next-page <a href="/page{{ paginator.next_page }}">Next Page &rArr;</a>
+  %a.next-page(href="/page{{ paginator.next_page }}")
+    %h3 Next Page &raquo;
   {% endif %}
 
