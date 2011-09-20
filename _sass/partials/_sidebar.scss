@@ -114,15 +114,11 @@ body.bp {
       a.dsq-widget-user {
         @include font-francois-one;
         font-weight: normal;
-        color: #777777;
-        background-color: #E2E2E2;
-        border: 1px solid #ccc;
-        @include border-radius(4px);
-        padding: 0 4px;
+        color: #555;
+        padding: 0 2px 0 0;
         text-decoration: none;
         &:hover {
-          color: #444;
-          background-color: #ddd;
+          color: #333;
         }
       }
       p.dsq-widget-meta {
