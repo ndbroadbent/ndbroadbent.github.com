@@ -40,6 +40,9 @@
           a, a:visited {
              text-decoration: none;
           }
+          a:hover {
+            text-decoration: underline;
+          }
         }
         h6 {
           text-shadow: 1px 1px 0 #FFFFFF;
