@@ -2,7 +2,7 @@
 layout: post
 title: Add .bashrc to iPhone for SSH or MobileTerminal
 wordpress_id: 325
-tags: guide, iphone, ios-4-x, jailbreak
+tags: guides bash iphone jailbreak
 date: 2011-01-07 07:23:48 +08:00
 wordpress_url: http://www.f-77.com/?p=325
 ---

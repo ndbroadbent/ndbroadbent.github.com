@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: Weather Notifier
 wordpress_id: 404
-tags: compaq-evo-t20, linux, projects, home-automation, electronics
+tags: compaq-evo-t20 linux projects home-automation electronics
 date: 2011-03-19 15:37:32 +08:00
 wordpress_url: http://www.f-77.com/?p=404
 ---
@@ -26,3 +26,4 @@ wordpress_url: http://www.f-77.com/?p=404
 <p style="margin:20px;">So when I walk out the door,<br/> I know whether or not I should take an umbrella to work.</p>
 
 </div>
+

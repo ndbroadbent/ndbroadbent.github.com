@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: How to use bundler with multiple Gemfiles in plugins / extensions
 wordpress_id: 139
-tags: guide, ruby, ruby-gems, ruby-on-rails, bundler
+tags: guides ruby-on-rails bundler plugins
 date: 2010-10-19 20:37:16 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=139
 ---
@@ -24,3 +24,4 @@ end
 {% endhighlight %}
 
 This will find and evaluate the Gemfiles from each of your plugins/extensions, as if you were modifying your base Gemfile.
+

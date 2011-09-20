@@ -2,7 +2,7 @@
 layout: post
 title: You keep using 'bundle install {gem}'. I do not think it means what you think it means.
 wordpress_id: 571
-tags: ruby, ruby-gems
+tags: bundler ruby ruby-gems
 date: 2011-09-03 04:39:22 +08:00
 wordpress_url: http://madebynathan.com/?p=571
 ---

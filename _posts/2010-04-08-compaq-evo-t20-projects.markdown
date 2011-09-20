@@ -1,9 +1,9 @@
---- 
+---
 layout: post
 title: Compaq Evo T20 projects
 wordpress_id: 8
-tags: c-compiling, compaq-evo-t20, damn-small-linux, dependency-hell, linux
-date: 2010-04-07 13:51:23 +08:00
+tags: c compaq-evo-t20 damn-small-linux linux
+date: 2010-04-08 13:51:23 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=8
 ---
 Compaq Evo T20s are fun. I have a few that I'm using for various projects. I plan to set one up as a RFID controlled alarm/door lock system. Its running Damn Small Linux using ruby, rubygems and sinatra packages that I compiled myself.
@@ -19,3 +19,4 @@ Anyway, <a href="http://docs.google.com/View?id=dcfcvm9s_23gs32zshc">you can hav
 <a href="http://github.com/ndbroadbent/linux_on_t20">and download my tweaked T20 build scripts from here</a>.
 
 The notes are pretty scrambled and random, but I guess its better that they're in one document instead of 50 blog posts..
+

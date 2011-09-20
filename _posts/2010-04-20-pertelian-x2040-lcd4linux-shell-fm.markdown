@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: Pertelian X2040, lcd4linux, shell-fm
 wordpress_id: 25
-tags: compaq-evo-t20, lcd4linux, linux, shell-fm
+tags: compaq-evo-t20 lcd4linux linux shell-fm
 date: 2010-04-20 13:19:42 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=25
 ---
@@ -21,3 +21,4 @@ Will post some pics or video once I get it all working nicely. I'm also really k
 P.S. I bought one of these <a href="http://usb.brando.com/prod_detail.php?prod_id=00666">super-tiny keyboards</a> for my T20 projects. I think they're just really cool!
 
 [caption id="attachment_28" align="alignnone" width="220" caption="Super Tiny USB Keyboard"]<a href="/images/posts/2010/04/supertiny-keyboard.jpg"><img class="size-full wp-image-28" title="Super Tiny USB Keyboard" src="/images/posts/2010/04/supertiny-keyboard.jpg" alt="Super Tiny USB Keyboard" width="220" height="165" /></a>[/caption]
+

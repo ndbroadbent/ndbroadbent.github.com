@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: "Configure SMTP - SMTP Error: Could not connect to SMTP host."
 wordpress_id: 249
-tags: guide, wordpress, installation, smtp, gmail, email
+tags: guides wordpress
 date: 2010-10-07 18:23:30 +08:00
 wordpress_url: http://www.f-77.com/?p=249
 ---
@@ -16,5 +16,5 @@ error message "SMTP Error: Could not connect to SMTP host."
 firewall. Ask your hosting provider / system administrator to do
 this for you.</li> <li> If it still doesn't work, you
 might need to double-check your gmail password.</li>
-</ul> Feel free to leave a comment if you are still having
-trouble.
+</ul>
+

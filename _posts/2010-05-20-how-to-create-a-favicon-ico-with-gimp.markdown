@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: How to create a favicon.ico with GIMP
 wordpress_id: 85
-tags: gimp, guide, linux, ruby-on-rails, web-design
+tags: gimp guides web-design
 date: 2010-05-20 13:19:13 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=85
 ---
@@ -26,3 +26,4 @@ resp.
 </pre>
 </li>
 That's all. Now copy your <tt>favicon.ico</tt> to the document root of Apache, for example to <tt>/srv/www/htdocs/favicon.ico</tt>, if you are using SuSE Linux &gt;= 8.1.
+

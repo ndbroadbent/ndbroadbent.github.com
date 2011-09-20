@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: Build a ruby gem and host it on rubygems.org in 4 easy steps
 wordpress_id: 335
-tags: guide, ruby, ruby-gems, ruby-on-rails, bundler, ruby-on-rails-2, gem-building, bundler, rubygems-org
+tags: guides ruby ruby-gems ruby-on-rails bundler
 date: 2011-01-22 06:39:39 +08:00
 wordpress_url: http://www.f-77.com/?p=335
 ---
@@ -19,3 +19,4 @@ $ gem push pkg/<em>shiny_new_gem</em>-0.0.1.gem        # Push the gem up 
 Done! Now any rails developer can add <strong>gem "shiny_new_gem"</strong> to their Gemfile, and use your creation. Pretty soon you'll be famous! You'll be hired by important people! You'll buy a boat!
 
 Go build your gems!
+

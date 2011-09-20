@@ -1,8 +1,8 @@
---- 
+---
 layout: post
-title: last.fm on embedded systems
+title: Last.fm on embedded systems
 wordpress_id: 96
-tags: compaq-evo-t20, lcd4linux, linux, music, projects, ruby, ruby-gems, shell-fm, web-design
+tags: compaq-evo-t20 lcd4linux linux music projects ruby shell-fm web-design
 date: 2010-06-26 00:30:15 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=96
 ---
@@ -19,3 +19,4 @@ Here are some screenshots of the shell.fm sinatra web interface:
 <a href="/images/posts/2010/06/changing-station.png"><img class="alignnone size-medium wp-image-97" title="shell.fm sinatra" src="/images/posts/2010/06/changing-station.png?w=300" alt="" width="300" height="187" /></a>
 
 <a href="/images/posts/2010/06/paused.png"><img class="alignnone size-medium wp-image-98" title="paused track, volume change" src="/images/posts/2010/06/paused.png?w=300" alt="" width="300" height="141" /></a>
+

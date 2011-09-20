@@ -2,7 +2,7 @@
 layout: post
 title: Repurposed pressure gauge - Bathroom door indicator
 wordpress_id: 425
-tags: projects, art, electronics
+tags: projects electronics
 date: 2011-04-30 15:44:26 +08:00
 wordpress_url: http://www.f-77.com/?p=425
 ---

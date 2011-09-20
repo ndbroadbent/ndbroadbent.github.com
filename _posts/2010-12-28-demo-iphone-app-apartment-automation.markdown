@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: Demo iPhone app - Apartment automation
 wordpress_id: 316
-tags: iphone, projects, ios-4-x, home-automation
+tags: iphone projects home-automation
 date: 2010-12-28 18:21:50 +08:00
 wordpress_url: http://www.f-77.com/?p=316
 ---
@@ -27,3 +27,4 @@ You could use this as a demo app to help you learn about:
 	<li>etc.</li>
 </ul>
 <a href="/images/posts/2010/12/photo3.png"><img class="aligncenter size-full wp-image-317" title="iPhone app for apartment automation" src="/images/posts/2010/12/photo3.png" alt="iPhone app for apartment automation" width="320" height="480" /></a>
+

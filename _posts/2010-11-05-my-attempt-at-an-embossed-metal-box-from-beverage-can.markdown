@@ -2,7 +2,7 @@
 layout: post
 title: My attempt at an embossed metal box from beverage can
 wordpress_id: 208
-tags: projects, art, aluminium, embossed-box, can, creative, craft
+tags: projects
 date: 2010-11-05 15:05:57 +08:00
 wordpress_url: http://www.f-77.com/?p=208
 ---

@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: New Cydia Themes (Sounds)
 wordpress_id: 350
-tags: iphone, ios-4-x, jailbreak, cydia
+tags: projects iphone ios jailbreak
 date: 2011-02-10 01:28:28 +08:00
 wordpress_url: http://www.f-77.com/?p=350
 ---
@@ -15,7 +15,7 @@ You can find them by searching for them by name:
 Replaces the 'new email' sound with a clip of Moss saying "Message for me!"
 <em>Overall Downloads: <script src="http://modmyi.com/cstats/index.php?package=com.modmyi.messageformeitcrowdmailtone&amp;output=text" type="text/javascript"></script></em><br/>
 <strong>Piano DTMF Tones</strong>
-Replaces the keypad sounds in the 'phone' app with piano notes.   
+Replaces the keypad sounds in the 'phone' app with piano notes.
 <em>Overall Downloads: <script src="http://modmyi.com/cstats/index.php?package=com.modmyi.pianodtmftones&amp;output=text" type="text/javascript"></script></em><br/>
 <strong>Plants Vs Zombies - Coin SMS Tone</strong>
 Plants Vs Zombies Coin SMS Tone
@@ -30,3 +30,4 @@ Replaces iPhone sounds with sounds from the game "Crash Bandicoot" on Playstatio
   <li>Error/low power - 'TNT'</li>
 </ul>
 <em>Overall Downloads: <script type="text/javascript" src="http://modmyi.com/cstats/index.php?package=com.modmyi.crashbandicootsounds&output=text"></script></em><br/>
+

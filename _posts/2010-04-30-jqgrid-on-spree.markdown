@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: jqgrid on Spree
 wordpress_id: 59
-tags: guide, ruby, ruby-gems, ruby-on-rails
+tags: guides ruby ruby-on-rails jqgrid
 date: 2010-04-30 17:22:57 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=59
 ---
@@ -17,17 +17,21 @@ It did take a little while to debug some things that were going wrong, though. F
 By default, Spree has its i18n locale set to "en-US". <a href="http://www.2dconcept.com/jquery-grid-rails-plugin" target="_blank">2dcJqgrid</a> has a fancy method that sets the jqgrid locale to the same locale as your Rails app, but unfortunately that breaks down for any 'en-**' locales, because jqgrid only has the one 'en' locale file in its 'i18n' directory.
 
 The simple fix is to change the file '2dc_jqgrid.rb' (starting from line 11), from this:
-<pre>def jqgrid_javascripts
+
+{% highlight ruby %}
+def jqgrid_javascripts
     locale = I18n.locale rescue :en
     js =  ''
     ...
-</pre>
+{% endhighlight %}
+
 to this:
-<pre>
-<pre>def jqgrid_javascripts
-    locale = I18n.locale rescue :en
-    locale = :en if locale.to_s.start_with?("en")
+
+{% highlight ruby %}
+def jqgrid_javascripts
+    locale = I18n.locale rescue :en
+    locale = :en if locale.to_s.start_with?("en")
     js =  ''
-    ...</pre>
-</pre>
-Hope it helps someone out.
+    ...
+{% endhighlight %}
+

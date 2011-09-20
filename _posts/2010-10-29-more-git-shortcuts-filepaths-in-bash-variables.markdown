@@ -1,13 +1,13 @@
---- 
+---
 layout: post
 title: Make 'git status' put filepaths into numbered variables
 wordpress_id: 192
-tags: bash, development, guide, linux, ruby
+tags: git guides
 date: 2010-10-29 22:31:35 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=192
 ---
-I like my shortcuts for git (ie. 'gst' for 'git status', 'gca' for 'git commit -a -m', etc.) 
-But I wanted more, so I thought it would be nice if I could somehow create 'shortcuts' to the filepaths of modified files whenever I run 'git status'. 
+I like my shortcuts for git (ie. 'gst' for 'git status', 'gca' for 'git commit -a -m', etc.)
+But I wanted more, so I thought it would be nice if I could somehow create 'shortcuts' to the filepaths of modified files whenever I run 'git status'.
 I created a function to export the paths of each modified file into numbered environment variables, and it has really sped up my workflow.
 
 You will need to configure git if you want to have colorized output:
@@ -95,3 +95,4 @@ $ git rm -r $e3
 
 
 I use git version 1.7.1.1, GNU bash version 4.1.5(1), and Ubuntu 10.04.
+

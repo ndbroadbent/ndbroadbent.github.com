@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: git shortcuts
 wordpress_id: 87
-tags: thoughts
+tags: git guides
 date: 2010-05-21 13:40:27 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=87
 ---
@@ -23,3 +23,4 @@ $ gc "I made a change to foo.bar"
 
 </pre>
 Its probably saved me thousands of keystrokes by now..
+

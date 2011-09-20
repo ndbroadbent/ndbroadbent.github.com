@@ -2,7 +2,7 @@
 layout: post
 title: Get attacked for breaking your software tests.
 wordpress_id: 264
-tags: uncategorized
+tags: projects ruby continous-integration
 date: 2010-11-12 09:38:09 +08:00
 wordpress_url: http://www.f-77.com/?p=264
 ---

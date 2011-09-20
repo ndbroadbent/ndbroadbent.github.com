@@ -2,7 +2,7 @@
 layout: post
 title: Really handy RVM hook to symlink current gem directory
 wordpress_id: 446
-tags: ruby-gems, ruby-on-rails, bundler, rails-3, rvm
+tags: guides ruby-on-rails bundler rails-3 rvm gedit
 date: 2011-04-28 05:23:44 +08:00
 wordpress_url: http://www.f-77.com/?p=446
 ---

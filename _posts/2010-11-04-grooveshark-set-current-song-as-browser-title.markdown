@@ -1,9 +1,8 @@
---- 
+---
 layout: post
 title: Grooveshark - Set Current Song as Browser Title
-excerpt: Groove-shark-monkey
 wordpress_id: 136
-tags: greasemonkey, javascript
+tags: greasemonkey javascript music grooveshark
 date: 2010-11-04 19:07:51 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=136
 ---
@@ -14,3 +13,4 @@ In the meantime, I was dissapointed that I couldn't see which song was currently
 <a href="http://userscripts.org/scripts/show/87742">http://userscripts.org/scripts/show/87742</a>
 
 Hope you find it useful!
+

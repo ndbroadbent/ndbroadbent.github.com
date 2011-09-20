@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: iOS JB tweak - Replace operator with current prepaid balance
 wordpress_id: 300
-tags: iphone, ios-4-x, jailbreak
+tags: projects iphone jailbreak
 date: 2010-12-26 16:42:16 +08:00
 wordpress_url: http://www.f-77.com/?p=300
 ---
@@ -41,3 +41,4 @@ This project might also be useful if you need to learn how to:
 My carrier (PCCW) doesn’t believe in sending SMS alerts when my balance is about to, or even has, run out. I’ve emailed them about it, but thats just the way it is. So I thought this would be a better alternative to getting a new number.
 
 Would be happy to help anyone alter this for their own carriers, if requested. However, some operators do weird stuff like SMS every time you send an AT command like this, so that would be annoying.
+

@@ -1,14 +1,14 @@
---- 
+---
 layout: post
 title: Rails 3 Rake tasks can take too long to load
 wordpress_id: 373
-tags: guide, ruby, ruby-on-rails, bundler, rails-3
+tags: guides ruby-on-rails rails-3
 date: 2011-02-24 05:02:15 +08:00
 wordpress_url: http://www.f-77.com/?p=373
 ---
 When you run a rake task for a Rails 3 project, it has to load the entire environment since gems can include their own rake tasks. I started to get annoyed by this, because every capistrano deployment would load up rails on my environment just to notify hoptoad.
 
-If you have a very simple rake task that is called very often, you might want to add some work-around code to check for it in the very beginning of your Rakefile. You might even want to bypass rake entirely, and put the code in a file in ./scripts. 
+If you have a very simple rake task that is called very often, you might want to add some work-around code to check for it in the very beginning of your Rakefile. You might even want to bypass rake entirely, and put the code in a file in ./scripts.
 
 Here is an example for way faster hoptoad notifications (this cut our deploy time in half):
 
@@ -31,3 +31,4 @@ end
 There are other ways to speed up rake, such as <a href="https://github.com/outoftime/rake_server">Rake Server</a> (which forks a Rails server process each time you invoke a rake task).
 
 But sometimes quick hacks just work best.
+

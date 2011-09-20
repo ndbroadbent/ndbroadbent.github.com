@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: fireworks display in time to music.
 wordpress_id: 33
-tags: projects, thoughts
+tags: projects reaper music
 date: 2010-04-25 14:06:56 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=33
 ---
@@ -10,4 +10,5 @@ I've had a <a href="http://reaper.fm/">REAPER</a> license for a year or 2 now. G
 
 I just followed this <a href="http://www.davehayes.org/2007/04/27/howto-reaper-on-ubuntu-linux-with-wineasio">extremely helpful tutorial by Dave Hayes </a>to get REAPER running on Ubuntu with wineasio. And now, I am in the middle of researching midi plugins that can trigger shell or network events.
 
-My goal is to have REAPER play a song on one track. I will have another track set up with midi notes that fire off triggers to a plugin. This plugin will fire an event on my K8055 USB interface board. This USB board will trigger a relay. This relay will trigger a charge and set off a fireball in the field behind my house :D. I work for a stage lighting company in my spare time too, if I can get my hands on some USB -&gt; DMX controllers, it would be cool to set up a few strobes and halogens as well. I'm planning this display for my 21st birthday party, and I'll put a video on youtube if it works out. Probably won't be all that impressive, but who knows :)
+My goal is to have REAPER play a song on one track. I will have another track set up with midi notes that fire off triggers to a plugin. This plugin will fire an event on my K8055 USB interface board. This USB board will trigger a relay. This relay will trigger a charge and set off a fireball in the field behind my house :D. I work for a stage lighting company in my spare time too, if I can get my hands on some USB -&gt; DMX controllers, it would be cool to set up a few strobes and halogens as well.
+

@@ -2,7 +2,7 @@
 layout: post
 title: Daily Calvin & Hobbes RSS feed (with embedded images)
 wordpress_id: 342
-tags: rss-feed, calvin-and-hobbes, calvin-hobbes, rss-feed-2, embedded-images
+tags: projects
 date: 2011-01-29 08:26:41 +08:00
 wordpress_url: http://www.f-77.com/?p=342
 ---

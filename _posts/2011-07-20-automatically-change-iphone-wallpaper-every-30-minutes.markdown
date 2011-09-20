@@ -2,7 +2,7 @@
 layout: post
 title: Automatically change iPhone wallpaper every 30 minutes
 wordpress_id: 526
-tags: iphone, ios-4-x, jailbreak
+tags: scripts bash iphone jailbreak
 date: 2011-07-20 16:27:10 +08:00
 wordpress_url: http://madebynathan.com/?p=526
 ---

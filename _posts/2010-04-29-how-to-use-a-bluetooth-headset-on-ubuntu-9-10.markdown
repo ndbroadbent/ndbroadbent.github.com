@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: how to use a bluetooth headset on Ubuntu 9.10 +
 wordpress_id: 40
-tags: bluetooth, guide, linux, ubuntu-9-10
+tags: bluetooth guides linux ubuntu-9-10
 date: 2010-04-29 10:39:42 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=40
 ---
@@ -33,3 +33,4 @@ These are the steps that worked for me. YMMV with other headset brands/models.
 Also note: Any application (including Skype) <strong>should</strong> be able to play audio through the headset if you follow these steps. If you want to use Skype, you will also need to set up the mic on the headset by following the same steps to configure the bluez source device (‘bluez_source.XX…’) as the 'Default Source'.
 
 I was able to record and playback audio fine with Audacity, and a test call on Skype worked fine.
+

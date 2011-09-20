@@ -2,7 +2,7 @@
 layout: post
 title: Bash Color Index
 wordpress_id: 552
-tags: uncategorized
+tags: bash scripts
 date: 2011-08-16 08:47:38 +08:00
 wordpress_url: http://madebynathan.com/?p=552
 ---

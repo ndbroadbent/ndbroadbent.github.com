@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: it works
 wordpress_id: 21
-tags: compaq-evo-t20, guide, linux, projects, ruby, shell-fm, thoughts
+tags: compaq-evo-t20 linux projects ruby shell-fm
 date: 2010-04-15 22:22:32 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=21
 ---
@@ -38,3 +38,4 @@ I have actually implemented the last idea. It took a lot of help from other peop
 
 (Thanks to Karl Mowatt-Wilson for this)</pre>
 So anyway, I do have a little last.fm stream player sitting in my lounge, and impressing my friends :) My parents have transitioned from  "stop spending so much time on the computer", to "so how much will it cost to make us one of those". :P
+

@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: Search and replace in multiple files on linux with bash, egrep, sed function
 wordpress_id: 184
-tags: bash, development, guide, linux
+tags: bash guides
 date: 2010-10-26 18:05:53 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=184
 ---
@@ -28,3 +28,4 @@ So you might want to replace all occurences of 'badly_named_method' with 'awesom
 {% endhighlight %}
 
 Note: quotes are optional for single words.
+

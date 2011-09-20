@@ -1,12 +1,12 @@
---- 
+---
 layout: post
 title: How to preserve indentation in wordpress [sourcecode] tags
 wordpress_id: 150
-tags: thoughts
+tags: guides wordpress
 date: 2010-10-19 20:58:38 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=150
 ---
-Dont use the visual editor! Copy the code into your 'HTML' view and it will preserve indentation. Copy it into 'Visual' view and your code will be all left-aligned...
+Dont use the visual editor. Copy the code into your 'HTML' view and it will preserve indentation. Copy it into 'Visual' view and your code will be all left-aligned...
 
 Examples:
 
@@ -33,3 +33,4 @@ Examples:
 {% endhighlight %}
 
 YMMV, I guess, but this is what works for me.
+

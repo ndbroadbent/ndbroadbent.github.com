@@ -2,7 +2,7 @@
 layout: post
 title: Scanning lots of photos at once with GIMP on Ubuntu Linux
 wordpress_id: 74
-tags: gimp, guide, projects
+tags: gimp guides projects photography
 date: 2010-05-13 22:13:09 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=74
 ---

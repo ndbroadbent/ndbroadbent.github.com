@@ -1,8 +1,8 @@
---- 
+---
 layout: post
 title: Running bash color codes through sed
 wordpress_id: 569
-tags: uncategorized
+tags: bash scripts
 date: 2011-08-18 04:48:59 +08:00
 wordpress_url: http://madebynathan.com/?p=569
 ---
@@ -22,3 +22,4 @@ fi
 {% endhighlight %}
 
 <p>You might also find this page useful: <a href="http://www.commandlinefu.com/commands/view/3584/remove-color-codes-special-characters-with-sed">http://www.commandlinefu.com/commands/view/3584/remove-color-codes-special-characters-with-sed</a></p>
+
