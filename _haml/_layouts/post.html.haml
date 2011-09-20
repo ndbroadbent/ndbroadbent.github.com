@@ -11,7 +11,7 @@
         %h3 <a href="{{ page.url }}">{{ page.title }}</a>
         %h6 {{ page.date | date: "%A, %B %d, %Y" }}
         %span.divider #{"|"}
-        %h6 tagged with {{ page.tags | join " " }}
+        %h6 tags: {{ page.tags | join:', ' }}
         {% include add_this_page_title.html %}
 
     .content
