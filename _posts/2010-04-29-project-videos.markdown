@@ -2,7 +2,7 @@
 layout: post
 title: projects videos
 wordpress_id: 49
-tags: linux, music, projects, reaper, ruby, ubuntu-9-10, videos
+tags: linux music projects reaper ruby ubuntu-9-10 videos
 date: 2010-04-29 11:35:52 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=49
 ---
