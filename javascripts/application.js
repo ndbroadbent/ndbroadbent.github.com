@@ -30,7 +30,7 @@ $(function() {
 
   // Emulate Github's tooltip style
   jQuery.fn.qtip.styles.github = {
-    background: '#444',
+    background: '#555',
     color: 'white',
     tip: {
       corner: 'topMiddle',
@@ -40,7 +40,7 @@ $(function() {
     border: {
       width:  3,
       radius: 3,
-      color:  '#444'
+      color:  '#555'
     },
     padding: '0 4px'
   }
