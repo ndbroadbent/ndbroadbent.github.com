@@ -6,10 +6,7 @@
 #content
   .posts-list
     {% for post in site.posts %}
-    .post-excerpt
-      %h3 <a href="{{ post.url }}">{{ post.title }}</a>
-      %h6 Posted on {{ post.date | date: "%A, %B %d, %Y" }} #{"|"} tagged with {{ post.tags | join " " }}
-      {{ post.excerpt }}
+    {% include post_excerpt.html %}
     {% endfor %}
 
 
