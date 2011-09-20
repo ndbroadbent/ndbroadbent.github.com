@@ -1,6 +1,8 @@
 # A sample Gemfile
 source "http://rubygems.org"
 gem "rake"
+gem "activesupport"
+gem "i18n"
 gem "jekyll",     "~> 0.10.0"
 
 gem "haml",       ">= 3.1.3"
