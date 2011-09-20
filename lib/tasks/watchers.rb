@@ -31,7 +31,7 @@ namespace :asset do
 end
 
 namespace :tags do
-  desc 'Watch posts directory, and regenerate tag indexes on change'
+  desc 'Watch _posts directory, and regenerate tag indexes on change'
   task(:watch) { require 'watcher/tags'; Watcher::Tags.watch }
 end
 
