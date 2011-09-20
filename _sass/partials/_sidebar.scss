@@ -50,17 +50,17 @@ body.bp {
           h6 {
             @include font-francois-one;
             font-weight: normal;
-            color: #85A085;
+            color: $light-header;
             margin: 1px 0;
           }
           a {
             @include font-francois-one;
             font-weight: normal;
             text-decoration: none;
-            color: #676767;
+            color: $dark-gray;
             font-size: 14px;
             &:hover {
-              color: #4b4b4b;
+              color: $darker-gray;
             } } } } }
 
     // About
@@ -125,19 +125,19 @@ body.bp {
       a.dsq-widget-user {
         @include font-francois-one;
         font-weight: normal;
-        color: #555;
+        color: $dark-gray;
         padding: 0 2px 0 0;
         text-decoration: none;
         &:hover {
-          color: #333;
+          color: $darker-gray;
         }
       }
       p.dsq-widget-meta {
         margin-bottom: 0;
         a {
-          color: #555;
+          color: $dark-gray;
           &:hover {
-            color: #333; }
+            color: $darker-gray; }
           @include font-francois-one;
           text-decoration: none;
           font-size: 12px; } }
@@ -172,9 +172,9 @@ body.bp {
           color: #444;
           a {
             text-decoration: none;
-            color: #555;
+            color: $dark-gray;
             &:hover {
-              color: #333; } } }
+              color: $darker-gray; } } }
         .tweet_text {
           color: #444; }
         .tweet_avatar {

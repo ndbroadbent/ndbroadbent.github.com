@@ -22,7 +22,7 @@
     a:hover {
       color: #555555; } }
     h2 {
-      color: #85A085;
+      color: $light-header;
       @include font-francois-one;
       font-size: 1.3em;
       margin: 3px 10px 5px;

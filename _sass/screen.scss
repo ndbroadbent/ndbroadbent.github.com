@@ -67,7 +67,7 @@ body.two-col {
     a, a:visited {
       color: $dark-gray;
     }
-    a:hover { color: #333333; }
+    a:hover { color: $darker-gray; }
   }
   #container {
     @include container; }
