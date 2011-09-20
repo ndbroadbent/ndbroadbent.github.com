@@ -1,42 +1,40 @@
-task :cloud_basic do
-    puts 'Generating tag cloud...'
-    require 'rubygems'
-    require 'jekyll'
-    include Jekyll::Filters
+namespace :tags do
+  desc "Generate a basic tag cloud"
+  task :cloud_basic do
+      puts 'Generating tag cloud...'
+      require 'rubygems'
+      require 'jekyll'
+      include Jekyll::Filters
+      options = Jekyll.configuration({})
+      site = Jekyll::Site.new(options)
+      site.read_posts('')
 
-    options = Jekyll.configuration({})
-    site = Jekyll::Site.new(options)
-    site.read_posts('')
+      html = ''
+      site.tags.sort.each do |tag, posts|
+        s = posts.count
+        font_size = 12 + (s*1.2);
+        html << "<a href=\"#{options["url"]}/tag/#{tag}/\" title=\"Pages tagged #{tag}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\" rel=\"tag\">#{tag}</a> "
+      end
 
-    html = ''
-
-    site.tags.sort.each do |tag, posts|
-
-      s = posts.count
-      font_size = 12 + (s*1.2);
-      html << "<a href=\"#{options["url"]}/tag/#{tag}/\" title=\"Pages tagged #{tag}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\" rel=\"tag\">#{tag}</a> "
+      FileUtils.mkdir_p "tags"
+      File.open('_includes/tags.html', 'w+') do |file|
+        file.puts html
+      end
+      puts 'Done.'
     end
 
-    File.open('_includes/tags.html', 'w+') do |file|
-      file.puts html
-    end
+  desc "Generate a full tag cloud"
+  task :cloud do
+      puts 'Generating tag cloud...'
+      require 'rubygems'
+      require 'jekyll'
+      include Jekyll::Filters
 
-    puts 'Done.'
-  end
+      options = Jekyll.configuration({})
+      site = Jekyll::Site.new(options)
+      site.read_posts('')
 
-
-task :cloud do
-    puts 'Generating tag cloud...'
-    require 'rubygems'
-    require 'jekyll'
-    include Jekyll::Filters
-
-    options = Jekyll.configuration({})
-    site = Jekyll::Site.new(options)
-    site.read_posts('')
-
-
-    html =<<-HTML
+      html =<<-HTML
 ---
 layout: default
 title: Tags
@@ -45,11 +43,10 @@ type: A tag cloud
 
 <h1>Tag cloud for {{site.title}}</h1>
 
-    <p>Click on a tag to see the relevant posts.</p>
-    HTML
+<p>Click on a tag to see the relevant posts.</p>
+HTML
 
     site.tags.sort.each do |tag, posts|
-      next if tag == ".net"
       html << <<-HTML
       HTML
 
@@ -60,13 +57,14 @@ type: A tag cloud
 
     html << "<p>You may also wish to browse the <a href=\"#{options["url"]}/archives/\" title=\"Archives for {{site.title}}\">archives</a>."
 
-
+    FileUtils.mkdir_p "tags"
     File.open('tags/index.html', 'w+') do |file|
       file.puts html
     end
 
     puts 'Done.'
   end
+end
 
 desc 'Generate tags page'
 task :tags do
