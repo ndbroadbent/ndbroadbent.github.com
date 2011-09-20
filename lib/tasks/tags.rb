@@ -55,7 +55,7 @@ title: "Tags Index"
 ---
 <div id="content">
   <div id="tag_cloud">
-    <h3>Post Tags</h3>
+    <h3>Tags</h3>
 HTML
 
   @site.tags.sort.each do |tag, posts|
