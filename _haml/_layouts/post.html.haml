@@ -9,9 +9,10 @@
     .header
       .title
         %h3 <a href="{{ page.url }}">{{ page.title }}</a>
-        %h6 {{ page.date | date: "%A, %B %d, %Y" }} #{"|"} tagged with {{ page.tags | join " " }}
-      .social_bar
-        {% include add_this.html %}
+        %h6 {{ page.date | date: "%A, %B %d, %Y" }}
+        %span.divider #{"|"}
+        %h6 tagged with {{ page.tags | join " " }}
+        {% include add_this_page_title.html %}
 
     .content
       {{ content }}
@@ -20,6 +21,9 @@
     %p.hackernews
       Liked this post? Share the <span class="heart">♥</span> on <a href="{{ page.hackernews_url }}">Hacker News</a>
     {% endif %}
+
+  #addthis_footer
+    {% include add_this_page_footer.html %}
   #disqus_thread
   :javascript
     (function() {

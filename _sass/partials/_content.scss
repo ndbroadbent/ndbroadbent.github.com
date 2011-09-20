@@ -24,14 +24,18 @@
       width: $content-width;
       padding: 6px 0 3px 0;
       .title {
-        display: inline-block;
+        display: inline;
         @include post-title;
         margin: 0;
         margin-bottom: 4px;
+        span.divider {
+          color: #ccc;
+          margin: 0 2px;
+        }
         h3 {
           font-size: 22px;
           line-height: 110%;
-          padding-bottom: 0;
+          padding-bottom: 5px;
           a, a:visited {
              text-decoration: none;
           }
@@ -43,9 +47,15 @@
           text-shadow: 1px 1px 0 #FFFFFF;
           margin-top: 1px;
           font-size: 14px;
+          display: inline;
         } }
       .social_bar {
-        margin: 3px 0 3px -2px; } }
+        margin: 3px 0 3px -2px; }
+      .addthis_inline {
+        display: inline;
+        float: right;
+        margin-top: 2px;
+      } }
     .content {
       background-color: #fff;
       @include border-indent(1px, 1px, 4px, #bbb);
@@ -86,6 +96,12 @@
       p:after {
         content: "”";
         float: right; } } }
+  #addthis_footer {
+    margin-bottom: 10px;
+  }
+  #disqus_thread {
+    margin-top: -49px;
+  }
   .post-excerpt {
     margin-bottom: 20px;
     @include post-title;

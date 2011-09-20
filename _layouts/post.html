@@ -7,10 +7,10 @@ layout: default
     <div class='header'>
       <div class='title'>
         <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
-        <h6>{{ page.date | date: "%A, %B %d, %Y" }} | tagged with {{ page.tags | join " " }}</h6>
-      </div>
-      <div class='social_bar'>
-        {% include add_this.html %}
+        <h6>{{ page.date | date: "%A, %B %d, %Y" }}</h6>
+        <span class='divider'>|</span>
+        <h6>tagged with {{ page.tags | join " " }}</h6>
+        {% include add_this_page_title.html %}
       </div>
     </div>
     <div class='content'>
@@ -21,6 +21,9 @@ layout: default
       Liked this post? Share the <span class="heart">♥</span> on <a href="{{ page.hackernews_url }}">Hacker News</a>
     </p>
     {% endif %}
+  </div>
+  <div id='addthis_footer'>
+    {% include add_this_page_footer.html %}
   </div>
   <div id='disqus_thread'></div>
   <script type='text/javascript'>

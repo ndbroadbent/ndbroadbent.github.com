@@ -9,8 +9,10 @@
       .header
         .title
           %h3 <a href="{{ post.url }}">{{ post.title }}</a>
-          %h6
-            {{ post.date | date: "%A, %B %d, %Y" }} #{"|"} tagged with {{ post.tags | join " " }}
+          %h6 {{ post.date | date: "%A, %B %d, %Y" }}
+          %span.divider #{"|"}
+          %h6 tagged with {{ post.tags | join " " }}
+          {% include add_this_post_title.html %}
 
       .content
         {{ post.content }}
