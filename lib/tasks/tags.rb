@@ -6,37 +6,12 @@ def load_jekyll
   @site.read_posts('')
 end
 
-namespace :tags do
-  desc "Generate a tag cloud for sidebar"
-  task :cloud do
-    load_jekyll
-
-    puts 'Generating tag cloud...'
-    html = ''
-    @site.tags.sort.each do |tag, posts|
-      s = posts.count
-      font_size = 12 + (s*1.2);
-      html << "<a href=\"#{@options["url"]}/tag/#{tag}/\" title=\"Pages tagged #{tag}\" style=\"font-size: #{font_size}px; line-height:#{font_size}px\" rel=\"tag\">#{tag}</a>\n"
-    end
-
-    FileUtils.mkdir_p "tags"
-    File.open('_includes/tags.html', 'w+') do |file|
-      file.puts html
-    end
-    puts 'Done.'
-  end
-
-  task :index do
-
-  end
-end
-
-
-desc 'Generate tags pages'
+desc 'Generate tags index and pages'
 task :tags do
   load_jekyll
+  require 'active_support/core_ext/string'
 
-  puts "Generating tags..."
+  puts "Generating tag pages..."
 
   # Remove tags directory before regenerating
   FileUtils.rm_rf("tags")
@@ -48,6 +23,7 @@ layout: default
 title: "tagged: #{tag}"
 ---
 <div id="content">
+  <h2>Listing posts tagged with: #{tag}</h2>
   <div class="posts-list">
     {% for post in site.posts %}
       {% for tag in post.tags %}
@@ -64,10 +40,37 @@ title: "tagged: #{tag}"
 HTML
 
     FileUtils.mkdir_p("tags/#{tag}")
-    File.open("tags/#{tag}/index.html", 'w+') do |file|
-      file.puts html
-    end
+    File.open("tags/#{tag}/index.html", 'w+') {|f| f.puts html }
   end
+
+  puts "Generating tags index (cloud)..."
+
+  # Generate tag cloud as index
+  # ----------------------------------------------------
+
+  html = <<-HTML
+---
+layout: default
+title: "Tags Index"
+---
+<div id="content">
+  <div id="tag_cloud">
+    <h3>Post Tags</h3>
+HTML
+
+  @site.tags.sort.each do |tag, posts|
+    font_size = 14 + (posts.count * 1.3);
+    html << "<a href=\"/tags/%s/\" title=\"Posts tagged with %s\" style=\"font-size: #{font_size}px;\">%s</a>\n" % [tag, tag.gsub("-", ' '), tag.gsub("-", ' ')]
+  end
+
+  html << <<-HTML
+  </div>
+</div>
+
+{% include default_sidebar.html %}
+HTML
+
+  File.open("tags/index.html", 'w+') {|f| f.puts html }
   puts 'Done.'
 end
 
