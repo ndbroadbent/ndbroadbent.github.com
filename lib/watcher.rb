@@ -5,4 +5,5 @@ require 'watcher/asset'
 require 'watcher/haml'
 require 'watcher/image'
 require 'watcher/jammit'
+require 'watcher/tags'
 

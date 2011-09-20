@@ -31,3 +31,14 @@ namespace :asset do
   task(:watch) { require 'watcher/asset'; Watcher::Asset.watch }
 end
 
+namespace :tags do
+  desc 'Watch posts directory, and regenerate tag indexes on change'
+  task(:watch) { require 'watcher/tags'; Watcher::Tags.watch }
+end
+
+desc 'Generate tags index and pages'
+task :tags do
+  require 'watcher/tags'
+  Watcher::Tags.regenerate_indexes
+end
+

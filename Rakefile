@@ -3,5 +3,4 @@ require 'ruby-debug'
 
 load 'tasks/posts.rb'
 load 'tasks/watchers.rb'
-load 'tasks/tags.rb'
 
