@@ -20,7 +20,7 @@
       @include font-amaranth;
       font-size: 42px;
     a:hover {
-      color: #555555; } }
+      color: $darker-gray; } }
     h2 {
       color: $light-header;
       @include font-francois-one;

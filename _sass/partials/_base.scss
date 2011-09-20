@@ -9,9 +9,5 @@ $blueprint-grid-margin: 10px;
 // Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.
 $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
 
-$light-header: #80AA80;
-$dark-gray: #4f4f4f;
-$darker-gray: #151515;
-
 $content-width: 620px;
 
