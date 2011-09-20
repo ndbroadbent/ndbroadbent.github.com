@@ -24,14 +24,14 @@
     h2 {
       color: #85A085;
       @include font-francois-one;
-      font-size: 16px;
+      font-size: 1.3em;
       margin: 3px 10px 5px;
       vertical-align: bottom; } }
   #menu {
     @include font-francois-one;
     clear: both;
     float: left;
-    width: 600px;
+    width: $content-width;
     margin-bottom: 8px;
     a, a:visited {
       color: #444; }
