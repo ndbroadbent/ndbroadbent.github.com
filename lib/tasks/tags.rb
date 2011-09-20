@@ -60,7 +60,7 @@ HTML
 
   @site.tags.sort.each do |tag, posts|
     font_size = 14 + (posts.count * 1.3);
-    html << "<a href=\"/tags/%s/\" style=\"font-size: #{font_size}px;\">%s</a>\n" % [tag, tag.gsub("-", ' ')]
+    html << "<a href=\"/tags/%s/\" style=\"font-size: #{font_size}px;\">%s</a>\n" % [tag, tag.gsub("-", '&nbsp;')]
   end
 
   html << <<-HTML
