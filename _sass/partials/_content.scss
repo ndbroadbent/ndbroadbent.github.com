@@ -43,7 +43,9 @@
           text-shadow: 1px 1px 0 #FFFFFF;
           margin-top: 1px;
           font-size: 14px;
-        } } }
+        } }
+      .social_bar {
+        margin: 3px 0 3px -2px; } }
     .content {
       background-color: #fff;
       @include border-indent(1px, 1px, 4px, #bbb);
