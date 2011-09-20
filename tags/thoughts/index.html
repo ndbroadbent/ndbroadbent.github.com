@@ -1,0 +1,19 @@
+---
+layout: default
+title: "tagged: thoughts"
+---
+<div id="content">
+  <h2>Listing posts tagged with: thoughts</h2>
+  <div class="posts-list">
+    {% for post in site.posts %}
+      {% for tag in post.tags %}
+        {% if tag == "thoughts" %}
+          {% include post_excerpt.html %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include default_sidebar.html %}
+
