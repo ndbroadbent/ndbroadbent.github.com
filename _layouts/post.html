@@ -5,27 +5,12 @@ layout: default
 <div id='content'>
   <div class='post'>
     <div class='header'>
-      <div class='title limit_width'>
+      <div class='title'>
         <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
         <h6>{{ page.date | date: "%A, %B %d, %Y" }} | tagged with {{ page.tags | join " " }}</h6>
       </div>
       <div class='social_bar'>
-        <ul>
-          <li>
-            <div>
-              <a href="http://twitter.com/share" class="twitter-share-button"
-                data-via="madebynathan"
-                data-counturl="{{ site.url }}{{ page.url }}"
-                data-url="{% if page.short_url %}{{ page.short_url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}"
-                data-text="{{ page.title }}"
-                data-count="none"
-              >Tweet</a>
-            </div>
-          </li>
-          <li>
-            <div class='g-plusone' data-count='false' data-href='{{ post.url }}' data-size='standard'></div>
-          </li>
-        </ul>
+        {% include add_this.html %}
       </div>
     </div>
     <div class='content'>

@@ -28,11 +28,6 @@
         @include post-title;
         margin: 0;
         margin-bottom: 4px;
-        // limit width to allow room for social bar
-        &.limit_width {
-          @include column(11);
-          width: 416px;
-        }
         h3 {
           font-size: 22px;
           line-height: 110%;
@@ -48,16 +43,7 @@
           text-shadow: 1px 1px 0 #FFFFFF;
           margin-top: 1px;
           font-size: 14px;
-        } }
-      .social_bar {
-        @include column(3, true);
-        width: 120px;
-        ul {
-          list-style-type: none;
-          float: right;
-          margin-right: 0px;
-          li {
-            display: inline-block; } } } }
+        } } }
     .content {
       background-color: #fff;
       @include border-indent(1px, 1px, 4px, #bbb);
