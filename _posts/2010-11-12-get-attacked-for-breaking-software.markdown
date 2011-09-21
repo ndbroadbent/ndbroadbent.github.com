@@ -23,7 +23,8 @@ If you're interested, see here for the source code and instructions:
 
 UPDATE:
 
-I attached a webcam and set it to record a video every time a missile was fired. Heres a link to the latest video:  http://www.youtube.com/watch?v=MK1p7Nz5c9s
+I attached a webcam and set it to record a video every time a missile was fired. Heres a link to the latest video:
+[http://www.youtube.com/watch?v=MK1p7Nz5c9s](http://www.youtube.com/watch?v=MK1p7Nz5c9s)
 
 UPDATE 2:
 
