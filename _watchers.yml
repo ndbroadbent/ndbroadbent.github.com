@@ -4,7 +4,7 @@ haml:
 image:
   path: "images/posts/"
   sizes:
-    post:  [540, 540]
+    post:  [592, 592]
     thumb: [75, 75]
 
 jammit:
