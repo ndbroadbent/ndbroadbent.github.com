@@ -28,6 +28,7 @@
       margin: 3px 10px 5px; } }
   #menu {
     @include column(24);
+    width: 940px;
     @include font-francois-one;
     clear: both;
     float: left;
