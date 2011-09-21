@@ -25,3 +25,9 @@ UPDATE:
 
 I attached a webcam and set it to record a video every time a missile was fired. Heres a link to the latest video:  http://www.youtube.com/watch?v=MK1p7Nz5c9s
 
+UPDATE 2:
+
+The Atlassian guys wrote an article about us and posted it on their blog!
+
+Click here to see it: [http://blogs.atlassian.com/devtools/2010/12/missiles-failed-builds-bamboo-punisher.html](http://blogs.atlassian.com/devtools/2010/12/missiles-failed-builds-bamboo-punisher.html)
+
