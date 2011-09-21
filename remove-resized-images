@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ ! -d .git ]; then
+    echo "Error: must run this script from the root of a git repository";
+    return;
+fi;
+echo "== Removing resized images from git history. You will need to 'force push' after this procedure."
+files="images/posts/*/*/*-*x*.*";
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch $files" HEAD;
+rm -rf .git/refs/original/ && git reflog expire --all && git gc --aggressive --prune
+echo "===== History cleaned. Now run 'git push origin master -f'"
+
