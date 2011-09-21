@@ -5,7 +5,6 @@ image:
   path: "images/posts/"
   sizes:
     post:  [592, 592]
-    thumb: [75, 75]
 
 jammit:
   assets_file: "_assets.yml"

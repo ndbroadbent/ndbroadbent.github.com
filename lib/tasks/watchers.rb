@@ -22,7 +22,7 @@ namespace :image do
   desc "Watch images in images/posts, and create resized versions & thumbnails"
   task(:watch) { require 'watcher/image'; Watcher::Image.watch }
   desc "Delete all previously generated images, and regenerates from Watcher::Image::SIZES"
-  task(:regenerate) { require 'watcher/image'; Watcher::Image.regenerate_all }
+  task(:resize) { require 'watcher/image'; Watcher::Image.regenerate_all }
 end
 
 namespace :asset do
