@@ -11,7 +11,7 @@ rdiscount:
   extensions: []
 paginate:    5
 
-exclude: Rakefile, README.textile, lib
+exclude: Design, Rakefile, README.textile, lib
 
 #
 # Site configuration

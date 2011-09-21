@@ -10,7 +10,7 @@ $(function() {
       'opacity' : 0.08,
       'fallback' : '',
       'monochrome' : false
-  }).css('background-color', '#f7f7f7');
+  })
 
   // Always open links from blog post content in a new tab/window
   $(".post .content a").attr("target","_blank");
