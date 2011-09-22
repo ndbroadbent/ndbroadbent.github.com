@@ -4,7 +4,7 @@ if (window.location.href.indexOf("//localhost") != -1) {
 };
 
 $(function() {
-  $('.two-col').noisy({
+  $('.two-col, ul.site_links').noisy({
       'intensity' : 1,
       'size' : 200,
       'opacity' : 0.08,
