@@ -24,7 +24,7 @@
     h2 {
       color: #aaa;
       @include font-francois-one;
-      font-size: 17px;
+      font-size: 19px;
       margin: 3px 10px 5px; } }
   #menu {
     @include column(24);
@@ -33,13 +33,9 @@
     clear: both;
     float: left;
     margin-bottom: 8px;
-    a, a:visited {
-      color: #444; }
-    a:hover {
-      color: #333; }
-    ul.icons {
+    ul {
       margin: 0;
-      padding: 9px 4px 9px 9px;
+      padding: 7px 4px 5px 9px;
       @include background-gradient(#fefefe, #e2e2e2);
       border-bottom: 1px solid #c7c7c7;
       border-right: 1px solid #c7c7c7;
@@ -47,16 +43,32 @@
       li {
         margin-left: 0;
         margin-right: 14px;
-        a { line-height: 23px; }
+        a, a:visited {
+          color: $dark-gray;
+          display: inline-block; }
+        a {
+          line-height: 23px;
+          font-size: 15px;
+          div.icon {
+            opacity: 0.7;
+          }
+          &:hover {
+            color: $darker-gray;
+            div.icon { opacity: 1; }
+          }
+        }
+
+        span.icon-text {
+          display: inline;
+          vertical-align: middle;
+        }
+
         form {
           width: 100px;
           display: inline; } }
       li.no-text {
         float: right;
-        margin-right: 3px;
-        a {
-          padding-left: 35px;
-        } }
+        margin-right: 6px; }
       &.profiles {
         margin-left: 30px;
       } } } }

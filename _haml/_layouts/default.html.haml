@@ -14,27 +14,7 @@
 
   %body.bp.two-col
     #container
-      #header
-        #logo
-          %ul
-            %li
-              %h1 <a href="/">{{ site.title }}</a>
-            %li
-              %h2 {{ site.description }}
-        #menu
-          %ul.icons.site_links
-            %li <a href="/projects" class="icons-projects" title="Project gallery">projects</a>
-            %li <a href="/tags" class="icons-tags" title="Tag cloud of categories">categories</a>
-            %li <a href="/archive.html" class="icons-archive" title="Archive of all posts">archive</a>
-            %li <a href="http://feeds.feedburner.com/madebynathan" class="icons-rss" title="Follow me via RSS" target="blank">rss</a>
-
-            %li.no-text <a href="http://grooveshark.com/#/nathanf77" class="icons-grooveshark" title="Grooveshark" target="_blank"></a>
-            %li.no-text <a href="http://www.last.fm/user/nathan_f77" class="icons-lastfm" title="Last.fm" target="_blank"></a>
-            %li.no-text <a href="http://www.youtube.com/user/nathanf77" class="icons-youtube" title="Youtube" target="_blank"></a>
-            %li.no-text <a href="http://twitter.com/nathanf77" class="icons-twitter" title="Twitter" target="_blank"></a>
-            %li.no-text <a href="http://www.linkedin.com/profile/view?id=74450241" class="icons-linkedin" title="LinkedIn" target="_blank"></a>
-            %li.no-text <a href="http://stackoverflow.com/users/304706/nathan-f77" class="icons-stackoverflow" title="Stack Overflow" target="_blank"></a>
-            %li.no-text <a href="http://github.com/ndbroadbent" class="icons-github" title="Fork me on Github" target="_blank"></a>
+      {% include header.html %}
 
       {{ content }}
 
