@@ -20,6 +20,8 @@
       margin-bottom: 0px;
       @include font-amaranth;
       font-size: 50px;
+    a {
+      text-shadow: 2px 2px 0 #FFFFFF; }
     a:hover {
       color: $darker-gray; } }
     h2 {
@@ -37,9 +39,11 @@
     ul.site_links {
       margin: 0;
       padding: 7px 4px 5px 9px;
-      @include background-gradient(#fefefe, #e2e2e2);
-      border-bottom: 1px solid #cfcfcf;
-      border-radius: 5px 5px 5px 5px;
+      //@include background-gradient(#eee, #eeeef2);
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-top-color: #fafafa;
+      border-left-color: #fafafa;
       li {
         margin-left: 0;
         margin-right: 14px;

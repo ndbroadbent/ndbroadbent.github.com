@@ -9,10 +9,11 @@ body.bp {
     text-shadow: 1px 1px 0 #ffffff;
     h3 {
       @include font-francois-one;
-      color: #484;
+      color: #FCFCFC;
+      text-shadow: 1px 1px 3px #444;
+      font-size: 25px;
       margin-bottom: 9px;
-      padding-bottom: 3px;
-      border-bottom: 1px solid #ccc; }
+      padding-bottom: 3px; }
     .sidebar-section {
       margin-bottom: 24px;
     }

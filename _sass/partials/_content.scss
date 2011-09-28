@@ -30,6 +30,7 @@
     .header {
       @include column(14, true);
       width: $content-width;
+      margin-left: 3px;
       padding: 6px 0 3px 0;
       .title {
         display: inline;
@@ -64,9 +65,10 @@
       } }
     .content {
       background-color: #fff;
-      @include border-indent(1px, 1px, 4px, #bbb);
+      @include border-shadow(1px, 2px, 4px, #C4C4C4);
       padding: 17px 20px;
       clear: both;
+      border: 1px solid #e0e0e0;
     }
     img {
       @include border-shadow(2px, 2px, 6px, #999); }
