@@ -17,16 +17,21 @@
   }
   .post {
     margin-bottom: 20px;
-    p, h4 {
-      @include font-droid-sans; }
+    p, h4, li {
+      @include font-georgia; }
     h4 {
       margin-bottom: 0px; }
     h4 + p {
       text-indent: 2em; }
-    code {
-      @include font-droid-sans-mono; }
     p {
       line-height: 140%; }
+    p > code {
+        background-color: #F7F7F7;
+        border: 1px solid #CCCCCC;
+        border-radius: 3px 3px 3px 3px;
+        font-size: 12px;
+        padding: 1px 2px;
+        @include font-droid-sans-mono; }
     .header {
       @include column(14, true);
       width: $content-width;
