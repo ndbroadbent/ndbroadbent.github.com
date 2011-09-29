@@ -23,3 +23,8 @@ This relay will trigger a charge and set off a fireball in the field behind my h
 I work for a stage lighting company in my spare time too, if I can get my hands on some USB -&gt; DMX controllers,
 it would be cool to set up a few strobes and halogens as well.
 
+UPDATE (30/09/11):
+
+I actually did set everything up last year, and it was all ready to go, but then .. it rained :(
+Next time I'm in NZ I'll try this again.
+
