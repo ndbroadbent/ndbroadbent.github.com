@@ -16,7 +16,7 @@ By the way, this post is about an embedded linux system that plays last.fm inter
 
 Here are some screenshots of the shell.fm sinatra web interface:
 
-<a href="/images/posts/2010/06/changing-station.png"><img class="alignnone size-medium wp-image-97" title="shell.fm sinatra" src="/images/posts/2010/06/changing-station.png?w=300" alt="" width="300" height="187" /></a>
+<img class="lightbox" alt="shell.fm sinatra" src="/images/posts/2010/06/changing-station.png" />
 
-<a href="/images/posts/2010/06/paused.png"><img class="alignnone size-medium wp-image-98" title="paused track, volume change" src="/images/posts/2010/06/paused.png?w=300" alt="" width="300" height="141" /></a>
+<img class="lightbox" alt="paused track, volume change" src="/images/posts/2010/06/paused.png" />
 
