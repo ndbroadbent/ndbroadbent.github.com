@@ -11,9 +11,9 @@ At work, we use software called Atlassian Bamboo. It does CI (continuous integra
 We had a USB Missile launcher lying around, and I thought it could be put to good use. So now, whenever a developer commits a change that breaks a test, he gets shot.
 
 <br>
-<a href="/images/posts/2010/11/Photo-Nov-11-17-21-55.jpg">
-<img src="/images/posts/2010/11/Photo-Nov-11-17-21-55.jpg" alt="CI Sentinel is waiting for your mistake" title="CI Sentinel" width="480px" class="size-full wp-image-268" />
-</a>
+
+<img class="lightbox thumb" src="/images/posts/2010/11/Photo-Nov-11-17-21-55.jpg" alt="CI Sentinel" />
+
 <br>
 
 The launcher is a bit wimpy though. I'd like to replace the springs with some more powerful ones, since the darts only get about half way to Steve's desk :P

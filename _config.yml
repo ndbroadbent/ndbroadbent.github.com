@@ -35,7 +35,7 @@ watchers:
     path: "images/posts/"
     sizes:
       post:  [592, 592]
-      thumb:  [128, 128]
+      thumb:  [200, 200]
   jammit:
     assets_file: "_assets.yml"
     command: "jammit -o assets -c _assets.yml"

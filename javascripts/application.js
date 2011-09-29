@@ -45,7 +45,8 @@ $(function() {
     padding: '0 4px'
   }
 
-  // Auto-setup fancybox lightboxes for images.
+
+  // Auto-setup fancybox lightboxes / thumbnails for images.
   $("img.lightbox").each(function(i) {
     // The following processes e
     // For each image with the 'lightbox' class, the original image url
@@ -53,20 +54,19 @@ $(function() {
     // The image is then wrapped in a link tag with the url of the original image,
     // which is then turned into a lightbox by fancybox.
     var large_url = $(this).attr('src');
-    var resized_url = large_url.replace(/\.([a-z]*)$/, "-resized-post.\$1");
+    var resize_class = $(this).hasClass('thumb') ? "thumb" : "post"
+    var resized_url = large_url.replace(/\.([a-z]*)$/, "-resized-" + resize_class + ".\$1");
+    // Set the url for the original image to a resized version
     $(this).attr('src', resized_url);
 
     var link = $('<a href="'+large_url+'" />');
-    link.attr('title', 'Click to enlarge')
+    link.attr('title', '(click to enlarge)');
+    if ($(this).attr('alt')) { link.attr('title', $(this).attr('alt') + '   ' + link.attr('title')); }
 
-    if ($(this).attr('alt')) {
-      link.attr('title', $(this).attr('alt') + '   (click to enlarge)' );
-    } else {
-      link.attr('title', '(click to enlarge)');
-    }
     link.fancybox();
     $(this).wrap(link);
   });
+
 
   $('a[href][title]').each(function() {
     $(this).qtip({

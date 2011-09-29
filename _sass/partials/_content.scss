@@ -88,6 +88,15 @@
       border: 2px solid #dedede;
       pre {
         margin: 0px; } }
+    .gallery {
+      background-color: #EEEEEE;
+      padding: 10px;
+      text-align: center;
+      img {
+        margin: 7px;
+        border: 3px solid #ddd;
+      }
+    }
     .hackernews {
       font-size: 1.3em;
       text-align: right;

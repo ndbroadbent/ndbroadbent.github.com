@@ -15,9 +15,7 @@ An extension to <a href="https://github.com/NSPwn/Fake-Operator">Fake-Operator</
 
 Credit to <a href="http://george.insideiphone.com/index.php/2007/11/25/a-convenient-tool-to-send-at-commands">this site</a> for the source code of sendmodem.
 
-<a href="/images/posts/2010/12/photo.png">
-![BalanceAsOperator screenshot](/images/posts/2010/12/photo.png)
-</a>
+<img class="lightbox thumb" src="/images/posts/2010/12/photo.png" alt="BalanceAsOperator screenshot" />
 
 <strong>Install</strong>
 
