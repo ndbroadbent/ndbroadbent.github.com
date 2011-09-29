@@ -30,6 +30,10 @@ module Watcher
         File.join(config["path"], file)
       end
 
+      def glob_pattern
+        File.join(config["path"], "**/*.*")
+      end
+
       def output_file(file, tag)
         ext = file[/\.([^\.]*)$/, 1]
         filename = file.sub(Regexp.new("\\.#{ext}$"), '')
@@ -66,7 +70,6 @@ module Watcher
       end
 
       def delete_resized
-        glob_pattern = File.join(config["path"], "**/*.*")
         Dir.glob(glob_pattern).each do |file|
           if is_processed?(file)
             puts "\033[0;31m   remove\033[0m #{file}"
