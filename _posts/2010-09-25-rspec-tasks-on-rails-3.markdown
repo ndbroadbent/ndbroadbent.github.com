@@ -11,16 +11,24 @@ uninitialized constant RSpec::Rake
 
 Solution:
 
-You are using rails 3 (and rspec 2), and trying to define a custom rake task with Spec::Rake::SpecTask.new
+You are using rails 3 (and rspec 2), and trying to define a custom rake task with <code>Spec::Rake::SpecTask.new</code>
 
 Instead, do:
 
-<pre>RSpec::Core::RakeTask.new(:spec) do |t|
-...</pre>
+{% highlight ruby %}
+RSpec::Core::RakeTask.new(:spec) do |t|
+...
+{% endhighlight %}
+
 and make sure to change:
-<pre>
-     t.spec_files = FileList['spec/**/*_spec.rb']</pre>
+
+{% highlight ruby %}
+t.spec_files = FileList['spec/**/*_spec.rb']
+{% endhighlight %}
+
 to
-<pre>
-    t.pattern   = 'spec/**/*_spec.rb'</pre>
+
+{% highlight ruby %}
+t.pattern   = 'spec/**/*_spec.rb'
+{% endhighlight %}
 
