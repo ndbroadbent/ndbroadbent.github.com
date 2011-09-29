@@ -27,11 +27,11 @@ Thanks to <strong> <a href="http://www.gimptalk.com/forum/memberlist.php?mode=vi
 
 Example:
 
-<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1.jpg" width="540px">
+<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1.jpg" width="592px">
 
 <h3>becomes</h3>
 
-<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-a.jpg" width="540px">
-<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-b.jpg" width="540px">
-<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-c.jpg" width="540px">
+<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-a.jpg" width="592px">
+<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-b.jpg" width="592px">
+<img src="http://www.majhost.com/gallery/ffaat/gimp/scan1-c.jpg" width="592px">
 
