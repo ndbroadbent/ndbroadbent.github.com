@@ -23,6 +23,8 @@ namespace :image do
   task(:watch) { require 'watcher/image'; Watcher::Image.watch }
   desc "Delete all previously generated images, and regenerates from Watcher::Image::SIZES"
   task(:resize) { require 'watcher/image'; Watcher::Image.regenerate_all }
+  desc "Delete all previously generated images"
+  task(:delete_resized) { require 'watcher/image'; Watcher::Image.delete_resized }
 end
 
 namespace :asset do

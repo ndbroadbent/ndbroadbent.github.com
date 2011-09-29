@@ -4,9 +4,9 @@ module Watcher
   class Base
     class << self
       def config
-        # _watchers.yml contains config keys for each subclass of Watcher::Base
+        # _config.yml contains config keys for the subclasses of Watcher::Base
         config_key = self.name[/::([^:]*)$/,1].downcase
-        @config ||= YAML.load_file('_watchers.yml')[config_key]
+        @config ||= YAML.load_file('_config.yml')['watchers'][config_key]
       end
 
       def status_message(output_file)

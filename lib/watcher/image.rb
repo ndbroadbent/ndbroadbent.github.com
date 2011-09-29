@@ -23,17 +23,17 @@ module Watcher
       end
 
       def is_processed?(file)
-        file =~ /-\d+x\d+\./
+        file =~ /-resized-/
       end
 
       def full_path(file)
         File.join(config["path"], file)
       end
 
-      def output_file(file, x, y)
+      def output_file(file, tag)
         ext = file[/\.([^\.]*)$/, 1]
         filename = file.sub(Regexp.new("\\.#{ext}$"), '')
-        "#{filename}-#{x}x#{y}.#{ext}"
+        "#{filename}-resized-#{tag}.#{ext}"
       end
 
       def process(file)
@@ -44,7 +44,7 @@ module Watcher
         if sizes[:thumb]
           sizes.delete(:thumb).tap do |x, y|
             thumb = image.crop_resized(75, 75, Magick::NorthGravity)
-            dest = output_file(file, x, y)
+            dest = output_file(file, tag)
             puts status_message(dest)
             thumb.write(dest)
           end
@@ -52,7 +52,7 @@ module Watcher
         # Process other sizes
         sizes.each do |tag, (x, y)|
           resized = image.resize_to_fit(x, y)
-          dest = output_file(file, x, y)
+          dest = output_file(file, tag)
           puts status_message(dest)
           resized.write(dest)
         end
@@ -60,6 +60,12 @@ module Watcher
 
       def regenerate_all
         # 1st pass - delete previously generated images
+        delete_resized
+        # 2nd pass - regenerate images
+        Dir.glob(glob_pattern).each {|file| process(file) }
+      end
+
+      def delete_resized
         glob_pattern = File.join(config["path"], "**/*.*")
         Dir.glob(glob_pattern).each do |file|
           if is_processed?(file)
@@ -67,8 +73,6 @@ module Watcher
             File.delete(file)
           end
         end
-        # 2nd pass - regenerate images
-        Dir.glob(glob_pattern).each {|file| process(file) }
       end
     end
   end

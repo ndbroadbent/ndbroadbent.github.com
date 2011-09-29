@@ -24,3 +24,19 @@ keywords:     ruby, rails, ubuntu, linux, iphone, electronics, arduino, projects
 author:       Nathan Broadbent
 email:        nathan.f77@gmail.com
 
+#
+# Watcher configuration
+#
+watchers:
+  haml:
+    path: "_haml"
+
+  image:
+    path: "images/posts/"
+    sizes:
+      post:  [592, 592]
+      thumb:  [128, 128]
+  jammit:
+    assets_file: "_assets.yml"
+    command: "jammit -o assets -c _assets.yml"
+
