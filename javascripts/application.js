@@ -45,6 +45,18 @@ $(function() {
     padding: '0 4px'
   }
 
+  // Set up fancybox lightboxes
+  //  $("img.lightbox").fancybox();
+
+  //  $('.inner').wrap('<a class="new" />')
+
+  $("img.lightbox").each(function(i) {
+    var large_url = $(this).attr('src');
+    var resized_url = large_url.replace(/\.([a-z]*)$/, "-592x592.\$1");
+    $(this).attr('src', resized_url);
+  });
+
+
   $('a[href][title]').each(function() {
     $(this).qtip({
       content: $(this).attr('title'),

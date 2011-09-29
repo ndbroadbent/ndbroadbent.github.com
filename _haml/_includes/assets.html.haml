@@ -15,7 +15,7 @@
 <!--[if lt IE 8]><link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" /><![endif]-->
 
 - YAML.load_file('_assets.yml')['javascripts']['application'].each do |js_file|
-  = %Q{"<script src="/#{js_file}" type="text/javascript"></script>"}
+  = %Q{<script src="/#{js_file}" type="text/javascript"></script>}
 
 -# Use production css/js when jekyll is running without server
 {% else %}
