@@ -12,18 +12,21 @@ wordpress_url: http://nathanf77.wordpress.com/?p=85
 
 By<strong> <a href="http://linuxproblem.org/auth_1.html">Mathias Kettner</a> </strong>:
 
-You need an image file that GIMP can open (PNG, GIF, etc.). And you need the command line tool <tt>ppmtowinicon</tt> from the <tt>netpbm</tt>-tools (on SuSE you have to have installed the package <tt>netpbm</tt>). Now perform the following actions:
-	<li>Open your image with GIMP.</li>
-	<li>If your image is not a square then resize the canvas with GIMP.</li>
-	<li>Scale the image to 16x16 pixel (Image, Scale image).</li>
-	<li>Choose <em>File, save as..</em> and save as <tt>favicon.pnm</tt> or <tt>favicon.ppm</tt> with <em>raw</em> encoding.</li>
-	<li>Close GIMP</li>
-	<li>Convert <tt>favicon.pnm</tt> resp. <tt>favicon.ppm</tt> using the command line utility <tt>ppmtowinicon</tt>:
-<pre>&gt; <strong>ppmtowinicon -output favicon.ico favicon.pnm</strong>
-</pre>
-resp.
-<pre>&gt; <strong>ppmtowinicon -output favicon.ico favicon.ppm</strong>
-</pre>
-</li>
-That's all. Now copy your <tt>favicon.ico</tt> to the document root of Apache, for example to <tt>/srv/www/htdocs/favicon.ico</tt>, if you are using SuSE Linux &gt;= 8.1.
+You need an image file that GIMP can open (PNG, GIF, etc.). And you need the command line tool <code>ppmtowinicon</code> from the <code>netpbm</code>-tools (on SuSE you have to have installed the package <code>netpbm</code>). Now perform the following actions:
+
+<ul>
+<li>Open your image with GIMP.</li>
+<li>If your image is not a square then resize the canvas with GIMP.</li>
+<li>Scale the image to 16x16 pixel (Image, Scale image).</li>
+<li>Choose <em>File, save as..</em> and save as <code>favicon.ppm</code> with <em>raw</em> encoding.</li>
+<li>Close GIMP</li>
+<li>Convert <code>favicon.ppm</code> using the command line utility <code>ppmtowinicon</code>:
+</ul>
+
+{% highlight bash %}
+ppmtowinicon -output favicon.ico favicon.ppm
+{% endhighlight %}
+
+
+That's all. Now copy your <code>favicon.ico</code> to the document root of Apache, for example to <code>/srv/www/htdocs/favicon.ico</code>, if you are using SuSE Linux &gt;= 8.1.
 
