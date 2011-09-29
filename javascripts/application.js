@@ -45,17 +45,28 @@ $(function() {
     padding: '0 4px'
   }
 
-  // Set up fancybox lightboxes
-  //  $("img.lightbox").fancybox();
-
-  //  $('.inner').wrap('<a class="new" />')
-
+  // Auto-setup fancybox lightboxes for images.
   $("img.lightbox").each(function(i) {
+    // The following processes e
+    // For each image with the 'lightbox' class, the original image url
+    // is replaced with the resized 'post' url.
+    // The image is then wrapped in a link tag with the url of the original image,
+    // which is then turned into a lightbox by fancybox.
     var large_url = $(this).attr('src');
-    var resized_url = large_url.replace(/\.([a-z]*)$/, "-592x592.\$1");
+    var resized_url = large_url.replace(/\.([a-z]*)$/, "-resized-post.\$1");
     $(this).attr('src', resized_url);
-  });
 
+    var link = $('<a href="'+large_url+'" />');
+    link.attr('title', 'Click to enlarge')
+
+    if ($(this).attr('alt')) {
+      link.attr('title', $(this).attr('alt') + '   (click to enlarge)' );
+    } else {
+      link.attr('title', '(click to enlarge)');
+    }
+    link.fancybox();
+    $(this).wrap(link);
+  });
 
   $('a[href][title]').each(function() {
     $(this).qtip({
