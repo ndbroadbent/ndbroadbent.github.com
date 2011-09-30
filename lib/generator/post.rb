@@ -16,7 +16,6 @@ module Generator
       params["title"] = ask("Title:  ") { |q| q.validate = /.+/ }
       params["excerpt"] = ask("Excerpt:  ") { |q| q.default = params["title"] }
       params["tags"] = ask("Tags:  ") { |q| q.default = "uncategorized" }
-      params["content"] = ask("Content:  ")
       params
     end
 

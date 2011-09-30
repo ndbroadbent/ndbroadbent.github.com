@@ -5,5 +5,4 @@ excerpt: {{ excerpt }}
 tags: {{ tags }}
 date: {{ date }}
 ---
-{{ content }}
 
