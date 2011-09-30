@@ -6,7 +6,6 @@ module Generator
       if ENV["title"]
         @params = %w(title excerpt tags content).inject({}){|h,n| h[n] = ENV[n]; h }
       else
-        puts "No title given in 'title'. Prompting for user input..."
         @params = params_from_input
       end
       @params["date"] = @time.to_s
