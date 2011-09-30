@@ -6,14 +6,18 @@ tags: git guides
 date: 2010-05-21 13:40:27 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=87
 ---
-It seems that for every single git repository I create, I just want to be able to run "git push" and "git pull". "git pull origin master" just gets annoying after a while. In case I forget how to do this again, this is all it takes (provided you already have an 'origin' remote configured):
+It seems that for every single git repository I create,
+I just want to be able to run "git push" and "git pull".
+"git pull origin master" just gets annoying after a while.
+In case I forget how to do this again, this is all it takes (provided you already have an 'origin' remote configured):
 
 {% highlight bash %}
 git config branch.master.remote origin
 git config branch.master.merge refs/heads/master
 {% endhighlight %}
 
-Other useful git shortcut that I literally use everyday (add them to the bottom of ~/.bashrc and then run $ source ~/.bashrc):
+Other useful git shortcut that I literally use everyday
+(add them to the bottom of ~/.bashrc and then run $ source ~/.bashrc):
 
 {% highlight bash %}
 alias gst='git status'
