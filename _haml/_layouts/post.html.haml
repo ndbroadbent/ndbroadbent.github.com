@@ -8,7 +8,7 @@
   .post
     .header
       .title
-        %h3 <a href="{{ page.url }}">{{ page.title }}</a>
+        %h3 {{ page.title }}
         %h6 {{ page.date | date: "%A, %B %d, %Y" }}
         %span.divider #{"|"}
         %h6 tags: {{ page.tags | join:', ' }}
@@ -35,6 +35,7 @@
 
 #sidebar
   {% include sidebar/search.html %}
+  {% include adsense/sidebar.html %}
   {% include sidebar/related_posts.html %}
   {% include sidebar/about.html %}
   {% include sidebar/twitter.html %}

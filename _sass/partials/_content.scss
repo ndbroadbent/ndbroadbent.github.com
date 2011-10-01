@@ -15,6 +15,9 @@
     @include font-francois-one;
     border-bottom: 2px solid #bbb;
   }
+  .posts-list {
+    margin-top: 10px;
+  }
   .post {
     margin-bottom: 20px;
     p, h4, li {
@@ -55,6 +58,7 @@
              color: #555;
           }
           a:hover {
+            color: #333;
             text-decoration: underline;
           }
         }
