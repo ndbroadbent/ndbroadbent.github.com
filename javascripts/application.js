@@ -48,7 +48,6 @@ $(function() {
 
   // Auto-setup fancybox lightboxes / thumbnails for images.
   $("img.lightbox").each(function(i) {
-    // The following processes e
     // For each image with the 'lightbox' class, the original image url
     // is replaced with the resized 'post' url.
     // The image is then wrapped in a link tag with the url of the original image,
