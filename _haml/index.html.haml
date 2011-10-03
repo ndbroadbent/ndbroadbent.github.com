@@ -9,7 +9,7 @@
     .post
       .header
         .title
-          %h3 <a href="{{ post.url }}" title="Click here to share & comment">{{ post.title }}</a>
+          %h3 <a href="{% include post_url %}" title="Click here to share & comment">{{ post.title }}</a>
           %h6 {{ post.date | date: "%A, %B %d, %Y" }}
           %span.divider #{"|"}
           %h6 tags: {{ post.tags | join:', ' }}
