@@ -42,5 +42,5 @@ color_index() {
 
 Calling 'color_index' produces something like this:
 
-<img src="/images/posts/2011/08/color_index3-resized-post.png" alt="color_index()" />
+<img src="/images/posts/2011/08/color_index-resized-post.png" alt="color_index()" />
 
