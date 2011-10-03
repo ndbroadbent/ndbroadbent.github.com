@@ -77,11 +77,11 @@ body.bp {
       }
     }
 
-    // Stack Overflow
+    // Widgets - Stack Overflow, Ohloh, etc.
     // --------------------------------------------------------------
-    #stack-overflow {
-      text-align: center;
-      img.stack-overflow {
+    #widgets {
+      text-align: left;
+      img {
         margin-top: 7px;
       }
     }
