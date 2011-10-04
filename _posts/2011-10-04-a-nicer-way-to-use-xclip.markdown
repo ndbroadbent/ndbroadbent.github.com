@@ -61,10 +61,10 @@ So if you think this looks handy, you can add the following to your <code>~/.bas
 cb() {
   local _scs_col="\e[0;32m"; local _wrn_col='\e[1;31m'; local _trn_col='\e[0;33m'
   # Check that xclip is installed.
-  if ! which xclip | grep xclip -q; then
+  if ! type xclip > /dev/null 2>&1; then
     echo -e "$_wrn_col""You must have the 'xclip' program installed.\e[0m"
   # Check user is not root (root doesn't have access to user xorg server)
-  elif [[ $(whoami) == root ]]; then
+  elif [ "$USER" == "root" ]; then
     echo -e "$_wrn_col""Must be regular user (not root) to copy a file to the clipboard.\e[0m"
   else
     # If no tty, data should be available on stdin
