@@ -48,7 +48,7 @@ No options, no <code>man</code> pages.
 It also comes with a handy <code>cb_ssh</code> alias that copies your SSH public key to the clipboard,
 for when you are setting up your new [BitBucket account](https://bitbucket.org)
 with [unlimited, free private git repositories](http://blog.bitbucket.org/2011/10/03/bitbucket-now-rocks-git/)!
-I'm not even affiliated with them, I just think they're awesome.
+I'm not affiliated with Atlassian, I just think they're awesome.
 
 So if you think this looks handy, you can add the following to your <code>~/.bashrc</code>:
 
