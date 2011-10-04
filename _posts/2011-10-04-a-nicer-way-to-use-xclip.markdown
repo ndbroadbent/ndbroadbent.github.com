@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A nicer way to use xclip (clipboard from the command line)
-excerpt: A nicer way to use xclip
+title: A better way to use xclip (clipboard from the command line)
+excerpt: A better way to use xclip
 tags: ubuntu linux guides bash
 date: 2011-10-04 16:45:42 +0800
 ---
