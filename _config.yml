@@ -9,7 +9,7 @@ pygments:    true
 markdown:    rdiscount
 rdiscount:
   extensions: []
-paginate:    5
+paginate:    3
 
 exclude: Design, Rakefile, README.textile, lib
 
