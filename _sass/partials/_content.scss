@@ -83,6 +83,7 @@
       @include border-shadow(1px, 2px, 4px, #C4C4C4);
       padding: 17px 20px;
       clear: both;
+      color: #000;
     }
     img {
       @include border-shadow(2px, 2px, 6px, #999); }
