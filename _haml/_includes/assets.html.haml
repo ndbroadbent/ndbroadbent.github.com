@@ -40,9 +40,20 @@
 
 {% endif %}
 
+-# 'Add This' loader
 <script src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e78a2905b551b31" type="text/javascript"></script>
+
+-# Disqus loader
+:javascript
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://madebynathan.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 
+-# IE 6 Deprecation
 :plain
   <!--[if lte IE 6]>
     <script src="/no_ie6/warning.js" type="text/javascript"></script>

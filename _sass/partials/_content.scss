@@ -2,7 +2,7 @@
   @include column(14, true);
   @include prepend(1);
   @include append(1);
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 0;
   padding-right: 0;
   width: $content-width;
@@ -26,6 +26,15 @@
       @include no-spacer;
       padding-top: 0;
     }
+    &.single {
+      padding-bottom: 20px;
+      .header {
+        margin-bottom: 14px;
+        .title h3 {
+          padding-bottom: 5px;
+        }
+      }
+    }
     p, h4, li {
       @include font-georgia; }
     h4 {
@@ -48,18 +57,22 @@
       margin-bottom: 4px;
       padding-bottom: 3px;
       .title {
-        display: inline;
         @include post-title;
         margin: 0;
+        margin-bottom: 2px;
         span.divider {
           color: #ccc;
           margin: 0 2px;
+        }
+        .subtitle {
+          float: left;
+          padding-top: 2px;
         }
         h3 {
           color: #333333;
           font-size: 24px;
           line-height: 110%;
-          padding-bottom: 1px;
+          padding-bottom: 3px;
           a, a:visited {
              text-decoration: none;
              color: #555;
@@ -77,7 +90,8 @@
       .social_bar {
         margin: 3px 0 3px -2px; }
       .addthis_inline {
-        margin: 7px 0;
+        margin: 5px 0 0 4px;
+        float: left;
       } }
     .content {
       background-color: #FBFBFB;
@@ -130,7 +144,7 @@
         content: "”";
         float: right; } } }
   #addthis_footer {
-    margin-bottom: 10px;
+    margin-bottom: 35px;
   }
   #disqus_thread {
   }
