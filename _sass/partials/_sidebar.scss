@@ -88,6 +88,7 @@ body.bp {
     // Google Site Search API
     // --------------------------------------------------------------
     #google-search {
+      min-height: 35px;
       table { margin-bottom: 0; }
       table.gsc-branding { display: none; }
       .gsc-results {
