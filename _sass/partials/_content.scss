@@ -20,7 +20,12 @@
     text-align: left;
   }
   .post {
-    margin-bottom: 20px;
+    @include spacer;
+    padding: 20px 0 30px;
+    &:first-child {
+      @include no-spacer;
+      padding-top: 0;
+    }
     p, h4, li {
       @include font-georgia; }
     h4 {
@@ -39,9 +44,9 @@
     .header {
       @include column(14, true);
       width: $content-width;
-      margin-left: 3px;
+      margin-left: 2px;
       margin-bottom: 4px;
-      padding: 6px 0 3px 0;
+      padding-bottom: 3px;
       .title {
         display: inline;
         @include post-title;

@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id='content'>
-  {% include adsense/content_banner.html %}
+  {% include adsense/header_leaderboard.html %}
   <div class='posts-list'>
     {% for post in paginator.posts %}
     <div class='post'>
@@ -20,6 +20,7 @@ layout: default
     </div>
     {% endfor %}
   </div>
+  {% include adsense/footer_leaderboard.html %}
   {% include pagination.html %}
 </div>
 {% include default_sidebar.html %}

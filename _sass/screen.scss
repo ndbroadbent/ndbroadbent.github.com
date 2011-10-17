@@ -72,7 +72,8 @@ body.two-col {
     a:hover { color: $darker-gray; }
   }
   #container {
-    @include container; }
+    @include container;
+    width: 1037px; }
 
   #footer {
     @include column(24);

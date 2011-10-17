@@ -1,6 +1,11 @@
 #content .adsense {
   text-align: center;
-  margin: 10px 0 20px;
-  background-color: #eeeeee;
+  padding: 18px 0;
+  @include spacer;
+}
+
+#content .adsense.top {
+  padding-top: 11px;
+  @include no-spacer;
 }
 

@@ -24,6 +24,17 @@
   box-shadow: $horizontal $vertical $blur $colour inset;
   -webkit-box-shadow: $horizontal $vertical $blur $colour inset; }
 
+@mixin spacer {
+  @include border-indent(0, 1px, 0, #fff);
+  border-top: 1px solid #ccc;
+}
+
+
+@mixin no-spacer {
+  @include border-indent(0, 0, 0, #fff);
+  border-top: none;
+}
+
 @mixin background-gradient($start, $end) {
   background-color: $start;
   background-repeat: repeat-x;

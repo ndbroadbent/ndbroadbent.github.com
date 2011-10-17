@@ -12,6 +12,7 @@ body.bp {
       color: #555;
       text-shadow: 1px 1px 0px #FFFFFF;
       font-size: 25px;
+      border-bottom: 2px solid #dedede;
       margin-bottom: 9px;
       padding-bottom: 3px; }
     .sidebar-section {
@@ -26,13 +27,11 @@ body.bp {
       margin-bottom: 7px;
       margin-top: 0;
       padding-top: 6px;
-      border-top: 1px solid #ccc;
-      @include border-indent(0, 1px, 0, #fff);
+      @include spacer;
 
       // Turn off border and padding for first li element
       &:first-child {
-        border-top: none;
-        @include border-indent(0px, 0px, 0px, #fff);
+        @include no-spacer;
         padding-top: 0;
       }
     }

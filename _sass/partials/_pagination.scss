@@ -3,7 +3,7 @@ body.bp {
     text-align: center;
     padding: 18px 0;
     border-top: 1px solid #ccc;
-    @include border-indent(0, 1px, 0, #fff);
+    @include spacer;
     h3 {
       display: inline-block;
       margin: 0;

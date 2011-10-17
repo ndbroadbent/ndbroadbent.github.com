@@ -3,7 +3,7 @@
   layout: default
   ---
 #content
-  {% include adsense/content_banner.html %}
+  {% include adsense/header_leaderboard.html %}
 
   .posts-list
     {% for post in paginator.posts %}
@@ -18,8 +18,9 @@
         {{ post.content }}
     {% endfor %}
 
-  {% include pagination.html %}
+  {% include adsense/footer_leaderboard.html %}
 
+  {% include pagination.html %}
 
 {% include default_sidebar.html %}
 
