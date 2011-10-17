@@ -43,12 +43,9 @@ body.bp {
 //   :margin 0px
 form.bp {}
 
-html {
-  @include background-gradient(#f9f9f9, #e7e7e7);
-}
-
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col {
+  background-color: #f4f4f4;
   font-size: 12px;
   a, a:visited {
     color: #448844;
