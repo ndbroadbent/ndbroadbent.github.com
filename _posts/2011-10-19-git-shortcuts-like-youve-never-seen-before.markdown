@@ -121,9 +121,12 @@ This sends the `HOME` key, followed by `git_add_and_commit`:
 
 ## Repository Index
 
-The second feature is a repository index for all of your projects.
-This gives you super-fast switching between your project directories with tab completion,
-and it can even tab-complete project subdirectories.
+The second feature is a repository index for all of your projects and submodules.
+This gives you super-fast switching between your project directories, with tab completion,
+and it can even tab-complete down to project subdirectories.
+This means that you can keep your projects organized in subfolders,
+but switch between them as easily as if they were all in one folder.
+
 It's similar to [autojump](https://github.com/joelthelion/autojump), but it doesn't need to 'learn' anything,
 and it can do SCM-specific stuff like:
 
@@ -132,7 +135,7 @@ and it can do SCM-specific stuff like:
 
 The default alias for `git_index` is 's', which could stand for 'source' or 'switch' :)
 
-You first need to configure your repository directory, and then build the index:
+You will first need to configure your repository directory, and then build the index:
 
 {% highlight bash %}
 $ s --rebuild
@@ -145,8 +148,27 @@ Then you'll be able to switch between your projects, or show the list of indexed
 <div class="centered">
 <img src="/images/posts/2011/10/source_list-resized-post.png" alt="Git Status With Shortcuts" />
 </div>
-<br/>
+<br/><br/>
 
+To switch to a project directory, you don't need to type the full project name. For example,
+to switch to the `errbit` project, you could type any of the following:
+
+{% highlight bash %}
+$ s errbit
+$ s err
+$ s rbit
+{% endhighlight %}
+
+Or if you wanted to go straight to a subdirectory within `errbit`:
+
+{% highlight bash %}
+$ s err<TAB>
+$ s errbit/<TAB>
+# => app/       autotest/  config/    db/    ...
+$ s errbit/conf<TAB>
+$ s errbit/config/
+# => cd ~/src/rails/errbit/config
+{% endhighlight %}
 
 
 ## Anything else?
