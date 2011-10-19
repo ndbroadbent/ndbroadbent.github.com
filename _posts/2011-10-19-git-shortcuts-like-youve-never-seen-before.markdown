@@ -189,7 +189,7 @@ and will create or patch your `~/.*.scmbrc` files if any new settings are added.
 SCM Breeze lives on Github at [https://github.com/ndbroadbent/scm_breeze](https://github.com/ndbroadbent/scm_breeze)
 
 Please feel free to fork and send pull requests, especially if you would like to build these features
-for a different SCM.
+for Mercurial, SVN, etc.
 
 
 ## Enjoy!
