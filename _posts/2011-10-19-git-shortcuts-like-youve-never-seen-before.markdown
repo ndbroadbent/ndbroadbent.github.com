@@ -184,7 +184,15 @@ Run `update_scm_breeze`. This will update SCM Breeze from Github,
 and will create or patch your `~/.*.scmbrc` files if any new settings are added.
 
 
+# Contributing
+
+SCM Breeze lives on Github at [https://github.com/ndbroadbent/scm_breeze](https://github.com/ndbroadbent/scm_breeze)
+
+Please feel free to fork and send pull requests, especially if you would like to build these features
+for a different SCM.
+
+
 ## Enjoy!
 
-I look forward to your pull requests!
+Look forward to your pull requests!
 
