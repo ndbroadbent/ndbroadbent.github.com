@@ -173,8 +173,7 @@ SCM Breeze is configured via automatically installed `~/.*.scmbrc` files.
 To change git configuration, edit `~/.git.scmbrc`.
 
 I know we grow attached to the aliases we use every day, so I've made them completely customizable.
-Just change any aliases in `~/.git.scmbrc`, and tab completions will also be updated.
-You can also change or remove any keyboard shortcuts.
+Just change any aliases in `~/.git.scmbrc`. You can also change or remove any keyboard shortcuts.
 
 Each feature is modular, so you are free to ignore the parts you don't want to use.
 Just comment out the relevant line in `~/.scm_breeze/scm_breeze.sh`.
