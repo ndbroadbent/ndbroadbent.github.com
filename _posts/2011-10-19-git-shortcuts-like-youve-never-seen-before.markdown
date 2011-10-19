@@ -105,7 +105,7 @@ The commit shortcuts use the `git_commit_prompt` function, which gives a simple 
 (When using bash, this commit prompt gives you access to your bash history via the arrow keys.)
 <br/>
 
-And if you really want to speed up your workflow, you can do this:
+And if you really want to speed up your workflow, you can type this:
 
 {% highlight bash %}
 $ 2 3 <CTRL+x c>
