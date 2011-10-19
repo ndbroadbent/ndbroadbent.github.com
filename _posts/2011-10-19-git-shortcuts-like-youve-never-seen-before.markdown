@@ -40,10 +40,16 @@ $ ga assets/git_breeze/config* assets/git_breeze/install.sh
 You can type this instead:
 
 {% highlight bash %}
+$ ga $e2 $e3 $e11
+{% endhighlight %}
+
+But SCM Breeze is also smart enough to expand integers and ranges, so all you need to type is:
+
+{% highlight bash %}
 $ ga 2 3 11
 {% endhighlight %}
 
-Or maybe you want to add all unstaged changes (files 1 to 10):
+And if you want to add all unstaged changes (files 1 to 10):
 
 {% highlight bash %}
 $ ga 1..10
