@@ -163,8 +163,7 @@ It would be cool to make this project into an [oh-my-zsh](https://github.com/rob
 
 {% highlight bash %}
 git clone git://github.com/ndbroadbent/scm_breeze.git ~/.scm_breeze
-cd ~/.scm_breeze
-./install.sh
+~/.scm_breeze/install.sh
 source ~/.bashrc   # or source ~/.zshrc
 {% endhighlight %}
 
