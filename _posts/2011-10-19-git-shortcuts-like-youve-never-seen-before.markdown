@@ -194,5 +194,3 @@ for Mercurial, SVN, etc.
 
 ## Enjoy!
 
-Look forward to your pull requests!
-
