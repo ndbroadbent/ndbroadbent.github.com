@@ -111,7 +111,7 @@ And if you really want to speed up your workflow, you can do this:
 $ 2 3 <CTRL+x c>
 {% endhighlight %}
 
-Which sends the `HOME` key, followed by `git_add_and_commit`:
+This sends the `HOME` key, followed by `git_add_and_commit`:
 
 <div class="centered">
 <img src="/images/posts/2011/10/git_add_and_commit_params-resized-post.png" alt="Git Add And Commit" />
