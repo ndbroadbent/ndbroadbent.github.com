@@ -201,6 +201,8 @@ source ~/.bashrc   # or source ~/.zshrc
 SCM Breeze is configured via automatically installed `~/.*.scmbrc` files.
 To change git configuration, edit `~/.git.scmbrc`.
 
+**Note:** After changing any settings, you will need to run `source ~/.bashrc` (or `source ~/.zshrc`)
+
 I know we grow attached to the aliases we use every day, so I've made them completely customizable.
 Just change any aliases in `~/.git.scmbrc`. You can also change or remove any keyboard shortcuts.
 
