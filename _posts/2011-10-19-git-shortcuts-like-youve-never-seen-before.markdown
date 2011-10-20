@@ -31,7 +31,7 @@ You can configure the variable prefix, which is 'e' by default.
 
 These numbers (or ranges of numbers) can be used with any SCM or system command.
 
-For example, if `ga` used to be your alias for `git add`, instead of typing something like:
+For example, if `ga` was your alias for `git add`, instead of typing something like:
 
 {% highlight bash %}
 $ ga assets/git_breeze/config* assets/git_breeze/install.sh
@@ -43,7 +43,7 @@ You can type this instead:
 $ ga $e2 $e3 $e11
 {% endhighlight %}
 
-But you could also alias `ga` to SCM Breeze's `git_add_shorcuts` function,
+But with SCM Breeze, you could alias `ga` to the `git_add_shorcuts` function instead,
 which is smart enough to expand integers and ranges, so all you need to type is:
 
 {% highlight bash %}
