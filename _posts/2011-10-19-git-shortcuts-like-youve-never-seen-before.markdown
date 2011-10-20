@@ -90,7 +90,8 @@ My most common git commands are `git status`, `git add` and `git commit`, so I w
 to be as streamlined as possible. One way of speeding up commonly used commands is by binding them to
 keyboard shortcuts.
 
-Here are the default keyboard bindings:
+Keyboard shortcuts are turned off by default,
+but here are the default key bindings if you enable them:
 
 * `CTRL`+`SPACE` => `git_status_shortcuts` - show git status with file shortcuts
 * `CTRL`+`x` `c` => `git_add_and_commit` - add given files (if any), then commit staged changes
