@@ -11,7 +11,7 @@ date: 2011-10-19 01:14:01 +0800
 such as git. It integrates with your shell to give you numbered file shortcuts,
 a repository index with tab completion, and a community driven collection of useful SCM functions.
 
-Disclaimer: **git** is currently the only supported SCM, because it's the only one I use.
+Disclaimer: **git** is currently the only supported SCM.
 I've kept the project's name open because it won't be difficult to port it for other SCMs.
 
 
