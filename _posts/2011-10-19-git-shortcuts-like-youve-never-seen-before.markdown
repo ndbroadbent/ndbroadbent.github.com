@@ -84,7 +84,7 @@ $ ge echo 1..3
 {% endhighlight %}
 
 
-## Keyboard bindings
+## Keyboard bindings (disabled by default)
 
 My most common git commands are `git status`, `git add` and `git commit`, so I wanted these
 to be as streamlined as possible. One way of speeding up commonly used commands is by binding them to
