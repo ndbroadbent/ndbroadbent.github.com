@@ -116,7 +116,7 @@ design link
 This uses your git index (from SCM Breeze) to symlink any existing design directories
 into each of the projects that you have on that machine.
 
-Note: The same thing could be acheived by running 'design init' for each of the projects on your other machine.
+Note: The same thing could be achieved by running 'design init' for each of the projects on your other machine.
 
 
 ## Enjoy!
