@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Managing project design assets within git repositories: A simple solution"
+title: "Managing Project Design Assets in Git Repositories: A Simple Solution"
 excerpt: How to use Dropbox to sync the files you don't want to check in
 tags: git bash scripts guides projects ubuntu
 date: 2011-10-21 23:25:47 +0800
 ---
 
-When you're creating logos or icons for a project in a `git` repository,
+When you're creating logos or icons for a project that uses `git`,
 have you ever wondered where you should store those `.psd` or `.xcf` files?
 Do you commit all of your raw design files, or does it put you off that any changes to those files
 will bloat your repository?
@@ -100,19 +100,18 @@ design rm
 
 ## 4) Link existing design directories into your projects
 
-Now that you've that you've set up your design directories on one machine,
-you'll probably want them to be synchronized across all of your machines.
+If you've set up your design directories on one machine, you'll want them
+to be synchronized across all of your machines.
 
-Just run the following command on any of your other machines after following steps 1 and 2:
+Just run the following command on your other machines after following steps 1 and 2:
 
 {% highlight bash %}
 design link
 {% endhighlight %}
 
-This uses your git index (from SCM Breeze) to symlink any existing design directories
-into each of the projects that you have on that machine.
-
-Note: The same thing could be achieved by running 'design init' for each of the projects on your other machine.
+This uses your git index (from SCM Breeze) to figure out where to create the symlinks.
+If you don't use the git index, the same outcome could be achieved by running 'design init'
+for each of the projects.
 
 
 ## Enjoy!
