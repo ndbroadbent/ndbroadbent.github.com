@@ -101,7 +101,7 @@ design rm
 ## 4) Link existing design directories into your projects
 
 If you've set up your design directories on one machine, you'll want them
-to be synchronized across all of your machines.
+to be synchronized across all of your other development machines.
 
 Just run the following command on your other machines after following steps 1 and 2:
 
