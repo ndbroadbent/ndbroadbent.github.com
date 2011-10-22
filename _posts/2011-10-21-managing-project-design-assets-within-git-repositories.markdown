@@ -1,25 +1,25 @@
 ---
 layout: post
-title: How to use Dropbox to sync files you don't want in your git repos
+title: Managing project design assets within git repositories: A simple solution
+excerpt: How to use Dropbox to sync the files you don't want to check in
 tags: git bash scripts guides projects ubuntu
 date: 2011-10-21 23:25:47 +0800
 ---
+When you're creating logos or icons for a project in a `git` repository,
+have you ever wondered where you should store those `.psd` or `.xcf` files?
+Do you commit all of your raw design files, or does it put you off that any changes to those files
+will bloat your repository?
+
 The following post describes a part of my [SCM Breeze](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/)
 project. If you haven't seen it already, take a look at my [blog post that describes what it can do](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/).
-
-When you're designing logos or icons for a `git` project,
-have you ever wondered what you should do with all those `.psd`s or `.xcf`s?
-Do you commit all of your design files, or does it put you off that any changes to those files
-will end up bloating your repository?
 
 Here were my goals when I set out to find a solution:
 
 * I wanted a design directory for each of my projects
 * I didn't want the design directory to be checked in to the git repository
 * The design directory needed to be synchronized across all of my machines
-* I wanted to be able to organize files so the root design directory should
-  be structured like `Design/Icons/project1`, and the project's design directory
-  should look like `project1/design_assets/Icons`.
+* I wanted the root design directory to be structured like `Design/Icons/project1`,
+  and the project's design directory should look like `project1/design_assets/Icons`.
 
 
 I decided that I would need to store all of my design files in one place so that they could be easily
