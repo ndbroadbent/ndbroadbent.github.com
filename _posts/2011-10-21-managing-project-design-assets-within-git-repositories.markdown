@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing project design assets within git repositories: A simple solution
+title: "Managing project design assets within git repositories: A simple solution"
 excerpt: How to use Dropbox to sync the files you don't want to check in
 tags: git bash scripts guides projects ubuntu
 date: 2011-10-21 23:25:47 +0800
