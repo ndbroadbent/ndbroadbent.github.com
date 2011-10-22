@@ -18,8 +18,6 @@ Here were my goals when I set out to find a solution:
 * I wanted a design directory for each of my projects
 * I didn't want the design directory to be checked in to the git repository
 * The design directory needed to be synchronized across all of my machines
-* I wanted the root design directory to be structured like `Design/Icons/project1`,
-  and the project's design directory should look like `project1/design_assets/Icons`.
 
 
 I decided that I would need to store all of my design files in one place so that they could be easily
