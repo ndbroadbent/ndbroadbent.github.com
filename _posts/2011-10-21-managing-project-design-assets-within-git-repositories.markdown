@@ -70,13 +70,10 @@ If your root directory is `~/Dropbox/Design`, directories will be created at
 The function will also create a design directory within the project,
 such as `my_project/design_assets`, and it will add this directory to `.git/info/exclude` so that git ignores it.
 
-It will then symlink each of the subdirectories from your root design directory into your project's design directory,
-so you end up with something like this:
+It will then symlink the project from your root design directory into your project's design directory,
+so you end up with:
 
-* `my_project/design_assets/Backgrounds` -> `~/Dropbox/Design/Backgrounds/my_project`
-* `my_project/design_assets/Icons` -> `~/Dropbox/Design/Icons/my_project`
-* `my_project/design_assets/Images` -> `~/Dropbox/Design/Images/my_project`
-* `my_project/design_assets/Logos` -> `~/Dropbox/Design/Logos/my_project`
+* `my_project/design_assets` -> `~/Dropbox/Design/projects/my_project`
 
 
 Here's the awesome part: If you use the SCM Breeze repository index,
