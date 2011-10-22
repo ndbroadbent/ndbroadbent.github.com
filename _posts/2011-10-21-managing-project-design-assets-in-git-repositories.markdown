@@ -77,7 +77,7 @@ so you end up with:
 It also adds this directory to `.git/info/exclude` so that git ignores it.
 
 
-Here's the awesome part: If you use the SCM Breeze repository index,
+Here's the awesome part: If you use the SCM Breeze git repository index,
 you can run the following batch command to set up these directories for all of your git repos at once:
 
 {% highlight bash %}
