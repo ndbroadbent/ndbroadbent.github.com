@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Managing project design assets within git repositories: A simple solution
+excerpt: How to use Dropbox to sync the files you don't want to check in
 tags: git bash scripts guides projects ubuntu
 date: 2011-10-21 23:25:47 +0800
 ---
+
 When you're creating logos or icons for a project in a `git` repository,
 have you ever wondered where you should store those `.psd` or `.xcf` files?
 Do you commit all of your raw design files, or does it put you off that any changes to those files
