@@ -1,6 +1,6 @@
 module Generator
   class Post
-    def initialize(options = {:edit_with => :gedit})
+    def initialize(options = {:edit_with => :geany})
       @options = options
       @time = Time.now
       if ENV["title"]
@@ -39,6 +39,7 @@ module Generator
       puts "===== Editing post with #{editor}..."
       case editor
       when :gedit; system("nohup gedit #{file} > /dev/null &")
+      when :gedit; system("nohup geany #{file}:9 > /dev/null &")
       end
     end
 
