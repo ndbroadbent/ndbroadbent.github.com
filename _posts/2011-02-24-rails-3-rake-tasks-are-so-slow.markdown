@@ -2,7 +2,7 @@
 layout: post
 title: Rails 3 Rake tasks can take too long to load
 wordpress_id: 373
-tags: guides ruby-on-rails rails-3
+tags: guides rails rails-3
 date: 2011-02-24 05:02:15 +08:00
 wordpress_url: http://www.f-77.com/?p=373
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: obscure jqGrid API notes
 wordpress_id: 61
-tags: javascript ruby-on-rails web-design jqgrid
+tags: javascript rails web-design jqgrid
 date: 2010-05-06 15:33:06 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=61
 ---

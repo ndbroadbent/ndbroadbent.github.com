@@ -2,7 +2,7 @@
 layout: post
 title: jqgrid on Spree
 wordpress_id: 59
-tags: guides ruby ruby-on-rails jqgrid
+tags: guides ruby rails jqgrid
 date: 2010-04-30 17:22:57 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=59
 ---

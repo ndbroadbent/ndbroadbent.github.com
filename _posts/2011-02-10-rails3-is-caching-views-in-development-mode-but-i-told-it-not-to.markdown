@@ -2,7 +2,7 @@
 layout: post
 title: Rails 3 caching views in development mode
 wordpress_id: 366
-tags: guides ruby-on-rails rails-3
+tags: guides rails rails-3
 date: 2011-02-10 03:40:52 +08:00
 wordpress_url: http://www.f-77.com/?p=366
 ---

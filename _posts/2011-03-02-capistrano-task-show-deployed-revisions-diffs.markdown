@@ -2,7 +2,7 @@
 layout: post
 title: Capistrano task - show deployed revisions & diffs
 wordpress_id: 380
-tags: guides ruby-on-rails rails-3 capistrano
+tags: guides rails rails-3 capistrano
 date: 2011-03-02 05:43:35 +08:00
 wordpress_url: http://www.f-77.com/?p=380
 ---

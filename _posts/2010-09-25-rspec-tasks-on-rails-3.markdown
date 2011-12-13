@@ -2,7 +2,7 @@
 layout: post
 title: RSpec tasks on Rails 3
 wordpress_id: 125
-tags: rspec rails-3 bugfixes ruby-on-rails
+tags: rspec rails-3 bugfixes rails
 date: 2010-09-25 19:51:35 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=125
 ---

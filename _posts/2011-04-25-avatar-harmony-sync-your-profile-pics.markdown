@@ -2,7 +2,7 @@
 layout: post
 title: Avatar Harmony - Sync your profile pics
 wordpress_id: 432
-tags: projects ruby-on-rails web-design rails-3
+tags: projects rails web-design rails-3
 date: 2011-04-25 17:32:50 +08:00
 wordpress_url: http://www.f-77.com/?p=432
 ---

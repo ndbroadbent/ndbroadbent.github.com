@@ -2,7 +2,7 @@
 layout: post
 title: Don&#039;t override core Rails methods
 wordpress_id: 90
-tags: bugfixes ruby-on-rails
+tags: bugfixes rails
 date: 2010-05-28 14:55:05 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=90
 ---
