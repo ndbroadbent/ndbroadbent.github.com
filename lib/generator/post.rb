@@ -50,7 +50,7 @@ module Generator
       images_dir = File.join("images", "posts", @time.year.to_s, "%02d" % @time.month)
       unless File.exist?(images_dir)
         puts "===== Creating image directory: #{images_dir}"
-        Dir.mkdir(images_dir)
+        `mkdir -p #{images_dir}`
       end
     end
   end
