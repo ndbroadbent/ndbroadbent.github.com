@@ -17,10 +17,11 @@ Here's what my prompt looks like now:
 
 <img src="/images/posts/2012/01/travis_ci_prompt.png" alt="Travis CI status in prompt" />
 
+Here's how:
 
-You will need to cache the build status, since looking it up takes a few seconds.
+----------------
 
-First, install the `travis-client` gem for your default gemset.
+You will need to cache the build status, since looking it up takes a few seconds. First, install the `travis-client` gem for your default gemset.
 
 {% highlight bash %}
 gem install travis-client
