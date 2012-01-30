@@ -108,7 +108,7 @@ find_in_cwd_or_parent() {
 }
 {% endhighlight %}
 
-(It's a bit complicated because it also works if you are in a project's sub-directory)
+(it also works if you are in a project's sub-directory.)
 
 Finally, add `$(parse_travis_status)` somewhere in your `$PS1`. You may like to have a look at the [prompt section of my dotfiles](https://github.com/ndbroadbent/dotfiles/blob/master/bashrc/prompt.sh), to see how I do it.
 
