@@ -13,7 +13,7 @@ date: 2012-01-31 01:21:13 +0800
 
 Wouldn't it be cool if you could see that build status in your shell prompt whenever you are working on a project?
 
-Here's what my prompt looks like now:
+Here's what my shell prompt looks like now:
 
 <img src="/images/posts/2012/01/travis_ci_prompt.png" alt="Travis CI status in prompt" />
 
