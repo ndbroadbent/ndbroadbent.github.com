@@ -21,7 +21,8 @@ Here's how:
 
 ----------------
 
-You will need to cache the build status, since looking it up takes a few seconds. First, install the `travis-client` gem for your default gemset.
+You will need to cache the build status, since looking it up takes a few seconds. First, install the `travis-client` gem.
+If you are using RVM, make sure you are using your default ruby.
 
 {% highlight bash %}
 gem install travis-client
