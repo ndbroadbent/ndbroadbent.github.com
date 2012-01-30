@@ -29,7 +29,7 @@ gem install travis-client
 
 
 Next, we need a way to update the cached status.
-The following function is included as part of my [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/), but feel free to save the following script to `/usr/bin/update_travis_ci_status`.
+The following code is included as part of my [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/), but feel free to save the following script to `/usr/bin/update_travis_ci_status`.
 
 {% highlight bash %}
 #!/bin/bash
