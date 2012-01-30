@@ -7,7 +7,7 @@ date: 2012-01-31 01:21:13 +0800
 ---
 
 
-Travis CI is a distributed continuous integration for the open source community. It's an awesome service that be used with any of your public projects on GitHub. You've probably seen some 'build status' badges like this:
+[Travis CI](http://travis-ci.org/) is a distributed [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration) service for the open source community, and it can be used with any of your public projects on [GitHub](https://github.com/). You've probably seen some 'build status' badges like this:
 
 <img src="https://secure.travis-ci.org/travis-ci/travis-ci.png" alt="Travis CI build status">
 
