@@ -55,7 +55,7 @@ fi
 
 We also need a way to run this update task every few minutes, across all of our local git repos.
 
-My [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/) maintains an index of your git repositories, which gives you the ability to run batch commands via the `git_index` function.
+The [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/) also maintains an index of your git repositories, which gives you the ability to run batch commands via the `git_index` function.
 So the build status update can be easily set up as a cron task:
 
 {% highlight text %}
