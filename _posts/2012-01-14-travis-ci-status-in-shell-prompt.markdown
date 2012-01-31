@@ -6,7 +6,6 @@ tags: ruby github travis-ci bash prompt
 date: 2012-01-31 01:21:13 +0800
 ---
 
-
 [Travis CI](http://travis-ci.org/) is a distributed [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration) service for the open source community, and it can be used with any of your public projects on [GitHub](https://github.com/). You've probably seen some 'build status' badges like this:
 
 <img src="https://secure.travis-ci.org/travis-ci/travis-ci.png" alt="Travis CI build status">
@@ -17,53 +16,64 @@ Here's what my shell prompt looks like now:
 
 <img src="/images/posts/2012/01/travis_ci_prompt.png" alt="Travis CI status in prompt" />
 
-Here's how:
+This shows the build status for the current branch.
 
 ----------------
 
-You will need to cache the build status, since looking it up takes a few seconds. First, install the `travis-client` gem.
-If you are using RVM, make sure you are using your default ruby.
+You will need to cache the build status, since looking it up takes a few seconds.
+
+You should use my fork of [mislav's](https://github.com/mislav) `travis-ci` script, which can check the build status of a project. Make sure `~/bin` is in your `PATH`, and if you are using RVM, make sure you are using your default ruby.
+
+Run the following to install it:
 
 {% highlight bash %}
-gem install travis-client
+mkdir -p ~/bin/
+curl -sL https://raw.github.com/gist/1708408/travis.rb > ~/bin/travis-ci \
+  && chmod +x ~/bin/travis-ci
+
+gem install hub | tail -2
+ruby -e 'require "json"' 2>/dev/null || gem install json
 {% endhighlight %}
 
 
-Next, we need a way to update the cached status.
+Next, we need to update the cached status.
 The following code is included as part of my [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/), but feel free to save the following script to `/usr/bin/update_travis_ci_status`.
 
 {% highlight bash %}
 #!/bin/bash
 if [ -e ".travis.yml" ]; then
-  if type ruby > /dev/null 2>&1 && type travis > /dev/null 2>&1; then
-    # Only use slug from origin
-    local repo=$(ruby -e "puts %x[git remote -v].scan(/origin.*(?:\:|\/)([^\:\/]+\/[^\:\/]+)\.git/m).flatten.uniq")
-    local travis_output=$(travis repositories --slugs="$repo")
+  if type ruby > /dev/null 2>&1 && type travis-ci > /dev/null 2>&1; then
+    # Use repo from origin remote
+    local branches=$(git branch -a | sed "s/ *remotes\/origin\///;tm;d;:m;/^HEAD/d;")
     local stat_file=".travis_status~"
-    case "$travis_output" in
-    *Passing*) echo "Passing" > "$stat_file";;
-    *Failing*) echo "Failing" > "$stat_file";;
-    *Running*) echo "Running" > "$stat_file";;
-    esac
-    
+    echo -n > "$stat_file"
+    for branch in $branches; do
+      local travis_output=$(travis-ci "$branch" 2>&1)
+      case "$travis_output" in
+      *built\ OK*)    echo "$branch passed"  >> "$stat_file";;
+      *failed*)       echo "$branch failed"  >> "$stat_file";;
+      *in\ progress*) echo "$branch running" >> "$stat_file";;
+      esac
+    done
+
     # Ignore status from git
-    if ! ([ -e .git/info/exclude ] && grep -q ".travis_status~" .git/info/exclude); then 
-      echo ".travis_status~" >> .git/info/exclude
+    if ! ([ -e .git/info/exclude ] && grep -q "$stat_file" .git/info/exclude); then
+      echo "$stat_file" >> .git/info/exclude
     fi
   fi
 fi
 {% endhighlight %}
 
-We also need a way to run this update task every few minutes, across all of our local git repos.
+We will also need a way to run this update task every few minutes, across all of our local git repos.
 
 The [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/) also maintains an index of your git repositories, which gives you the ability to run batch commands via the `git_index` function.
 So the build status update can be easily set up as a cron task:
 
 {% highlight text %}
-*/2 * * * * /bin/bash -c '. $HOME/.bashrc && git_index --rebuild && git_index --batch-cmd update_travis_ci_status'
+*/5 * * * * /bin/bash -c '. $HOME/.bashrc && git_index --rebuild && git_index --batch-cmd update_travis_ci_status'
 {% endhighlight %}
 
-Alternatively, you can save the following script to `/usr/bin/update_all_travis_ci_statuses`.
+Alternatively, you could save the following script to `/usr/bin/update_all_travis_ci_statuses`.
 
 {% highlight bash %}
 #!/bin/bash
@@ -76,10 +86,10 @@ done
 ... and use the following cron task:
 
 {% highlight text %}
-*/2 * * * * /bin/bash -c '. $HOME/.bashrc && /usr/bin/update_all_travis_ci_statuses'
+*/5 * * * * /bin/bash -c '. $HOME/.bashrc && /usr/bin/update_all_travis_ci_statuses'
 {% endhighlight %}
 
-(you only need to source your `.bashrc` if your default ruby comes from RVM)
+(you need to source your `.bashrc` if your default ruby comes from RVM)
 
 
 Finally, you need a way to display the cached status in your prompt.
@@ -89,12 +99,15 @@ Here are the functions I use to return a colored pass / fail / running symbol:
 {% highlight bash %}
 # Returns the Travis CI status for a github project
 parse_travis_status() {
-  local status_file=$(find_in_cwd_or_parent ".travis_status~")
-  if [ -e "$status_file" ]; then
-    case "$(cat "$status_file")" in
-    Passing) echo "\[\e[01;32m\]✔ ";; # green
-    Failing) echo "\[\e[01;31m\]✘ ";; # red
-    Running) echo "\[\e[01;33m\]⁇ ";; # yellow
+  local branch="$1"
+  if [ -z "$branch" ]; then branch="master"; fi
+
+  local stat_file=$(find_in_cwd_or_parent ".travis_status~")
+  if [ -e "$stat_file" ]; then
+    case "$(grep -m 1 "^$branch " "$stat_file")" in
+    *passed)  echo "\[\e[01;32m\]✔ ";; # green
+    *failed)  echo "\[\e[01;31m\]✘ ";; # red
+    *running) echo "\[\e[01;33m\]⁇ ";; # yellow
     esac
   fi
 }
