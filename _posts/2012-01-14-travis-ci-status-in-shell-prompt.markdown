@@ -125,7 +125,9 @@ find_in_cwd_or_parent() {
 
 (it also works if you are in a project's sub-directory.)
 
-Finally, add `$(parse_travis_status)` somewhere in your `$PS1`. You may like to have a look at the [prompt section of my dotfiles](https://github.com/ndbroadbent/dotfiles/blob/master/bashrc/prompt.sh), to see how I do it.
+Finally, add `$(parse_travis_status "$current_branch")` somewhere in your `$PS1`. Set the `$current_branch` variable to the current git branch, but if you leave it blank, it will default to the `master` branch.
+
+You may like to have a look at the [prompt section of my dotfiles](https://github.com/ndbroadbent/dotfiles/blob/master/bashrc/prompt.sh), to see how I do it.
 
 
 Enjoy! Please let me know if you have any questions, or need some help.
