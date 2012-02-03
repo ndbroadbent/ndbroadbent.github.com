@@ -132,7 +132,7 @@ if [ -e ".travis.yml" ]; then
     # Either update all branches, or only current branch
     if [ "$UPDATE_ALL_BRANCHES" = "true" ]; then
       # All branches on origin remotes
-      local branches="$(git branch -a | sed "s/ *remotes\/origin\///;tm;d;:m;/^HEAD/d;")"
+      local branches="$(\git branch -a | sed "s/ *remotes\/origin\///;tm;d;:m;/^HEAD/d;")"
       # Create a new, blank temp file
       echo -n > "$tmp_stat_file"
     else
@@ -166,8 +166,10 @@ if [ -e ".travis.yml" ]; then
 
     # Replace current stat file with finished update
     cp -f "$tmp_stat_file" "$stat_file"
-    # Ignore stat file from git repo
-    git_ignore "$stat_file" ".git/info/exclude"
+    # Ignore status file from git repo
+    if ! ([ -e .git/info/exclude ] && grep -q "$stat_file" .git/info/exclude); then
+      echo "$stat_file" >> .git/info/exclude
+    fi
     # Remove temporary file
     rm -f "$tmp_stat_file"
   fi
