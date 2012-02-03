@@ -6,6 +6,13 @@ tags: ruby github travis-ci bash prompt
 date: 2012-01-31 01:21:13 +0800
 ---
 
+### Update:
+
+I've updated the build status checking script, because updating all branches was taking too long (over 20 minutes.)
+Now it performs frequent updates for the current branch, and only periodic updates for all branches.
+
+----------------
+
 [Travis CI](http://travis-ci.org/) is a distributed [continuous integration](http://en.wikipedia.org/wiki/Continuous_integration) service for the open source community, and it can be used with any of your public projects on [GitHub](https://github.com/). You've probably seen some 'build status' badges like this:
 
 <img src="https://secure.travis-ci.org/travis-ci/travis-ci.png" alt="Travis CI build status">
@@ -37,40 +44,17 @@ ruby -e 'require "json"' 2>/dev/null || gem install json
 
 
 Next, we need to update the cached status.
-The following code is included as part of my [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/), but feel free to save the following script to `/usr/bin/update_travis_ci_status`.
-
-{% highlight bash %}
-#!/bin/bash
-if [ -e ".travis.yml" ]; then
-  if type ruby > /dev/null 2>&1 && type travis-ci > /dev/null 2>&1; then
-    # Use repo from origin remote
-    local branches=$(git branch -a | sed "s/ *remotes\/origin\///;tm;d;:m;/^HEAD/d;")
-    local stat_file=".travis_status~"
-    echo -n > "$stat_file"
-    for branch in $branches; do
-      local travis_output=$(travis-ci "$branch" 2>&1)
-      case "$travis_output" in
-      *built\ OK*)    echo "$branch passed"  >> "$stat_file";;
-      *failed*)       echo "$branch failed"  >> "$stat_file";;
-      *in\ progress*) echo "$branch running" >> "$stat_file";;
-      esac
-    done
-
-    # Ignore status from git
-    if ! ([ -e .git/info/exclude ] && grep -q "$stat_file" .git/info/exclude); then
-      echo "$stat_file" >> .git/info/exclude
-    fi
-  fi
-fi
-{% endhighlight %}
+The following code is included as part of my [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/), but feel free to save the `update_travis_ci_status` script [at the bottom of this post \[1\]](#update_travis_ci_status) to `/usr/bin/update_travis_ci_status`.
 
 We will also need a way to run this update task every few minutes, across all of our local git repos.
+We only want to frequently update the status for the currently checked out branch, and periodically update the status for all branches.
 
 The [SCM Breeze project](http://madebynathan.com/2011/10/18/git-shortcuts-like-youve-never-seen-before/) also maintains an index of your git repositories, which gives you the ability to run batch commands via the `git_index` function.
 So the build status update can be easily set up as a cron task:
 
 {% highlight text %}
 */5 * * * * /bin/bash -c '. $HOME/.bashrc && git_index --rebuild && git_index --batch-cmd update_travis_ci_status'
+*/45 * * * * /bin/bash -c '. $HOME/.bashrc && git_index --rebuild && git_index --batch-cmd UPDATE_ALL_BRANCHES=true update_travis_ci_status'
 {% endhighlight %}
 
 Alternatively, you could save the following script to `/usr/bin/update_all_travis_ci_statuses`.
@@ -87,6 +71,7 @@ done
 
 {% highlight text %}
 */5 * * * * /bin/bash -c '. $HOME/.bashrc && /usr/bin/update_all_travis_ci_statuses'
+*/45 * * * * /bin/bash -c '. $HOME/.bashrc && export UPDATE_ALL_BRANCHES=true && /usr/bin/update_all_travis_ci_statuses'
 {% endhighlight %}
 
 (you need to source your `.bashrc` if your default ruby comes from RVM)
@@ -131,3 +116,60 @@ You may like to have a look at the [prompt section of my dotfiles](https://githu
 
 
 Enjoy! Please let me know if you have any questions, or need some help.
+
+
+----------------
+
+<a name="update_travis_ci_status">[1]</a> `update_travis_ci_status` script:
+
+{% highlight bash %}
+#!/bin/bash
+if [ -e ".travis.yml" ]; then
+  if type ruby > /dev/null 2>&1 && type travis-ci > /dev/null 2>&1; then
+    local stat_file=".travis_status~"
+    local tmp_stat_file="$stat_file"".tmp"
+
+    # Either update all branches, or only current branch
+    if [ "$UPDATE_ALL_BRANCHES" = "true" ]; then
+      # All branches on origin remotes
+      local branches="$(git branch -a | sed "s/ *remotes\/origin\///;tm;d;:m;/^HEAD/d;")"
+      # Create a new, blank temp file
+      echo -n > "$tmp_stat_file"
+    else
+      # Only current branch
+      local branches="$(\git branch 2> /dev/null | sed "s/^\* \([^ ]*\)/\1/;tm;d;:m")"
+      # Copy current file to temp file
+      touch "$stat_file"
+      cp -f "$stat_file" "$tmp_stat_file"
+    fi
+
+    for branch in $branches; do
+      local travis_output=$(travis-ci "$branch" 2>&1)
+      local status=""
+      case "$travis_output" in
+      *built\ OK*)    status="passed";;
+      *failed*)       status="failed";;
+      *in\ progress*) status="running";;
+      esac
+
+      # If branch has a build status
+      if [ -n "$status" ]; then
+        if grep -q "^$branch" "$tmp_stat_file"; then
+          # Replace branch's build status
+          sed -e "s/^$branch .*/$branch $status/" -i "$tmp_stat_file"
+        else
+          # Append new line for branch
+          echo "$branch $status" >> "$tmp_stat_file"
+        fi
+      fi
+    done
+
+    # Replace current stat file with finished update
+    cp -f "$tmp_stat_file" "$stat_file"
+    # Ignore stat file from git repo
+    git_ignore "$stat_file" ".git/info/exclude"
+    # Remove temporary file
+    rm -f "$tmp_stat_file"
+  fi
+fi
+{% endhighlight %}
