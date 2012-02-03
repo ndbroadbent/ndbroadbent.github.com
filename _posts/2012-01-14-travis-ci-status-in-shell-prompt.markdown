@@ -169,13 +169,11 @@ if [ -e ".travis.yml" ]; then
     done
 
     # Replace current stat file with finished update
-    cp -f "$tmp_stat_file" "$stat_file"
+    mv -f "$tmp_stat_file" "$stat_file"
     # Ignore status file from git repo
     if ! ([ -e .git/info/exclude ] && grep -q "$stat_file" .git/info/exclude); then
       echo "$stat_file" >> .git/info/exclude
     fi
-    # Remove temporary file
-    rm -f "$tmp_stat_file"
   fi
 fi
 {% endhighlight %}
