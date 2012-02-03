@@ -12,8 +12,8 @@ $(function() {
       'monochrome' : false
   })
 
-  // Always open links from blog post content in a new tab/window
-  $(".post .content a").attr("target","_blank");
+  // Open links from blog post content in a new tab/window
+  $(".post .content a.new_tab").attr("target","_blank");
 
   $("#tweets").tweet({
     username: "nathanf77",
