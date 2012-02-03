@@ -13,7 +13,7 @@ gem "pygmentize", ">= 0.0.3"
 
 gem "rmagick",    ">= 2.13.1"
 gem "rdiscount",  ">= 1.6.8"
-gem "gsl",        ">= 1.14.7"
+#gem "gsl",        ">= 1.14.7"
 
 gem "jammit",     ">= 0.6.3"
 gem "foreman",    ">= 0.18.0"
