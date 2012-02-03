@@ -54,7 +54,7 @@ So the build status update can be easily set up as a cron task:
 
 {% highlight text %}
 */5 * * * * /bin/bash -c '. $HOME/.bashrc && git_index --rebuild && git_index --batch-cmd update_travis_ci_status'
-*/45 * * * * /bin/bash -c '. $HOME/.bashrc && git_index --rebuild && git_index --batch-cmd UPDATE_ALL_BRANCHES=true update_travis_ci_status'
+*/45 * * * * /bin/bash -c '. $HOME/.bashrc && export UPDATE_ALL_BRANCHES=true && git_index --rebuild && git_index --batch-cmd update_travis_ci_status'
 {% endhighlight %}
 
 Alternatively, you could save the following script to `/usr/bin/update_all_travis_ci_statuses`.
