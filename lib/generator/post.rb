@@ -1,21 +1,57 @@
+require 'jekyll'
+include Jekyll::Filters
+
 module Generator
   class Post
-    def initialize(options = {:edit_with => :geany})
+    def initialize(options = {})
       @options = options
       @time = Time.now
-      if ENV["title"]
-        @params = %w(title excerpt tags content).inject({}){|h,n| h[n] = ENV[n]; h }
-      else
-        @params = params_from_input
-      end
+      @params = post_params_from_user_input
       @params["date"] = @time.to_s
     end
 
-    def params_from_input
+    def jekyll_site
+      @site ||= begin
+        s = Jekyll::Site.new(Jekyll.configuration({}))
+        s.read_posts('')
+        s
+      end
+    end
+
+    def popular_tags(count=-1)
+      jekyll_site.tags.sort.map{|t, p| [p.count, t] }.sort {|x,y| y <=> x }.map(&:last)[0..count]
+    end
+
+    def choose_tags
+      # select tags from a list of the 10 most common tags
+      tags = []
+      show_tags = 10
+      begin
+        choice = choose do |menu|
+          menu.prompt = "Please choose some tags. Choose 'Done' when finished:"
+          menu.choices(*popular_tags(show_tags))
+          menu.choice(:Other) { ask("Tag: ") }
+          menu.choice('Remove Last Tag')
+          menu.choice('Show All Tags')
+          menu.choice(:Done)
+        end
+        case choice
+        when 'Remove Last Tag'; tags.pop
+        when 'Show All Tags'; show_tags = -1
+        when :Done
+        else
+          tags << choice
+        end
+        tags = tags.uniq
+        puts "Current tag list: #{tags.join(', ')}"
+      end while choice != :Done
+      tags
+    end
+
+    def post_params_from_user_input
       params = {}
       params["title"] = ask("Title:  ") { |q| q.validate = /.+/ }
-      params["excerpt"] = ask("Excerpt:  ") { |q| q.default = params["title"] }
-      params["tags"] = ask("Tags:  ") { |q| q.default = "uncategorized" }
+      params["tags"] = choose_tags.join(' ')
       params
     end
 
@@ -28,19 +64,16 @@ module Generator
 
       rendered = Liquid::Template.parse(template).render(@params)
       File.open(output_file, 'w') {|f| f.puts rendered }
-      puts "== Generated new post from template at '#{output_file}'."
+      puts "== Generated new post from template, saved at '#{output_file}'."
 
       create_images_dir!
-      edit_file(output_file, @options[:edit_with]) if @options[:edit_with]
+      edit_file(output_file)
     end
 
     # Run this command after creating a new post
-    def edit_file(file, editor)
-      puts "===== Editing post with #{editor}..."
-      case editor
-      when :gedit; system("nohup gedit #{file} > /dev/null &")
-      when :gedit; system("nohup geany #{file}:9 > /dev/null &")
-      end
+    def edit_file(file)
+      puts "===== Editing post with Geany..."
+      system("nohup geany #{file}:8 > /dev/null &")
     end
 
     protected
