@@ -12,7 +12,7 @@ body.bp {
       text-shadow: 1px 1px 0px #FFFFFF;
       font-size: 22px;
       border-bottom: 2px solid #dedede;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
       padding-bottom: 3px; }
     .sidebar-section {
       padding: 12px 0;
@@ -82,10 +82,28 @@ body.bp {
     // Widgets - Stack Overflow, Ohloh, etc.
     // --------------------------------------------------------------
     #widgets {
-      text-align: left;
-      img {
-        margin-top: 7px;
+      .widget {
+        margin-bottom: 16px;
+        text-align: left;
+        padding: 5px 0;
       }
+
+      img.badge { 
+        @include border-shadow(2px, 2px, 6px, #999);
+      }
+      #pledgie-widget img.badge { @include border-radius(3px); }
+      #working-with-rails-widget img.badge { @include border-radius(5px); }
+      #ohloh-widget img.badge { @include border-radius(9px); }
+
+      a, a:hover {
+        text-decoration: none;
+      }
+
+      .coderwall {
+        width: 220px;
+        padding: 0px;
+      }
+      
     }
 
     // Google Site Search API

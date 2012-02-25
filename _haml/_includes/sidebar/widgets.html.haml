@@ -1,16 +1,25 @@
 .sidebar-section#widgets
-  %h3
-  <a href="http://stackoverflow.com/users/304706/nathan-f77">
-  <img class="stack-overflow" src="http://stackoverflow.com/users/flair/304706.png" alt="Stack Overflow profile for nathan.f77 at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="Stack Overflow profile for nathan.f77 at Stack Overflow, Q&amp;A for professional and enthusiast programmers" height="58" width="208">
-  </a>
+  %h3 Badges!
   
-  %br
-  <a href="http://www.workingwithrails.com/person/20792-nathan-broadbent">
-  <img alt="Working with Rails profile" src="http://workingwithrails.com/images/tools/compact-small.jpg">
-  </a>
+  .widget
+    <a href="http://stackoverflow.com/users/304706/nathan-f77">
+    <img class="badge" src="http://stackoverflow.com/users/flair/304706.png" alt="Stack Overflow profile for nathan.f77 at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="Stack Overflow profile for nathan.f77 at Stack Overflow, Q&amp;A for professional and enthusiast programmers" height="58" width="208">
+    </a>
+   
+  .widget#pledgie-widget
+    <a href='http://www.pledgie.com/campaigns/16154'>
+    <img class="badge" alt='Click here to lend your support to: MadeByNathan.com and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/16154.png?skin_name=chrome' border='0' />
+    </a>
   
-  %br
-  <a href='https://www.ohloh.net/accounts/78450?ref=Detailed'>
-  <img alt='Ohloh profile for nathan_f77' height='35' src='https://www.ohloh.net/accounts/78450/widgets/account_detailed.gif' width='191' />
-  </a>
-
+  .widget#working-with-rails-widget
+    <a href="http://www.workingwithrails.com/person/20792-nathan-broadbent">
+    <img class="badge" alt="Working with Rails profile" src="http://workingwithrails.com/images/tools/compact-small.jpg">
+    </a>
+  
+  .widget#ohloh-widget
+    <a href='https://www.ohloh.net/accounts/78450?ref=Detailed'>
+    <img class="badge" alt='Ohloh profile for nathan_f77' height='35' src='https://www.ohloh.net/accounts/78450/widgets/account_detailed.gif' width='191' />
+    </a>
+  
+  .widget#coderwall-widget
+    %section.coderwall(data-coderwall-username="ndbroadbent" data-coderwall-orientation="horizontal")
