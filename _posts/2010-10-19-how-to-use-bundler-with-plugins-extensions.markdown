@@ -19,7 +19,7 @@ If we are developing a Spree extension, or a Retrospectiva extension, or a Fat F
 {% highlight ruby %}
 # Install gems from each plugin
 Dir.glob(File.join(File.dirname(__FILE__), 'vendor', 'plugins', '**', "Gemfile")) do |gemfile|
-    self.send(:eval, File.open(gemfile, 'r').read)
+    eval(IO.read(gemfile), binding)
 end
 {% endhighlight %}
 
