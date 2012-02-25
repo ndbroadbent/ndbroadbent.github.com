@@ -88,12 +88,19 @@ body.bp {
         padding: 5px 0;
       }
 
-      img.badge { 
-        @include border-shadow(2px, 2px, 6px, #999);
+      #github-widget { 
+        margin-bottom: 17px;
       }
-      #pledgie-widget img.badge { @include border-radius(3px); }
-      #working-with-rails-widget img.badge { @include border-radius(5px); }
-      #ohloh-widget img.badge { @include border-radius(9px); }
+      #pledgie-widget img.badge {
+        @include border-radius(3px);
+      }
+      #working-with-rails-widget img.badge { 
+        @include border-radius(5px);
+        border: 1px solid #bbb;
+      }
+      #ohloh-widget img.badge {
+        @include border-radius(9px);
+      }
 
       a, a:hover {
         text-decoration: none;
