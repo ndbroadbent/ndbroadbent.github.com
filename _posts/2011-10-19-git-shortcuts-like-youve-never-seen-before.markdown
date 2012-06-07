@@ -53,7 +53,7 @@ $ ga 2 3 11
 And if you want to add all unstaged changes (files 1 to 10):
 
 {% highlight bash %}
-$ ga 1..10
+$ ga 1-10
 {% endhighlight %}
 
 (Note that `ga` will also remove deleted files, unlike the standard `git add` command.
@@ -78,7 +78,7 @@ $ echo $e4
 # => assets/git_breeze/git_breeze.sh
 $ ge echo 4
 # => assets/git_breeze/git_breeze.sh
-$ ge echo 1..3
+$ ge echo 1-3
 # expands to echo $e1 $e2 $e3
 # => _shared.sh assets/git_breeze/config.example.sh assets/git_breeze/config.sh
 {% endhighlight %}
@@ -174,9 +174,6 @@ $ s errbit/config/
 
 
 ## Anything else?
-
-I mentioned there was a 'community driven collection of useful SCM functions'.
-Well... The 'community' hasn't quite started yet.
 
 If you have any awesome SCM scripts lurking in your `.bashrc` or `.zshrc`,
 please feel free to send me a pull request.
