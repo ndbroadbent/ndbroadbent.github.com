@@ -2,7 +2,7 @@
 layout: post
 title: 10 Reasons why Hackers should Jailbreak their iPhones
 tags: iphone jailbreak thoughts
-date: 2012-07-15 18:55:18 +0800
+date: 2011-10-20 18:55:18 +0800
 ---
 
 There was a post on the front page of [Hacker News](http://news.ycombinator.com/) recently, titled "[Making Chrome better on iOS](http://raphaelcaixeta.com/blog/2012/07/09/making-chrome-better-on-ios/)". Google's Chrome browser is now available on iOS, and the author of the article was talking about how app developers could be persuaded to add some code to their apps which would allow Chrome to open links.
@@ -22,13 +22,13 @@ You can find the "[Browser Changer](http://cydia.saurik.com/package/jp.tom-go.op
 <hr/>
 
 ### Grooveshark
-  
+
 The Grooveshark iPhone app was removed from the App Store, so you can only install it on a jailbroken iPhone through Cydia.
 
 <img src="/images/posts/2012/07/grooveshark.png" alt="Grooveshark" />
 
-The 'Grooveshark Anywhere' plan is required if you want to download unlimited albums and songs to play offline, but it's well worth the $9 per month. 
-It's definitely a replacement for iTunes, so it's no wonder that Apple feels threatened. 
+The 'Grooveshark Anywhere' plan is required if you want to download unlimited albums and songs to play offline, but it's well worth the $9 per month.
+It's definitely a replacement for iTunes, so it's no wonder that Apple feels threatened.
 
 <small>Note: I also tried Spotify for a week when it was released to New Zealand, but I found that Grooveshark has a much bigger music collection.</small>
 
@@ -42,8 +42,8 @@ I can also SFTP into the iPhone's filesystem, and use Ubuntu's file browser to c
 <hr/>
 
 ### VLC media player
-  
-Plays anything you can transfer to your iPhone. Another great app rejected from the App Store. 
+
+Plays anything you can transfer to your iPhone. Another great app rejected from the App Store.
 
 <hr/>
 
@@ -57,7 +57,7 @@ You never know when you might need to restart or rollback a remote server:
 <hr/>
 
 ### SBSettings
-  
+
 This is an incredibly useful shortcuts menu, displayed by swiping the status bar:
 
 <img src="/images/posts/2012/07/sbsettings.png" alt="SBSettings" />
