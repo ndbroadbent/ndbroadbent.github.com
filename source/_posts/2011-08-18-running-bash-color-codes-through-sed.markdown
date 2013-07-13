@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Running bash color codes through sed
 wordpress_id: 569
 tags: bash scripts

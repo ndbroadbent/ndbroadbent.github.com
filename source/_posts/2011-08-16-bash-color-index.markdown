@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Bash Color Index
 wordpress_id: 552
 tags: bash scripts

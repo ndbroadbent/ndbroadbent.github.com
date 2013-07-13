@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Really handy RVM hook to symlink current gem directory
 wordpress_id: 446
 tags: guides rails bundler rails-3 rvm gedit

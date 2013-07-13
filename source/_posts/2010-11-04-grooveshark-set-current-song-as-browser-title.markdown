@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Grooveshark - Set Current Song as Browser Title
 wordpress_id: 136
 tags: greasemonkey javascript music grooveshark

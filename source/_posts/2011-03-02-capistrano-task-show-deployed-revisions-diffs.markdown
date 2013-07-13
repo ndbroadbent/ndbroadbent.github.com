@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Capistrano task - show deployed revisions & diffs
 wordpress_id: 380
 tags: guides rails rails-3 capistrano

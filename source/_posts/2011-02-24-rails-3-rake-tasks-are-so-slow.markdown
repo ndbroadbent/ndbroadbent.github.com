@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Rails 3 Rake tasks can take too long to load
 wordpress_id: 373
 tags: guides rails rails-3

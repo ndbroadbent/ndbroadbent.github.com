@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Avatar Harmony - Sync your profile pics
 wordpress_id: 432
 tags: projects rails web-design rails-3

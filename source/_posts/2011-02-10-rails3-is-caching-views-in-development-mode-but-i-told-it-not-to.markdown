@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Rails 3 caching views in development mode
 wordpress_id: 366
 tags: guides rails rails-3

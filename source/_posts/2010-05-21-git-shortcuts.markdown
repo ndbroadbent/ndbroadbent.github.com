@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: git shortcuts
 wordpress_id: 87

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: RFID apartment lock (& iPhone app)
 wordpress_id: 104
 tags: compaq-evo-t20 projects linux ruby electronics home-automation

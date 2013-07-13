@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: How to preserve indentation in wordpress [sourcecode] tags
 wordpress_id: 150

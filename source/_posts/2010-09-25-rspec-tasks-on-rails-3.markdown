@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: RSpec tasks on Rails 3
 wordpress_id: 125

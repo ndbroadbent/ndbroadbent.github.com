@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Auto-reloading your .bashrc (or .zshrc)
 tags: bash linux scripts
 date: 2012-10-29 20:31:21 +1300

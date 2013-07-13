@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Travis CI Status in Shell Prompt
 excerpt: Travis CI Status in Shell Prompt
 tags: ruby github travis-ci bash prompt

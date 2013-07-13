@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Weather Notifier
 wordpress_id: 404
 tags: compaq-evo-t20 linux projects home-automation electronics

@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: jqgrid on Spree
 wordpress_id: 59

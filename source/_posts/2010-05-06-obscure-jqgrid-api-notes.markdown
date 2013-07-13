@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: obscure jqGrid API notes
 wordpress_id: 61

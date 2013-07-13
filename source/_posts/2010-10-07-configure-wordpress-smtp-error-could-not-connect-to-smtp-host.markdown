@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: "Configure SMTP - SMTP Error: Could not connect to SMTP host."
 wordpress_id: 249

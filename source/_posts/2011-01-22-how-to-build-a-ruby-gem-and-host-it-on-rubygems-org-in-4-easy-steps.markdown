@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Build a ruby gem and host it on rubygems.org in 4 easy steps
 wordpress_id: 335
 tags: guides ruby ruby-gems rails bundler

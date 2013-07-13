@@ -3,6 +3,7 @@ layout: post
 title: Compaq Evo T20 projects
 wordpress_id: 8
 tags: c compaq-evo-t20 damn-small-linux linux
+comments: true
 date: 2010-04-08 13:51:23 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=8
 ---

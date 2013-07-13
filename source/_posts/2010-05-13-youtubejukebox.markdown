@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: YoutubeJukebox
 wordpress_id: 71

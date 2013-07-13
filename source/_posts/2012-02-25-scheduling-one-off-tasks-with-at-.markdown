@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Scheduling one-off tasks with 'at'
 tags: linux bash administration server
 date: 2012-02-25 17:00:27 +0800

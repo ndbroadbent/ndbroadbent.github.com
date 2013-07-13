@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: New Cydia Themes (Sounds)
 wordpress_id: 350
 tags: iphone ios jailbreak

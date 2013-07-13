@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Don't use 'bundle install {gem}'.
 excerpt: You keep using 'bundle install {gem}'. I do not think it means what you think it means.
 wordpress_id: 571

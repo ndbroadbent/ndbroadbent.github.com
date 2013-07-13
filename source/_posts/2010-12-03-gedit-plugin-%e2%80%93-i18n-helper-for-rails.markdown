@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Gedit plugin \xE2\x80\x93 I18n Helper for Rails"
 wordpress_id: 297
 tags: plugins gedit

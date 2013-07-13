@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Automate your Rails development with cron: Keep projects updated, install gems, and maintain a repo index"
 tags: ruby rails guides bash rubygems scripts git
 date: 2012-10-11 14:56:54 +1300

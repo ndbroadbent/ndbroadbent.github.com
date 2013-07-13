@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Skype notifications using libnotify on Linux
 tags: scripts guides skype linux
 date: 2012-03-24 18:55:18 +0800

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "My attempt at an embossed metal box from beverage can"
 wordpress_id: 208
 tags: projects

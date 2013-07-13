@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Ubuntu Keyboard Shortcut: Open a selected file in Sublime Text 2"
 tags: ruby rails bash linux ubuntu
 date: 2013-03-29 23:44:58 +1300

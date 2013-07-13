@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: A better way to use xclip (clipboard from the command line)
 excerpt: A better way to use xclip
 tags: ubuntu linux guides bash

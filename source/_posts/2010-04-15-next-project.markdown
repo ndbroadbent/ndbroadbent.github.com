@@ -3,6 +3,7 @@ layout: post
 title: Next project!
 wordpress_id: 23
 tags: shell-fm ruby
+comments: true
 date: 2010-04-15 23:15:57 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=23
 ---

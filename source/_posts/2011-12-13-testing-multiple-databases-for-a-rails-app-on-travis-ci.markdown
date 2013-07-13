@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Testing Multiple Databases for a Rails app on Travis CI
 excerpt: Testing Multiple Databases for a Rails app on Travis CI
 tags: ruby rails

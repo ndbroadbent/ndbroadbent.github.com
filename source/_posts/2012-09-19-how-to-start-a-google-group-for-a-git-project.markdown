@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: How to start a Google Group for a git project
 tags: administration GitHub git google-groups mailing-list bash zsh
 date: 2012-09-19 12:05:39 +1200

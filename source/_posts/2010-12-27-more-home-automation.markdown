@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: More home automation..
 wordpress_id: 310
 tags: compaq-evo-t20 home-automation electronics

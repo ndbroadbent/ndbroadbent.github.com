@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Get Punished for Breaking Your Software Tests
 wordpress_id: 264
 tags: projects ruby continous-integration

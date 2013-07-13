@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Trying to use l1merain but it doesn't work?
 wordpress_id: 262
 tags: guides iphone jailbreak

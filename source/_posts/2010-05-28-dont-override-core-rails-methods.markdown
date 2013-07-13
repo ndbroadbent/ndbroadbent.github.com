@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Don&#039;t override core Rails methods
 wordpress_id: 90

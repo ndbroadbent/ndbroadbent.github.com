@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: How to upgrade git on legacy Ubuntu
 wordpress_id: 113

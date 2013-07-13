@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: "Last.fm Player - Project Videos"
 wordpress_id: 49

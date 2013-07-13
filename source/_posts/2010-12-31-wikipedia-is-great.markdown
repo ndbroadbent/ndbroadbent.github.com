@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Wikipedia is great, help keep it free!
 wordpress_id: 321
 tags: thoughts

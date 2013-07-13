@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: capistrano_colors has been merged into capistrano
 tags: rails ruby linux capistrano server administration
 date: 2012-11-08 12:55:17 +1300

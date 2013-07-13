@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Make 'git status' put filepaths into numbered variables
 wordpress_id: 192
 tags: git guides

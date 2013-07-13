@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Saving space in the terminal with symbols
 tags: linux bash ruby scripts
 date: 2012-10-14 22:28:47 +1300

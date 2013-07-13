@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: How to use bundler with multiple Gemfiles in plugins / extensions
 wordpress_id: 139

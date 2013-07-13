@@ -3,6 +3,7 @@ layout: post
 title: This blog should have been started a long time ago
 wordpress_id: 189
 tags: thoughts
+comments: true
 date: 2010-04-07 13:30:37 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=4
 ---

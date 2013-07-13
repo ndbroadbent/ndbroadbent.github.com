@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: wimp.com rss feed
 wordpress_id: 115

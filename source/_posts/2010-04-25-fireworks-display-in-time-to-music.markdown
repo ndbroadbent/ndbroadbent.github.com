@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: fireworks display in time to music.
 wordpress_id: 33

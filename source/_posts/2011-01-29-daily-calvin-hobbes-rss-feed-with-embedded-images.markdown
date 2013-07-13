@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Daily Calvin & Hobbes RSS feed (with embedded images)
 wordpress_id: 342
 tags: rss feed comics

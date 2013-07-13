@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Hacking DSP-420 LCD displays
 wordpress_id: 30

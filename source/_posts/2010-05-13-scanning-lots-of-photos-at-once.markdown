@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Scanning lots of photos at once with GIMP on Ubuntu Linux
 wordpress_id: 74

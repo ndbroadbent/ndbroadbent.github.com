@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Git Shortcuts Like You've Never Seen Before
 tags: git bash zsh scripts projects
 date: 2011-10-19 01:14:01 +0800

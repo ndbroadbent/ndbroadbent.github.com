@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: iOS JB tweak - Replace operator with current prepaid balance
 wordpress_id: 300
 tags: projects iphone jailbreak

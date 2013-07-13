@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Demo iPhone app - Apartment automation
 wordpress_id: 316
 tags: iphone projects home-automation

@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: How to create a favicon.ico with GIMP
 wordpress_id: 85

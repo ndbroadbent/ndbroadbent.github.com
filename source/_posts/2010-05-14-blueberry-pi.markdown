@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: blueberry pi
 wordpress_id: 80

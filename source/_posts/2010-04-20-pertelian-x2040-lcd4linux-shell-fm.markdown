@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Pertelian X2040, lcd4linux, shell-fm
 wordpress_id: 25

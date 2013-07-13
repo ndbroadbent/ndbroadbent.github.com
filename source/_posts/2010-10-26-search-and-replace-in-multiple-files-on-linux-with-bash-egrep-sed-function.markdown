@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Search and replace in multiple files on linux with bash, egrep, sed function
 wordpress_id: 184

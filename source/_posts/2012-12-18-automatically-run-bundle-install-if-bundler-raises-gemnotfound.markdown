@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Automatically run 'bundle install' when Bundler can't find a gem
 tags: ruby rails bash bundler rubygems
 date: 2012-12-18 19:56:01 +1300

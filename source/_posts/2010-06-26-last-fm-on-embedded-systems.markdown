@@ -1,4 +1,5 @@
 ---
+comments: true
 layout: post
 title: Last.fm on embedded systems
 wordpress_id: 96

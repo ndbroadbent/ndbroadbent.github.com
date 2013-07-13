@@ -3,6 +3,7 @@ layout: post
 title: The Compaq Evo T20 works
 wordpress_id: 21
 tags: compaq-evo-t20 linux ruby shell-fm
+comments: true
 date: 2010-04-15 22:22:32 +08:00
 wordpress_url: http://nathanf77.wordpress.com/?p=21
 ---

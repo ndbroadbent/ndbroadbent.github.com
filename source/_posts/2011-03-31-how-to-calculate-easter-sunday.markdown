@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: How to calculate Easter Sunday
 wordpress_id: 420
 tags: guides ruby home-automation
