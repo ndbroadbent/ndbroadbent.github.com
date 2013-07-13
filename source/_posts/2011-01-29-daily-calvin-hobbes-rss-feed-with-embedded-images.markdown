@@ -1,0 +1,14 @@
+---
+layout: post
+title: Daily Calvin & Hobbes RSS feed (with embedded images)
+wordpress_id: 342
+tags: rss feed comics
+date: 2011-01-29 08:26:41 +08:00
+wordpress_url: http://www.f-77.com/?p=342
+---
+<a href="http://pipes.yahoo.com/pipes/">Yahoo Pipes</a> is fantastic. I wasn't a big fan of yahoo in the past, but their pipes service is amazing. Its great for sprucing up a not-so-well implemented RSS feed, and lets you create feeds from virtually anything on the web.
+
+Here's a <a title="Calvin and Hobbes RSS" href="http://pipes.yahoo.com/pipes/pipe.run?_id=4ea8ada9a8b0f29e54ce1056f46f9202&amp;_render=rss" target="_blank">daily Calvin and Hobbes RSS feed</a> that parses the comic image from the linked page, and drops it in the feed itself. Perfect for Google Reader.
+
+<img title="calvin &amp; hobbes" src="/images/posts/2011/01/calvinhobbes-resized-post.gif" />
+

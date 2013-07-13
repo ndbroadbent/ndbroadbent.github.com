@@ -1,0 +1,34 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+ul li {
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+ul.profile-icons {
+  float: right;
+  li, li a { border-left: none }
+  li {
+    margin-left: 7px;
+    a { padding-left: 0px; }
+    .icon {
+      opacity: 0.7;
+      &:hover { opacity: 1; }
+    }
+  }
+}
+
+.maskImage ul.subscription { top: .45em; }
+
+.google_search_form {
+  width: 170px;
+  top: 0.2em;
+  position: relative;
+}
+
+#about {
+  img.avatar {
+    margin-right: 12px;
+  }
+}
