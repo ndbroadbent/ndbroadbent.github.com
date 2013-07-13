@@ -2,6 +2,7 @@
 layout: post
 title: Raspberry Pi Microwave
 tags: raspberry-pi microwave kitchen appliances projects ruby rails sinatra linux videos electronics home-automation c
+comments: true
 date: 2013-07-10 23:51:47 +1200
 ---
 
