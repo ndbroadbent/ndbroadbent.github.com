@@ -156,19 +156,24 @@ i.location.search||i.location.hash;if(b){/\?/.test(b)&&(b=b.split("?")[1]);if(a=
 $(function(){
   // Auto-setup fancybox lightboxes / thumbnails for images.
   $("img.lightbox").each(function(i) {
-    // For each image with the 'lightbox' class, the original image url
-    // is replaced with the resized 'post' url.
-    // The image is then wrapped in a link tag with the url of the original image,
-    // which is then turned into a lightbox by fancybox.
+    var link, large_url;
     var large_url = $(this).attr('src');
-    var resize_class = $(this).hasClass('thumb') ? "thumb" : "post"
-    var resized_url = large_url.replace(/\.([a-z]*)$/, "-resized-" + resize_class + ".\$1");
-    // Set the url for the original image to a resized version
-    $(this).attr('src', resized_url);
+
+    if (large_url.indexOf("-resized-") != -1) {
+      var large_url = $(this).attr('src').replace(/-resized-(thumb|post)/, '');
+    } else {
+      // The original image url needs to be replaced with the resized 'post' url.
+      var resize_class = $(this).hasClass('thumb') ? "thumb" : "post"
+      var resized_url = large_url.replace(/\.([a-z]*)$/, "-resized-" + resize_class + ".\$1");
+      // Set the url for the original image to a resized version
+      $(this).attr('src', resized_url);
+    }
 
     var link = $('<a href="'+large_url+'" />');
     if ($(this).attr('alt')) { link.attr('title', $(this).attr('alt')); }
 
+    // The image is then wrapped in a link tag with the url of the original image,
+    // which is turned into a lightbox by fancybox.
     link.fancybox();
     $(this).wrap(link);
   });

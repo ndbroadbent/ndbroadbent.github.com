@@ -10,6 +10,9 @@ layout: default
       {% include article.html %}
     </article>
   {% endfor %}
+
+  {% include adsense/footer_leaderboard.html %}
+
   <div class="pagination">
     {% if paginator.next_page %}
       <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
