@@ -5,6 +5,15 @@ body > header {
   background-image: url('/images/header_pattern.png');
 }
 
+// Fix for fancybox loading image
+body > div#fancybox-loading {
+  background: url('/images/fancybox_sprite.png');
+  background-position: 0 -108px;
+}
+body > div#fancybox-loading , body > div#fancybox-loading div {
+  border: 0;
+}
+
 ul li {
   list-style-position: outside;
   margin-left: 1.3em;
