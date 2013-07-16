@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "contact"
-hide_title: true
+title: "Contact"
+hide_header: true
 date: 2013-07-16 08:44
 comments: false
 sharing: false
