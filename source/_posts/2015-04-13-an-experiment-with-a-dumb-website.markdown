@@ -13,6 +13,8 @@ Yesterday, I turned a [dumb joke into a webpage](http://whattypeofanimalareyou.c
 
 I love [Octopress](http://octopress.org/), but decided to try out [Middleman](https://middlemanapp.com/) for this site. Even though this is a very simple site, it's really helpful to have templates and an asset pipeline. Everything worked out of the box, and their [documentation](https://middlemanapp.com/basics/install/) is awesome! I used a lot of open source JS libraries, such as [fullPage.js](https://github.com/alvarotrigo/fullPage.js) and [spin.js](http://fgnass.github.com/spin.js/).
 
+All the images on the site are free & royalty-free stock photos from [FreeImages.com](http://freeimages.com/). I checked out a few different sites but [freeimages.com](http://freeimages.com/) seemed to have the biggest selection and best search.
+
 I used the [middleman-s3_sync](https://github.com/fredjean/middleman-s3_sync) gem to push the site to Amazon S3, and [configured hosting on the S3 bucket](http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html). I also set up [Cloudflare](https://www.cloudflare.com/), and added a Page Rule to cache the homepage HTML. (Cloudflare automatically caches everything else.)
 This means that only the first request hits my S3 bucket, and since [Cloudflare](https://www.cloudflare.com/) doesn't charge for bandwidth, I won't need to pay anything even if the site gets millions of page views. Thanks, [Cloudflare](https://www.cloudflare.com/)!
 
