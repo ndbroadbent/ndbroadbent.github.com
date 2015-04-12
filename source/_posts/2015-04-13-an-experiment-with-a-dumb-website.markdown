@@ -27,4 +27,4 @@ This means that only the first request hits my S3 bucket, and since [Cloudflare]
 * Main Facebook audience seems to be women between the ages of 25 and 31.
 
 
-This has been a fun experiment, and I learnt a little more about Google and Facebook's analytics tools. Look out for my post on [http://www.reddit.com/r/skateboarding](/r/skateboarding) when we launch HDWR in the next few months!
+This has been a fun experiment, and I learnt a little more about Google and Facebook's analytics tools. Look out for my post on [/r/skateboarding](http://www.reddit.com/r/skateboarding) when we launch HDWR in the next few months!
