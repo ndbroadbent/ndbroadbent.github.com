@@ -23,8 +23,12 @@ This means that only the first request hits my S3 bucket, and since [Cloudflare]
 * [0 upvotes on /r/funny](http://www.reddit.com/r/funny/comments/32cmox/i_made_a_short_quiz_that_tells_you_what_type_of/) (tough crowd)
 * 20,000 page views over the last 24 hours
 * It looks like around 40% of Redditors use AdBlock Plus or uBlock
-* Will probably fizzle out as soon as it drops off the Reddit
 * Main Facebook audience seems to be women between the ages of 25 and 31.
 
+I also realized that Facebook users are generally:
 
-This has been a fun experiment, and I learnt a little more about Google and Facebook's analytics tools. Look out for my post on [/r/skateboarding](http://www.reddit.com/r/skateboarding) when we launch HDWR in the next few months!
+* Very tired of these quizzes, so unlikely to click at face value
+* Not big fans of anti-jokes
+
+
+Anyway, this has been a fun experiment, and it will probably fizzle out as soon as it drops off Reddit. Even so, I learnt a little more about static site development, as well as Google and Facebook's analytics tools. I also made enough money from ads to buy a good dinner (in Thailand).
